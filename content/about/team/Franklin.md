@@ -1,0 +1,1 @@
+**Hannah Franklin** is the Project Manager of Knowing Machines.

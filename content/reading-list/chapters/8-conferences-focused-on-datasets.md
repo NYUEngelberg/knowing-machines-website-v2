@@ -1,0 +1,7 @@
+The scholarship summarized in this list spans academic fields, from science and technology studies (STS) to computer science, and human computer interaction (HCI) to library science. During the construction of this list, it became clear that certain conference venues and their proceedings are often associated with emerging work on training data. Other conference venues have dedicated workshops or particular tracks to the study of datasets. While this broader list represents training data scholarship at a particular moment in time, these locales provide sites where work on training data has been concentrated or is likely to be found.
+
+*   ACM CHI Conference on Human Factors in Computing Systems [https://chi2021.acm.org/](https://chi2021.acm.org/)
+*   ACM Conference on Computer Supported Cooperative Work (CSCW) [https://dl.acm.org/conference/cscw](https://dl.acm.org/conference/cscw)
+*   ACM Conference on Fairness, Accountability, and Transparency (ACM FAccT) [https://facctconference.org/](https://facctconference.org/)
+*   NeurIPS Datasets and Benchmarks Track [https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks](https://neurips.cc/Conferences/2021/CallForDatasetsBenchmarks)
+*   NeurIPS Data-Centric AI Workshop (2021) [https://nips.cc/Conferences/2021/Schedule?showEvent=21860](https://nips.cc/Conferences/2021/Schedule?showEvent=21860)

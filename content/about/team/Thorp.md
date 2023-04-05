@@ -1,0 +1,1 @@
+**Jer Thorp** is an artist, writer and teacher living in New York City. He is best known for designing the algorithm to place the nearly 3,000 names on the 9/11 Memorial in Manhattan. Jer was the New York Times' first Data Artist in Residence, is a National Geographic Explorer, and in 2017 and 2018 served as the Innovator in Residence at the Library of Congress.

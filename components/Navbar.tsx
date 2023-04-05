@@ -1,0 +1,57 @@
+import { useState, useCallback, useEffect } from "react";
+import NavbarLinksDesktop from "./NavbarLinksDesktop";
+import NavbarLinksMobile from "./NavbarLinksMobile";
+
+type Props = {
+  defaultCollapsed: boolean;
+};
+
+export default function Navbar({ defaultCollapsed }: Props) {
+  const [open, setIsOpen] = useState(!defaultCollapsed);
+  const [offset, setOffset] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      setOffset(window.scrollY)
+      setIsOpen(window.scrollY === 0);
+    };
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onMouseEnter = useCallback(() => setIsOpen(true), []);
+  const onMouseLeave = useCallback(() => setIsOpen(!defaultCollapsed && offset === 0), []);
+  const navbarLinks = {
+    about: "/about",
+    "reading list": "/reading-list",
+  };
+  return (
+    <nav
+      className={
+        "fixed top-0 left-0 right-0 z-50 " + 
+        ((defaultCollapsed || offset > 0) && !open ? "translate-y-[-49px] " : "") +
+        " text-black"
+      }
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <div
+        className={
+          "transition ease-in-out delay-150  max-w-[1175px] mx-auto " +
+          " flex justify-between uppercase bg-white"
+        }
+      >
+        <div>
+          <a href="/" className="mt-4 block">
+            <img className="h-[36px] -mb-[3px]" src="/img/logo_small.svg" />
+          </a>
+        </div>
+        <NavbarLinksDesktop navbarLinks={navbarLinks} />
+        <NavbarLinksMobile navbarLinks={navbarLinks} />
+      </div>
+      <div className="h-[3px] bg-black"></div>
+      {/* <div className="h-[2px] bg-white opacity-[0.5]"></div> */}
+      <div className="h-[7px] bg-transparent"></div>
+    </nav>
+  );
+}

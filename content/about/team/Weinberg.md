@@ -1,0 +1,1 @@
+**Michael Weinberg** is the Executive Director of the Engelberg Center on Innovation Law and Policy at the NYU School of Law. His work focuses on the intersection between openness and innovation. He is a long-time Board President of the [Open Source Hardware Association (OSHWA)](https://www.oshwa.org/) and a Co-Creator of [_Everybody is Gone_](https://www.everybodyisgone.org/).
