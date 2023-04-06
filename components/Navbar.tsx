@@ -20,15 +20,16 @@ export default function Navbar({ defaultCollapsed }: Props) {
   }, []);
 
   const onMouseEnter = useCallback(() => setIsOpen(true), []);
-  const onMouseLeave = useCallback(() => setIsOpen(!defaultCollapsed && offset === 0), []);
+  const onMouseLeave = useCallback(() => setIsOpen(!defaultCollapsed && offset === 0), [defaultCollapsed, offset]);
   const navbarLinks = {
     about: "/about",
     "reading list": "/reading-list",
   };
+
   return (
     <nav
       className={
-        "fixed top-0 left-0 right-0 z-50 " + 
+        "fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-500 " + 
         ((defaultCollapsed || offset > 0) && !open ? "translate-y-[-49px] " : "") +
         " text-black"
       }
@@ -37,7 +38,7 @@ export default function Navbar({ defaultCollapsed }: Props) {
     >
       <div
         className={
-          "transition ease-in-out delay-150  max-w-[1175px] mx-auto " +
+          " max-w-[1175px] mx-auto " +
           " flex justify-between uppercase bg-white"
         }
       >
@@ -50,8 +51,7 @@ export default function Navbar({ defaultCollapsed }: Props) {
         <NavbarLinksMobile navbarLinks={navbarLinks} />
       </div>
       <div className="h-[3px] bg-black"></div>
-      {/* <div className="h-[2px] bg-white opacity-[0.5]"></div> */}
-      <div className="h-[7px] bg-transparent"></div>
+      <div className="h-[25px] bg-transparent"></div>
     </nav>
   );
 }
