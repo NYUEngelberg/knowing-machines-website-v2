@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import ScrollToTop from "react-scroll-to-top";
 
 type Props = {
   title: string;
@@ -40,7 +41,9 @@ export default function Layout({ title, children, id, navbarDefaultCollapsed = f
       <div id={id} className="pt-12 bg-white text-black font-['IBM_Plex_Mono']">
         {children}
       </div>
-      <Footer />
+      <ScrollToTop smooth color="#1400FF" className=""/>
+
+      {/* <Footer /> */}
     </>
   );
 }

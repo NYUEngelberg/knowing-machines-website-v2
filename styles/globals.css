@@ -31,3 +31,35 @@ body {
   background-color: white;
   color: black;
 }
+
+.scroll-to-top {
+  box-shadow: none!important;
+  background-color: transparent!important;
+  right: 12px!important;
+}
+/*'sm': '640px',*/
+@media (min-width: 640px) {
+
+}
+
+/*'md': '768px',*/
+@media (min-width: 768px) {
+
+}
+
+/*'lg': '1024px',*/
+@media (min-width: 1024px) {
+  .scroll-to-top {
+    right: 30px!important;
+  }
+}
+
+/*'xl': '1280px',*/
+@media (min-width: 1280px) {
+
+}
+
+/*'2xl': '1536px',*/
+@media (min-width: 1536px) {
+
+}
