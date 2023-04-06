@@ -26,10 +26,6 @@ export default function About({ intro, contact, team, alumni }: Props) {
       text: "CONTACT",
       href: "CONTACT",
     },
-    {
-      text: "PRESS",
-      href: "PRESS",
-    },
   ];
   return (
     <Layout title={title}>
