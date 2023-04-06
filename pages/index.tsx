@@ -53,9 +53,9 @@ export default function Home({ intro, sets, activeSet }: Props) {
         </section>
       </main>
 
-      <main className={"max-w-[1175px] mx-auto py-12 "}>
+      {/* <main className={"max-w-[1175px] mx-auto py-12 "}>
         <UpcomingSets sets={sets} />
-      </main>
+      </main> */}
       <main className="py-12">
         <NewsletterFormEmbed />
       </main>
