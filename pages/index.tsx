@@ -34,11 +34,12 @@ export default function Home({ intro, sets, activeSet }: Props) {
                 className="markdown-content text-sm"
                 dangerouslySetInnerHTML={{ __html: intro }}
               />
-              <a href="/about"
-                className="uppercase font-bold flex flex-row gap-[20px] items-center">
+              <a
+                href="/about"
+                className="uppercase font-bold flex flex-row gap-[20px] items-center"
+              >
                 <span>Read more</span>
-                <img src="/img/right-arrow.png"
-                  className="link-arrow-magic"/>
+                <img src="/img/right-arrow.png" className="link-arrow-magic" />
               </a>
             </div>
           </div>

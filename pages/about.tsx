@@ -2,12 +2,16 @@ import TeamSection from "@/components/about/TeamSection";
 import Layout from "@/components/Layout";
 import SideNav from "@/components/SideNav";
 import { TeamMember, TeamType } from "@/types/about";
-import { getAboutsPageIntro, getContactSection, getTeam } from "@/util/aboutContent";
+import {
+  getAboutsPageIntro,
+  getContactSection,
+  getTeam,
+} from "@/util/aboutContent";
 
 type Props = {
   intro: string;
   team: TeamMember[];
-  alumni: TeamMember[]
+  alumni: TeamMember[];
   contact: string;
 };
 
@@ -65,7 +69,7 @@ export async function getStaticProps() {
       intro,
       contact,
       team,
-      alumni
+      alumni,
     },
   };
 }
