@@ -12,12 +12,12 @@ export default function Navbar({ defaultCollapsed }: Props) {
   useEffect(() => {
     const onScroll = () => {
       setOffset(window.scrollY)
-      setIsOpen(window.scrollY === 0);
+      setIsOpen(!defaultCollapsed && window.scrollY === 0);
     };
     window.removeEventListener("scroll", onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [defaultCollapsed]);
 
   const onMouseEnter = useCallback(() => setIsOpen(true), []);
   const onMouseLeave = useCallback(() => setIsOpen(!defaultCollapsed && offset === 0), [defaultCollapsed, offset]);
