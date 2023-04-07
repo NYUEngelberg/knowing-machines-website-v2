@@ -3,7 +3,7 @@ export default function SubmitSuggestion () {
         <span className="uppercase font-bold text-sm tracking-widest">Something missing?</span>
         <br />
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScmvcD0naOd-szpeldPMTc0A7nwWClaNATS3VsXlm6J1Xo_tw/viewform?fbzx=149335141180928481&pli=1"
-            className="uppercase text-xs flex flex-row justify-between p-2">
+          className="uppercase text-xs flex flex-row justify-between p-2 hover:bg-[#1400FF] hover:text-white">
             <span className="pl-2">Submit a suggestion</span>
             <img src="/img/arrow-right.svg"
                 className="link-arrow w-4"/>

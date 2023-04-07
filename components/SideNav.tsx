@@ -21,10 +21,10 @@ export default function SideNav({ title, links }: Props) {
           >
             <a
               className={"grow leading-[123%] text-sm p-2 pl-4 flex justify-between items-center " +
-                " border-l-[3px] border-b-[1px] border-black hover:border-l-[#1400FF] "}
+                " border-l-[3px] border-b-[1px] border-black hover:bg-[#1400FF] hover:text-white"}
               href={"#" + link.href}
             >
-              <span>{link.text}</span>
+              <span className="link-text-abc">{link.text}</span>
               <img className="link-arrow h-[12px] pl-2" src="/img/arrow-bottom-right.svg" />
             </a>
             <PartialBulkyBorder total={links.length} i={i} />
