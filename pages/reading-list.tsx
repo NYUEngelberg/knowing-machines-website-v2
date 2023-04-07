@@ -22,7 +22,8 @@ export default function ReadingList({ intro, chapters }: Props) {
           " md:grid md:grid-rows-[1fr] md:grid-cols-[300px_minmax(0,1fr)] md:gap-[40px]"
         }
       >
-        <SideNav title={title} links={chapters.map((c) => c.link)} />
+        <SideNav title={title} submitSuggestion={true}
+        links={chapters.map((c) => c.link)} />
         <section className="border-[1px] border-black mx-4">
           <div
             className="markdown-content p-8 text-sm"
