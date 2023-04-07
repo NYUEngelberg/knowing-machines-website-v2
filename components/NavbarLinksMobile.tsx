@@ -10,7 +10,7 @@ export default function NavbarLinksMobile({ navbarLinks }: Props) {
     <div
       className={
         "flex flex-col sm:hidden " +
-        " space-x-6 mt-1 text-xs font-bold translate-y-[5px]" + 
+        " space-x-6 mt-1 text-xs font-bold translate-y-[6px]" + 
         (isExpanded ?
           " z-[50] absolute right-0 bg-white border-black border-b-[3px] pb-2" :
           "")
