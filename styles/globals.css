@@ -20,6 +20,9 @@ a {
 a:hover {
   color: #1400FF;
 }
+a:hover img.link-arrow-magic {
+  filter: invert(12%) sepia(85%) saturate(7348%) hue-rotate(251deg) brightness(86%) contrast(144%);
+}
 a:hover img.link-arrow {
   /* filter: invert(12%) sepia(85%) saturate(7348%) hue-rotate(251deg) brightness(86%) contrast(144%); */
   filter: invert(100%);

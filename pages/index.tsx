@@ -19,7 +19,7 @@ export default function Home({ intro, sets, activeSet }: Props) {
     <Layout title={"Knowing Machines"} navbarDefaultCollapsed={true}>
       <main
         className={
-          "max-w-[1175px] mx-auto py-10" +
+          "max-w-[1175px] mx-auto py-0" +
           " md:grid " +
           " md:grid-cols-[300px_minmax(0,1fr)] md:gap-[40px]"
         }
@@ -38,7 +38,7 @@ export default function Home({ intro, sets, activeSet }: Props) {
                 className="uppercase font-bold flex flex-row gap-[20px] items-center">
                 <span>Read more</span>
                 <img src="/img/right-arrow.png"
-                  className="link-arrow"/>
+                  className="link-arrow-magic"/>
               </a>
             </div>
           </div>

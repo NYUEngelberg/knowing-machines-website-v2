@@ -33,7 +33,7 @@ export default function PublicationsSection() {
                 <h3 className="flex-grow uppercase font-bold tracking-widest">
                   {item.title}
                 </h3>
-                <img src="/img/arrow-top-right.svg" className="link-arrow" />
+                <img src="/img/arrow-top-right.svg" className="link-arrow-magic" />
               </a>
               <div className="text-xs my-4">
                 {item.preposition + ": "}
