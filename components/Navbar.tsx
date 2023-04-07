@@ -7,11 +7,12 @@ type Props = {
 };
 
 export default function Navbar({ defaultCollapsed }: Props) {
+  const showNavbarAtOffset = 140;
   const [open, setIsOpen] = useState(!defaultCollapsed);
   const [offset, setOffset] = useState(0);
   useEffect(() => {
     const onScroll = () => {
-      setOffset(window.scrollY)
+      setOffset(window.scrollY);
       setIsOpen(!defaultCollapsed && window.scrollY === 0);
     };
     window.removeEventListener("scroll", onScroll);
@@ -20,7 +21,10 @@ export default function Navbar({ defaultCollapsed }: Props) {
   }, [defaultCollapsed]);
 
   const onMouseEnter = useCallback(() => setIsOpen(true), []);
-  const onMouseLeave = useCallback(() => setIsOpen(!defaultCollapsed && offset === 0), [defaultCollapsed, offset]);
+  const onMouseLeave = useCallback(
+    () => setIsOpen(!defaultCollapsed || offset >= 140),
+    [defaultCollapsed, offset]
+  );
   const navbarLinks = {
     about: "/about",
     "reading list": "/reading-list",
@@ -29,8 +33,10 @@ export default function Navbar({ defaultCollapsed }: Props) {
   return (
     <nav
       className={
-        "fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-500 " + 
-        ((defaultCollapsed || offset > 0) && !open ? "translate-y-[-49px] " : "") +
+        "fixed top-0 left-0 right-0 z-50 transition-all ease-in-out duration-500 " +
+        (defaultCollapsed && offset < showNavbarAtOffset && !open
+          ? "translate-y-[-49px] "
+          : "") +
         " text-black"
       }
       onMouseEnter={onMouseEnter}
@@ -51,7 +57,9 @@ export default function Navbar({ defaultCollapsed }: Props) {
         <NavbarLinksMobile navbarLinks={navbarLinks} />
       </div>
       <div className="h-[3px] bg-black"></div>
-      <div className="h-[25px] bg-transparent"></div>
+      {defaultCollapsed && offset < showNavbarAtOffset && (
+        <div className="h-[25px] bg-transparent"></div>
+      )}
     </nav>
   );
 }

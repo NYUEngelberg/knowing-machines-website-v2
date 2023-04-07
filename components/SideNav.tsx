@@ -10,7 +10,7 @@ type Props = {
 export default function SideNav({ title, links }: Props) {
   return (
     <aside className="mx-4 mb-12 ">
-      <div className="md:sticky md:top-8">
+      <div className="md:sticky md:top-16">
         <div className="border-b-[3px] border-black p-2 px-4 leading-4 uppercase font-bold leading-[123%] text-lg">
           {title}
         </div>
