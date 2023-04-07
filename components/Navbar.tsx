@@ -50,7 +50,7 @@ export default function Navbar({ defaultCollapsed }: Props) {
       >
         <div>
           <a href="/" className="mt-4 block">
-            <img className="h-[36px] -mb-[3px]" src="/img/logo_small.svg" />
+            <img className="pl-4 h-[36px] -mb-[3px]" src="/img/logo_small.svg" />
           </a>
         </div>
         <NavbarLinksDesktop navbarLinks={navbarLinks} />

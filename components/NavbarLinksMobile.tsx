@@ -17,9 +17,9 @@ export default function NavbarLinksMobile({ navbarLinks }: Props) {
       }
     >
       <img onClick={() => setIsExpanded(!isExpanded)}
-        className="cursor-pointer self-end pr-3" src="/img/hamburger.png" />
+        className="cursor-pointer self-end pr-4" src="/img/hamburger.png" />
       {isExpanded && Object.entries(navbarLinks).map(([text, href]) => (
-        <a href={href} key={href} className="px-3 pt-3 ">
+        <a href={href} key={href} className="pr-4 pt-3 ">
           {text}
         </a>
       ))}

@@ -7,7 +7,7 @@ export default function NavbarLinksDesktop({ navbarLinks }: Props) {
     <div className={"hidden sm:flex " +
         " space-x-6 mt-3 text-xs font-bold"}>
       {Object.entries(navbarLinks).map(([text, href]) => (
-        <a href={href} key={href} className="px-3 pt-3 ">
+        <a href={href} key={href} className="pr-4 pt-3 ">
           {text}
         </a>
       ))}
