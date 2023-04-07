@@ -24,7 +24,7 @@ export default function Home({ intro, sets, activeSet }: Props) {
           " md:grid-cols-[300px_minmax(0,1fr)] md:gap-[40px]"
         }
       >
-        <aside className="mb-10">
+        <aside className="mb-10 mx-4">
           <div className="md:sticky md:top-12">
             <div className="">
               <img src="/img/logo_main.svg" />

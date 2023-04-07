@@ -42,14 +42,14 @@ export default function About({ intro, contact, team, alumni }: Props) {
         <SideNav title={title} links={sectionLinks} />
         <div>
           <section
-            className="markdown-content border-[1px] border-black mx-4p p-8"
+            className="markdown-content border-[1px] border-black mx-4 p-8"
             dangerouslySetInnerHTML={{ __html: intro }}
           />
           <TeamSection sectionTitle="TEAM" team={team} />
           <TeamSection sectionTitle="ALUMNI" team={alumni} />
           <section
             id="CONTACT"
-            className="markdown-content border-[1px] border-black mx-4p p-8"
+            className="markdown-content border-[1px] border-black mx-4 mt-16 p-8"
             dangerouslySetInnerHTML={{ __html: contact }}
           />
         </div>

@@ -40,7 +40,7 @@ body {
 .scroll-to-top {
   box-shadow: none!important;
   background-color: transparent!important;
-  right: 12px!important;
+  right: 6px!important;
 }
 /*'sm': '640px',*/
 @media (min-width: 640px) {
