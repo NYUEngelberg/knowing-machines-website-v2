@@ -2,7 +2,7 @@ import HomePageHeading from "./HomePageHeading";
 
 export default function PublicationsSection() {
   const item = {
-    href: "https://knowingmachines.org/critical-field-guide",
+    href: "/critical-field-guide",
     contentType: "Guide",
     title: "A CRITICAL FIELD GUIDE FOR WORKING WITH MACHINE LEARNING DATASETS",
     preposition: "Written by",
