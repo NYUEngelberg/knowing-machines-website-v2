@@ -6,6 +6,7 @@ import UpcomingSets from "@/components/sets/UpcomingSets";
 import HomePageHeading from "@/components/HomePageHeading";
 import ActiveSet from "@/components/sets/ActiveSet";
 import NewsletterFormEmbed from "@/components/NewsletterFormEmbed";
+import PublicationsSection from "@/components/PublicationsSection";
 
 type Props = {
   intro: string;
@@ -42,15 +43,7 @@ export default function Home({ intro, sets, activeSet }: Props) {
             </div>
           </div>
         </aside>
-        <section className="text-sm ">
-          <HomePageHeading
-            text={"SET " + activeSet.index + ": " + activeSet.name}
-          />
-          <div className={"p-12 relative"}>
-            <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
-            <ActiveSet set={activeSet} />
-          </div>
-        </section>
+        <PublicationsSection />
       </main>
 
       {/* <main className={"max-w-[1175px] mx-auto py-12 "}>
