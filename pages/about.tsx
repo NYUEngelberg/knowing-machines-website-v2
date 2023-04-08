@@ -49,7 +49,7 @@ export default function About({ intro, contact, team, alumni }: Props) {
           <TeamSection sectionTitle="ALUMNI" team={alumni} />
           <section
             id="CONTACT"
-            className="markdown-content border-[1px] border-black mx-4 mt-16 p-8"
+            className="markdown-content border-[1px] md:border-t-0 border-black mx-4 mt-16 md:mt-0 p-8"
             dangerouslySetInnerHTML={{ __html: contact }}
           />
         </div>
