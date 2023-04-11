@@ -35,7 +35,7 @@ export default function Layout({
         />
         <meta
           property="og:image"
-          content="https://knowingmachines.org/assets/FIELD_GUIDE-og.png"
+          content="https://knowingmachines.org/img/field_guide_black_1.png"
         />
         <meta
           property="og:image:alt"
@@ -57,7 +57,7 @@ export default function Layout({
         />
         <meta
           property="twitter:image"
-          content="https://knowingmachines.org/assets/FIELD_GUIDE-og.png"
+          content="https://knowingmachines.org/img/field_guide_black_1.png"
         />
         <meta
           property="twitter:image:alt"
