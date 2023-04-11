@@ -16,7 +16,10 @@ export default function PublicationsSection() {
       <div className={"pb-10 md:p-10 relative"}>
         <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
         <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
-          <img src="/img/field_guide_black_1.png" />
+          <img
+            src="/img/field_guide_black_1.png"
+            alt="a geometric pattern of boxes evoking a spreadsheet"
+          />
           <div
             id="set-collection-items"
             className="relative border-black border-t-[1px]"
@@ -33,7 +36,10 @@ export default function PublicationsSection() {
                 <h3 className="flex-grow uppercase font-bold tracking-widest">
                   {item.title}
                 </h3>
-                <img src="/img/arrow-top-right.svg" className="link-arrow-magic" />
+                <img
+                  src="/img/arrow-top-right.svg"
+                  className="link-arrow-magic"
+                />
               </a>
               <div className="text-xs my-4">
                 {item.preposition + ": "}
