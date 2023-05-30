@@ -56,6 +56,7 @@ export default function Home({ intro, sets, activeSet, publicationPreviews }: Pr
       {/* <main className="py-12 bg-black">
         <NewsletterFormEmbed />
       </main> */}
+      <></>
     </Layout>
   );
 }
