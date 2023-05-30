@@ -53,9 +53,9 @@ export default function Home({ intro, sets, activeSet, publicationPreviews }: Pr
       {/* <main className={"max-w-[1175px] mx-auto py-12 "}>
         <UpcomingSets sets={sets} />
       </main> */}
-      <main className="py-12 bg-black">
+      {/* <main className="py-12 bg-black">
         <NewsletterFormEmbed />
-      </main>
+      </main> */}
     </Layout>
   );
 }
