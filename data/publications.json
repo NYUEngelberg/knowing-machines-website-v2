@@ -1,0 +1,26 @@
+[
+  {
+    "href": "/publications/n_ways_to_see_a_dataset",
+    "contentType": "Collection",
+    "coverImg": "/img/n_ways_to_see_a_dataset.png",
+    "coverImgAlt": "a dithered image of forking paths in a forest or garden",
+    "title": "N ways to see a Dataset - are datasets approaching an event horizon?",
+    "preposition": "Written by",
+    "authors": "Kate Crawford",
+    "excerpt": "Description of N ways to see a dataset",
+    "intro": "content/publications/n_ways_to_see_a_dataset/intro.md",
+    "description": "sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis",
+    "external": false
+  },
+  {
+    "href": "/critical-field-guide",
+    "contentType": "Guide",
+    "coverImg": "/img/field_guide_black_1.png",
+    "coverImgAlt": "a geometric pattern of boxes evoking a spreadsheet",
+    "title": "A CRITICAL FIELD GUIDE FOR WORKING WITH MACHINE LEARNING DATASETS",
+    "preposition": "Written by",
+    "authors": "Sarah Ciston",
+    "excerpt": "Maybe you’re an engineer creating a new machine vision system to track birds. You might be a journalist using social media data to research Costa Rican households. You could be a researcher who stumbled upon your university’s archive of handwritten census cards from 1939. Or a designer creating a chatbot that relies on large language models like GPT-3. Perhaps you’re an artist experimenting with visual style combinations using DALLE-2. Or maybe you’re an activist with an urgent story that needs telling, and you’re searching for the right dataset to tell it.",
+    "external": true
+  }
+]

@@ -7,14 +7,17 @@ import HomePageHeading from "@/components/HomePageHeading";
 import ActiveSet from "@/components/sets/ActiveSet";
 import NewsletterFormEmbed from "@/components/NewsletterFormEmbed";
 import PublicationsSection from "@/components/PublicationsSection";
+import { PublicationMetaData } from "@/types/publications";
+import { getPublicationPreviews } from "@/util/publications";
 
 type Props = {
   intro: string;
   sets: WorkingSet[];
   activeSet: WorkingSet;
+  publicationPreviews: PublicationMetaData[]
 };
 
-export default function Home({ intro, sets, activeSet }: Props) {
+export default function Home({ intro, sets, activeSet, publicationPreviews }: Props) {
   return (
     <Layout title={"Knowing Machines"} navbarDefaultCollapsed={true}>
       <main
@@ -44,7 +47,7 @@ export default function Home({ intro, sets, activeSet }: Props) {
             </div>
           </div>
         </aside>
-        <PublicationsSection />
+        <PublicationsSection publicationPreviews={publicationPreviews}/>
       </main>
 
       {/* <main className={"max-w-[1175px] mx-auto py-12 "}>
@@ -61,11 +64,13 @@ export async function getStaticProps() {
   const intro = await getHomePageIntro();
   const sets = getSets();
   const activeSet = await getActiveSet();
+  const publicationPreviews = getPublicationPreviews();
   return {
     props: {
       intro,
       sets,
       activeSet,
+      publicationPreviews
     },
   };
 }

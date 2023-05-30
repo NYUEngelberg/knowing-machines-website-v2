@@ -1,19 +1,13 @@
 import { PublicationMetaData } from "@/types/publications";
-import HomePageHeading from "./HomePageHeading";
+import { getPublicationByHref, getPublicationPagePaths } from "@/util/publications";
 
 type Props = {
-  publicationPreviews: PublicationMetaData[]
+    publication: PublicationMetaData
 }
 
-export default function PublicationsSection({publicationPreviews}:Props) {
-  return (
-    <section className="text-sm px-4 md:pl-0">
-      <HomePageHeading text={"Publications"} />
-      <div className={"pb-10 md:p-10 relative"}>
-        <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
-        {publicationPreviews.map((publication) => (
-          <div
-            key={publication.href}
+export default function PublicationPage({publication}:Props) {
+    return <div>
+        <div
             className="border-[1px] border-black p-6 mb-6 flex flex-col items-center gap-[40px]"
           >
             <img src={publication.coverImg} alt={publication.coverImgAlt} />
@@ -49,8 +43,27 @@ export default function PublicationsSection({publicationPreviews}:Props) {
               </div>
             </div>
           </div>
-        ))}
-      </div>
-    </section>
-  );
-}
+    </div>
+};
+
+export async function getStaticPaths() {
+    const publicationStaticPaths = getPublicationPagePaths();
+    return {
+      paths: publicationStaticPaths.map(publication => ({
+        params: { publication },
+      })),
+      //[{ params: { id: '1' } }, { params: { id: '2' } }],
+      fallback: false, // can also be true or 'blocking'
+    };
+  }
+  
+  export async function getStaticProps(context: any) {
+    const slug: string = context.params.publication;
+    const href = "/publications/" + slug;
+    const publication = getPublicationByHref(href) as PublicationMetaData;
+    return {
+      // Passed to the page component as props
+      props: { publication: publication },
+    };
+  }
+  
