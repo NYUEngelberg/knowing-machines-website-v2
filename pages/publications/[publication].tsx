@@ -7,9 +7,9 @@ type Props = {
 }
 
 export default function PublicationPage({publication}:Props) {
-    return <Layout title={"Knowing Machines"} navbarDefaultCollapsed={false}>
+    return <Layout title={publication.title} navbarDefaultCollapsed={false}>
         <div
-            className="border-[1px] border-black p-6 mb-6 flex flex-col items-center gap-[40px]"
+            className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]"
           >
             <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
                 <img src={publication.coverImg} alt={publication.coverImgAlt} />
@@ -19,6 +19,9 @@ export default function PublicationPage({publication}:Props) {
                 <span className="absolute -top-6 left-[-1px] content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
                     {publication.contentType}
                 </span>
+            </div>
+            <div className="py-3 px-6 border-t-[2px] border-black uppercase font-bold text-[20px] text-center max-w-[450px] tracking-widest ">
+                {publication.title}
             </div>
             <div
               id="set-collection-items"
