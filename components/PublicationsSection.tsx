@@ -38,12 +38,12 @@ export default function PublicationsSection({publicationPreviews}:Props) {
                     className="link-arrow-magic"
                   />
                 </a>
-                <div className="text-xs my-4">
+                {/* <div className="text-xs my-4">
                   {publication.preposition + ": "}
                   <span className="font-bold">{publication.authors}</span>
-                </div>
+                </div> */}
                 <div
-                  className="markdown-content text-xs"
+                  className="markdown-content text-xs mt-4"
                   dangerouslySetInnerHTML={{ __html: publication.excerpt || "" }}
                 ></div>
               </div>

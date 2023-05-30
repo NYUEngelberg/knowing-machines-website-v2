@@ -9,9 +9,10 @@ export type PublicationMetaData = {
   excerpt: string;
   intro?: string;
   external?: boolean;
+  collectionItems?: PublicationCollectionItem[]
 };
 
-export type PublicationElement = {
+export type PublicationCollectionItem = {
   index: number
   contentType: string
   title: string

@@ -22,5 +22,16 @@
     "authors": "Sarah Ciston",
     "excerpt": "Maybe you’re an engineer creating a new machine vision system to track birds. You might be a journalist using social media data to research Costa Rican households. You could be a researcher who stumbled upon your university’s archive of handwritten census cards from 1939. Or a designer creating a chatbot that relies on large language models like GPT-3. Perhaps you’re an artist experimenting with visual style combinations using DALLE-2. Or maybe you’re an activist with an urgent story that needs telling, and you’re searching for the right dataset to tell it.",
     "external": true
+  },
+  {
+    "href": "/reading-list",
+    "contentType": "Reading List",
+    "coverImg": "/img/field_guide_black_1.png",
+    "coverImgAlt": "a geometric pattern of boxes evoking a spreadsheet",
+    "title": "CRITICAL DATASET STUDIES",
+    "preposition": "Collected and curated by",
+    "authors": "Knowing Machines Team",
+    "excerpt": "This collection provides a curated reading list for researchers, practitioners, and students seeking to understand how machine learning datasets work, are utilised, and are influenced by various social, political, and ethical issues. The list is organised into various sections to help readers follow their specific interests and is primarily focused on academic publications. This list is also not meant to be exhaustive. We see the list as a living resource and invite readers to make suggestions and contributions. We hope this reading list might serve as a useful resource for scholars and practitioners investigating ML datasets as sociotechnical assemblages that shape and are shaped by social worlds.",
+    "external": true
   }
 ]
