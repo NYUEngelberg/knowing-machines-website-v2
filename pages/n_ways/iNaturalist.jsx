@@ -1,9 +1,59 @@
+import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 
+export function CollectionGridItem({ item }) {
+  const { id, files } = item;
+  console.log(id, files, item);
+  return (
+    <div
+      className="border aspect-square bg-contain"
+      style={{
+        backgroundImage: `url(https://machinist.smokingheaps.net/api/collections/7/files/${files[0].id})`,
+      }}
+    >
+      {item.id}
+    </div>
+  );
+}
+
+export function CollectionGrid({ collection }) {
+  return (
+    <div className="grid grid-cols-3 grid-flow-row w-full">
+      {collection.map((item) => {
+        return <CollectionGridItem item={item} key={item.id} />;
+      })}
+    </div>
+  );
+}
+
 export default function INaturalistEssayPage() {
+  const [collectionData, setCollectionData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    fetch("https://machinist.smokingheaps.net/api/collections/7/data")
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw response;
+      })
+      .then((data) => {
+        setCollectionData(data.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching colletion data:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <Layout>
       <div className="mx-auto max-w-3xl p-6 flex flex-col items-start gap-[40px] text-left">
+        {collectionData.length > 0 && (
+          <CollectionGrid collection={collectionData} />
+        )}
         <em className="self-center">Images of blobs</em>
         <p>
           If you’ve found a featureless blob and you’d like to identify it, your
