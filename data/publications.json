@@ -19,7 +19,7 @@
         "preposition": "by",
         "authors": "Mike Ananny",
         "excerpt": "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements.",
-        "href": ""
+        "href": "/n_ways/iNaturalist"
       }, 
       {
         "index": 1,
@@ -28,7 +28,7 @@
         "preposition": "by",
         "authors": "Kate Crawford & Jake Karr",
         "excerpt": "The Colossal Cleaned Common Crawl dataset, or C4, is a large-scale text corpus developed by a team of engineers at Google. It was created by taking a single month’s scrape of Common Crawl and applying filtering heuristics to remove duplicate, placeholder, nonsense, and non-english language content.",
-        "href": ""
+        "href": "/n_ways/iNaturalist"
       },
       {
         "index": 2,
@@ -37,7 +37,7 @@
         "preposition": "by",
         "authors": "Hamsini Sridharan",
         "excerpt": "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories.",
-        "href": ""
+        "href": "/n_ways/iNaturalist"
       }, 
       {
         "index": 3,
@@ -46,7 +46,7 @@
         "preposition": "by",
         "authors": "Sasha Luccioni",
         "excerpt": "ImageNet is one of the first datasets AI researchers are exposed to when learning and experimenting with computer vision approaches. Since it was first released in 2009, it has been used to train and evaluate nearly every AI model in the object recognition task, and improvement upon state-of-the-art performance on the dataset can translate into getting accepted into top AI conferences and appearing on leaderboards.",
-        "href": ""
+        "href": "/n_ways/iNaturalist"
       }, 
       {
         "index": 4,
@@ -55,7 +55,7 @@
         "preposition": "by",
         "authors": "Christo Buschek",
         "excerpt": "While research and investigations share many similarities, there are also key differences that set them apart. An investigation aims to scrutinize the investigative subject, to discover something hidden or secret, and then tell a story about it.",
-        "href": ""
+        "href": "/n_ways/iNaturalist"
       }
     ]
   },
