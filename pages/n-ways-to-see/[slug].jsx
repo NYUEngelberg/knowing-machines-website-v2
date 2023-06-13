@@ -8,6 +8,8 @@ import html from "remark-html";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
 import { visit, SKIP } from "unist-util-visit";
+import { u } from "unist-builder";
+import { toHast } from "mdast-util-to-hast";
 import { toHtml } from "hast-util-to-html";
 import { markdownToHtml } from "../../util/markdownHelpers";
 import Layout from "@/components/Layout";
@@ -17,28 +19,50 @@ import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 export default function NWaysPage({ content, frontmatter }) {
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
+  const elementTypes = ["paragraph", "strong", "list"];
 
   useEffect(() => {
     const htmlOutput = markdownToHtml(content).then((output) => {
       const AST = unified().use(remarkParse).parse(content);
       let sections = [];
-      const elementTypes = ["paragraph", "strong"];
       visit(AST, ["text", ...elementTypes], (node) => {
-        if (node.type === "text" && node.value.startsWith("[:")) {
+        if (node.value && node.value.startsWith("[:")) {
           sections.push({
-            type: node.value.startsWith("[:image") ? "image" : "grid",
+            type: node.value.slice(1, -1).slice(1).split("-")[0],
             id: node.value,
           });
+        } else if (node.type === "strong" || node.type === "list") {
+          const mda = u("root", u(node.type, node.children));
+          sections.push({
+            type: node.parent ? node.parent.type : node.type,
+            content: toHtml(toHast(mda)),
+            className: node.type,
+          });
+          return SKIP;
         } else if (elementTypes.includes(node.type)) {
-          if (
-            node.children[0].value &&
-            !node.children[0].value.startsWith("[:")
-          ) {
-            sections.push({
-              type: "html",
-              content: toHtml(node.children),
-            });
-          }
+          const mda = u("root", u(node.type, node.children));
+          sections.push({
+            type: node.parent ? node.parent.type : node.type,
+            content: toHtml(toHast(mda)),
+            className: node.type,
+          });
+          return SKIP;
+          // if (
+          //   node.children[0].value &&
+          //   !node.children[0].value.startsWith("[:")
+          // ) {
+          //   const mdast = {
+          //     type: `root`,
+          //     children: [{ type: node.type, children: node.children }],
+          //   };
+          //   const mda = u("root", node);
+          //   const hast = toHast(mda);
+          //   sections.push({
+          //     type: node.parent ? node.parent.type : node.type,
+          //     content: toHtml(hast),
+          //     className: node.type,
+          //   });
+          // }
         }
       });
       setHtmlOutput(output);
@@ -54,7 +78,6 @@ export default function NWaysPage({ content, frontmatter }) {
       <NWaysImage title={item.caption} imagePath={item.imagePath} />
     );
   }
-
   return (
     <Layout title={frontmatter.title} navbarDefaultCollapsed={false}>
       <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
@@ -77,10 +100,10 @@ export default function NWaysPage({ content, frontmatter }) {
           {sections.length > 0 &&
             sections.map((section, idx) => (
               <div key={idx}>
-                {section.type === "html" ? (
-                  <p
+                {elementTypes.includes(section.type) ? (
+                  <div
                     key={idx}
-                    className="max-w-3xl"
+                    className={`max-w-3xl ${section.className}`}
                     dangerouslySetInnerHTML={{
                       __html: section.content || "",
                     }}
@@ -94,6 +117,19 @@ export default function NWaysPage({ content, frontmatter }) {
         <style jsx global>{`
           p {
             margin-bottom: 1.2em !important;
+          }
+          b,
+          strong,
+          .strong {
+            font-weight: bolder;
+          }
+          ul {
+            list-style: disc;
+            margin-left: 1em;
+            margin-bottom: 2em;
+          }
+          .li::first-of-type {
+            margin-top: -1em;
           }
         `}</style>
       </div>
