@@ -16,8 +16,8 @@ grid-1:
   caption: "images of blobs"
   collection: 7
 grid-2:
-  caption: "More images of blobs"
-  collection: 8
+  caption: "Images of ‘human’ labeled images"
+  collection: 2
 ---
 
 [:grid-1]
@@ -85,8 +85,6 @@ these things as evidence of a species, in the way that a small skull
 might tell of a rabbit or a pile of small round droppings a deer.
 
 [:grid-2]
-
-**Images of ‘human’ labeled images**
 
 Machine learning datasets are designed to carry world views: to pass
 to the systems that are trained upon them their own particular ways of
