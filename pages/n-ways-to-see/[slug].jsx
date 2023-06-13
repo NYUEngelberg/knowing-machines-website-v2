@@ -11,8 +11,8 @@ import { visit, SKIP } from "unist-util-visit";
 import { toHtml } from "hast-util-to-html";
 import { markdownToHtml } from "../../util/markdownHelpers";
 import Layout from "@/components/Layout";
-import NWaysImage from "@/components/n_ways/NWaysImage";
-import NWaysGrid from "@/components/n_ways/NWaysGrid";
+import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
+import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 
 export default function NWaysPage({ content, frontmatter }) {
   const [htmlOutput, setHtmlOutput] = useState("");
@@ -102,10 +102,10 @@ export default function NWaysPage({ content, frontmatter }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("content", "n_ways"));
+  const files = fs.readdirSync(path.join("content", "n-ways-to-see"));
   const temppaths = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
-      path.join("content", "n_ways", filename),
+      path.join("content", "n-ways-to-see", filename),
       "utf-8"
     );
     const { data: frontmatter } = matter(markdownWithMeta);
@@ -123,7 +123,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("content", "n_ways", slug + ".md"),
+    path.join("content", "n-ways-to-see", slug + ".md"),
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);

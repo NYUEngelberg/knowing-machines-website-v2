@@ -1,6 +1,6 @@
 ---
 title: "N Ways to See a Dataset: iNaturalist"
-slug: n_ways/iNaturalist
+slug: n-ways-to-see/iNaturalist
 draft: false
 contentType: article
 coverImg: "/img/n_ways_to_see_a_dataset.png"
