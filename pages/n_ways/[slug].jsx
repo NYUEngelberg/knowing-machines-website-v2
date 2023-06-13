@@ -22,13 +22,14 @@ export default function NWaysPage({ content, frontmatter }) {
     const htmlOutput = markdownToHtml(content).then((output) => {
       const AST = unified().use(remarkParse).parse(content);
       let sections = [];
-      visit(AST, ["text", "paragraph"], (node) => {
+      const elementTypes = ["paragraph", "strong"];
+      visit(AST, ["text", ...elementTypes], (node) => {
         if (node.type === "text" && node.value.startsWith("[:")) {
           sections.push({
             type: node.value.startsWith("[:image") ? "image" : "grid",
             id: node.value,
           });
-        } else if (node.type === "paragraph") {
+        } else if (elementTypes.includes(node.type)) {
           if (
             node.children[0].value &&
             !node.children[0].value.startsWith("[:")
@@ -48,17 +49,29 @@ export default function NWaysPage({ content, frontmatter }) {
   function loadEmbed(type, id) {
     const item = frontmatter[id.slice(1, -1).slice(1)];
     return type === "grid" ? (
-      <NWaysGrid title={item.title} collection={item.collection} />
+      <NWaysGrid title={item.caption} collection={item.collection} />
     ) : (
-      <NWaysImage title={item.title} imagePath={item.imagePath} />
+      <NWaysImage title={item.caption} imagePath={item.imagePath} />
     );
   }
 
   return (
     <Layout title={frontmatter.title} navbarDefaultCollapsed={false}>
       <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
+        <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
+          <img src={frontmatter.coverImg} alt={frontmatter.coverImgAlt} />
+          <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
+          <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
+          <div className="absolute bottom-0 left-0 h-[4px] w-[100px] bg-black"></div>
+          <span className="absolute -top-6 left-[-1px] content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
+            {frontmatter.contentType}
+          </span>
+        </div>
         <div className="py-3 px-6 border-t-[2px] border-black uppercase font-bold text-[20px] text-center max-w-[450px] tracking-widest ">
           {frontmatter.title}
+        </div>
+        <div className="text-xs my-6 text-center mx-auto">
+          <span className="font-bold uppercase">{frontmatter.authors}</span>
         </div>
         <div className="max-w-3xl">
           {sections.length > 0 &&

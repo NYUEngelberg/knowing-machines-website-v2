@@ -2,17 +2,21 @@
 title: "N Ways to See a Dataset: iNaturalist"
 slug: n_ways/iNaturalist
 draft: false
+contentType: article
+coverImg: "/img/n_ways_to_see_a_dataset.png"
+coverImgAlt: "N Ways to See a Dataset: iNaturalist Cover Image"
+authors: "Article Author"
 image-1:
-  title: "Blob image 1."
+  caption: "Blob image 1."
   imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061301"
 image-2:
-  title: "Blob image 2."
+  caption: "Blob image 2."
   imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061129"
 grid-1:
-  title: "images of blobs"
+  caption: "images of blobs"
   collection: 7
 grid-2:
-  title: "More images of blobs"
+  caption: "More images of blobs"
   collection: 8
 ---
 
