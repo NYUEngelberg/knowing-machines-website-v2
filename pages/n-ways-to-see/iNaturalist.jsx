@@ -1,8 +1,19 @@
 import CollectionEssay from "@/components/collection-essay/CollectionEssay";
 
 export default function INaturalistEssayPage() {
+  const essay = {
+    "index": 4,
+    "contentType": "essay",
+    "title": "iNaturalist", 
+    "img": "/img/n_ways_to_see_a_dataset.png",
+    "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+    "preposition": "by",
+    "authors": "Christo Buschek",
+    "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
+    "href": "/n-ways-to-see/iNaturalist"
+  };
   return (
-    <CollectionEssay title="iNaturalist">
+    <CollectionEssay essay={essay}>
       <em className="self-center">Images of blobs</em>
       <p>
         If you’ve found a featureless blob and you’d like to identify it, your
