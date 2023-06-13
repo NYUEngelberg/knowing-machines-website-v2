@@ -1,11 +1,13 @@
 ---
-title: "N Ways to See a Dataset: iNaturalist"
-slug: n-ways-to-see/iNaturalist
+title: "iNaturalist"
 draft: false
-contentType: article
+index: 4
+contentType: essay
 coverImg: "/img/n_ways_to_see_a_dataset.png"
 coverImgAlt: "N Ways to See a Dataset: iNaturalist Cover Image"
-authors: "Article Author"
+preposition: "by"
+authors: "Christo Buschek"
+excerpt: "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist."
 image-1:
   caption: "Blob image 1."
   imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061301"
