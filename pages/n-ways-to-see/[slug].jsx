@@ -26,10 +26,10 @@ export default function NWaysPage({ content, frontmatter }) {
       const AST = unified().use(remarkParse).parse(content);
       let sections = [];
       visit(AST, ["text", ...elementTypes], (node) => {
-        if (node.value && node.value.startsWith("[:")) {
+        if (node.children && node.children[0].value.startsWith("[:")) {
           sections.push({
-            type: node.value.slice(1, -1).slice(1).split("-")[0],
-            id: node.value,
+            type: node.children[0].value.slice(1, -1).slice(1).split("-")[0],
+            id: node.children[0].value,
           });
         } else if (node.type === "strong" || node.type === "list") {
           const mda = u("root", u(node.type, node.children));
