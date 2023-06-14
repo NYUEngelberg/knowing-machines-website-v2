@@ -24,7 +24,7 @@ export default function Home({ intro, sets, activeSet, publicationPreviews }: Pr
         className={
           "max-w-[1175px] mx-auto py-0" +
           " md:grid " +
-          " md:grid-cols-[300px_minmax(0,1fr)] md:gap-[40px]"
+          " md:grid-cols-[328px_minmax(0,1fr)] md:gap-[40px]"
         }
       >
         <aside className="mb-10 mx-4 md:mr-0">
