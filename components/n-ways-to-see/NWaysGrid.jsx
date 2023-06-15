@@ -4,6 +4,10 @@ import NWaysGridImage from "./NWaysGridImage";
 export default function NWaysGrid({ title, collection }) {
   const [collectionData, setCollectionData] = useState({});
   const [loading, setLoading] = useState(true);
+  const itemsPerPage = 9;
+  const [pages, setPages] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [currentSet, setCurrentSet] = useState([]);
 
   const apiURL = "https://machinist.smokingheaps.net/api";
   useEffect(() => {
@@ -18,7 +22,13 @@ export default function NWaysGrid({ title, collection }) {
           throw "Error";
         })
         .then((data) => {
+          setPages(
+            data.data.length > itemsPerPage
+              ? Math.trunc(data.data.length / itemsPerPage) + 1
+              : pages
+          );
           setCollectionData(data.data);
+          setCurrentSet(data.data.slice(0, itemsPerPage));
         })
         .catch((err) => {
           console.error("Error fetching images: ", Error);
@@ -30,6 +40,16 @@ export default function NWaysGrid({ title, collection }) {
 
     fetchImages(collection);
   }, []);
+
+  useEffect(() => {
+    const start = currentPage === 1 ? 0 : (currentPage - 1) * itemsPerPage;
+    const end =
+      currentPage === 1
+        ? itemsPerPage
+        : (currentPage - 1) * (itemsPerPage + itemsPerPage);
+
+    setCurrentSet(!loading && collectionData.slice(start, end));
+  }, [currentPage]);
 
   function displayText(item) {
     let text;
@@ -57,8 +77,8 @@ export default function NWaysGrid({ title, collection }) {
           "loading"
         ) : (
           <>
-            {collectionData.length > 0 &&
-              collectionData.slice(0, 9).map((item, idx) => {
+            {currentSet.length > 0 &&
+              currentSet.map((item, idx) => {
                 return (
                   <NWaysGridImage
                     item={item}
@@ -71,7 +91,24 @@ export default function NWaysGrid({ title, collection }) {
           </>
         )}
       </div>
-
+      {pages > 1 && (
+        <div className="flex my-5 justify-end">
+          {getPages().map((page) => (
+            <>
+              <button
+                key={page.page}
+                id={page.page}
+                className={`w-[24px] h-[24px] rounded-full mx-2 ${
+                  parseInt(currentPage, 10) === parseInt(page.page, 10)
+                    ? "bg-black"
+                    : "bg-gray-300"
+                } hover:bg-black duration-300 hover:shadow-lg`}
+                onClick={() => setCurrentPage(page.page)}
+              />
+            </>
+          ))}
+        </div>
+      )}
       <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
     </>
   );
