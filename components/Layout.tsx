@@ -7,7 +7,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 type Props = {
   title: string;
-  children: ReactNode[];
+  children: ReactNode | ReactNode[];
   id?: string;
   navbarDefaultCollapsed?: boolean;
 };

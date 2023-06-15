@@ -16,6 +16,8 @@ export type PublicationCollectionItem = {
   index: number
   contentType: string
   title: string
+  img: string
+  imgAlt: string
   preposition: string
   authors: string
   excerpt: string
