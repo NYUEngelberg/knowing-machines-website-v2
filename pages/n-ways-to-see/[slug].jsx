@@ -106,7 +106,7 @@ export default function NWaysPage({ content, frontmatter }) {
                 {elementTypes.includes(section.type) ? (
                   <div
                     key={idx}
-                    className={`max-w-3xl ${section.className}`}
+                    className={`markdown-content max-w-3xl ${section.className}`}
                     dangerouslySetInnerHTML={{
                       __html: section.content || "",
                     }}
