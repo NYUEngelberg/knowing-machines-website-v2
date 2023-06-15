@@ -3,7 +3,7 @@ title: "NABirds"
 draft: false
 index: 2
 contentType: "essay"
-coverImg: "/img/n_ways_to_see_a_dataset.png"
+coverImg: "/img/n_ways/nabird_black.png"
 coverImgAlt: "/img/n_ways_to_see_a_dataset.png"
 preposition: "by"
 authors: "Hamsini Sridharan"

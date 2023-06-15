@@ -2,7 +2,7 @@
   {
     "href": "/publications/n_ways_to_see_a_dataset",
     "contentType": "Collection",
-    "coverImg": "/img/n_ways_to_see_a_dataset.png",
+    "coverImg": "/img/n_ways/home_n_ways.png",
     "coverImgAlt": "a dithered image of forking paths in a forest or garden",
     "title": "N ways to see a Dataset - are datasets approaching an event horizon?",
     "preposition": "Written by",
@@ -57,6 +57,17 @@
         "href": "/n-ways-to-see/ImageNet"
       },
       {
+        "index": 3,
+        "contentType": "essay",
+        "title": "What Can LAION Teach Us About Copyright Law?",
+        "img": "/img/n_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jason Schultz",
+        "excerpt": "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?",
+        "href": "/n-ways-to-see/LAION-copyright"
+      },
+      {
         "index": 4,
         "contentType": "essay",
         "title": "Investigating Datasets",
@@ -94,7 +105,7 @@
   {
     "href": "/reading-list",
     "contentType": "Reading List",
-    "coverImg": "/img/field_guide_black_1.png",
+    "coverImg": "/img/reading_list.png",
     "coverImgAlt": "a geometric pattern of boxes evoking a spreadsheet",
     "title": "CRITICAL DATASET STUDIES",
     "preposition": "Collected and curated by",

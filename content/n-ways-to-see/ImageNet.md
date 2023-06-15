@@ -3,7 +3,7 @@ title: "ImageNet"
 draft: false
 index: 3
 contentType: "essay"
-coverImg: "/img/n_ways_to_see_a_dataset.png"
+coverImg: "/img/n_ways/imagenet_black.png"
 coverImgAlt: "/img/n_ways_to_see_a_dataset.png"
 preposition: "by"
 authors: "Sasha Luccioni"
