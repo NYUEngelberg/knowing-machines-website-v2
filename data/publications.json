@@ -57,6 +57,17 @@
         "href": "/n-ways-to-see/ImageNet"
       },
       {
+        "index": 3,
+        "contentType": "essay",
+        "title": "What Can LAION Teach Us About Copyright Law?",
+        "img": "/img/n_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jason Schultz",
+        "excerpt": "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?",
+        "href": "/n-ways-to-see/LAION-copyright"
+      },
+      {
         "index": 4,
         "contentType": "essay",
         "title": "Investigating Datasets",
