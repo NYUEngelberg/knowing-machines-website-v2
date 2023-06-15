@@ -3,7 +3,7 @@ title: "Investigating Datasets"
 index: 4
 draft: false
 contentType: "essay"
-coverImg: "/img/n_ways_to_see_a_dataset.png"
+coverImg: "/img/n_ways/investigation_black.png"
 coverImgAlt: "/img/n_ways_to_see_a_dataset.png"
 preposition: "by"
 authors: "Christo Buschek"

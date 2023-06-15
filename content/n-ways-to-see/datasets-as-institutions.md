@@ -3,7 +3,7 @@ title: "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS"
 draft: false
 index: 0
 contentType: "essay"
-coverImg: "/img/n_ways_to_see_a_dataset.png"
+coverImg: "/img/n_ways/nyt_black.png"
 coverImgAlt: "/img/n_ways_to_see_a_dataset.png"
 preposition: "by"
 authors: "Mike Ananny"

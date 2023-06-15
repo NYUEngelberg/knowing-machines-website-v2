@@ -16,7 +16,9 @@ export default function PublicationsSection({publicationPreviews}:Props) {
             key={publication.href}
             className="border-[1px] border-black p-6 mb-6 flex flex-col items-center gap-[40px]"
           >
-            <img src={publication.coverImg} alt={publication.coverImgAlt} />
+            <div className="bg-center bg-cover h-[262px] w-full"
+              style={{backgroundImage: "url(" + publication.coverImg + ")"}}
+              title={publication.coverImgAlt}></div>
             <div
               id="set-collection-items"
               className="relative border-black border-t-[1px]"
