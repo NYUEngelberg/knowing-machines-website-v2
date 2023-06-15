@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import NWaysGridImage from "./NWaysGridImage";
 
 export default function NWaysGrid({ title, collection }) {
   const [collectionData, setCollectionData] = useState({});
   const [loading, setLoading] = useState(true);
-  const apiURL = "https://machinist.smokingheaps.net//api";
+
+  const apiURL = "https://machinist.smokingheaps.net/api";
   useEffect(() => {
     const fetchImages = async (collection) => {
-      fetch(`${apiURL}/collections/${collection}/data`)
+      fetch(`${apiURL}/collections/${collection}/data?page=0&size=200`, {
+        method: "GET",
+      })
         .then((response) => {
           if (response.ok) {
             return response.json();
@@ -26,9 +30,29 @@ export default function NWaysGrid({ title, collection }) {
 
     fetchImages(collection);
   }, []);
+
+  function displayText(item) {
+    let text;
+    if (item.labels.length > 0) {
+      text = item.labels[0].name;
+    }
+    if (item.texts.length > 0) {
+      text = item.texts[0].text;
+    }
+    return text;
+  }
+
+  function getPages() {
+    let p = [];
+    for (let i = 1; i < pages + 1; i++) {
+      p.push({ page: i, active: currentPage === i });
+    }
+    return p;
+  }
+
   return (
     <>
-      <div className="grid grid-cols-3 self-center w-full">
+      <div className="grid grid-cols-3 self-center w-full divide-x divide-y divide-solid divide-black border-gray-900 border">
         {loading ? (
           "loading"
         ) : (
@@ -36,20 +60,18 @@ export default function NWaysGrid({ title, collection }) {
             {collectionData.length > 0 &&
               collectionData.slice(0, 9).map((item, idx) => {
                 return (
-                  <div
-                    className="aspect-square bg-cover flex flex-col justify-end text-white items-end px-2 py-2"
+                  <NWaysGridImage
+                    item={item}
+                    apiURL={apiURL}
+                    collection={collection}
                     key={idx}
-                    style={{
-                      backgroundImage: `url("${apiURL}/collections/${collection}/files/${item.files[0].id}")`,
-                    }}
-                  >
-                    {item.id}
-                  </div>
+                  />
                 );
               })}
           </>
         )}
       </div>
+
       <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
     </>
   );
