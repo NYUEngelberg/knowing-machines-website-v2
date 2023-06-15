@@ -15,51 +15,51 @@
       {
         "index": 0,
         "contentType": "essay",
-        "title": "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS", 
+        "title": "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS",
         "img": "/img/n_ways_to_see_a_dataset.png",
         "imgAlt": "/img/n_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Mike Ananny",
         "excerpt": "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements.",
         "href": "/n-ways-to-see/datasets-as-institutions"
-      }, 
+      },
       {
         "index": 1,
         "contentType": "essay",
-        "title": "C4", 
+        "title": "C4",
         "img": "/img/n_ways_to_see_a_dataset.png",
         "imgAlt": "/img/n_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Will Orr",
         "excerpt": "The Colossal Cleaned Common Crawl dataset, or C4, is a large-scale text corpus developed by a team of engineers at Google. It was created by taking a single month’s scrape of Common Crawl and applying filtering heuristics to remove duplicate, placeholder, nonsense, and non-english language content.",
-        "href": "/n-ways-to-see/c4"
+        "href": "/n-ways-to-see/C4"
       },
       {
         "index": 2,
         "contentType": "essay",
-        "title": "NABirds", 
+        "title": "NABirds",
         "img": "/img/n_ways_to_see_a_dataset.png",
         "imgAlt": "/img/n_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Hamsini Sridharan",
         "excerpt": "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories.",
         "href": "/n-ways-to-see/nabirds"
-      }, 
+      },
       {
         "index": 3,
         "contentType": "essay",
-        "title": "ImageNet", 
+        "title": "ImageNet",
         "img": "/img/n_ways_to_see_a_dataset.png",
         "imgAlt": "/img/n_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Sasha Luccioni",
         "excerpt": "ImageNet is one of the first datasets AI researchers are exposed to when learning and experimenting with computer vision approaches. Since it was first released in 2009, it has been used to train and evaluate nearly every AI model in the object recognition task, and improvement upon state-of-the-art performance on the dataset can translate into getting accepted into top AI conferences and appearing on leaderboards.",
-        "href": "/n-ways-to-see/imagenet"
-      }, 
+        "href": "/n-ways-to-see/ImageNet"
+      },
       {
         "index": 4,
         "contentType": "essay",
-        "title": "Investigating Datasets", 
+        "title": "Investigating Datasets",
         "img": "/img/n_ways_to_see_a_dataset.png",
         "imgAlt": "/img/n_ways_to_see_a_dataset.png",
         "preposition": "by",
@@ -70,7 +70,7 @@
       {
         "index": 4,
         "contentType": "essay",
-        "title": "iNaturalist", 
+        "title": "iNaturalist",
         "img": "/img/n_ways_to_see_a_dataset.png",
         "imgAlt": "/img/n_ways_to_see_a_dataset.png",
         "preposition": "by",

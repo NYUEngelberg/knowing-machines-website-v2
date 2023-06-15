@@ -14,6 +14,12 @@ const nextConfig = {
       destination: "/critical-field-guide-mob.html",
     },
   ],
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback.fs = false;
+    }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
