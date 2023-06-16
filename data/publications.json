@@ -15,6 +15,16 @@
       {
         "index": 0,
         "contentType": "essay",
+        "title": "9 Ways To Look At A Dataset: What’s at stake in examining datasets?",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Kate Crawford",
+        "excerpt": "If you read the leaked memo from Google, “We Have No Moat, and Neither Does Open AI”, you’ll find a revealing admission about AI development: “data quality scales better than data size.” This short phrase points to a seachange in thinking that has significant implications for generative AI in particular",
+        "href": "/9-ways-to-see/9-ways-to-see-a-dataset"
+      },{
+        "index": 0,
+        "contentType": "essay",
         "title": "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "/img/9_ways_to_see_a_dataset.png",
@@ -22,6 +32,17 @@
         "authors": "Mike Ananny",
         "excerpt": "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements.",
         "href": "/9-ways-to-see/datasets-as-institutions"
+      },
+      {
+        "index": 1,
+        "contentType": "essay",
+        "title": "NABirds and the Iceland Gull",
+        "img": "/img/9_ways/gull_black.png",
+        "imgAlt": "/img/9_ways/gull_black.png",
+        "preposition": "by",
+        "authors": "Jer Thorp",
+        "excerpt": "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight.",
+        "href": "/9-ways-to-see/NABirds-and-the-Iceland-Gull"
       },
       {
         "index": 1,
@@ -48,7 +69,7 @@
       {
         "index": 3,
         "contentType": "essay",
-        "title": "ImageNet",
+        "title": "Investigating ImageNet",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
@@ -70,6 +91,16 @@
       {
         "index": 4,
         "contentType": "essay",
+        "title": "iNaturalist",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jer Thorp",
+        "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
+        "href": "/9-ways-to-see/iNaturalist"
+      },{
+        "index": 9,
+        "contentType": "essay",
         "title": "Investigating Datasets",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "/img/9_ways_to_see_a_dataset.png",
@@ -77,17 +108,6 @@
         "authors": "Christo Buschek",
         "excerpt": "While research and investigations share many similarities, there are also key differences that set them apart. An investigation aims to scrutinize the investigative subject, to discover something hidden or secret, and then tell a story about it.",
         "href": "/9-ways-to-see/investigating-datasets"
-      },
-      {
-        "index": 4,
-        "contentType": "essay",
-        "title": "iNaturalist",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Christo Buschek",
-        "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
-        "href": "/9-ways-to-see/iNaturalist"
       }
     ]
   },
