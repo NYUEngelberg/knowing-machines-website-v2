@@ -98,10 +98,10 @@ export default function NWaysGrid({ title, collection }) {
               <button
                 key={page.page}
                 id={page.page}
-                className={`w-[24px] h-[24px] rounded-full mx-2 ${
+                className={`w-[20px] h-[20px] rounded-full mx-2 ${
                   parseInt(currentPage, 10) === parseInt(page.page, 10)
                     ? "bg-black"
-                    : "bg-gray-300"
+                    : "border border-black"
                 } hover:bg-black duration-300 hover:shadow-lg`}
                 onClick={() => setCurrentPage(page.page)}
               />

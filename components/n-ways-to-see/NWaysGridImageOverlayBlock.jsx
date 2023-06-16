@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function NWaysGridImageOverlayBlock({ title, block }) {
-  function renderBlock() {
+  function renderOverlayBlock() {
     if (typeof block === "object") {
       return (
         <>
@@ -17,11 +17,11 @@ export default function NWaysGridImageOverlayBlock({ title, block }) {
     }
   }
   return (
-    <div className="min-h-fit my-2 mx-2 border border-black relative py-6 px-3 flex flex-col w-full">
-      <div className="absolute top-0 left-0 px-1 text-white uppercase bg-black">
+    <div className="min-h-fit my-2 mx-2 relative py-8 px-3 pr-4 flex flex-col w-full">
+      <div className="absolute -top-2 -left-3 px-2 py-1 text-white uppercase bg-black">
         {title}
       </div>
-      {renderBlock()}
+      {renderOverlayBlock()}
     </div>
   );
 }
