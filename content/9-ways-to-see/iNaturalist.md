@@ -10,10 +10,10 @@ authors: "Christo Buschek"
 excerpt: "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist."
 image-1:
   caption: "Blob image 1."
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061301"
+  imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
 image-2:
   caption: "Blob image 2."
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061129"
+  imagePath: "https://machinist.smokingheaps.net/api/collections/3/data/77939530"
 grid-1:
   caption: "images of blobs"
   collection: 7
@@ -58,6 +58,8 @@ someone must have played with a can and sprayed the trees.” The
 original poster agreed with the new identification and the species in
 the photo was changed: from Dog Vomit Slime Mold (Fuligo septica) to
 Human (Home sapiens).
+
+[:image-2]
 
 This little fungus to foam story carries in it an important lesson:
 that datasets are artifacts of the people that create them. In the
