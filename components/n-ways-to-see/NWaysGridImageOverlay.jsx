@@ -6,10 +6,11 @@ export default function NWaysGridImageOverlay({
   meta,
   isOverlayOpen,
   setIsOverlayOpen,
+  hasImage,
 }) {
   return (
     <>
-      {!isOverlayOpen && (
+      {!isOverlayOpen && hasImage && (
         <div
           className="relative md:hidden sm:pointer-events-auto w-full h-full top-0 right-0 left-0 bottom-0"
           onClick={() => setIsOverlayOpen(true)}

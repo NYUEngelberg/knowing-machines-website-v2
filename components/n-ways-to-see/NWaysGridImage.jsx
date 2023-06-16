@@ -10,7 +10,10 @@ export default function NWaysGridImage({ item, apiURL, collection }) {
       <div
         className="w-full h-full bg-cover group-hover:opacity-100 duration-200"
         style={{
-          backgroundImage: `url("${apiURL}/collections/${collection}/files/${item.files[0].id}")`,
+          backgroundImage:
+            item.files.length > 0
+              ? `url("${apiURL}/collections/${collection}/files/${item.files[0].id}")`
+              : "",
         }}
       >
         <NWaysGridImageOverlay
@@ -18,6 +21,7 @@ export default function NWaysGridImage({ item, apiURL, collection }) {
           meta={meta}
           isOverlayOpen={isOverlayOpen}
           setIsOverlayOpen={setIsOverlayOpen}
+          hasImage={item.files.length > 0}
         />
       </div>
     </div>

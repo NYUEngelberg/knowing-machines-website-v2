@@ -46,8 +46,17 @@ export default function NWaysGrid({ title, collection, apiURL }) {
       currentPage === 1
         ? itemsPerPage
         : (currentPage - 1) * (itemsPerPage + itemsPerPage);
-
-    setCurrentSet(!loading && collectionData.slice(start, end));
+    let cSet = !loading && collectionData.slice(start, end);
+    const blankGridItems = itemsPerPage - cSet.length;
+    for (let i = 0; i < blankGridItems; i++) {
+      cSet.push({
+        id: Math.random().toString().substring(2, 8),
+        labels: {},
+        texts: {},
+        files: {},
+      });
+    }
+    setCurrentSet(cSet);
   }, [currentPage]);
 
   function displayText(item) {
