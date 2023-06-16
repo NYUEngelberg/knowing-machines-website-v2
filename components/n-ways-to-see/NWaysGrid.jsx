@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NWaysGridImage from "./NWaysGridImage";
 
-export default function NWaysGrid({ title, collection }) {
+export default function NWaysGrid({ title, collection, apiURL }) {
   const [collectionData, setCollectionData] = useState({});
   const [loading, setLoading] = useState(true);
   const itemsPerPage = 9;
@@ -9,7 +9,6 @@ export default function NWaysGrid({ title, collection }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [currentSet, setCurrentSet] = useState([]);
 
-  const apiURL = "https://machinist.smokingheaps.net/api";
   useEffect(() => {
     const fetchImages = async (collection) => {
       fetch(`${apiURL}/collections/${collection}/data?page=0&size=200`, {
