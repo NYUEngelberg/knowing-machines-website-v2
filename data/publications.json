@@ -36,6 +36,17 @@
       {
         "index": 1,
         "contentType": "essay",
+        "title": "NABirds and the Iceland Gull",
+        "img": "/img/9_ways/gull_black.png",
+        "imgAlt": "/img/9_ways/gull_black.png",
+        "preposition": "by",
+        "authors": "Jer Thorp",
+        "excerpt": "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight.",
+        "href": "/9-ways-to-see/NABirds-and-the-Iceland-Gull"
+      },
+      {
+        "index": 1,
+        "contentType": "essay",
         "title": "C4",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "/img/9_ways_to_see_a_dataset.png",

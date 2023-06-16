@@ -6,7 +6,7 @@ contentType: essay
 coverImg: "/img/9_ways/blob_black.png"
 coverImgAlt: "9 Ways to See a Dataset: iNaturalist Cover Image"
 preposition: "by"
-authors: "Christo Buschek"
+authors: "Jer Thorp"
 excerpt: "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist."
 image-1:
   caption: "Blob image 1."
