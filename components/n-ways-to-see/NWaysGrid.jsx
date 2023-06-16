@@ -92,7 +92,7 @@ export default function NWaysGrid({ title, collection }) {
         )}
       </div>
       {pages > 1 && (
-        <div className="flex my-5 justify-end">
+        <div className="flex my-5 justify-end z-100">
           {getPages().map((page) => (
             <button
               key={page.page}
