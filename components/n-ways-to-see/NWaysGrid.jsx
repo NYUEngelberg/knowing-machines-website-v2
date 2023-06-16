@@ -72,7 +72,7 @@ export default function NWaysGrid({ title, collection }) {
 
   return (
     <>
-      <div className="grid grid-cols-3 self-center w-full divide-x divide-y divide-solid divide-black border-gray-900 border">
+      <div className="grid grid-cols-3 self-center w-full divide-x divide-y divide-solid divide-black border-gray-900 border relative">
         {loading ? (
           "loading"
         ) : (
@@ -94,22 +94,23 @@ export default function NWaysGrid({ title, collection }) {
       {pages > 1 && (
         <div className="flex my-5 justify-end">
           {getPages().map((page) => (
-            <>
-              <button
-                key={page.page}
-                id={page.page}
-                className={`w-[20px] h-[20px] rounded-full mx-2 ${
-                  parseInt(currentPage, 10) === parseInt(page.page, 10)
-                    ? "bg-black"
-                    : "border border-black"
-                } hover:bg-black duration-300 hover:shadow-lg`}
-                onClick={() => setCurrentPage(page.page)}
-              />
-            </>
+            <button
+              key={page.page}
+              id={page.page}
+              className={`w-[20px] h-[20px] rounded-full mx-2 ${
+                parseInt(currentPage, 10) === parseInt(page.page, 10)
+                  ? "bg-black"
+                  : "border border-black"
+              } hover:bg-black duration-300 hover:shadow-lg`}
+              onClick={() => setCurrentPage(page.page)}
+            />
           ))}
         </div>
       )}
-      <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
+      <div className="italic mt-2 mb-6 w-100 text-center">
+        {title}{" "}
+        <span className="md:hidden sm:inline">(tap to see metadata)</span>
+      </div>
     </>
   );
 }
