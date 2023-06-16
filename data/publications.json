@@ -1,14 +1,14 @@
 [
   {
-    "href": "/publications/n_ways_to_see_a_dataset",
+    "href": "/publications/9_ways_to_see_a_dataset",
     "contentType": "Collection",
-    "coverImg": "/img/n_ways/home_n_ways.png",
+    "coverImg": "/img/9_ways/home_9_ways.png",
     "coverImgAlt": "a dithered image of forking paths in a forest or garden",
-    "title": "N ways to see a Dataset - are datasets approaching an event horizon?",
+    "title": "9 ways to see a Dataset - are datasets approaching an event horizon?",
     "preposition": "Written by",
     "authors": "Kate Crawford",
-    "excerpt": "Description of N ways to see a dataset",
-    "intro": "content/publications/n_ways_to_see_a_dataset/intro.md",
+    "excerpt": "Description of 9 ways to see a dataset",
+    "intro": "content/publications/9_ways_to_see_a_dataset/intro.md",
     "description": "sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis",
     "external": false,
     "collectionItems": [
@@ -16,78 +16,78 @@
         "index": 0,
         "contentType": "essay",
         "title": "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Mike Ananny",
         "excerpt": "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements.",
-        "href": "/n-ways-to-see/datasets-as-institutions"
+        "href": "/9-ways-to-see/datasets-as-institutions"
       },
       {
         "index": 1,
         "contentType": "essay",
         "title": "C4",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Will Orr",
         "excerpt": "The Colossal Cleaned Common Crawl dataset, or C4, is a large-scale text corpus developed by a team of engineers at Google. It was created by taking a single month’s scrape of Common Crawl and applying filtering heuristics to remove duplicate, placeholder, nonsense, and non-english language content.",
-        "href": "/n-ways-to-see/C4"
+        "href": "/9-ways-to-see/C4"
       },
       {
         "index": 2,
         "contentType": "essay",
         "title": "NABirds",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Hamsini Sridharan",
         "excerpt": "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories.",
-        "href": "/n-ways-to-see/nabirds"
+        "href": "/9-ways-to-see/nabirds"
       },
       {
         "index": 3,
         "contentType": "essay",
         "title": "ImageNet",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Sasha Luccioni",
         "excerpt": "ImageNet is one of the first datasets AI researchers are exposed to when learning and experimenting with computer vision approaches. Since it was first released in 2009, it has been used to train and evaluate nearly every AI model in the object recognition task, and improvement upon state-of-the-art performance on the dataset can translate into getting accepted into top AI conferences and appearing on leaderboards.",
-        "href": "/n-ways-to-see/ImageNet"
+        "href": "/9-ways-to-see/ImageNet"
       },
       {
         "index": 3,
         "contentType": "essay",
         "title": "What Can LAION Teach Us About Copyright Law?",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Jason Schultz",
         "excerpt": "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?",
-        "href": "/n-ways-to-see/LAION-copyright"
+        "href": "/9-ways-to-see/LAION-copyright"
       },
       {
         "index": 4,
         "contentType": "essay",
         "title": "Investigating Datasets",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Christo Buschek",
         "excerpt": "While research and investigations share many similarities, there are also key differences that set them apart. An investigation aims to scrutinize the investigative subject, to discover something hidden or secret, and then tell a story about it.",
-        "href": "/n-ways-to-see/investigating-datasets"
+        "href": "/9-ways-to-see/investigating-datasets"
       },
       {
         "index": 4,
         "contentType": "essay",
         "title": "iNaturalist",
-        "img": "/img/n_ways_to_see_a_dataset.png",
-        "imgAlt": "/img/n_ways_to_see_a_dataset.png",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Christo Buschek",
         "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
-        "href": "/n-ways-to-see/iNaturalist"
+        "href": "/9-ways-to-see/iNaturalist"
       }
     ]
   },

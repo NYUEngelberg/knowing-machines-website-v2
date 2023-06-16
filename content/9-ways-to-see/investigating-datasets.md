@@ -3,8 +3,8 @@ title: "Investigating Datasets"
 index: 4
 draft: false
 contentType: "essay"
-coverImg: "/img/n_ways/investigation_black.png"
-coverImgAlt: "/img/n_ways_to_see_a_dataset.png"
+coverImg: "/img/9_ways/investigation_black.png"
+coverImgAlt: "/img/9_ways_to_see_a_dataset.png"
 preposition: "by"
 authors: "Christo Buschek"
 excerpt: "While research and investigations share many similarities, ther are also key differences that set them apart. An investigation aims to scrutinize the investigative subject, to discover something hidden or secret, and then tell a story about it."

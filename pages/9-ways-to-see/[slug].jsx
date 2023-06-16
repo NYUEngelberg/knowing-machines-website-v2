@@ -93,10 +93,10 @@ export default function NWaysPage({ content, frontmatter }) {
             {frontmatter.contentType}
           </span>
         </div>
-        <div className="py-3 px-6 border-t-[2px] border-black uppercase font-bold text-[20px] text-center max-w-[450px] tracking-widest ">
+        <div className="self-stretch mx-auto max-w-3xl uppercase font-bold text-[20px] tracking-widest ">
           {frontmatter.title}
         </div>
-        <div className="text-xs my-6 text-center mx-auto">
+        <div className="text-xs self-stretch mx-auto max-w-3xl ">
           <span className="font-bold uppercase">{frontmatter.authors}</span>
         </div>
         <div className="max-w-3xl">
@@ -141,10 +141,10 @@ export default function NWaysPage({ content, frontmatter }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("content", "n-ways-to-see"));
+  const files = fs.readdirSync(path.join("content", "9-ways-to-see"));
   const temppaths = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
-      path.join("content", "n-ways-to-see", filename),
+      path.join("content", "9-ways-to-see", filename),
       "utf-8"
     );
     const { data: frontmatter } = matter(markdownWithMeta);
@@ -162,7 +162,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("content", "n-ways-to-see", slug + ".md"),
+    path.join("content", "9-ways-to-see", slug + ".md"),
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);

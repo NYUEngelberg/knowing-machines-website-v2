@@ -28,7 +28,7 @@ export default function Navbar({ defaultCollapsed }: Props) {
   const navbarLinks = {
     "about": "/about",
     "reading list": "/reading-list",
-    "publications": "/"
+    "research": "/research"
   };
 
   return (

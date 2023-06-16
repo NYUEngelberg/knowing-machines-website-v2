@@ -7,7 +7,7 @@ export function getPublicationPreviews() {
 }
 
 export function getPublicationPagePaths() {
-    const publicationPagePaths = ["n_ways_to_see_a_dataset"];
+    const publicationPagePaths = ["9_ways_to_see_a_dataset"];
     return publicationPagePaths;
 }
 

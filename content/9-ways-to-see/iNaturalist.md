@@ -3,8 +3,8 @@ title: "iNaturalist"
 draft: false
 index: 4
 contentType: essay
-coverImg: "/img/n_ways/blob_black.png"
-coverImgAlt: "N Ways to See a Dataset: iNaturalist Cover Image"
+coverImg: "/img/9_ways/blob_black.png"
+coverImgAlt: "9 Ways to See a Dataset: iNaturalist Cover Image"
 preposition: "by"
 authors: "Christo Buschek"
 excerpt: "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist."

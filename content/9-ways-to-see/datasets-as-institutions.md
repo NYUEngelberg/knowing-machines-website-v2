@@ -3,8 +3,8 @@ title: "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS"
 draft: false
 index: 0
 contentType: "essay"
-coverImg: "/img/n_ways/nyt_black.png"
-coverImgAlt: "/img/n_ways_to_see_a_dataset.png"
+coverImg: "/img/9_ways/nyt_black.png"
+coverImgAlt: "/img/9_ways_to_see_a_dataset.png"
 preposition: "by"
 authors: "Mike Ananny"
 excerpt: "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements."

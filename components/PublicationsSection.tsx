@@ -3,12 +3,13 @@ import HomePageHeading from "./HomePageHeading";
 
 type Props = {
   publicationPreviews: PublicationMetaData[]
+  isResearchPage?: boolean
 }
 
-export default function PublicationsSection({publicationPreviews}:Props) {
+export default function PublicationsSection({publicationPreviews, isResearchPage}:Props) {
   return (
     <section className="text-sm px-4 md:pl-0">
-      <HomePageHeading text={"Publications"} />
+      <HomePageHeading text={isResearchPage ? "Research" : "Publications"} />
       <div className={"pb-10 md:p-10 relative"}>
         <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
         {publicationPreviews.map((publication) => (
