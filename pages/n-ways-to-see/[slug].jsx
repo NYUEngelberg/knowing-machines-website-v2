@@ -17,6 +17,7 @@ import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 
 export default function NWaysPage({ content, frontmatter }) {
+  const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
   const elementTypes = ["paragraph", "strong", "list"];
@@ -26,8 +27,7 @@ export default function NWaysPage({ content, frontmatter }) {
       const AST = unified().use(remarkParse).parse(content);
       let sections = [];
       visit(AST, ["text", ...elementTypes], (node) => {
-        if (node.children &&
-          node.children[0]?.value?.startsWith("[:")) {
+        if (node.children && node.children[0]?.value?.startsWith("[:")) {
           sections.push({
             type: node.children[0].value.slice(1, -1).slice(1).split("-")[0],
             id: node.children[0].value,
@@ -74,18 +74,28 @@ export default function NWaysPage({ content, frontmatter }) {
   function loadEmbed(type, id) {
     const item = frontmatter[id.slice(1, -1).slice(1)];
     return type === "grid" ? (
-      <NWaysGrid title={item.caption} collection={item.collection} />
+      <NWaysGrid
+        title={item.caption}
+        collection={item.collection}
+        apiURL={apiURL}
+      />
     ) : (
-      <NWaysImage title={item.caption} imagePath={item.imagePath} />
+      <NWaysImage
+        title={item.caption}
+        imagePath={item.imagePath}
+        apiURL={apiURL}
+      />
     );
   }
   return (
     <Layout title={frontmatter.title} navbarDefaultCollapsed={false}>
       <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
-          <div className="max-w-3xl w-[900px] h-[265.93px] bg-center bg-cover"
-            style={{backgroundImage: "url(" + frontmatter.coverImg + ")"}}
-            title={frontmatter.coverImgAlt}></div>
+          <div
+            className="max-w-3xl w-[900px] h-[265.93px] bg-center bg-cover"
+            style={{ backgroundImage: "url(" + frontmatter.coverImg + ")" }}
+            title={frontmatter.coverImgAlt}
+          ></div>
           <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
           <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
           <div className="absolute bottom-0 left-0 h-[4px] w-[100px] bg-black"></div>
