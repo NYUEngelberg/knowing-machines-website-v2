@@ -22,7 +22,7 @@ export default function ResearchPage({ intro, sets, activeSet, publicationPrevie
     <Layout title={"Knowing Machines Research"}>
       <main
         className={
-          "max-w-[1080px] mx-auto py-0" +
+          "max-w-[1080px] mx-auto my-12" +
           " md:grid " +
           " md:grid-cols-[minmax(0,1fr)] md:gap-[40px]"
         }
