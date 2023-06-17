@@ -99,9 +99,13 @@ export default function NWaysPage({ content, frontmatter }) {
           <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
           <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
           <div className="absolute bottom-0 left-0 h-[4px] w-[100px] bg-black"></div>
-          <span className="absolute -top-6 left-[-1px] content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
-            {frontmatter.contentType}
-          </span>
+          <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
+            <a className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
+              href="/publications/9_ways_to_see_a_dataset">
+              collection
+            </a>
+            <span className="inline-block pr-2 p-1 pl-0"> | {frontmatter.contentType}</span>
+          </div>
         </div>
         <div className="self-stretch mx-auto max-w-3xl uppercase font-bold text-[20px] tracking-widest ">
           {frontmatter.title}
