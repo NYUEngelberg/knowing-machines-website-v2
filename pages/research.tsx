@@ -19,7 +19,7 @@ type Props = {
 
 export default function ResearchPage({ intro, sets, activeSet, publicationPreviews }: Props) {
   return (
-    <Layout title={"Knowing Machines"} navbarDefaultCollapsed={true}>
+    <Layout title={"Knowing Machines Research"}>
       <main
         className={
           "max-w-[1080px] mx-auto py-0" +

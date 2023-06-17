@@ -1,5 +1,6 @@
 import { PublicationMetaData } from "@/types/publications";
 import HomePageHeading from "./HomePageHeading";
+import ResearchExternalPapers from "./reading-list/ResearchExternalPapers";
 
 type Props = {
   publicationPreviews: PublicationMetaData[]
@@ -13,9 +14,11 @@ export default function PublicationsSection({publicationPreviews, isResearchPage
       <div className={"pb-10 md:p-10 relative"}>
         <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
         {publicationPreviews.map((publication) => (
+          <>
           <div
             key={publication.href}
-            className="border-[1px] border-black p-6 mb-6 flex flex-col items-center gap-[40px]"
+            className={"border-[1px] border-black p-6 flex flex-col items-center gap-[40px]" +
+              (isResearchPage && publication.href === "/reading-list" ? "" : " mb-6")}
           >
             <div className="bg-center bg-cover h-[262px] w-full"
               style={{backgroundImage: "url(" + publication.coverImg + ")"}}
@@ -52,6 +55,10 @@ export default function PublicationsSection({publicationPreviews, isResearchPage
               </div>
             </div>
           </div>
+
+          {isResearchPage && publication.href === "/reading-list" &&
+              (<ResearchExternalPapers />)}
+          </>
         ))}
       </div>
     </section>
