@@ -89,10 +89,10 @@ export default function NWaysPage({ content, frontmatter }) {
   }
   return (
     <Layout title={frontmatter.title} navbarDefaultCollapsed={false}>
-      <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
+      <div className="border-[1px] border-black p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
-            className="max-w-3xl w-[900px] h-[265.93px] bg-center bg-cover"
+            className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
             style={{ backgroundImage: "url(" + frontmatter.coverImg + ")" }}
             title={frontmatter.coverImgAlt}
           ></div>

@@ -16,10 +16,10 @@ type Props = {
 export default function PublicationPage({ publication }: Props) {
   return (
     <Layout title={publication.title} navbarDefaultCollapsed={false}>
-      <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
+      <div className="border-[1px] border-black p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
-            className="max-w-3xl w-[900px] h-[265.93px] bg-center bg-cover"
+            className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
             style={{ backgroundImage: "url(" + publication.coverImg + ")" }}
             title={publication.coverImgAlt}
           ></div>
@@ -30,7 +30,7 @@ export default function PublicationPage({ publication }: Props) {
             {publication.contentType}
           </span>
         </div>
-        <div className="py-3 px-6 border-t-[2px] border-black uppercase font-bold text-[20px] text-center max-w-[450px] tracking-widest ">
+        <div className="py-3 px-6 border-t-[2px] border-black uppercase font-bold text-[20px] justify-self-center text-center max-w-[450px] tracking-widest ">
           {publication.title}
         </div>
         <div className="max-w-3xl">
@@ -61,7 +61,7 @@ export default function PublicationPage({ publication }: Props) {
           {(publication.collectionItems || []).map((item) => (
             <div
               key={item.title}
-              className="p-6 flex flex-col items-center gap-[40px]"
+              className="py-6 flex flex-col items-center gap-[40px]"
             >
               <div
                 id="set-collection-items"

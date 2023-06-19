@@ -43,7 +43,7 @@ export default function PublicationsSection({publicationPreviews, isResearchPage
                   </div>
                   <img
                     src="/img/arrow-top-right.svg"
-                    className="link-arrow-magic self-start"
+                    className="link-arrow-magic"
                   />
                 </a>
                 {/* <div className="text-xs my-4">
