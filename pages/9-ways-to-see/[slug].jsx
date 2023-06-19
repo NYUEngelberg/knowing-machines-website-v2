@@ -15,8 +15,12 @@ import { markdownToHtml } from "../../util/markdownHelpers";
 import Layout from "@/components/Layout";
 import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
+import CollectionLinks from "@/components/collection-essay/CollectionLinks";
+import {
+  getPublicationByHref
+} from "@/util/publications";
 
-export default function NWaysPage({ content, frontmatter }) {
+export default function NWaysPage({ content, frontmatter, publication }) {
   const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
@@ -149,7 +153,9 @@ export default function NWaysPage({ content, frontmatter }) {
             margin-top: -1em;
           }
         `}</style>
+        <CollectionLinks publication={publication} />
       </div>
+      
     </Layout>
   );
 }
@@ -180,5 +186,7 @@ export async function getStaticProps({ params: { slug } }) {
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
-  return { props: { frontmatter, slug, content } };
+
+  const publication = getPublicationByHref("/publications/9_ways_to_see_a_dataset");
+  return { props: { frontmatter, slug, content, publication } };
 }

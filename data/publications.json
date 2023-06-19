@@ -23,7 +23,7 @@
         "excerpt": "If you read the leaked memo from Google, “We Have No Moat, and Neither Does Open AI”, you’ll find a revealing admission about AI development: “data quality scales better than data size.” This short phrase points to a seachange in thinking that has significant implications for generative AI in particular",
         "href": "/9-ways-to-see/9-ways-to-see-a-dataset"
       },{
-        "index": 0,
+        "index": 1,
         "contentType": "essay",
         "title": "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -34,7 +34,7 @@
         "href": "/9-ways-to-see/datasets-as-institutions"
       },
       {
-        "index": 1,
+        "index": 2,
         "contentType": "essay",
         "title": "NABirds and the Iceland Gull",
         "img": "/img/9_ways/gull_black.png",
@@ -45,7 +45,7 @@
         "href": "/9-ways-to-see/NABirds-and-the-Iceland-Gull"
       },
       {
-        "index": 1,
+        "index": 3,
         "contentType": "essay",
         "title": "C4",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -56,7 +56,7 @@
         "href": "/9-ways-to-see/C4"
       },
       {
-        "index": 2,
+        "index": 4,
         "contentType": "essay",
         "title": "NABirds",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -67,7 +67,7 @@
         "href": "/9-ways-to-see/nabirds"
       },
       {
-        "index": 3,
+        "index": 5,
         "contentType": "essay",
         "title": "Investigating ImageNet",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -78,7 +78,7 @@
         "href": "/9-ways-to-see/ImageNet"
       },
       {
-        "index": 3,
+        "index": 6,
         "contentType": "essay",
         "title": "What Can LAION Teach Us About Copyright Law?",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -89,7 +89,7 @@
         "href": "/9-ways-to-see/LAION-copyright"
       },
       {
-        "index": 4,
+        "index": 7,
         "contentType": "essay",
         "title": "iNaturalist",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -99,7 +99,7 @@
         "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
         "href": "/9-ways-to-see/iNaturalist"
       },{
-        "index": 9,
+        "index": 8,
         "contentType": "essay",
         "title": "Investigating Datasets",
         "img": "/img/9_ways_to_see_a_dataset.png",
