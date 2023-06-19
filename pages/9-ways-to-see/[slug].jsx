@@ -107,10 +107,10 @@ export default function NWaysPage({ content, frontmatter }) {
             <span className="inline-block pr-2 p-1 pl-0"> | {frontmatter.contentType}</span>
           </div>
         </div>
-        <div className="self-stretch mx-auto max-w-3xl uppercase font-bold text-[20px] tracking-widest ">
+        <div className="text-left max-w-3xl uppercase font-bold text-[20px] tracking-widest ">
           {frontmatter.title}
         </div>
-        <div className="text-xs self-stretch mx-auto max-w-3xl ">
+        <div className="text-left text-xs self-stretch max-w-3xl ">
           <span className="font-bold uppercase">{frontmatter.authors}</span>
         </div>
         <div className="max-w-3xl">
