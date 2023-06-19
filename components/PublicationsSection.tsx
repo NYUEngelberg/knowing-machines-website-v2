@@ -31,17 +31,19 @@ export default function PublicationsSection({publicationPreviews, isResearchPage
                 <a
                   href={publication.href}
                   target="_blank"
-                  className="flex flex-row items-center gap-[10px] mt-[20px]"
+                  className="flex flex-row items-center gap-[10px] mt-[20px] justify-between"
                 >
-                  <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
-                    {publication.contentType}
-                  </span>
-                  <h3 className="flex-grow uppercase font-bold tracking-widest">
-                    {publication.title}
-                  </h3>
+                  <div className="flex flex-row flex-wrap gap-[10px] items-center">
+                    <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
+                      {publication.contentType}
+                    </span>
+                    <h3 className="flex-grow uppercase font-bold tracking-widest">
+                      {publication.title}
+                    </h3>
+                  </div>
                   <img
                     src="/img/arrow-top-right.svg"
-                    className="link-arrow-magic"
+                    className="link-arrow-magic self-start"
                   />
                 </a>
                 {/* <div className="text-xs my-4">
