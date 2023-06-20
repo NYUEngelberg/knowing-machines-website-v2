@@ -1,5 +1,6 @@
 import previewsData from "@/data/publications.json";
 import { PublicationMetaData } from "@/types/publications";
+import { getHtmlFromMdFile } from "./markdownHelpers";
 
 export function getPublicationPreviews() {
     const publicationPreviews: PublicationMetaData[] = previewsData;
@@ -11,8 +12,12 @@ export function getPublicationPagePaths() {
     return publicationPagePaths;
 }
 
-export function getPublicationByHref(href: string) {
+export async function getPublicationByHref(href: string) {
     const publicationPreviews: PublicationMetaData[] = previewsData;
-    const publication = publicationPreviews.find(p => p.href === href);
+    const publication = publicationPreviews.find(p => p.href === href) as PublicationMetaData;
+    const introPath = publication.intro;
+    if (introPath != null) {
+        publication.intro = await getHtmlFromMdFile(introPath);
+    }
     return publication;
 }

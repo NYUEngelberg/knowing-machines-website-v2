@@ -1,0 +1,1 @@
+The last decade of AI has been marked by a relentless pursuit of scale: more data, and more computational resources to process that data. Training datasets went from being relatively small scale with some human curation, to being massive, indiscriminate dragnets of the internet with little to no curation at all.
