@@ -17,7 +17,11 @@ export async function getPublicationByHref(href: string) {
     const publication = publicationPreviews.find(p => p.href === href) as PublicationMetaData;
     const introPath = publication.intro;
     if (introPath != null) {
-        publication.intro = await getHtmlFromMdFile(introPath);
+        const intro = await getHtmlFromMdFile(introPath);
+        return {
+            ...publication,
+            intro
+        }
     }
     return publication;
 }
