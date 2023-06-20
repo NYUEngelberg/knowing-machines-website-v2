@@ -13,7 +13,11 @@ excerpt: "What makes a bird hard to see? It may be a small bird, or a well camou
 
 What makes a bird hard to see?  
 
-It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that's hard to get to. Or, it might be hiding in plain sight.Image of Iceland gull from iNaturalist (https://machinist.smokingheaps.net/api/datasets/9/files/81059465)Consider the Iceland Gull. If you've never seen one, picture whichever seagull it is in your part of the world that steals lunches on sunny afternoons, and then turn up the brightness. Lighten the gray on the wings and erase any signs of inky black that might be on your picnic-raiding gull's wing tips. You'll be left with a handsome bird (all gulls are handsome) that is the light gray of a dry sidewalk and the perfect white of copier paper.  
+It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that's hard to get to. Or, it might be hiding in plain sight.
+
+Image of Iceland gull from iNaturalist (https://machinist.smokingheaps.net/api/datasets/9/files/81059465)Consider the Iceland Gull. 
+
+If you've never seen one, picture whichever seagull it is in your part of the world that steals lunches on sunny afternoons, and then turn up the brightness. Lighten the gray on the wings and erase any signs of inky black that might be on your picnic-raiding gull's wing tips. You'll be left with a handsome bird (all gulls are handsome) that is the light gray of a dry sidewalk and the perfect white of copier paper.  
 
 If you can say with confidence that you've seen an Iceland gull, I can say with confidence that you're a birder. Iceland gulls live most of their lives in the Arctic, feeding in icy oceans and nesting on narrow cliff edges. Even in the winter, the overwhelming majority of them stay far up North. Only a small number of Iceland Gulls venture south every year to Northern Europe and the East and West coasts of North America, where they tend to settle in with flocks of other large seagulls.   
 
