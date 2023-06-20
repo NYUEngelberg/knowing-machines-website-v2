@@ -33,7 +33,6 @@ export default function CollectionItemsList({
             <div>
               <a
                 href={item.href}
-                target="_blank"
                 className="flex flex-row items-center gap-[10px] mt-[20px]"
               >
                 <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">

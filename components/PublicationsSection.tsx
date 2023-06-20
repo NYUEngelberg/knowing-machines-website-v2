@@ -37,7 +37,6 @@ export default function PublicationsSection({
                 <div>
                   <a
                     href={publication.href}
-                    target="_blank"
                     className="flex flex-row items-center gap-[10px] mt-[20px] justify-between"
                   >
                     <div className="flex flex-row flex-wrap gap-[10px] items-center">
