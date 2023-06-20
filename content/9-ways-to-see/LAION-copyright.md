@@ -7,14 +7,13 @@ coverImg: "/img/9_ways/laion_copyright_black.png"
 coverImgAlt: "9 Ways to See a Dataset: What Can LAION Teach Us About Copyright Law?"
 preposition: "by"
 authors: "Jason Schultz"
-excerpt: "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?
-"
+excerpt: "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?"
 image-1:
   caption: "Blob image 1."
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061301"
+  imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
 image-2:
   caption: "Blob image 2."
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/9/files/81061129"
+  imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
 grid-1:
   caption: "images of blobs"
   collection: 7
@@ -35,7 +34,7 @@ So who is correct? Ultimately, the courts will decide, but one way to understand
 
 Lesson One: Copyright Is Easy to Claim but Often Hard to Determine  
 
-[:image-1]
+[:image-2]
 
 Image of Napoleon  
 
@@ -51,19 +50,19 @@ And [here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=10&siz
 
 Lesson Two: Outdated or Mistaken Metadata Is Abundant  
 
-[:image-1]
+[:image-2]
 
 Image of Clement Scott  
 
 Continuing to search, I run across a second set of mistaken copyright claims, these arising from images with outdated or mistaken metadata. Take, for example, this [photo](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=12&size=50&details=78191526) of the influential English theatre critic Clement Scott, whose metadata asserts "From a copyrighted photograph by Elliott & Fry." While it may be true that at one point [Elliott & Fry](https://en.wikipedia.org/wiki/Elliott_%26_Fry) owned the copyright for this photo, it is almost certainly no longer the case. According to [Wikipedia](https://en.wikipedia.org/wiki/Clement_Scott), Clement Scott died in 1904\. Given that the photo had to be taken before his death, it is in the public domain in the United States, as are all works published before January 1, 1928\. Other similar LAION images with expired copyrights can be found [here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=14&size=50&details=78001621) and [here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=15&size=50&details=77939530).  
 
-[:image-1]
+[:image-2]
 
 Image of album cover  
 
 [Here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=7&size=50&details=79239582) is the well-known cover image from "Frampton Comes Alive!" one of the best-selling rock albums of all time. The label says copyright Ticketmaster, but in reality it belongs to photographer [Richard E. Allen](https://rockpopgallery.typepad.com/rockpop_gallery_news/2007/04/cover_story_fra.html). Again, one must assume the Ticketmaster copyright claim is either a mistake or comes from Ticketmaster claiming copyright of the overall webpage where it sold tickets to Frampton's "[Comes Alive 35](https://www.staugustine.com/story/entertainment/arts/2011/05/24/evening-peter-frampton/16194056007/)" tour.  
 
-[:image-1]
+[:image-2]
 
 Image of vintage photo  
 
@@ -71,19 +70,19 @@ Image of vintage photo
 
 Lesson Three: Fair Use Is Also Part of the Picture  
 
-[:image-1]
+[:image-2]
 
 Image of Trump meme  
 
 Finally, even when valid copyrights exist and metadata is accurate, issues of fair use can be implicated for each individual image. Take [this version](https://machinist.smokingheaps.net/datasets/8?q=fair%2Buse&page=2&size=250&details=42850351) of a [classic Trump meme](https://imgflip.com/memegenerator/Trump-Bill-Signing) from 2018\. Vox [credits](https://www.vox.com/policy-and-politics/2018/3/23/17156900/omnibus-spending-bill-trump-statement) one version of the original photo to "Ron Sachs - Pool/Getty Images," but there are so many versions of these photos online, it is hard to know which one is the original. Beyond that, the use of the image to comment on fair use could itself qualify as fair, meaning that no license or permission is required. Other examples of plausible fair use claims are [here](https://machinist.smokingheaps.net/datasets/8?q=fair%2Buse&page=2&size=250&details=49678826) and [here](https://machinist.smokingheaps.net/datasets/8?q=fair%2Buse&page=0&size=50&details=79143291).  
 
-[:image-1]
+[:image-2]
 
 Image of Lafferty drawing  
 
 In [this](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=11&size=50&details=78288479) example, we see a complex interaction between fair use and the right to make "derivative" works of other copyrighted works. Here, artist Jeff Lafferty has drawn his rendition of "Padme Amidala" claiming his own copyright in the drawing. But the work is a derivative of a [promo still](https://www.ebay.com/itm/363071775930) from the Star Wars prequels. Did Lafferty receive permission from Disney/Lucasfilm to make and [sell](https://www.behance.net/gallery/18245701/Padme-with-Blaster?locale=en_US) the drawing? Probably not. However, given that he has incorporated his own creativity into the drawing, it is [possible](https://www.supremecourt.gov/opinions/22pdf/21-869_87ad.pdf) that courts could find this a fair use of the still, especially since it is unlikely to compete with sales of official Star Wars images. On the other hand, if it is found to be infringing as a derivative work, it [loses](https://www.law.cornell.edu/uscode/text/17/103) its copyright.Which analysis should LAION users rely on?  
 
-[:image-1]
+[:image-2]
 
 Image of Allie Mae Burroughs  
 
