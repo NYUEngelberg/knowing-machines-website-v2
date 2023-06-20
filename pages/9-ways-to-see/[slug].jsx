@@ -187,6 +187,6 @@ export async function getStaticProps({ params: { slug } }) {
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
-  const publication = getPublicationByHref("/publications/9_ways_to_see_a_dataset");
+  const publication = await getPublicationByHref("/publications/9_ways_to_see_a_dataset");
   return { props: { frontmatter, slug, content, publication } };
 }
