@@ -35,7 +35,7 @@ export default function PublicationPage({ publication }: Props) {
           {publication.title}
         </div>
         <div className="max-w-3xl">
-          <div className="text-sm"
+          <div className="text-sm markdown-content"
             dangerouslySetInnerHTML={{
               __html: publication.intro || "",
             }}
