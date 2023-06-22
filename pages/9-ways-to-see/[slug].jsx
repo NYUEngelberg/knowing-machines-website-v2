@@ -24,12 +24,18 @@ export default function NWaysPage({ content, frontmatter, publication }) {
   const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
-  const elementTypes = ["paragraph", "strong", "list"];
+  const elementTypes = ["heading", "paragraph", "strong", "list"];
 
   useEffect(() => {
+
+    console.log(content);
     const htmlOutput = markdownToHtml(content).then((output) => {
+
       const AST = unified().use(remarkParse).parse(content);
+      console.log(AST);
+
       let sections = [];
+
       visit(AST, ["text", ...elementTypes], (node) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
           sections.push({
@@ -70,6 +76,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           // }
         }
       });
+      console.log(output);
       setHtmlOutput(output);
       return setSections(sections);
     });
@@ -186,6 +193,7 @@ export async function getStaticProps({ params: { slug } }) {
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
+
 
   const publication = await getPublicationByHref("/publications/9_ways_to_see_a_dataset");
   return { props: { frontmatter, slug, content, publication } };
