@@ -4,7 +4,7 @@ draft: false
 index: 4
 contentType: essay
 coverImg: "/img/9_ways/blob_black.png"
-coverImgAlt: "9 Ways to See a Dataset: iNaturalist Cover Image"
+coverImgAlt: "A dithered image of a spray foam blob in the crook of a tree"
 preposition: "by"
 authors: "Jer Thorp"
 excerpt: "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist."
