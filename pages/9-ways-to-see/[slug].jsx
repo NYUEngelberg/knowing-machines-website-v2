@@ -16,9 +16,7 @@ import Layout from "@/components/Layout";
 import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 import CollectionLinks from "@/components/collection-essay/CollectionLinks";
-import {
-  getPublicationByHref
-} from "@/util/publications";
+import { getPublicationByHref } from "@/util/publications";
 
 export default function NWaysPage({ content, frontmatter, publication }) {
   const apiURL = "https://machinist.smokingheaps.net/api";
@@ -27,23 +25,21 @@ export default function NWaysPage({ content, frontmatter, publication }) {
   const elementTypes = ["heading", "paragraph", "strong", "list"];
 
   useEffect(() => {
-
-    console.log(content);
     const htmlOutput = markdownToHtml(content).then((output) => {
-
       const AST = unified().use(remarkParse).parse(content);
-      console.log(AST);
 
       let sections = [];
-
       visit(AST, ["text", ...elementTypes], (node) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
           sections.push({
             type: node.children[0].value.slice(1, -1).slice(1).split("-")[0],
             id: node.children[0].value,
           });
-        } else if (node.type === "strong" || node.type === "list") {
-          const mda = u("root", u(node.type, node.children));
+        } else if (["list", "strong", "heading"].includes(node.type)) {
+          const mda = u(
+            "root",
+            u(node.type, { children: node.children, depth: node.depth })
+          );
           sections.push({
             type: node.parent ? node.parent.type : node.type,
             content: toHtml(toHast(mda)),
@@ -58,25 +54,8 @@ export default function NWaysPage({ content, frontmatter, publication }) {
             className: node.type,
           });
           return SKIP;
-          // if (
-          //   node.children[0].value &&
-          //   !node.children[0].value.startsWith("[:")
-          // ) {
-          //   const mdast = {
-          //     type: `root`,
-          //     children: [{ type: node.type, children: node.children }],
-          //   };
-          //   const mda = u("root", node);
-          //   const hast = toHast(mda);
-          //   sections.push({
-          //     type: node.parent ? node.parent.type : node.type,
-          //     content: toHtml(hast),
-          //     className: node.type,
-          //   });
-          // }
         }
       });
-      console.log(output);
       setHtmlOutput(output);
       return setSections(sections);
     });
@@ -111,11 +90,16 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
           <div className="absolute bottom-0 left-0 h-[4px] w-[100px] bg-black"></div>
           <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
-            <a className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-              href="/publications/9_ways_to_see_a_dataset">
+            <a
+              className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
+              href="/publications/9_ways_to_see_a_dataset"
+            >
               collection
             </a>
-            <span className="inline-block pr-2 p-1 pl-0"> | {frontmatter.contentType}</span>
+            <span className="inline-block pr-2 p-1 pl-0">
+              {" "}
+              | {frontmatter.contentType}
+            </span>
           </div>
         </div>
         <div className="text-left max-w-3xl uppercase font-bold text-[20px] tracking-widest ">
@@ -124,7 +108,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
         <div className="text-left text-xs self-stretch max-w-3xl ">
           <span className="font-bold uppercase">{frontmatter.authors}</span>
         </div>
-        <div className="max-w-3xl">
+        <div className="max-w-3xl markdown-content">
           {sections.length > 0 &&
             sections.map((section, idx) => (
               <div key={idx}>
@@ -159,10 +143,29 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           .li::first-of-type {
             margin-top: -1em;
           }
+          h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 1em;
+          }
+          h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 1em;
+          }
+          h4 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 1em;
+          }
+          h5 {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 1em;
+          }
         `}</style>
         <CollectionLinks publication={publication} />
       </div>
-      
     </Layout>
   );
 }
@@ -194,7 +197,8 @@ export async function getStaticProps({ params: { slug } }) {
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
-
-  const publication = await getPublicationByHref("/publications/9_ways_to_see_a_dataset");
+  const publication = await getPublicationByHref(
+    "/publications/9_ways_to_see_a_dataset"
+  );
   return { props: { frontmatter, slug, content, publication } };
 }
