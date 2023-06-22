@@ -4,7 +4,7 @@ draft: false
 index: 0
 contentType: "essay"
 coverImg: "/img/9_ways/nyt_black.png"
-coverImgAlt: "/img/9_ways_to_see_a_dataset.png"
+coverImgAlt: "A dithered image of the New York Times logo, cropped so only the top part of the logo is visible"
 preposition: "by"
 authors: "Mike Ananny"
 excerpt: "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements."

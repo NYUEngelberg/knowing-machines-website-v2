@@ -4,7 +4,7 @@ draft: false
 index: 2
 contentType: "essay"
 coverImg: "/img/9_ways/nabird_black.png"
-coverImgAlt: "/img/9_ways_to_see_a_dataset.png"
+coverImgAlt: "A dithered image of a bird from the NABirds dataset"
 preposition: "by"
 authors: "Hamsini Sridharan"
 excerpt: "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories."

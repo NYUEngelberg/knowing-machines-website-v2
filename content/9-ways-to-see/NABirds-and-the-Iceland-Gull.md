@@ -4,7 +4,7 @@ draft: false
 index: 4
 contentType: essay
 coverImg: "/img/9_ways/gull_black.png"
-coverImgAlt: "9 Ways to See a Dataset: NABirds and the Iceland Gull"
+coverImgAlt: "A dithered image of the Iceland Gull, cropped so only the middle part of the bird is visible"
 preposition: "by"
 authors: "Jer Thorp"
 excerpt: "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight."

@@ -4,7 +4,7 @@ draft: false
 index: 3
 contentType: "essay"
 coverImg: "/img/9_ways/imagenet_black.png"
-coverImgAlt: "/img/9_ways_to_see_a_dataset.png"
+coverImgAlt: "A dithered image of a sparce grid of images selected from the ImageNet dataset"
 preposition: "by"
 authors: "Sasha Luccioni"
 excerpt: "ImageNet is one of the first datasets AI researchers are exposed to when learning and experimenting with computer vision approaches. Since it was first released in 2009, it has been used to train and evaluate nearly every AI model in the object recognition task, and improvement upon state-of-the-art performance on the dataset can translate into getting accepted into top AI conferences and appearing on leaderboards."

@@ -4,7 +4,7 @@ draft: false
 index: 4
 contentType: essay
 coverImg: "/img/9_ways/laion_copyright_black.png"
-coverImgAlt: "9 Ways to See a Dataset: What Can LAION Teach Us About Copyright Law?"
+coverImgAlt: "A dithered image of Napoleon in profile, cropped"
 preposition: "by"
 authors: "Jason Schultz"
 excerpt: "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?"

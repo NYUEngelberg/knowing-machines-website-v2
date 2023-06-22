@@ -4,7 +4,7 @@ index: 0
 draft: false
 contentType: "essay"
 coverImg: "/img/9_ways/home_9_ways.png"
-coverImgAlt: "/img/9_ways/home_9_ways.png"
+coverImgAlt: "A dithered image of a grid of images selected from a dataset"
 preposition: "by"
 authors: "Kate Crawford"
 excerpt: "If you read the leaked memo from Google, “We Have No Moat, and Neither Does Open AI”, you’ll find a revealing admission about AI development: “data quality scales better than data size.” This short phrase points to a seachange in thinking that has significant implications for generative AI in particular"
