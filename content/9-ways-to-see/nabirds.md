@@ -1,5 +1,5 @@
 ---
-title: "NABirds"
+title: "NABirds And The Instability Of Categories"
 draft: false
 index: 2
 contentType: "essay"

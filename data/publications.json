@@ -15,7 +15,7 @@
       {
         "index": 0,
         "contentType": "essay",
-        "title": "9 Ways To Look At A Dataset: What’s at stake in examining datasets?",
+        "title": "9 Ways To See A Dataset: What’s at stake in examining datasets?",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "a dithered image of a grid of images selected from a dataset",
         "preposition": "by",
@@ -36,7 +36,7 @@
       {
         "index": 2,
         "contentType": "essay",
-        "title": "NABirds and the Iceland Gull",
+        "title": "Consider The Iceland Gull",
         "img": "/img/9_ways/gull_black.png",
         "imgAlt": "/img/9_ways/gull_black.png",
         "preposition": "by",
@@ -58,7 +58,7 @@
       {
         "index": 4,
         "contentType": "essay",
-        "title": "NABirds",
+        "title": "NABirds And The Instability Of Categories",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
@@ -91,7 +91,7 @@
       {
         "index": 7,
         "contentType": "essay",
-        "title": "iNaturalist",
+        "title": "Some Blobs Are Human, Too",
         "img": "/img/9_ways_to_see_a_dataset.png",
         "imgAlt": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",

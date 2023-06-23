@@ -1,5 +1,5 @@
 ---
-title: "iNaturalist"
+title: "Some Blobs Are Human, Too"
 draft: false
 index: 4
 contentType: essay

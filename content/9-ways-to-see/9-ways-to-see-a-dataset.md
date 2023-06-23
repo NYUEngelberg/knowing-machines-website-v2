@@ -1,5 +1,5 @@
 ---
-title: "9 Ways To Look At A Dataset: What’s at stake in examining datasets?"
+title: "9 Ways To See A Dataset: What’s at stake in examining datasets?"
 index: 0
 draft: false
 contentType: "essay"

@@ -1,5 +1,5 @@
 ---
-title: "NABirds and the Iceland Gull"
+title: "Consider The Iceland Gull"
 draft: false
 index: 4
 contentType: essay
