@@ -31,6 +31,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
     "list",
     "footnoteDefinition",
     "html",
+    "image",
   ];
 
   useEffect(() => {
@@ -38,7 +39,6 @@ export default function NWaysPage({ content, frontmatter, publication }) {
       const AST = unified().use(remarkParse).use(remarkGfm).parse(content);
       let sections = [];
       let footnotes = {};
-      console.log(AST);
       Object.assign(footnotes, { type: "root", children: [] });
       visit(AST, ["text", ...elementTypes], (node) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
@@ -69,6 +69,17 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           );
           sections.push({
             type: node.parent ? node.parent.type : node.type,
+            content: toHtml(toHast(mda, { allowDangerousHtml: true }), {
+              allowDangerousHtml: true,
+            }),
+            className: node.type,
+          });
+          return SKIP;
+        } else if (node.children && node.children[0].type === "image") {
+          const img = node.children[0];
+          const mda = u(img.type, { url: img.url, alt: img.alt });
+          sections.push({
+            type: img.type,
             content: toHtml(toHast(mda, { allowDangerousHtml: true }), {
               allowDangerousHtml: true,
             }),
