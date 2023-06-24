@@ -175,10 +175,11 @@ export default function NWaysPage({ content, frontmatter, publication }) {
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 1em;
+            text-transform: uppercase;
           }
           h3 {
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 500;
             margin-bottom: 1em;
           }
           h4 {
