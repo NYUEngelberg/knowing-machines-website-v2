@@ -7,7 +7,9 @@ import { remark } from "remark";
 import html from "remark-html";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
+import remarkGfm from "remark-gfm";
 import { visit, SKIP } from "unist-util-visit";
+import { filter } from "unist-util-filter";
 import { u } from "unist-builder";
 import { toHast } from "mdast-util-to-hast";
 import { toHtml } from "hast-util-to-html";
@@ -22,41 +24,67 @@ export default function NWaysPage({ content, frontmatter, publication }) {
   const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
-  const elementTypes = ["heading", "paragraph", "strong", "list"];
+  const elementTypes = [
+    "heading",
+    "paragraph",
+    "strong",
+    "list",
+    "footnoteDefinition",
+  ];
 
   useEffect(() => {
     const htmlOutput = markdownToHtml(content).then((output) => {
-      const AST = unified().use(remarkParse).parse(content);
-
+      const AST = unified().use(remarkParse).use(remarkGfm).parse(content);
       let sections = [];
+      let footnotes = {};
+      Object.assign(footnotes, { type: "root", children: [] });
       visit(AST, ["text", ...elementTypes], (node) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
           sections.push({
             type: node.children[0].value.slice(1, -1).slice(1).split("-")[0],
             id: node.children[0].value,
           });
+        } else if (node.type === "footnoteDefinition") {
+          node.type = "footnote";
+          footnotes.children.push(node);
+          return SKIP;
         } else if (["list", "strong", "heading"].includes(node.type)) {
           const mda = u(
             "root",
-            u(node.type, { children: node.children, depth: node.depth })
+            u(node.type, {
+              children: node.children,
+              depth: node.depth,
+            })
           );
           sections.push({
             type: node.parent ? node.parent.type : node.type,
-            content: toHtml(toHast(mda)),
+            content: toHtml(toHast(mda, { allowDangerousHtml: true }), {
+              allowDangerousHtml: true,
+            }),
             className: node.type,
           });
           return SKIP;
         } else if (elementTypes.includes(node.type)) {
           const mda = u("root", u(node.type, node.children));
+
           sections.push({
             type: node.parent ? node.parent.type : node.type,
-            content: toHtml(toHast(mda)),
+            content: toHtml(toHast(mda, { allowDangerousHtml: true }), {
+              allowDangerousHtml: true,
+            }),
             className: node.type,
           });
           return SKIP;
         }
       });
       setHtmlOutput(output);
+      if (footnotes.children.length > 0) {
+        sections.push({
+          type: "paragraph",
+          tagName: "div",
+          content: toHtml(toHast(footnotes)),
+        });
+      }
       return setSections(sections);
     });
   }, []);
@@ -112,7 +140,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           {sections.length > 0 &&
             sections.map((section, idx) => (
               <div key={idx}>
-                {elementTypes.includes(section.type) ? (
+                {["footnote", ...elementTypes].includes(section.type) ? (
                   <div
                     key={idx}
                     className={`markdown-content max-w-3xl ${section.className}`}
