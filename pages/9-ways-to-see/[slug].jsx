@@ -30,6 +30,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
     "strong",
     "list",
     "footnoteDefinition",
+    "html",
   ];
 
   useEffect(() => {
@@ -37,6 +38,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
       const AST = unified().use(remarkParse).use(remarkGfm).parse(content);
       let sections = [];
       let footnotes = {};
+      console.log(AST);
       Object.assign(footnotes, { type: "root", children: [] });
       visit(AST, ["text", ...elementTypes], (node) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
@@ -48,6 +50,15 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           node.type = "footnote";
           footnotes.children.push(node);
           return SKIP;
+        } else if (node.type === "html") {
+          const mda = u(node.type, { value: node.value });
+          sections.push({
+            type: node.type,
+            content: toHtml(toHast(mda, { allowDangerousHtml: true }), {
+              allowDangerousHtml: true,
+            }),
+            className: `${node.type} w-full flex justify-center items-center mb-8`,
+          });
         } else if (["list", "strong", "heading"].includes(node.type)) {
           const mda = u(
             "root",
