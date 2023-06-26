@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import NWaysGridImage from "./NWaysGridImage";
+import NWaysGridSeeIcon from "./NWaysGridSeeIcon";
 
 export default function NWaysGrid({ title, collection, apiURL }) {
   const [collectionData, setCollectionData] = useState({});
@@ -8,6 +9,7 @@ export default function NWaysGrid({ title, collection, apiURL }) {
   const [pages, setPages] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentSet, setCurrentSet] = useState([]);
+  const [currentImage, setCurrentImage] = useState(null);
 
   useEffect(() => {
     const fetchImages = async (collection) => {
@@ -77,14 +79,18 @@ export default function NWaysGrid({ title, collection, apiURL }) {
     }
     return p;
   }
-
   return (
     <>
-      <div className="grid grid-cols-3 self-center w-full divide-x divide-y divide-solid divide-black border-gray-900 border relative">
+      <div
+        className={`image-grid grid grid-cols-3 self-center w-full divide-x divide-y divide-solid divide-black border-gray-900 border relative duration-300 ${
+          currentImage && "pointer-events-none"
+        }`}
+      >
         {loading ? (
           "loading"
         ) : (
           <>
+            <NWaysGridSeeIcon currentImage={currentImage} />
             {currentSet.length > 0 &&
               currentSet.map((item, idx) => {
                 return (
@@ -93,14 +99,29 @@ export default function NWaysGrid({ title, collection, apiURL }) {
                     apiURL={apiURL}
                     collection={collection}
                     key={idx}
+                    currentImage={currentImage}
+                    setCurrentImage={setCurrentImage}
                   />
                 );
               })}
           </>
         )}
       </div>
+      {!currentImage && (
+        <style jsx global>
+          {`
+            .image-grid:hover > * {
+              opacity: 0.3;
+            }
+            .image-grid:hover > *:hover,
+            .image-grid:hover > .see-button {
+              opacity: 1;
+            }
+          `}
+        </style>
+      )}
       {pages > 1 && (
-        <div className="flex my-5 justify-end z-100">
+        <div className="flex my-5 justify-end ">
           {getPages().map((page) => (
             <button
               key={page.page}
@@ -110,15 +131,15 @@ export default function NWaysGrid({ title, collection, apiURL }) {
                   ? "bg-black"
                   : "border border-black"
               } hover:bg-black duration-300 hover:shadow-lg`}
-              onClick={() => setCurrentPage(page.page)}
+              onClick={() => {
+                setCurrentPage(page.page);
+                setCurrentImage(null);
+              }}
             />
           ))}
         </div>
       )}
-      <div className="italic mt-2 mb-6 w-100 text-center">
-        {title}{" "}
-        <span className="md:hidden sm:inline">(tap to see metadata)</span>
-      </div>
+      <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
     </>
   );
 }

@@ -43,7 +43,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
       visit(AST, ["text", ...elementTypes], (node) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
           sections.push({
-            type: node.children[0].value.slice(1, -1).slice(1).split("-")[0],
+            type: node.children[0].value.slice(1, -1).split("-")[0],
             id: node.children[0].value,
           });
         } else if (node.type === "footnoteDefinition") {
@@ -113,7 +113,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
 
   function loadEmbed(type, id) {
     const item = frontmatter[id.slice(1, -1).slice(1)];
-    return type === "grid" ? (
+    return type === ":grid" ? (
       <NWaysGrid
         title={item.caption}
         collection={item.collection}

@@ -6,7 +6,7 @@ export default function NWaysGridImageOverlayBlock({ title, block }) {
       return (
         <>
           {Object.keys(block).map((key) => (
-            <div key={key} className="break-normal">
+            <div key={key} className="break-normal mb-2">
               {key}: <span className="font-bold">{block[key]}</span>
             </div>
           ))}
@@ -17,8 +17,8 @@ export default function NWaysGridImageOverlayBlock({ title, block }) {
     }
   }
   return (
-    <div className="min-h-fit my-2 mx-2 relative py-8 px-3 pr-4 flex flex-col w-fit">
-      <div className="absolute -top-2 -left-3 px-2 py-1 text-white uppercase bg-black">
+    <div className="my-2 mx-2 relative py-8 px-8 pr-4 flex flex-col w-full">
+      <div className="top-2 -left-3 px-2 py-1 w-fit mb-4 text-white uppercase bg-black">
         {title}
       </div>
       {renderOverlayBlock()}
