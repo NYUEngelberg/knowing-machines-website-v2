@@ -4,12 +4,12 @@
     "contentType": "Collection",
     "coverImg": "/img/9_ways/home_9_ways.png",
     "coverImgAlt": "a dithered image of a grid of images selected from a dataset",
-    "title": "9 ways to see a Dataset - are datasets approaching an event horizon?",
+    "title": "9 ways to see a Dataset",
     "preposition": "Written by",
     "authors": "Kate Crawford",
-    "excerpt": "The Knowing Machines Project is proud to launch SeeSet, an investigative tool for examining the training datasets for AI. In addition to offering access to the tool itself, we present nine essays from individual members of our team, each one using SeeSet to explore a key AI dataset and its role in the construction of 'ground truth.'",
+    "excerpt": "To further the understanding of training data, the Knowing Machines Project developed SeeSet, an investigative tool for examining the training datasets for AI. Here you will find nine essays from individual members of our team. Each one uses SeeSet to explore a key AI dataset and its role in the construction of 'ground truth.'",
     "intro": "content/9-ways-to-see/intro.md",
-    "description": "The Knowing Machines Project is proud to launch SeeSet, an investigative tool for examining the training datasets for AI. In addition to offering access to the tool itself, we present nine essays from individual members of our team, each one using SeeSet to explore a key AI dataset and its role in the construction of 'ground truth.'",
+    "description": "To further the understanding of training data, the Knowing Machines Project developed SeeSet, an investigative tool for examining the training datasets for AI. Here you will find nine essays from individual members of our team. Each one uses SeeSet to explore a key AI dataset and its role in the construction of 'ground truth.'",
     "external": false,
     "collectionItems": [
       {
