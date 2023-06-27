@@ -56,6 +56,7 @@ export default function NWaysGrid({ title, collection, apiURL }) {
         labels: {},
         texts: {},
         files: {},
+        empty: true,
       });
     }
     setCurrentSet(cSet);

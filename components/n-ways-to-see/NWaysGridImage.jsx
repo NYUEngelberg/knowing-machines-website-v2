@@ -50,7 +50,7 @@ export default function NWaysGridImage({
       <div
         className={`w-full h-full bg-cover duration-200 ${
           currentImage === item.id && "cursor-default"
-        }`}
+        } ${item.empty && "pointer-events-none cursor-none"}`}
         style={{
           backgroundImage:
             item.files.length > 0
