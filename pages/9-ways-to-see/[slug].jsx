@@ -77,7 +77,12 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           return SKIP;
         } else if (node.children && node.children[0].type === "image") {
           const img = node.children[0];
-          const mda = u(img.type, { url: img.url, alt: img.alt });
+          const mda = u(img.type, {
+            url: img.url,
+            alt: img.alt,
+            title: img.title,
+            width: "100%",
+          });
           sections.push({
             type: img.type,
             content: toHtml(toHast(mda, { allowDangerousHtml: true }), {
@@ -212,6 +217,11 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           h5 {
             font-size: 12px;
             font-weight: 700;
+            margin-bottom: 1em;
+          }
+          .paragraph > img {
+            width: 100%;
+            height: auto;
             margin-bottom: 1em;
           }
         `}</style>
