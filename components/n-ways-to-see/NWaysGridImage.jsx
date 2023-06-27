@@ -13,9 +13,7 @@ export default function NWaysGridImage({
   const meta = item.labels.length > 0 && item.labels[0].meta;
   const text = item.texts.length > 0 && item.texts[0].text;
   const handleClick = (id) => {
-    if (id === currentImage) {
-      setIsOverlayOpen(true);
-    } else {
+    if (id !== currentImage) {
       setCurrentImage(id);
     }
   };
@@ -50,7 +48,9 @@ export default function NWaysGridImage({
         </button>
       )}
       <div
-        className="w-full h-full bg-cover duration-200"
+        className={`w-full h-full bg-cover duration-200 ${
+          currentImage === item.id && "cursor-default"
+        }`}
         style={{
           backgroundImage:
             item.files.length > 0
@@ -58,7 +58,16 @@ export default function NWaysGridImage({
               : "",
         }}
         onClick={() => handleClick(item.id)}
-      ></div>
+      >
+        <div
+          className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-gray-100 w-full text-right duration-300 cursor-pointer ${
+            currentImage === item.id && !isOverlayOpen ? "block" : "hidden"
+          }`}
+          onClick={() => setIsOverlayOpen(true)}
+        >
+          Click to see data
+        </div>
+      </div>
       {isOverlayOpen && (
         <NWaysGridImageOverlay
           text={text}

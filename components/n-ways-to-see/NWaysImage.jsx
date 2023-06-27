@@ -46,11 +46,18 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
   return (
     <div className="max-w-none w-100 self-center flex flex-col">
       <div className="relative group w-full relative border border-black cursor-pointer">
+        <div
+          className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-gray-100 w-full pointer-events-auto text-right duration-300 cursor-pointer ${
+            !isOverlayOpen ? "block" : "hidden"
+          }`}
+          onClick={() => setIsOverlayOpen(true)}
+        >
+          Click to see data
+        </div>
         <img
-          className="max-w-auto min-w-full block pointer-events-auto "
+          className="max-w-auto min-w-full block pointer-events-auto cursor-default"
           src={imgPath}
           alt={title}
-          onClick={() => setIsOverlayOpen(true)}
         />
         <div
           className={`${
