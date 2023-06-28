@@ -15,7 +15,7 @@ image-2:
   caption: "Blob image 2."
   imagePath: "https://machinist.smokingheaps.net/api/collections/3/data/77939530"
 grid-1:
-  caption: "images of blobs"
+  caption: "Images of blob-like organisms from the iNaturalist training set"
   collection: 7
 grid-2:
   caption: "Images of ‘human’ labeled images"
@@ -44,8 +44,6 @@ This little fungus to foam story carries in it an important lesson: that dataset
 With the Frankfurt blob, we can see how these users act as both creators and maintainers of data. Inczi89, who correctly IDed the foam insulation, [has 2,366 observations of his own](https://www.inaturalist.org/observations?place_id=any&reviewed=true&user_id=inczi89). Because an identification requires ⅔ consensus to be considered ‘research grade’ and included in the training sets, every image in the iNat dataset has involved the attention of a minimum of two people: the person who took the photo and at least one other user who’s confirmed the ID.
 
 The specifics of this example, that the *Fuligo* ended up as *Homo sapiens*, reveal something important about iNat’s philosophy. Search for ‘human’ on the website and you’ll find thousands of selfies – people tend to test the automatic identification on the first animal they find handy. Humans are very much a part of iNaturalist’s idea of nature. You’ll also find photos of [drones](https://www.inaturalist.org/observations/159020304) and [dog poop bags](https://www.inaturalist.org/observations/159058908) and [old tires](https://www.inaturalist.org/observations/155619810). Graffiti and gum wrappers and bike racks. iNaturalist considers these things as evidence of a species, in the way that a small skull might tell of a rabbit or a pile of small round droppings a deer. 
-
-[:grid-2]
 
 Machine learning datasets are designed to carry world views: to pass to the systems that are trained upon them their own particular ways of seeing the world. In the case of iNaturalist, its human-as-wildlife and cigarette-butt-as-human ethic carries into its community and its tools; something you can experience firsthand the next time you stumble upon a blob (featureless or not). 
 
