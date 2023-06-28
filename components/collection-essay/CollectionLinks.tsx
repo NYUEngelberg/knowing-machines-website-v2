@@ -28,7 +28,7 @@ export default function CollectionLinks({ publication }: Props) {
       </div>
       <CollectionItemsList
         collectionItems={publication.collectionItems}
-        showTitleOnly={true}
+        hideExcerpt={true}
         hidePartialBulkyBorder={true}
       />
     </div>

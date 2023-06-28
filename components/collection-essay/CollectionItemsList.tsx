@@ -3,13 +3,13 @@ import PartialBulkyBorder from "../PartialBulkyBorder";
 
 type Props = {
   collectionItems: PublicationCollectionItem[] | undefined;
-  showTitleOnly?: boolean;
+  hideExcerpt?: boolean;
   hidePartialBulkyBorder?: boolean;
 };
 
 export default function CollectionItemsList({
   collectionItems,
-  showTitleOnly,
+  hideExcerpt,
   hidePartialBulkyBorder,
 }: Props) {
   return (
@@ -50,14 +50,12 @@ export default function CollectionItemsList({
               {publication.preposition + ": "}
               <span className="font-bold">{publication.authors}</span>
             </div> */}
-              {!showTitleOnly && (
-                <div className="text-xs mt-4 mb-2">
-                  <span className="font-bold uppercase">{item.authors}</span>
-                </div>
-              )}
-              {!showTitleOnly && (
+              <div className="text-xs mt-4">
+                <span className="font-bold uppercase">{item.authors}</span>
+              </div>
+              {!hideExcerpt && (
                 <div
-                  className="markdown-content text-xs"
+                  className="mt-2 markdown-content text-xs"
                   dangerouslySetInnerHTML={{
                     __html: item.excerpt || "",
                   }}
