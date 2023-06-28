@@ -1,5 +1,5 @@
 ---
-title: "What Can LAION Teach Us About Copyright Law?"
+title: "9 Ways To See A Dataset: What Can LAION Teach Us About Copyright Law?"
 draft: false
 index: 4
 contentType: essay

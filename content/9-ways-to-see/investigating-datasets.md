@@ -1,5 +1,5 @@
 ---
-title: "Investigating Datasets"
+title: "9 Ways To See A Dataset: Investigating Datasets"
 index: 4
 draft: false
 contentType: "essay"

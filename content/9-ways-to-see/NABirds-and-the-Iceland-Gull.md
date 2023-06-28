@@ -1,5 +1,5 @@
 ---
-title: "Consider The Iceland Gull"
+title: "9 Ways To See A Dataset: Consider The Iceland Gull"
 draft: false
 index: 4
 contentType: essay

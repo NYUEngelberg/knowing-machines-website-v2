@@ -1,5 +1,5 @@
 ---
-title: "Some Blobs Are Human, Too"
+title: "9 Ways To See A Dataset: Some Blobs Are Human, Too"
 draft: false
 index: 4
 contentType: essay

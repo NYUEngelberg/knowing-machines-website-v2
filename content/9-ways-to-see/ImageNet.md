@@ -1,5 +1,5 @@
 ---
-title: "Investigating ImageNet"
+title: "9 Ways To See A Dataset: Investigating ImageNet"
 draft: false
 index: 3
 contentType: "essay"

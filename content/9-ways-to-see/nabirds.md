@@ -1,5 +1,5 @@
 ---
-title: "NABirds And The Instability Of Categories"
+title: "9 Ways To See A Dataset: NABirds And The Instability Of Categories"
 draft: false
 index: 2
 contentType: "essay"
