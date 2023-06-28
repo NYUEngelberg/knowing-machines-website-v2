@@ -42,12 +42,11 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
   }
   const meta = imageData.labels.length > 0 && imageData.labels[0].meta;
   const text = imageData.texts.length > 0 && imageData.texts[0].text;
-
   return (
     <div className="max-w-none w-100 self-center flex flex-col">
       <div className="relative group w-full relative border border-black cursor-pointer">
         <div
-          className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-gray-100 w-full pointer-events-auto text-right duration-300 cursor-pointer ${
+          className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-white bg-opacity-75 w-full pointer-events-auto text-right duration-300 cursor-pointer ${
             !isOverlayOpen ? "block" : "hidden"
           }`}
           onClick={() => setIsOverlayOpen(true)}
