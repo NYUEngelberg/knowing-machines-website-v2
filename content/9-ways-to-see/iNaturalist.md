@@ -11,9 +11,6 @@ excerpt: "If you’ve found a featureless blob and you’d like to identify it, 
 image-1:
   caption: "Blob image 1."
   imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
-image-2:
-  caption: "Blob image 2."
-  imagePath: "https://machinist.smokingheaps.net/api/collections/3/data/77939530"
 grid-1:
   caption: "Images of blob-like organisms from the iNaturalist training set"
   collection: 7
@@ -28,16 +25,14 @@ If you’ve found a featureless blob and you’d like to identify it, your first
 
 The living world is full of featureless blobs, and iNaturalist’s computer vision model has been trained to recognize thousands of them. If you’re on a beach you might find out that your blob could be a stranded moon jelly, or the swim bladder of a porcupinefish. If your blob is big and white and you’re standing in a farmer’s field, iNaturalist may tell you’re looking at a giant puffball mushroom. If you were in a forest outside of Frankfurt at the beginning of May, your blob would be ID’ed as a patch of dog vomit slime mold:
 
-[:image-1]
+![Blob image 1.](https://inaturalist-open-data.s3.amazonaws.com/photos/274368677/original.jpeg "Blob image 1.")
+
 
 Blobs, particularly featureless ones, are a challenge for computer vision systems, which really like features. Edges, corners, ridges - these are all things that models use to distinguish images of birds from images of fish; they’re what a system uses to learn what a face is, or a letter T, or a convoy of armored trucks. Without these things blobs can blend together for machines, and one can easily be mistaken for another. 
 
 So we shouldn’t be too hard on iNat for making a mistake.
 
 The Frankfurt blob is spray foam, the kind that might be used to fill a crack underneath a drafty window. How it ended up in the crook of a tree in a German forest or how long it’s been there is anyone’s guess. The mistaken identification, though, only lasted on iNaturalist for a day before it [was corrected by a user named inczi89](https://www.inaturalist.org/observations/158786749) who wrote: “Its insulation foam used by builders. Its \[sic] not anything alive. someone must have played with a can and sprayed the trees.” The original poster agreed with the new identification and the species in the photo was changed: from Dog Vomit Slime Mold (*Fuligo septica*) to Human (*Home sapiens*).
-
-
-[:image-2]
 
 This little fungus to foam story carries in it an important lesson: that datasets are artifacts of the people that create them. In the case of iNaturalist, the datasets it uses for machine learning (and releases publicly) are constructed by its community of users - more than 1.5 million people who have made at least one verified observation on the platform. By giving us a brief look at the practices and philosophies of the iNat community, the story helps us to better understand the extent and quality of the dataset. 
 
