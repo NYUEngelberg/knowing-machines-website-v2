@@ -8,14 +8,16 @@ coverImgAlt: "A dithered image of the Iceland Gull, cropped so only the middle p
 preposition: "by"
 authors: "Jer Thorp"
 excerpt: "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight."
+image-1:
+  caption: "Image of Iceland gull from iNaturalist"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/9/data/81059465"
 ---
 
 What makes a bird hard to see?
 
 It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that's hard to get to. Or, it might be hiding in plain sight.
 
-![Image of Iceland gull from iNaturalist](https://machinist.smokingheaps.net/api/datasets/9/files/81059465 "Image of Iceland gull from iNaturalist
-")
+[:image-1]
 
 Consider the Iceland Gull.
 
