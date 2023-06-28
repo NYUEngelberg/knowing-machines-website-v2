@@ -60,7 +60,7 @@ export default function NWaysGridImage({
         onClick={() => handleClick(item.id)}
       >
         <div
-          className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-gray-100 w-full text-right duration-300 cursor-pointer ${
+          className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-white bg-opacity-75 w-full text-right duration-300 cursor-pointer ${
             currentImage === item.id && !isOverlayOpen ? "block" : "hidden"
           }`}
           onClick={() => setIsOverlayOpen(true)}
