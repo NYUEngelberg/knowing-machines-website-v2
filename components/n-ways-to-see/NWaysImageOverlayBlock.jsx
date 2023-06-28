@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NWaysGridImageOverlayBlock({ title, block }) {
+export default function NWaysImageOverlayBlock({ title, block }) {
   function renderOverlayBlock() {
     if (typeof block === "object") {
       return (

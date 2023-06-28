@@ -17,6 +17,7 @@ import { markdownToHtml } from "../../util/markdownHelpers";
 import Layout from "@/components/Layout";
 import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
+import NWaysCarousel from "@/components/n-ways-to-see/NWaysCarousel";
 import CollectionLinks from "@/components/collection-essay/CollectionLinks";
 import { getPublicationByHref } from "@/util/publications";
 
@@ -118,19 +119,34 @@ export default function NWaysPage({ content, frontmatter, publication }) {
 
   function loadEmbed(type, id) {
     const item = frontmatter[id.slice(1, -1).slice(1)];
-    return type === ":grid" ? (
-      <NWaysGrid
-        title={item.caption}
-        collection={item.collection}
-        apiURL={apiURL}
-      />
-    ) : (
-      <NWaysImage
-        title={item.caption}
-        imagePath={item.imagePath}
-        apiURL={apiURL}
-      />
-    );
+    switch (type) {
+      case ":grid":
+        return (
+          <NWaysGrid
+            title={item.caption}
+            collection={item.collection}
+            apiURL={apiURL}
+          />
+        );
+        break;
+      case ":carousel":
+        return (
+          <NWaysCarousel
+            title={item.caption}
+            collection={item.collection}
+            apiURL={apiURL}
+          />
+        );
+        break;
+      default:
+        return (
+          <NWaysImage
+            title={item.caption}
+            imagePath={item.imagePath}
+            apiURL={apiURL}
+          />
+        );
+    }
   }
   return (
     <Layout title={frontmatter.title} navbarDefaultCollapsed={false}>
