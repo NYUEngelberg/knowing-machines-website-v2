@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NWaysGridImageOverlay from "./NWaysGridImageOverlay";
+import NWaysImageOverlay from "./NWaysImageOverlay";
 
 export default function NWaysGridImage({
   item,
@@ -69,7 +69,7 @@ export default function NWaysGridImage({
         </div>
       </div>
       {isOverlayOpen && (
-        <NWaysGridImageOverlay
+        <NWaysImageOverlay
           text={text}
           meta={meta}
           isOverlayOpen={isOverlayOpen}

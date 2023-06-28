@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NWaysGridImage from "./NWaysGridImage";
-import NWaysGridSeeIcon from "./NWaysGridSeeIcon";
+import NWaysSeeIcon from "./NWaysSeeIcon";
+import NWaysPagination from "./NWaysPagination";
 
 export default function NWaysGrid({ title, collection, apiURL }) {
   const [collectionData, setCollectionData] = useState({});
@@ -73,13 +74,6 @@ export default function NWaysGrid({ title, collection, apiURL }) {
     return text;
   }
 
-  function getPages() {
-    let p = [];
-    for (let i = 1; i < pages + 1; i++) {
-      p.push({ page: i, active: currentPage === i });
-    }
-    return p;
-  }
   return (
     <>
       <div
@@ -91,7 +85,7 @@ export default function NWaysGrid({ title, collection, apiURL }) {
           "loading"
         ) : (
           <>
-            <NWaysGridSeeIcon currentImage={currentImage} />
+            <NWaysSeeIcon />
             {currentSet.length > 0 &&
               currentSet.map((item, idx) => {
                 return (
@@ -122,23 +116,12 @@ export default function NWaysGrid({ title, collection, apiURL }) {
         </style>
       )}
       {pages > 1 && (
-        <div className="flex my-5 justify-end ">
-          {getPages().map((page) => (
-            <button
-              key={page.page}
-              id={page.page}
-              className={`w-[20px] h-[20px] rounded-full mx-2 ${
-                parseInt(currentPage, 10) === parseInt(page.page, 10)
-                  ? "bg-black"
-                  : "border border-black"
-              } hover:bg-black duration-300 hover:shadow-lg`}
-              onClick={() => {
-                setCurrentPage(page.page);
-                setCurrentImage(null);
-              }}
-            />
-          ))}
-        </div>
+        <NWaysPagination
+          pages={pages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          setCurrentImage={setCurrentImage}
+        />
       )}
       <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
     </>

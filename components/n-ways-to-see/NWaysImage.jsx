@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import NWaysGridImageOverlay from "./NWaysGridImageOverlay";
-import NWaysGridSeeIcon from "./NWaysGridSeeIcon";
+import NWaysImageOverlay from "./NWaysImageOverlay";
+import NWaysSeeIcon from "./NWaysSeeIcon";
 
 export default function NWaysImage({ title, imagePath, apiURL }) {
   const [imageData, setImageData] = useState(null);
   const [imgPath, setImgPath] = useState("");
   const [loading, setLoading] = useState(true);
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+
   useEffect(() => {
     const fetchImageData = async (imagePath) => {
       fetch(imagePath, {
@@ -28,7 +29,7 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
           setImageData(data.data);
         })
         .catch((err) => {
-          console.error("Error fetching image: ", Error);
+          console.error("Error fetching image: ", err);
         })
         .finally(() => {
           setLoading(false);
@@ -43,7 +44,7 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
   const meta = imageData.labels.length > 0 && imageData.labels[0].meta;
   const text = imageData.texts.length > 0 && imageData.texts[0].text;
   return (
-    <div className="max-w-none w-100 self-center flex flex-col">
+    <div className={`max-w-none w-100 self-center flex flex-col `}>
       <div className="relative group w-full relative border border-black cursor-pointer">
         <div
           className={`z-20 absolute bottom-0 see-button-text p-1 pr-20 bg-white bg-opacity-75 w-full pointer-events-auto text-right duration-300 cursor-pointer ${
@@ -54,7 +55,7 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
           Click to see data
         </div>
         <img
-          className="max-w-auto min-w-full block pointer-events-auto cursor-default"
+          className="min-w-full  block pointer-events-auto cursor-default aspect-video"
           src={imgPath}
           alt={title}
         />
@@ -64,7 +65,7 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
           } top-0 bottom-0 left-0 right-0 duration-400`}
         >
           {isOverlayOpen && (
-            <NWaysGridImageOverlay
+            <NWaysImageOverlay
               text={text}
               meta={meta}
               isOverlayOpen={isOverlayOpen}
@@ -73,9 +74,11 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
             />
           )}
         </div>
-        <NWaysGridSeeIcon currentImage={Math.random(2, 0)} />
+        <NWaysSeeIcon />
       </div>
-      <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
+      {title && (
+        <div className="italic mt-2 mb-6 w-100 text-center">{title}</div>
+      )}
     </div>
   );
 }

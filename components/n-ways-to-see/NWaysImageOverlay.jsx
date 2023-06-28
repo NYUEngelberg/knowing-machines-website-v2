@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NWaysGridImageOverlayBlock from "./NWaysGridImageOverlayBlock";
+import NWaysImageOverlayBlock from "./NWaysImageOverlayBlock";
 
-export default function NWaysGridImageOverlay({
+export default function NWaysImageOverlay({
   meta,
   text,
   isOverlayOpen,
@@ -12,7 +12,7 @@ export default function NWaysGridImageOverlay({
     <div
       className={`cursor-default pointer-events-auto bg-white top-0 right-0 bottom-0 left-0 ${
         isOverlayOpen ? "block absolute" : "hidden"
-      } z-10`}
+      } z-10 overflow-x-hidden overflow-y-scroll`}
     >
       <button
         onClick={() => {
@@ -36,9 +36,9 @@ export default function NWaysGridImageOverlay({
         </svg>
       </button>
       {text && text !== "" && (
-        <NWaysGridImageOverlayBlock title={`texts`} block={text} />
+        <NWaysImageOverlayBlock title={`texts`} block={text} />
       )}
-      {meta && <NWaysGridImageOverlayBlock title={`labels`} block={meta} />}
+      {meta && <NWaysImageOverlayBlock title={`labels`} block={meta} />}
     </div>
   );
 }
