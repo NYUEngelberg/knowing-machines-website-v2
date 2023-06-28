@@ -1,5 +1,5 @@
 ---
-title: "DATASETS AS INSTITUTIONS: THE NEW YORK TIMES ANNOTATED CORPUS"
+title: "9 Ways To See A Dataset: Datasets as Institutions — The New York Times Annotated Corpus"
 draft: false
 index: 0
 contentType: "essay"
