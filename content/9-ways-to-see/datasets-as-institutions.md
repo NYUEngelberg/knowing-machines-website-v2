@@ -28,7 +28,7 @@ Beyond tracing the NYTAC as a site of (inter)organizational practices, the NYTAC
 
 **Method:** Searching for “racism” + “baseball”, “racism” + “football”, “racism” + “hockey” within Sports and News returns this pattern:
 
-![Graph showing pattern returned from searching for “racism” + “baseball”, “racism” + “football”, “racism” + “hockey” within Sports and News](/img/9_ways/graph.png)
+![Chart showing usage of the terms 'racism' in NYTimes coverage of various sports, comparing usage in Sports and News sections.](/img/9_ways/graph.png "Chart showing usage of the terms 'racism' in NYTimes coverage of various sports, comparing usage in Sports and News sections.")
 
 **Interpretation:** Taking 1987-2007 NYT coverage as a baseline, racism seems more likely to be discussed in stories appearing in the News section versus the Sports section. More sophisticated investigations into exactly how these discussions appear is needed, but this cursory look raises questions:
 
