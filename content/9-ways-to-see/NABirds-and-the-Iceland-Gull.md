@@ -11,6 +11,9 @@ excerpt: "What makes a bird hard to see? It may be a small bird, or a well camou
 image-1:
   caption: "Image of Iceland gull from iNaturalist"
   imagePath: "https://machinist.smokingheaps.net/api/datasets/9/data/81059465"
+grid-1:
+  caption: "'Images of Herring Gulls from NABirds"
+  collection: 9
 ---
 
 What makes a bird hard to see?
@@ -33,7 +36,7 @@ While not looking for gulls, I spent many daytime hours last winter scanning thr
 
 NABirds was designed to be used for fine-grained visual categorization experiments. It's meant to train and to benchmark computer vision systems designed to recognize broad classes of things (a bicycle) as well as specific subclasses (a mountain bike, a tandem bike, a penny-farthing). Birds have been bound to this kind of machine learning right from the start, because they offer a lot of subclasses that are well-defined and often very fine-grained.
 
-<graphic: connection of images from NABirds from one species\>
+[:grid-1]
 
 Look through photos from single species, and you'll appreciate all the small variations that can occur in a bird even with the same set of genes. The Herring Gull (a close relative of the Iceland) has a full seven distinct (and handsome) plumage forms: juvenile, first winter, first summer, second winter, third winter, adult non-breeding and adult breeding. To split those fine grains even further, the Herring Gull has five subspecies which themselves can have subtly different developmental plumage types. The Herring Gull is one of these things that makes NABirds a challenging data set for computer vision systems: eight years after its release in 2015, best-in class ML systems can correctly label 93% of the images in the set, about 13 out of every 14 photos. Carousel of HerringGull images
 
