@@ -20,8 +20,6 @@ What makes a bird hard to see?
 
 It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that's hard to get to. Or, it might be hiding in plain sight.
 
-[:image-1]
-
 Consider the Iceland Gull.
 
 If you've never seen one, picture whichever seagull it is in your part of the world that steals lunches on sunny afternoons, and then turn up the brightness. Lighten the gray on the wings and erase any signs of inky black that might be on your picnic-raiding gull's wing tips. You'll be left with a handsome bird (all gulls are handsome) that is the light gray of a dry sidewalk and the perfect white of copier paper.
@@ -30,7 +28,7 @@ If you can say with confidence that you've seen an Iceland gull, I can say with 
 
 Picking out an Iceland gull from a flock of ring-billed gulls and herring gulls in January is a kind of right of passage for birders in North America. I've spent many long evenings in a darkening Brooklyn Bridge Park, poring over the gulls that come by the thousands to settle onto the pilings and into the marina. I've only found an Iceland Gull on my own once. It was in 2021, just a few days before the New Year. I'd been looking at gulls for an hour, scanning the pilings as each new wave of birds came in to rest for the night, looking for one bird that was whiter than the rest. I was beginning to wonder if the Iceland Gull was an elaborate joke, dreamt up to trick new birders. Just as I was about to give up, I found one. It was perched just twenty feet away, all gray and white and perfect.
 
-<Image of my Iceland Gull\>
+[:image-1]
 
 While not looking for gulls, I spent many daytime hours last winter scanning through NABirds, a data set assembled to teach machines how to identify birds. NABirds contains 48,000 photographs of the most common 400 species in North America. There are at least 100 images of each bird; some are crisp and complete, others are blurred and partial. Each one is hand-labeled with a bounding box for the bird and a precise label for every visible body part.Images from NABirds
 
