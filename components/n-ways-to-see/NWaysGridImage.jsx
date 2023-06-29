@@ -48,7 +48,7 @@ export default function NWaysGridImage({
         </button>
       )}
       <div
-        className={`w-full h-full bg-cover duration-200 ${
+        className={`w-full h-full bg-cover duration-200 bg-center ${
           currentImage === item.id && "cursor-default"
         } ${item.empty && "pointer-events-none cursor-none"}`}
         style={{
