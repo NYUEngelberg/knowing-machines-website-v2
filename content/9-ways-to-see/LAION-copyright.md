@@ -12,14 +12,11 @@ image-1:
   caption: "Blob image 1."
   imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
 image-2:
-  caption: "Blob image 2."
-  imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
+  caption: "Image of Napoleon"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78676939"
 grid-1:
   caption: "Copyright curiousities in the LAION training set"
   collection: 3
-grid-2:
-  caption: "Images of ‘human’ labeled images"
-  collection: 2
 ---
 
 *Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?*  
