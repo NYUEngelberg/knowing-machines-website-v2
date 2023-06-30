@@ -9,6 +9,7 @@ import NewsletterFormEmbed from "@/components/NewsletterFormEmbed";
 import PublicationsSection from "@/components/PublicationsSection";
 import { PublicationMetaData } from "@/types/publications";
 import { getPublicationPreviews } from "@/util/publications";
+import { MetaOgTagData } from "@/types/meta";
 
 type Props = {
   intro: string;
@@ -18,8 +19,16 @@ type Props = {
 };
 
 export default function Home({ intro, sets, activeSet, publicationPreviews }: Props) {
+  const metaOgTagData:MetaOgTagData = {
+    title: "Knowing Machines",
+    description: "Knowing Machines is a research project tracing the histories, practices, and politics of how machine learning systems are trained to interpret the world.",
+    url: "https://knowingmachines.org",
+    imageUrl: "https://knowingmachines.org/img/field_guide_black_1.png",
+    imageAlt: "a geometric pattern of boxes evoking a spreadsheet",
+  }
+
   return (
-    <Layout title={"Knowing Machines"} navbarDefaultCollapsed={true}>
+    <Layout metaOgTagData={metaOgTagData} navbarDefaultCollapsed={true}>
       <main
         className={
           "max-w-[1175px] mx-auto py-0" +

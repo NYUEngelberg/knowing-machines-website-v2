@@ -4,12 +4,14 @@ import { ReactNode } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ScrollToTop from "react-scroll-to-top";
+import { MetaOgTagData } from "@/types/meta";
 
 type Props = {
-  title: string;
+  title?: string;
   children: ReactNode | ReactNode[];
   id?: string;
   navbarDefaultCollapsed?: boolean;
+  metaOgTagData?: MetaOgTagData
 };
 
 export default function Layout({
@@ -17,11 +19,12 @@ export default function Layout({
   children,
   id,
   navbarDefaultCollapsed = false,
+  metaOgTagData
 }: Props) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title || metaOgTagData?.title}</title>
         <meta name="description" content="Knowing Machines is a research project tracing the histories, practices, and politics of how machine learning systems are trained to interpret the world." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
