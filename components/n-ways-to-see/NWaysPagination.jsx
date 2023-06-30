@@ -14,7 +14,7 @@ export default function NWaysPagination({
     return p;
   }
   return (
-    <div className="flex my-5 justify-end ">
+    <div className="flex my-5 justify-center ">
       {getPages().map((page) => (
         <button
           key={page.page}
