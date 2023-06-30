@@ -11,7 +11,7 @@ type Props = {
   children: ReactNode | ReactNode[];
   id?: string;
   navbarDefaultCollapsed?: boolean;
-  metaOgTagData?: MetaOgTagData
+  metaOgTagData: MetaOgTagData
 };
 
 export default function Layout({
@@ -25,50 +25,50 @@ export default function Layout({
     <>
       <Head>
         <title>{title || metaOgTagData?.title}</title>
-        <meta name="description" content="Knowing Machines is a research project tracing the histories, practices, and politics of how machine learning systems are trained to interpret the world." />
+        <meta name="description" content={metaOgTagData.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <meta
           property="og:title"
-          content="KNOWING MACHINES / A CRITICAL FIELD GUIDE FOR WORKING WITH MACHINE LEARNING DATASETS"
+          content={metaOgTagData.title}
         />
         <meta
           property="og:description"
-          content="Maybe you’re an engineer creating a new machine vision system to track birds. You might be a journalist using social media data to research Costa Rican households. You could be a researcher who stumbled upon your university’s archive of handwritten census cards from 1939. Or a designer creating a chatbot that relies on large language models like GPT-3. Perhaps you’re an artist experimenting with visual style combinations using DALLE-2. Or maybe you’re an activist with an urgent story that needs telling, and you’re searching for the right dataset to tell it."
+          content={metaOgTagData.description}
         />
         <meta
           property="og:image"
-          content="https://knowingmachines.org/img/field_guide_black_1.png"
+          content={metaOgTagData.imageUrl}
         />
         <meta
           property="og:image:alt"
-          content="'A CRITICAL FIELD GUIDE FOR WORKING WITH MACHINE LEARNING DATASETS - Cover"
+          content={metaOgTagData.imageAlt}
         />
         <meta
           property="og:url"
-          content="https://knowingmachines.org/critical-field-guide"
+          content={metaOgTagData.url}
         />
 
         <meta name="twitter:card" content="summary" />
         <meta
           property="twitter:title"
-          content="KNOWING MACHINES / A CRITICAL FIELD GUIDE FOR WORKING WITH MACHINE LEARNING DATASETS"
+          content={metaOgTagData.title}
         />
         <meta
           property="twitter:description"
-          content="Maybe you’re an engineer creating a new machine vision system to track birds. You might be a journalist using social media data to research Costa Rican households. You could be a researcher who stumbled upon your university’s archive of handwritten census cards from 1939. Or a designer creating a chatbot that relies on large language models like GPT-3. Perhaps you’re an artist experimenting with visual style combinations using DALLE-2. Or maybe you’re an activist with an urgent story that needs telling, and you’re searching for the right dataset to tell it."
+          content={metaOgTagData.description}
         />
         <meta
           property="twitter:image"
-          content="https://knowingmachines.org/img/field_guide_black_1.png"
+          content={metaOgTagData.twitterImageUrl || metaOgTagData.imageUrl}
         />
         <meta
           property="twitter:image:alt"
-          content="'A CRITICAL FIELD GUIDE FOR WORKING WITH MACHINE LEARNING DATASETS - Cover"
+          content={metaOgTagData.imageAlt}
         />
         <meta
           property="twitter:url"
-          content="https://knowingmachines.org/critical-field-guide"
+          content={metaOgTagData.url}
         ></meta>
         <link
           rel="apple-touch-icon"

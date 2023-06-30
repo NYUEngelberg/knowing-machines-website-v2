@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { MetaOgTagData } from "@/types/meta";
 import { PublicationCollectionItem } from "@/types/publications";
 import { ReactNode } from "react";
 
@@ -8,8 +9,15 @@ type Props = {
 }
 
 export default function InvestigatingDatasetsEssayPage({essay, children}:Props) {
+  const metaOgTagData:MetaOgTagData = {
+    title: essay.title,
+    description: essay.excerpt,
+    url: "https://knowingmachines.org" + essay.excerpt,
+    imageUrl: "https://knowingmachines.org" + essay.img,
+    imageAlt: "https://knowingmachines.org" + essay.imgAlt,
+  }
   return (
-    <Layout title="">
+    <Layout metaOgTagData={metaOgTagData}>
       <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <img src={essay.img} alt={essay.imgAlt} />

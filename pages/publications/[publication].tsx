@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import PartialBulkyBorder from "@/components/PartialBulkyBorder";
 import CollectionItemsList from "@/components/collection-essay/CollectionItemsList";
+import { MetaOgTagData } from "@/types/meta";
 import {
   PublicationCollectionItem,
   PublicationMetaData,
@@ -15,8 +16,15 @@ type Props = {
 };
 
 export default function PublicationPage({ publication }: Props) {
+  const metaOgTagData:MetaOgTagData = {
+    title: publication.title,
+    description: publication.excerpt,
+    url: "https://knowingmachines.org" + publication.href,
+    imageUrl: "https://knowingmachines.org" + publication.coverImg,
+    imageAlt: "https://knowingmachines.org" + publication.coverImgAlt,
+  }
   return (
-    <Layout title={publication.title} navbarDefaultCollapsed={false}>
+    <Layout metaOgTagData={metaOgTagData} navbarDefaultCollapsed={false}>
       <div className="border-[1px] border-black p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div

@@ -22,6 +22,14 @@ import CollectionLinks from "@/components/collection-essay/CollectionLinks";
 import { getPublicationByHref } from "@/util/publications";
 
 export default function NWaysPage({ content, frontmatter, publication }) {
+  const metaOgTagData = {
+    title: frontmatter.title,
+    description: frontmatter.excerpt,
+    url: "https://knowingmachines.org" +
+      (publication.collectionItems.find(item => item.title === frontmatter.title)?.href || ""),
+    imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
+    imageAlt: "https://knowingmachines.org" + frontmatter.coverImgAlt,
+  }
   const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
@@ -149,7 +157,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
     }
   }
   return (
-    <Layout title={frontmatter.title} navbarDefaultCollapsed={false}>
+    <Layout metaOgTagData={metaOgTagData} navbarDefaultCollapsed={false}>
       <div className="border-[1px] border-black p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
