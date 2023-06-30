@@ -14,6 +14,21 @@ image-1:
 image-2:
   caption: "Image of Clement Scott"
   imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78191526"
+image-3:
+  caption: "Image of album cover"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/79239582"
+image-4:
+  caption: "Image of vintage photo"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78327143"
+image-5:
+  caption: "Image of Trump meme"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/42850351"
+image-6:
+  caption: "Image of Lafferty drawing"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78288479"
+image-7:
+  caption: "Image of Allie Mae Burroughs"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/77926428"
 grid-1:
   caption: "Copyright curiousities in the LAION training set"
   collection: 3
@@ -31,8 +46,6 @@ So who is correct? Ultimately, the courts will decide, but one way to understand
 
 [:image-1]
 
-Image of Napoleon  
-
 I'm staring at an [image](https://machinist.smokingheaps.net/api/datasets/8/files/77663187) of Napoleon, in profile. The LAION Face [metadata](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=7&size=50&details=78676939) about the image says "Napoleon in profile by Croizier, 1806, copyright McGill University." No other relevant information is given, other than the fact that the side of Napoleon's face is labeled "NSFW: UNLIKELY."  
 
 I sit for a minute, pondering what to think about these assertions from the point of view of copyright law. On the one hand, the drawing is clearly a work of art, potentially subject to copyright protection. On the other, the description suggests that it was made by [J. Croizier, an early 19th-century French artist](https://www.mutualart.com/Artist/J--Croizier/0A2B0607BC516D24). It also ends with the notion that McGill University somehow owns the copyright, presumably because both the image and its physical counterpart reside in the [McGill Napoleon Collection](https://digital.library.mcgill.ca/napoleon//search/printsdetail.php?ID=2540&doctype=Prints&sitelanguage=english&referer=detail). Several things don't add up. Copyright in most countries (including Canada) only lasts for 70 years after the author's death. Assuming Croizier drew the image and then, in fact, died in the 1800s, it would be in the public domain. Then how can it still be under copyright? And how did McGill end up with it?  
@@ -47,39 +60,27 @@ And [here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=10&siz
 
 [:image-2]
 
-Image of Clement Scott  
-
 Continuing to search, I run across a second set of mistaken copyright claims, these arising from images with outdated or mistaken metadata. Take, for example, this [photo](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=12&size=50&details=78191526) of the influential English theatre critic Clement Scott, whose metadata asserts "From a copyrighted photograph by Elliott & Fry." While it may be true that at one point [Elliott & Fry](https://en.wikipedia.org/wiki/Elliott_%26_Fry) owned the copyright for this photo, it is almost certainly no longer the case. According to [Wikipedia](https://en.wikipedia.org/wiki/Clement_Scott), Clement Scott died in 1904. Given that the photo had to be taken before his death, it is in the public domain in the United States, as are all works published before January 1, 1928\. Other similar LAION images with expired copyrights can be found [here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=14&size=50&details=78001621) and [here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=15&size=50&details=77939530).[^2]  
 
-[:image-2]
-
-Image of album cover  
+[:image-3]
 
 [Here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=7&size=50&details=79239582) is the well-known cover image from "Frampton Comes Alive!" one of the best-selling rock albums of all time. The label says copyright Ticketmaster, but in reality it belongs to photographer [Richard E. Allen](https://rockpopgallery.typepad.com/rockpop_gallery_news/2007/04/cover_story_fra.html). Again, one must assume the Ticketmaster copyright claim is either a mistake or comes from Ticketmaster claiming copyright of the overall webpage where it sold tickets to Frampton's "[Comes Alive 35](https://www.staugustine.com/story/entertainment/arts/2011/05/24/evening-peter-frampton/16194056007/)" tour.  
 
-[:image-2]
-
-Image of vintage photo  
+[:image-4]
 
 [Here](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=10&size=50&details=78327143) is a "vintage" photograph which the labeler considers "copyright-free" -- but is it? How would we know?  
 
 ## Lesson Three: Fair Use Is Also Part of the Picture  
 
-[:image-2]
-
-Image of Trump meme  
+[:image-5]
 
 Finally, even when valid copyrights exist and metadata is accurate, issues of fair use can be implicated for each individual image. Take [this version](https://machinist.smokingheaps.net/datasets/8?q=fair%2Buse&page=2&size=250&details=42850351) of a [classic Trump meme](https://imgflip.com/memegenerator/Trump-Bill-Signing) from 2018\. Vox [credits](https://www.vox.com/policy-and-politics/2018/3/23/17156900/omnibus-spending-bill-trump-statement) one version of the original photo to "Ron Sachs - Pool/Getty Images," but there are so many versions of these photos online, it is hard to know which one is the original. Beyond that, the use of the image to comment on fair use could itself qualify as fair, meaning that no license or permission is required. Other examples of plausible fair use claims are [here](https://machinist.smokingheaps.net/datasets/8?q=fair%2Buse&page=2&size=250&details=49678826) and [here](https://machinist.smokingheaps.net/datasets/8?q=fair%2Buse&page=0&size=50&details=79143291).  
 
-[:image-2]
-
-Image of Lafferty drawing  
+[:image-6]
 
 In [this](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=11&size=50&details=78288479) example, we see a complex interaction between fair use and the right to make "derivative" works of other copyrighted works. Here, artist Jeff Lafferty has drawn his rendition of "Padme Amidala" claiming his own copyright in the drawing. But the work is a derivative of a [promo still](https://www.ebay.com/itm/363071775930) from the Star Wars prequels. Did Lafferty receive permission from Disney/Lucasfilm to make and [sell](https://www.behance.net/gallery/18245701/Padme-with-Blaster?locale=en_US) the drawing? Probably not. However, given that he has incorporated his own creativity into the drawing, it is [possible](https://www.supremecourt.gov/opinions/22pdf/21-869_87ad.pdf) that courts could find this a fair use of the still, especially since it is unlikely to compete with sales of official Star Wars images. On the other hand, if it is found to be infringing as a derivative work, it [loses](https://www.law.cornell.edu/uscode/text/17/103) its copyright.Which analysis should LAION users rely on?  
 
-[:image-2]
-
-Image of Allie Mae Burroughs  
+[:image-7]
 
 Finally, consider [this image](https://machinist.smokingheaps.net/datasets/8?q=copyright&page=15&size=50&details=77926428) of Allie Mae Burroughs, one of several [famously shot](https://www.metmuseum.org/art/collection/search/284685) by Walker Evans in 1936\. Assuming Evans' copyright is still in effect, verbatim reproduction of the image would theoretically infringe. Yet in 1981 artist Sherrie Levine rephotographed the images as part of her [After Walker Evans](https://www.metmuseum.org/art/collection/search/267214) series. Subsequently, artist [Michael Mandiberg](https://www.mandiberg.com/) created [After Sherrie Levine](https://www.aftersherrielevine.com/), scanning Levine's rephotographing of Walker's originals as a comment on how we come to know information in this burgeoning digital age. Fair use? Infringing derivative? Again, LAION cannot provide clear answers.  
 
