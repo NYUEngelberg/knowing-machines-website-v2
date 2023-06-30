@@ -70,7 +70,7 @@ export default function NWaysCarousel({ title, collection, apiURL }) {
   }
   return (
     <>
-      <div className="w-full border self-center border-black relative aspect-video duration-400">
+      <div className="max-w-xl mx-auto w-full border self-center border-black relative aspect-video duration-400">
         {item && <NWaysCarouselImage item={item} key={item.id} />}
       </div>
       <NWaysPagination
