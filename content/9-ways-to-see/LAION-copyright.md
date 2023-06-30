@@ -9,11 +9,11 @@ preposition: "by"
 authors: "Jason Schultz"
 excerpt: "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?"
 image-1:
-  caption: "Blob image 1."
-  imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
-image-2:
   caption: "Image of Napoleon"
   imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78676939"
+image-2:
+  caption: "Image of Clement Scott"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78191526"
 grid-1:
   caption: "Copyright curiousities in the LAION training set"
   collection: 3
@@ -29,7 +29,7 @@ So who is correct? Ultimately, the courts will decide, but one way to understand
 
 ## Lesson One: Copyright Is Easy to Claim but Often Hard to Determine  
 
-[:image-2]
+[:image-1]
 
 Image of Napoleon  
 
