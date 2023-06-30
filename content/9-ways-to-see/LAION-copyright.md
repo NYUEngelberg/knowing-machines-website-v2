@@ -15,8 +15,8 @@ image-2:
   caption: "Blob image 2."
   imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
 grid-1:
-  caption: "images of blobs"
-  collection: 7
+  caption: "Copyright curiousities in the LAION training set"
+  collection: 3
 grid-2:
   caption: "Images of ‘human’ labeled images"
   collection: 2
@@ -25,8 +25,6 @@ grid-2:
 *Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?*  
 
 [:grid-1]
-
-Images from LAION Faces, set curated by Jason  
 
 In recent months, [numerous lawsuits](https://www.saverilawfirm.com/our-cases/ai-artgenerators-copyright-litigation), [news headlines](https://www.vice.com/en/article/3ad58k/ai-is-probably-using-your-images-and-its-not-easy-to-opt-out), and [protest letters](https://artisticinquiry.org/AI-Open-Letter) have accused [LAION](https://laion.ai/) and the companies that train on its datasets of massively infringing copyright. They claim that dataset creators and subsequent users must get permission for each image included in the dataset. In response, we've seen a number of regulatory proposals around copyright and training data, including [new amendments](https://www.reuters.com/technology/eu-lawmakers-committee-reaches-deal-artificial-intelligence-act-2023-04-27/) to the EU AI Act that propose mandatory copyright dataset disclosures. LAION claims [it respects copyright law](https://laion.ai/faq/) and the companies that use it [claim](https://www.techdirt.com/2023/04/21/stability-ai-and-deviantart-ask-court-to-dismiss-artists-silly-lawsuit-against-generative-art/) that they haven't infringed anyone's rights.  
 

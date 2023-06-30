@@ -17,7 +17,7 @@ export default function CollectionItemsList({
       {(collectionItems || []).map((item) => (
         <div
           key={item.title}
-          className="py-6 flex flex-col items-stretch gap-[40px]"
+          className="pb-6 flex flex-col items-stretch gap-[40px]"
         >
           <div
             id="set-collection-items"
