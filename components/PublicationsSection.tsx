@@ -28,7 +28,7 @@ export default function PublicationsSection({
               <div
                 className="bg-center bg-cover h-[262px] w-full"
                 style={{ backgroundImage: "url(" + publication.coverImg + ")" }}
-                title={publication.coverImgAlt}
+                role="img" aria-label={publication.coverImgAlt}
               ></div>
               <div
                 id="set-collection-items"
