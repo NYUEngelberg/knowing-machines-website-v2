@@ -194,7 +194,9 @@ export default function NWaysPage({ content, frontmatter, publication }) {
                 {["footnote", ...elementTypes].includes(section.type) ? (
                   <div
                     key={idx}
-                    className={`markdown-content max-w-3xl ${section.className}`}
+                    className={`markdown-content ${
+                      section.type === "image" ? "max-w-xl mx-auto" : "max-w-3xl"
+                    } ${section.className}`}
                     dangerouslySetInnerHTML={{
                       __html: section.content || "",
                     }}
