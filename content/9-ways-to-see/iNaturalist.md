@@ -27,6 +27,7 @@ The living world is full of featureless blobs, and iNaturalist’s computer visi
 
 ![Blob image 1.](https://inaturalist-open-data.s3.amazonaws.com/photos/274368677/original.jpeg "Blob image 1.")
 
+*Blob image 1.*
 
 Blobs, particularly featureless ones, are a challenge for computer vision systems, which really like features. Edges, corners, ridges - these are all things that models use to distinguish images of birds from images of fish; they’re what a system uses to learn what a face is, or a letter T, or a convoy of armored trucks. Without these things blobs can blend together for machines, and one can easily be mistaken for another. 
 
