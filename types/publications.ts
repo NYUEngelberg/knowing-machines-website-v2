@@ -17,7 +17,7 @@ export type PublicationCollectionItem = {
   contentType: string
   title: string
   img: string
-  imgAlt: string
+  imgAlt?: string
   preposition: string
   authors: string
   excerpt: string

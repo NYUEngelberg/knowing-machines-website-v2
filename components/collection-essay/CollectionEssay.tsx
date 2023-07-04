@@ -14,13 +14,13 @@ export default function InvestigatingDatasetsEssayPage({essay, children}:Props) 
     description: essay.excerpt,
     url: "https://knowingmachines.org" + essay.excerpt,
     imageUrl: "https://knowingmachines.org" + essay.img,
-    imageAlt: "https://knowingmachines.org" + essay.imgAlt,
+    imageAlt: "https://knowingmachines.org" + (essay?.imgAlt || ""),
   }
   return (
     <Layout metaOgTagData={metaOgTagData}>
       <div className="border-[1px] border-black p-6 flex flex-col items-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
-          <img src={essay.img} alt={essay.imgAlt} />
+          <img src={essay.img} alt={essay?.imgAlt || ""} />
           <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
           <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
           <div className="absolute bottom-0 left-0 h-[4px] w-[100px] bg-black"></div>
