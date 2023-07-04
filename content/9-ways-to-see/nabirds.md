@@ -8,6 +8,9 @@ coverImgAlt: "A dithered image of a bird from the NABirds dataset"
 preposition: "by"
 authors: "Hamsini Sridharan"
 excerpt: "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories."
+image-1:
+  caption: "Image of bird w/ labeled parts"
+  imagePath: "https://machinist.smokingheaps.net/api/datasets/5/data/15348943"
 carousel-1:
   caption: "Female Bird Images"
   collection: 6
@@ -22,13 +25,11 @@ Generic computer vision datasets, composed of images scraped in bulk from sites 
 
 This is the objective of the [NABirds dataset](https://paperswithcode.com/dataset/nabirds), a collection of more than 48,000 photographs of 400 species of birds common in North America. Created through a collaboration of computer vision researchers with the Cornell Lab of Ornithology, NABirds consists of images collected from and annotated by the “birding community,” including professional ornithologists and citizen scientists — birdwatchers with more expertise than, say, the average Mechanical Turk worker tasked with labeling images in datasets ([Van Horn et al., 2015](https://openaccess.thecvf.com/content_cvpr_2015/papers/Horn_Building_a_Bird_2015_CVPR_paper.pdf)).
 
-**Image of bird w/ labeled parts**
+[:image-1]
 
 Browsing the dataset, it is clear that NABirds is highly curated, composed of photographs of birds in naturalistic settings, carefully labeled by species, as well as, in some cases, age, sex, and morph (variations in plumage). The body of the bird is broken down for algorithmic recognition via annotations of its various visible “parts” (eye, crown, belly, left and right wings, tail, etc.). Annotations are limited by what is visible and knowable to the experts and citizen scientists tasked with preparing these images. But to me, the seeming orderliness of the dataset is belied by what is not visible in these images, and by the instability of the categories we use to process them into data.
 
 ## From birds to data
-
-**Example of a particularly ‘flat’ image**
 
 I’m struck by the flatness of these images. For computational systems to “see” birds, the birds must be transmuted into data, a process entangling numerous creatures and technologies. Each image suggests many invisible stories: of the bird itself, in its environs and community; of the photographer, an enthusiast of both birds and cameras; of the platform used to submit, collect, and store the images; of the ornithologists who selected images and supervised their annotation; of the citizen scientists labeling species and annotating bird parts using a digital interface; and of the computer scientists building tools to aggregate these images and labels into a dataset.
 
