@@ -11,6 +11,7 @@ excerpt: "How does a machine learning algorithm “recognize” a bird? Generic 
 image-1:
   caption: "Image of bird w/ labeled parts"
   imagePath: "https://machinist.smokingheaps.net/api/datasets/5/data/15348943"
+  fileIndex: 1
 carousel-1:
   caption: "Female Bird Images"
   collection: 6
