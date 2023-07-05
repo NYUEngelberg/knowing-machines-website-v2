@@ -80,6 +80,8 @@ export default function NWaysGrid({ title, collection, apiURL }) {
         className={`max-w-xl mx-auto image-grid grid grid-cols-3 self-center w-full divide-x divide-y divide-solid divide-black border-gray-900 border relative duration-300 ${
           currentImage && "pointer-events-none"
         }`}
+        aria-label={`A grid of ${title}`}
+        title={`A grid of ${title}`}
       >
         {loading ? (
           "loading"

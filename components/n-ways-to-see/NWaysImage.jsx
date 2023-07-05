@@ -61,6 +61,8 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
         <img
           className="min-w-full  block pointer-events-auto cursor-default aspect-video"
           src={imgPath}
+          title={title}
+          aria-label={title}
           alt={title}
         />
         <div
