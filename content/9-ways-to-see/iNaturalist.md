@@ -25,9 +25,9 @@ If you’ve found a featureless blob and you’d like to identify it, your first
 
 The living world is full of featureless blobs, and iNaturalist’s computer vision model has been trained to recognize thousands of them. If you’re on a beach you might find out that your blob could be a stranded moon jelly, or the swim bladder of a porcupinefish. If your blob is big and white and you’re standing in a farmer’s field, iNaturalist may tell you’re looking at a giant puffball mushroom. If you were in a forest outside of Frankfurt at the beginning of May, your blob would be ID’ed as a patch of dog vomit slime mold:
 
-![Blob image 1.](https://inaturalist-open-data.s3.amazonaws.com/photos/274368677/original.jpeg "Blob image 1.")
+![An unidentified blob sits at the point where a branch connects to the tree trunk.](https://inaturalist-open-data.s3.amazonaws.com/photos/274368677/original.jpeg "An unidentified blob sits at the point where a branch connects to the tree trunk.")
 
-*Blob image 1.*
+*An unidentified blob sits at the point where a branch connects to the tree trunk.*
 
 Blobs, particularly featureless ones, are a challenge for computer vision systems, which really like features. Edges, corners, ridges - these are all things that models use to distinguish images of birds from images of fish; they’re what a system uses to learn what a face is, or a letter T, or a convoy of armored trucks. Without these things blobs can blend together for machines, and one can easily be mistaken for another. 
 
