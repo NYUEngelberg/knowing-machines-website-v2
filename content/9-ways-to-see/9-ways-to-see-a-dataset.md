@@ -16,7 +16,7 @@ Back in 2003, Caltech 101 had under 10,000 images. By 2010, ImageNet was approac
 
 For example, if you looked at each image for ten seconds in ImageNet’s collection, it would take you four and half years – difficult but doable. But even such a cursory examination of the contents of LAION 5-B would take you 1,584 years, and a dip in the CommonPool would take 4,000 years. That’s fifty lifetimes.
 
-<iframe title="The Scale of LAION: Considering 5.85 Billion" src="https://diode.zone/videos/embed/162ddedf-90e7-4466-ab02-b9d5e4f41e8d" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
+<video controls width="560" class="mx-auto"><source src="/media/9-ways-to-see-a-dataset.mp4" type="video/mp4" /></video>
 
 There’s a widely held misapprehension that this is working well, and therefore understanding what’s in training data doesn’t matter: it’s an amorphous, vast mass of “stuff,” and only the size matters, not what it represents or how. It’s just grist to the mills of generative AI models. But training datasets are more important than ever. They determine the boundaries of what is known and unknown, they mark out the perimeter of the intelligible, they [encode worldviews](https://excavating.ai/). And therefore it's critical to understand how data is being used in generative AI systems.
 
