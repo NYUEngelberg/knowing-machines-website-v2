@@ -5,7 +5,11 @@ import NWaysSeeIcon from "./NWaysSeeIcon";
 export default function NWaysImage({ item }) {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
-  const meta = item.labels.length > 0 && item.labels[0].meta;
+  const meta =
+    item.labels.length > 0 &&
+    (item.labels[0].meta.length > 0
+      ? item.labels[0].meta
+      : Object.assign({}, { name: item.labels[0].name }));
   const text = item.texts.length > 0 && item.texts[0].text;
   return (
     <div className={`max-w-none w-100 self-center flex flex-col `}>

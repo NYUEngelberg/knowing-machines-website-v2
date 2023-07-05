@@ -41,7 +41,11 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
   if (loading) {
     return <div className="my-4">Loading</div>;
   }
-  const meta = imageData.labels.length > 0 && imageData.labels[0].meta;
+  const meta =
+    imageData.labels.length > 0 &&
+    (imageData.labels[0].meta.length > 0
+      ? imageData.labels[0].meta
+      : Object.assign({}, { name: imageData.labels[0].name }));
   const text = imageData.texts.length > 0 && imageData.texts[0].text;
   return (
     <div className={`max-w-xl mx-auto w-100 self-center flex flex-col `}>

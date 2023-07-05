@@ -10,7 +10,11 @@ export default function NWaysGridImage({
 }) {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
-  const meta = item.labels.length > 0 && item.labels[0].meta;
+  const meta =
+    item.labels.length > 0 &&
+    (item.labels[0].meta.length > 0
+      ? item.labels[0].meta
+      : Object.assign({}, { name: item.labels[0].name }));
   const text = item.texts.length > 0 && item.texts[0].text;
   const handleClick = (id) => {
     if (id !== currentImage) {
