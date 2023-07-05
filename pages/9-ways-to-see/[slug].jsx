@@ -25,11 +25,14 @@ export default function NWaysPage({ content, frontmatter, publication }) {
   const metaOgTagData = {
     title: frontmatter.title,
     description: frontmatter.excerpt,
-    url: "https://knowingmachines.org" +
-      (publication.collectionItems.find(item => item.title === frontmatter.title)?.href || ""),
+    url:
+      "https://knowingmachines.org" +
+      (publication.collectionItems.find(
+        (item) => item.title === frontmatter.title
+      )?.href || ""),
     imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
     imageAlt: "https://knowingmachines.org" + frontmatter.coverImgAlt,
-  }
+  };
   const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
@@ -152,6 +155,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
             title={item.caption}
             imagePath={item.imagePath}
             apiURL={apiURL}
+            fileIndex={item.fileIndex}
           />
         );
     }
@@ -163,7 +167,8 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           <div
             className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
             style={{ backgroundImage: "url(" + frontmatter.coverImg + ")" }}
-            role="img" aria-label={frontmatter.coverImgAlt}
+            role="img"
+            aria-label={frontmatter.coverImgAlt}
           ></div>
           <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
           <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
@@ -195,7 +200,9 @@ export default function NWaysPage({ content, frontmatter, publication }) {
                   <div
                     key={idx}
                     className={`markdown-content ${
-                      section.type === "image" ? "max-w-xl mx-auto" : "max-w-3xl"
+                      section.type === "image"
+                        ? "max-w-xl mx-auto"
+                        : "max-w-3xl"
                     } ${section.className}`}
                     dangerouslySetInnerHTML={{
                       __html: section.content || "",

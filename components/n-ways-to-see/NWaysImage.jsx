@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import NWaysImageOverlay from "./NWaysImageOverlay";
 import NWaysSeeIcon from "./NWaysSeeIcon";
 
-export default function NWaysImage({ title, imagePath, apiURL }) {
+export default function NWaysImage({ title, imagePath, apiURL, fileIndex }) {
   const [imageData, setImageData] = useState(null);
   const [imgPath, setImgPath] = useState("");
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ export default function NWaysImage({ title, imagePath, apiURL }) {
           throw "Error";
         })
         .then((data) => {
-          const id = data.data.files[0].id;
+          const id = data.data.files[fileIndex || 0].id;
           const dataId = imagePath.split("/").reverse()[0];
           const newImagePath = imagePath
             .replace("/data/", "/files/")
