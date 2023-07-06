@@ -13,10 +13,10 @@ image-1:
   imagePath: "https://machinist.smokingheaps.net/api/datasets/5/data/15348943"
   fileIndex: 1
 carousel-1:
-  caption: "Female Bird Images"
+  caption: "Female/Immature Male Bird Images"
   collection: 6
 carousel-2:
-  caption: "White-Throated Sparrow"
+  caption: "White-Throated Sparrows"
   collection: 5
 ---
 
