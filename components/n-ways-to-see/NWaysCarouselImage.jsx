@@ -23,7 +23,7 @@ export default function NWaysImage({ item }) {
           Click to see data
         </div>
         <img
-          className="min-w-full  block pointer-events-auto cursor-default aspect-video"
+          className="min-w-full  block pointer-events-auto cursor-default aspect-auto"
           src={item.imagePath}
         />
         <div

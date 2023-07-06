@@ -71,7 +71,7 @@ export default function NWaysCarousel({ title, collection, apiURL }) {
   return (
     <>
       <div
-        className="max-w-xl mx-auto w-full border self-center border-black relative aspect-video duration-400"
+        className="max-w-xl mx-auto w-full border self-center border-black relative aspect-auto duration-400"
         role="img"
         aria-label={`A slider of ${title}`}
         title={`A slider of ${title}`}
