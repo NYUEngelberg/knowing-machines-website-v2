@@ -48,7 +48,7 @@
         "img": "/img/9_ways_to_see_a_dataset.png",
         "preposition": "by",
         "authors": "Will Orr",
-        "excerpt": "The Colossal Cleaned Common Crawl dataset, or C4, is a large-scale text corpus developed by a team of engineers at Google. It was created by taking a single month’s scrape of Common Crawl and applying filtering heuristics to remove duplicate, placeholder, nonsense, and non-english language content.",
+        "excerpt": "The case of the Colossal Cleaned Common Crawl (C4) dataset underscores the importance of uncovering the sociotechnical dynamics that contribute to the formation of datasets.",
         "href": "/9-ways-to-see/C4"
       },
       {
