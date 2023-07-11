@@ -9,13 +9,13 @@ preposition: "by"
 authors: "Jer Thorp"
 excerpt: "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight."
 image-1:
-  caption: "Image of Iceland gull from iNaturalist"
+  caption: "Iceland Gull (Larus glaucoides) from iNat2021 dataset"
   imagePath: "https://machinist.smokingheaps.net/api/datasets/9/data/82073217"
 grid-1:
-  caption: "Images from NABirds"
+  caption: "Images from NABirds training data"
   collection: 6
 carousel-1:
-  caption: "Carousel of Herring Gulls images"
+  caption: "Herring Gulls (Larus argentatus) showing plumage variation"
   collection: 9
 ---
 
@@ -35,7 +35,7 @@ Picking out an Iceland gull from a flock of ring-billed gulls and herring gulls 
 
 ![Iceland Gull on the Brooklyn Bridge Pilings (Photo by Mike Yuan)](/img/9_ways/iceland-gull-on-the-brooklyn-bridge-pilings.png "Iceland Gull on the Brooklyn Bridge Pilings (Photo by Mike Yuan)")
 
-*Iceland Gull on the Brooklyn Bridge Pilings (Photo by Mike Yuan)*
+*Iceland Gull on the pilings in Brooklyn Bridge Park (Photo by Mike Yuan)*
 
 While not looking for gulls, I spent many daytime hours last winter scanning through NABirds, a data set assembled to teach machines how to identify birds. NABirds contains 48,000 photographs of the most common 400 species in North America. There are at least 100 images of each bird; some are crisp and complete, others are blurred and partial. Each one is hand-labeled with a bounding box for the bird and a precise label for every visible body part.
 
