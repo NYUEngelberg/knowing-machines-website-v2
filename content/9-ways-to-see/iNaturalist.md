@@ -12,7 +12,7 @@ image-1:
   caption: "Blob image 1."
   imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
 grid-1:
-  caption: "Images of blob-like organisms from the iNaturalist training set"
+  caption: "Images of blob-like organisms from the iNat2021 training set"
   collection: 7
 grid-2:
   caption: "Images of ‘human’ labeled images"
@@ -27,7 +27,7 @@ The living world is full of featureless blobs, and iNaturalist’s computer visi
 
 ![An unidentified blob sits at the point where a branch connects to the tree trunk.](https://inaturalist-open-data.s3.amazonaws.com/photos/274368677/original.jpeg "An unidentified blob sits at the point where a branch connects to the tree trunk.")
 
-*An unidentified blob sits at the point where a branch connects to the tree trunk.*
+*The Frankfurt Blob (image by Bernard Hiller).*
 
 Blobs, particularly featureless ones, are a challenge for computer vision systems, which really like features. Edges, corners, ridges - these are all things that models use to distinguish images of birds from images of fish; they’re what a system uses to learn what a face is, or a letter T, or a convoy of armored trucks. Without these things blobs can blend together for machines, and one can easily be mistaken for another. 
 
