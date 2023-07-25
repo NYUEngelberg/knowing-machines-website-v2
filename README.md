@@ -4,6 +4,13 @@
 
 2. Add [lastname].png as provided by the designer (because the image needs to have the dithering and the blue filter applied) to /public/img/about/team. It is neccessary that the .md file (from the step above) and the .png file have the same name
 
+## How to add a new alumni
+
+1. Create [lastname].md in /content/about/alumni, and add the bio as markdown. So far, we used the convention of naming the file [lastname].md, but if there is a lastname collision, any file name works, as long as it's unique, and as long as the img file in the step below uses the same name.
+
+2. Add [lastname].png as provided by the designer (because the image needs to have the dithering and the blue filter applied) to /public/img/about/alumni. It is neccessary that the .md file (from the step above) and the .png file have the same name
+
+
 ## Below is the initial next.js project readme
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
