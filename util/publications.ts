@@ -8,7 +8,7 @@ export function getPublicationPreviews() {
 }
 
 export function getPublicationPagePaths() {
-    const publicationPagePaths = ["9_ways_to_see_a_dataset"];
+    const publicationPagePaths = ["9_ways_to_see_a_dataset", "knowing_legal_machine"];
     return publicationPagePaths;
 }
 
