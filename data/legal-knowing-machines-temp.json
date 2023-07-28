@@ -1,0 +1,96 @@
+
+{
+    "href": "/publications/9_ways_to_see_a_dataset",
+    "contentType": "Collection",
+    "coverImg": "/img/legal/placeholder.png",
+    "coverImgAlt": "a dithered image of a grid of images selected from a dataset",
+    "title": "Knowing Legal Machine",
+    "preposition": "Written by",
+    "authors": "Kate Crawford",
+    "excerpt": "Lorem ipsum",
+    "intro": "content/knowing_legal_machine/intro.md",
+    "description": "Lorem ipsum",
+    "external": false,
+    "collectionItems": [
+      {
+        "index": 0,
+        "contentType": "Op-Ed",
+        "title": "To Preserve Its Surveillance Empire, This Powerful Tech Company Is Deploying a Free Speech Law Meant to Protect Traditional Activists From Bogus Lawsuits",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Nicola Morrow & Melodi Dincer",
+        "excerpt": "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water. To the company’s chagrin, several European countries have fined Clearview millions for violating their data protections laws by scraping billions of images of peoples’ faces from popular social media websites without their knowledge or consent in order to build its facial recognition app. So far, these moves have failed to stop Clearview from profiting from our data. But as lawsuits against Clearview continue to mount, the company has invoked a dangerous legal argument that, if successful, could provide a playbook for numerous AI companies to evade accountability.",
+        "href": "/legal/#"
+      },
+      {
+        "index": 1,
+        "contentType": "Op-Ed",
+        "title": "The First Amendment Should Protect Us from Tech Companies Like Clearview AI––Not the Other Way Around.",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Talya Whyte & Jake Karr",
+        "excerpt": "Lorem ipsum",
+        "href": "/legal/#"
+      },
+      {
+        "index": 2,
+        "contentType": "Post",
+        "title": "Transparency",
+        "img": "/img/9_ways/gull_black.png",
+        "preposition": "by",
+        "authors": "Jake Karr",
+        "excerpt": "Lorem ipsum",
+        "href": "/legal/#"
+      },
+      {
+        "index": 3,
+        "contentType": "Post",
+        "title": "Tell the White House to Limit AI-Driven Worker Surveillance",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer",
+        "excerpt": "The case of the Colossal Cleaned Common Crawl (C4) dataset underscores the importance of uncovering the sociotechnical dynamics that contribute to the formation of datasets.",
+        "href": "/9-ways-to-see/C4"
+      },
+      {
+        "index": 4,
+        "contentType": "Comment",
+        "title": "Comments of the Knowing Machines Research Project to the White House Office of Science and Technology Policy on Automated Worker Surveillance and Management",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer, Kate Crawford, Jason Schultz",
+        "excerpt": "On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems.",
+        "href": "/9-ways-to-see/nabirds"
+      },
+      {
+        "index": 5,
+        "contentType": "xx",
+        "title": "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jason Schultz and Melodi Dincer",
+        "excerpt": "This Amici Brief was filed before the Superior Court of the State of California, County of Alameda in the case of Renderos et al. v. Clearview AI, Inc. et al. in support of Plaintiffs’ opposition to Defendant Clearview’s Special Motion to Strike Pursuant to California Code of Civil Procedure § 425.16 (California’s anti-SLAPP statute).",
+        "href": "/9-ways-to-see/ImageNet"
+      },
+      {
+        "index": 6,
+        "contentType": "Paper",
+        "title": "The Right of Publicity: A New Framework for Regulating Facial Recognition",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jason Schultz",
+        "excerpt": "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their images and identities. Originating around the turn of the Twentieth Century in response to the newest image-appropriation technologies of the time, including portrait photography, mass-production packaging, and a ubiquitous printing press, the ROP has continued to evolve along with each new wave of technologies that enable companies to exploit peoples’ images and identities for commercial gain.",
+        "href": "/9-ways-to-see/LAION-copyright"
+      },
+      {
+        "index": 7,
+        "contentType": "Comment",
+        "title": "Comments of the Knowing Machines Research Project to the Federal Trade Commission ",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer and Kate Crawford",
+        "excerpt": "On August 22, 2022, the Federal Trade Commission published an advance notice of proposed rulemaking (ANPR) requesting public comment on an intended Trade Regulation Rule on Commercial Surveillance and Data Security.",
+        "href": "/9-ways-to-see/iNaturalist"
+      }
+    ]
+  }
