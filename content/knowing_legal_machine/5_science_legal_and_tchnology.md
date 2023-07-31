@@ -12,7 +12,6 @@ excerpt: "xx"
 
 [Download ↓](public/docs/legal_knowing_machines/FILED_Clearview_Scholars_Amici_Curiae_Brief.pdf)
 
-##Abstract	
 	
 This Amici Brief was filed before the Superior Court of the State of California, County of Alameda in the case of Renderos et al. v. Clearview AI, Inc. et al. in support of Plaintiffs’ opposition to Defendant Clearview’s Special Motion to Strike Pursuant to California Code of Civil Procedure § 425.16 (California’s anti-SLAPP statute).
 

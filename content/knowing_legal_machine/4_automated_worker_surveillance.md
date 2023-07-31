@@ -11,8 +11,6 @@ excerpt: "In this Comment, the Knowing Machines Research Project (Knowing Machin
 ---
 
 [Download ↓](public/docs/legal_knowing_machines/Knowing_Machines_Research_Project_OSTP Worker_Surveillance_Comment.pdf)
-
-##Abstract	
 		
 On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems.
 
