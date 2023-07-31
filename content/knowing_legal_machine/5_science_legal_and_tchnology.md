@@ -2,11 +2,11 @@
 title: "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)"
 index: 5
 draft: false
-contentType: "Brief"
+contentType: "Amicus Brief"
 coverImg: "/img/9_ways/home_9_ways.png"
 coverImgAlt: "A dithered image of a grid of images selected from a dataset"
 preposition: "by"
-authors: "Jason Schultz and Melodi Dincer"
+authors: "Jason Schultz & Melodi Dincer"
 excerpt: "xx"
 ---
 

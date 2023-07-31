@@ -6,7 +6,7 @@ contentType: "Comment"
 coverImg: "/img/9_ways/home_9_ways.png"
 coverImgAlt: "A dithered image of a grid of images selected from a dataset"
 preposition: "by"
-authors: "Melodi Dincer, Kate Crawford, Jason Schultz"
+authors: "Melodi Dincer, Kate Crawford & Jason Schultz"
 excerpt: "In this Comment, the Knowing Machines Research Project (Knowing Machines) urges OSTP to translate workers’ expectations of privacy in their data into guidance for employers on when and what types of data they can collect. As worker data fuels automated surveillance technologies by serving as training data for machine-learning models, we encourage OSTP to set a high bar for employers who exploit worker data to inform employment decision and undermine workers’ autonomy."
 ---
 

@@ -5,7 +5,7 @@
   "contentType": "Collection",
   "coverImg": "/img/legal/placeholder.png",
   "coverImgAlt": "a dithered image of a grid of images selected from a dataset",
-  "title": "Knowing Legal Machine",
+  "title": "Knowing Legal Machines",
   "preposition": "Written by",
   "authors": "Kate Crawford",
   "excerpt": "Lorem ipsum",
@@ -59,17 +59,17 @@
       "title": "Comments of the Knowing Machines Research Project to the White House Office of Science and Technology Policy on Automated Worker Surveillance and Management",
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
-      "authors": "Melodi Dincer, Kate Crawford, Jason Schultz",
+      "authors": "Melodi Dincer, Kate Crawford & Jason Schultz",
       "excerpt": "On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems.",
       "href": "/knowing-legal-machine/4_automated_worker_surveillance"
     },
     {
       "index": 5,
-      "contentType": "xx",
+      "contentType": "Amicus Brief",
       "title": "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)",
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
-      "authors": "Jason Schultz and Melodi Dincer",
+      "authors": "Jason Schultz & Melodi Dincer",
       "excerpt": "This Amici Brief was filed before the Superior Court of the State of California, County of Alameda in the case of Renderos et al. v. Clearview AI, Inc. et al. in support of Plaintiffs’ opposition to Defendant Clearview’s Special Motion to Strike Pursuant to California Code of Civil Procedure § 425.16 (California’s anti-SLAPP statute).",
       "href": "/knowing-legal-machine/5_science_legal_and_tchnology"
     },
@@ -89,7 +89,7 @@
       "title": "Comments of the Knowing Machines Research Project to the Federal Trade Commission ",
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
-      "authors": "Melodi Dincer and Kate Crawford",
+      "authors": "Melodi Dincer & Kate Crawford",
       "excerpt": "On August 22, 2022, the Federal Trade Commission published an advance notice of proposed rulemaking (ANPR) requesting public comment on an intended Trade Regulation Rule on Commercial Surveillance and Data Security.",
       "href": "/knowing-legal-machine/7_federal_trade_ommission"
     }

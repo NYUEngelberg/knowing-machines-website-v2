@@ -4,9 +4,9 @@ index: 7
 draft: false
 contentType: "Comment"
 coverImg: "/img/9_ways/home_9_ways.png"
-coverImgAlt: "xx"
+coverImgAlt: "Amicus Brief"
 preposition: "by"
-authors: "Melodi Dincer and Kate Crawford"
+authors: "Melodi Dincer & Kate Crawford"
 excerpt: "On August 22, 2022, the Federal Trade Commission published an advance notice of proposed rulemaking (ANPR) requesting public comment on an intended Trade Regulation Rule on Commercial Surveillance and Data Security."
 ---
 [Download ↓](public/docs/legal_knowing_machines/FTC-2022-0053-1142_attachment.pdf) 

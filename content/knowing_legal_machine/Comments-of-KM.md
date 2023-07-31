@@ -6,7 +6,7 @@ contentType: "essay"
 coverImg: "/img/9_ways/imagenet_black.png"
 coverImgAlt: "A dithered image of a sparce grid of images selected from the ImageNet dataset"
 preposition: "by"
-authors: "Melodi Dincer, Kate Crawford, Jason Schultz"
+authors: "Melodi Dincer, Kate Crawford & Jason Schultz"
 excerpt: "On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems."
 ---
 
