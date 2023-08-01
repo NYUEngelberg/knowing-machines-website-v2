@@ -33,12 +33,12 @@ export default function CollectionItemsList({
             <div>
               <a
                 href={item.href}
-                className="flex flex-row items-center gap-[10px] mt-[20px]"
+                className="flex flex-row items-center gap-[10px] mt-8"
               >
                 <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
                   {item.contentType}
                 </span>
-                <h3 className="flex-grow uppercase font-bold tracking-widest">
+                <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
                   {item.title}
                 </h3>
                 <img
@@ -50,12 +50,12 @@ export default function CollectionItemsList({
               {publication.preposition + ": "}
               <span className="font-bold">{publication.authors}</span>
             </div> */}
-              <div className="text-xs mt-4">
+              <div className="text-xs mt-8">
                 <span className="font-bold uppercase">{item.authors}</span>
               </div>
               {!hideExcerpt && (
                 <div
-                  className="mt-2 markdown-content text-xs"
+                  className="mt-8 markdown-content text-sm"
                   dangerouslySetInnerHTML={{
                     __html: item.excerpt || "",
                   }}

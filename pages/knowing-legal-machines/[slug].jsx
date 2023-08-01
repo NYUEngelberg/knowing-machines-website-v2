@@ -272,10 +272,10 @@ export default function NWaysPage({ content, frontmatter, publication }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("content", "knowing_legal_machine"));
+  const files = fs.readdirSync(path.join("content", "knowing_legal_machines"));
   const temppaths = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
-      path.join("content", "knowing_legal_machine", filename),
+      path.join("content", "knowing_legal_machines", filename),
       "utf-8"
     );
     const { data: frontmatter } = matter(markdownWithMeta);
@@ -293,13 +293,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("content", "knowing_legal_machine", slug + ".md"),
+    path.join("content", "knowing_legal_machines", slug + ".md"),
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
   const publication = await getPublicationByHref(
-    "/publications/knowing_legal_machine"
+    "/publications/knowing_legal_machines"
   );
   return { props: { frontmatter, slug, content, publication } };
 }
