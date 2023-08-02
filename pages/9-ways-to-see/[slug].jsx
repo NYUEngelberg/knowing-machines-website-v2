@@ -166,7 +166,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
   }
   return (
     <Layout metaOgTagData={metaOgTagData} navbarDefaultCollapsed={false}>
-      <div className="border-[1px] border-black p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
+      <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
             className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
