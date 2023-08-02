@@ -15,7 +15,8 @@ employment decision and undermine workers’ autonomy.
 "
 ---
 
-[Download ↓](public/docs/legal_knowing_machines/Knowing_Machines_Research_Project_OSTP Worker_Surveillance_Comment.pdf)
+[Download PDF ↓](public/docs/legal_knowing_machines/Knowing_Machines_Research_Project_OSTP_Worker_Surveillance_Comment.pdf)
+
 		
 On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems.
 

@@ -10,7 +10,7 @@ authors: "Melodi Dincer"
 excerpt: "The pandemic and its aftermath have intensified existing rifts over worker autonomy and control in the U.S., including the many ways in which workers are surveilled, measured, and controlled through automated surveillance products. Most workers understand that some of what they do on the job is important to measure so they can be hired to the right roles, rewarded for solid performance, and compensated fairly. But the ubiquitous datafication of every moment on the clock creates vast pools of data that employers are currently free to collect and use without limitations."
 ---
 
-[Published at  ↗](https://techpolicy.press/tell-the-white-house-to-limit-ai-driven-worker-surveillance/)
+[Full Article  ↗](https://techpolicy.press/tell-the-white-house-to-limit-ai-driven-worker-surveillance/)
 
 The pandemic and its aftermath have intensified existing rifts over worker autonomy and control in the U.S. Especially as young adults enter a workforce shaped by decades-long wage stagnation, anemic unionization, and regular waves of mass layoffs, they are proving immune to the promises of “[workism](https://www.theatlantic.com/ideas/archive/2019/02/religion-workism-making-americans-miserable/583441/)”—the belief that “work is not only necessary to economic production, but also the centerpiece of one’s identity and life’s purpose.” Attention-grabbing buzzwords like “the Great Resignation,” “quiet quitting,” and the “anti-work movement” attempt to capture a broader sense of turmoil in our relationship to work, boundaries, and living a meaningful life both in and beyond our jobs.
 
