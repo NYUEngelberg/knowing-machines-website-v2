@@ -180,7 +180,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
             <a
               className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-              href="/publications/9_ways_to_see_a_dataset"
+              href="/publications/knowing_legal_machines"
             >
               collection
             </a>
