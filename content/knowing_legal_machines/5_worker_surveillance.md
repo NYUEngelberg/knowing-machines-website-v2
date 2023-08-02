@@ -1,6 +1,6 @@
 ---
 title: "Tell the White House to Limit AI-Driven Worker Surveillance"
-index: 3
+index: 5
 draft: false
 contentType: "Op-Ed"
 coverImg: "/img/legal/3.png"
@@ -22,7 +22,7 @@ Today, technology is a critical factor in both what we do for work and how we do
 
 There are several types of automated worker surveillance. Much of it is used to assure employers that employees and contractors are actually working. This includes activity monitoring, or surveilling how workers spend their time through tools that track idle time, record keystrokes, and even take screenshots of a worker’s computer at random. But there are also several types of surveillance that go beyond monitoring productivity to uncover workers’ personal behaviors and characteristics. So-called “bossware” programs that monitor and collect data from workers’ emails, telephones, and online activities can be used to gauge productivity, but that data can also reveal personal behaviors and characteristics with no connection to work. 
 
-There are also tools to track workers’ locations, measure use of different applications on phones and laptops, and even tools that use facial recognition to ensure workers remain in front of their computer screens during business hours. Behavioral surveillance tools not only measure productivity and compliance with company policies, but some also attempt to predict when workers might be likely to quit. And tools like [emotion recognition](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4292217) analysis are used to gauge a job candidate’s “fit” with the prospective employer, based on pseudoscientific conclusions that we all express the same handful of emotions across age, culture, and language through facial expressions alone. 
+There are also tools to track workers’ locations, measure use of different applications on phones and laptops, and even tools that use facial recognition to ensure workers remain in front of their computer screens during business hours. Behavioral surveillance tools not only measure productivity and compliance with company policies, but some also attempt to predict when workers might be likely to quit. And tools like [emotion recognition analysis](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4292217) are used to gauge a job candidate’s “fit” with the prospective employer, based on pseudoscientific conclusions that we all express the same handful of emotions across age, culture, and language through facial expressions alone. 
 
 These technologies inform the field of “[people analytics](https://www.hbs.edu/ris/Publication%20Files/1-s2.0-S0191308523000011-main_0230d385-13af-4a01-9b68-c6b07be05ce2.pdf)” built on the vast digital data generated mostly passively as workers perform their daily activities. Its central premise is that as much data must be collected as possible, so that these data can provide accurate insights into persistent managerial questions, including who to hire or promote, who is likely to leave, who has been working collaboratively despite working remotely, and whether workers feel fulfilled. The algorithms that interpret these data are increasingly used to inform employment decisions, whether workers are aware or not.
 

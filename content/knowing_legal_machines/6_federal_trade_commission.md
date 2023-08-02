@@ -1,6 +1,6 @@
 ---
 title: "Comments of the Knowing Machines Research Project to the Federal Trade Commission"
-index: 7
+index: 6
 draft: false
 contentType: "Comment"
 coverImg: "/img/legal/7.png"
@@ -9,8 +9,7 @@ preposition: "by"
 authors: "Melodi Dincer & Kate Crawford"
 excerpt: "With this Comment, the Knowing Machines Project asks the Commission to investigate and, where appropriate, prohibit the deceptive and unfair practices that emotion recognition companies conduct."
 ---
-[Download ↓](public/docs/legal_knowing_machines/FTC-2022-0053-1142_attachment.pdf) 
-
+[Download ↓](/docs/legal_knowing_machines/FTC-2022-0053-1142_attachment.pdf) 
 
 On August 22, 2022, the Federal Trade Commission published an advance notice of proposed rulemaking (ANPR) requesting public comment on an intended Trade Regulation Rule on Commercial Surveillance and Data Security.
 

@@ -1,6 +1,6 @@
 ---
 title: "Freedom of Information Laws and Access to Government Data in the Age of AI: Two Recent Cases"
-index: 2
+index: 3
 draft: false
 contentType: "Post"
 coverImg: "/img/legal/2.png"

@@ -1,6 +1,6 @@
 ---
 title: "The Right of Publicity: A New Framework for Regulating Facial Recognition"
-index: 6
+index: 2
 draft: false
 contentType: "Paper"
 coverImg: "/img/legal/6.png"
@@ -10,7 +10,9 @@ authors: "Jason Schultz"
 excerpt: "In this article, I develop a novel theory for how Right of Publicity claims could apply to Facial Recognition systems and detail how their history and development, both statutory and common law, demonstrate their power to impose liability on entities that conduct mass image and identity appropriation, especially through innovative visual technologies."
 ---
 
-[Download PDF ↓](public/docs/legal_knowing_machines/The_Right_of_Publicity_A_New_Framework_for_Regulating_Facial_Rec.pdf) 
+[Download PDF ↓](/docs/legal_knowing_machines/The_Right_of_Publicity_A_New_Framework_for_Regulating_Facial_Rec.pdf) 
+
+
 
 For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their images and identities. Originating around the turn of the Twentieth Century in response to the newest image-appropriation technologies of the time, including portrait photography, mass-production packaging, and a ubiquitous printing press, the ROP has continued to evolve along with each new wave of technologies that enable companies to exploit peoples’ images and identities for commercial gain. Over time, the ROP has protected individuals from misappropriation in photographs, films, advertisements, action figures, baseball cards, animatronic robots, video game avatars, and even digital resurrection in film sequels. Critically, as new technologies gained capacity for mass appropriation, the ROP expanded to protect against these practices.
 

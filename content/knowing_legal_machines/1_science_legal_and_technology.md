@@ -1,6 +1,6 @@
 ---
 title: "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)"
-index: 5
+index: 1
 draft: false
 contentType: "Amicus Brief"
 coverImg: "/img/legal/5.png"
@@ -10,7 +10,7 @@ authors: "Jason Schultz & Melodi Dincer"
 excerpt: "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their identities. Originating around the turn of the twentieth century in response to the newest image-appropriation technologies of the time, the ROP has continued to evolve to cover each new wave of technologies enabling companies to exploit peoples’ identities as part of their business models."
 ---
 
-[Download PDF ↓](public/docs/legal_knowing_machines/FILED_Clearview_Scholars_Amici_Curiae_Brief.pdf)
+[Download PDF ↓](/docs/legal_knowing_machines/FILED_Clearview_Scholars_Amici_Curiae_Brief.pdf)
 
 	
 This Amici Brief was filed before the Superior Court of the State of California, County of Alameda in the case of Renderos et al. v. Clearview AI, Inc. et al. in support of Plaintiffs’ opposition to Defendant Clearview’s Special Motion to Strike Pursuant to California Code of Civil Procedure § 425.16 (California’s anti-SLAPP statute).
