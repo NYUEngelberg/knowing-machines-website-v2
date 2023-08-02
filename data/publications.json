@@ -1,5 +1,80 @@
 [
   {
+    "href": "/publications/knowing_legal_machines",
+    "contentType": "Collection",
+    "coverImg": "/img/legal/home.png",
+    "coverImgAlt": "A dithered abstract image of a mesh.",
+    "title": "Knowing Legal Machines",
+    "preposition": "",
+    "authors": "",
+    "excerpt": "Many of the social questions raised by artificial intelligence are mediated through the legal system. Policymakers explore new rules to govern the technology, courts work to apply existing legal framework to new situations, and advocates propose entirely new approaches to deal with novel problems (or old problems with new prominence).",
+    "intro": "content/knowing_legal_machines/intro.md",
+    "description": "Many of the social questions raised by artificial intelligence are mediated through the legal system. Policymakers explore new rules to govern the technology, courts work to apply existing legal framework to new situations, and advocates propose entirely new approaches to deal with novel problems (or old problems with new prominence).",
+    "external": false,
+    "collectionItems": [
+      {
+        "index": 1,
+        "contentType": "Amicus Brief",
+        "title": "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jason Schultz & Melodi Dincer",
+        "excerpt": "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their identities. Originating around the turn of the twentieth century in response to the newest image-appropriation technologies of the time, the ROP has continued to evolve to cover each new wave of technologies enabling companies to exploit peoples’ identities as part of their business models.",
+        "href": "/knowing-legal-machines/1_science_legal_and_technology"
+      },
+      {
+        "index": 2,
+        "contentType": "Paper",
+        "title": "The Right of Publicity: A New Framework for Regulating Facial Recognition",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Jason Schultz",
+        "excerpt": "In this article, I develop a novel theory for how Right of Publicity claims could apply to Facial Recognition systems and detail how their history and development, both statutory and common law, demonstrate their power to impose liability on entities that conduct mass image and identity appropriation, especially through innovative visual technologies.",
+        "href": "/knowing-legal-machines/2_right_of_publicity"
+      },
+      {
+        "index": 3,
+        "contentType": "Post",
+        "title": "Freedom of Information Laws and Access to Government Data in the Age of AI: Two Recent Cases",
+        "img": "/img/legal/2.png",
+        "preposition": "by",
+        "authors": "Jake Karr",
+        "excerpt": "In recent years, there has been a surge of concern about the massive amounts of data that governments collect about us. Calls for transparency and accountability have never been louder, especially when it comes to the ways that this data is fed into government AI systems to help “train” them to make decisions that directly but often secretly impact our lives.",
+        "href": "/knowing-legal-machines/3_freedom_of_information"
+      },
+      {
+        "index": 4,
+        "contentType": "Comment",
+        "title": "Comments of the Knowing Machines Research Project to the White House Office of Science and Technology Policy on Automated Worker Surveillance and Management",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer, Kate Crawford & Jason Schultz",
+        "excerpt": "Knowing Machines urges OSTP to translate workers’ expectations of privacy in their data into guidance for employers on when and what types of data they can collect. As worker data fuels automated surveillance technologies by serving as training data for machine-learning models, we encourage OSTP to set a high bar for employers who exploit worker data to inform employment decision and undermine workers’ autonomy.",
+        "href": "/knowing-legal-machines/4_automated_worker_surveillance"
+      },
+      {
+        "index": 5,
+        "contentType": "Post",
+        "title": "Tell the White House to Limit AI-Driven Worker Surveillance",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer",
+        "excerpt": "The pandemic and its aftermath have intensified existing rifts over worker autonomy and control in the U.S., including the many ways in which workers are surveilled, measured, and controlled through automated surveillance products. Most workers understand that some of what they do on the job is important to measure so they can be hired to the right roles, rewarded for solid performance, and compensated fairly. But the ubiquitous datafication of every moment on the clock creates vast pools of data that employers are currently free to collect and use without limitations.",
+        "href": "/knowing-legal-machines/5_worker_surveillance"
+      },
+      {
+        "index": 6,
+        "contentType": "Comment",
+        "title": "Comments of the Knowing Machines Research Project to the Federal Trade Commission ",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer & Kate Crawford",
+        "excerpt": "With this Comment, the Knowing Machines Project asks the Commission to investigate and, where appropriate, prohibit the deceptive and unfair practices that emotion recognition companies conduct.",
+        "href": "/knowing-legal-machines/6_federal_trade_commission"
+      }
+    ]
+  },
+  {
     "href": "/publications/9_ways_to_see_a_dataset",
     "contentType": "Collection",
     "coverImg": "/img/9_ways/home_9_ways.png",

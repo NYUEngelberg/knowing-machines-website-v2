@@ -180,7 +180,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
             <a
               className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-              href="/publications/9_ways_to_see_a_dataset"
+              href="/publications/knowing_legal_machines"
             >
               collection
             </a>
@@ -272,10 +272,10 @@ export default function NWaysPage({ content, frontmatter, publication }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("content", "9-ways-to-see"));
+  const files = fs.readdirSync(path.join("content", "knowing_legal_machines"));
   const temppaths = files.map((filename) => {
     const markdownWithMeta = fs.readFileSync(
-      path.join("content", "9-ways-to-see", filename),
+      path.join("content", "knowing_legal_machines", filename),
       "utf-8"
     );
     const { data: frontmatter } = matter(markdownWithMeta);
@@ -293,13 +293,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("content", "9-ways-to-see", slug + ".md"),
+    path.join("content", "knowing_legal_machines", slug + ".md"),
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
   const publication = await getPublicationByHref(
-    "/publications/9_ways_to_see_a_dataset"
+    "/publications/knowing_legal_machines"
   );
   return { props: { frontmatter, slug, content, publication } };
 }

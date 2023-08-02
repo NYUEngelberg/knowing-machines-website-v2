@@ -3,8 +3,8 @@ title: "To Preserve Its Surveillance Empire, This Powerful Tech Company Is Deplo
 index: 0
 draft: false
 contentType: "Op-Ed"
-coverImg: "/img/9_ways/home_9_ways.png"
-coverImgAlt: "A dithered image of a grid of images selected from a dataset"
+coverImg: "/img/legal/0.png"
+coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Nicola Morrow & Melodi Dincer"
 excerpt: "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water. To the company’s chagrin, several European countries have fined Clearview millions for violating their data protections laws by scraping billions of images of peoples’ faces from popular social media websites without their knowledge or consent in order to build its facial recognition app. So far, these moves have failed to stop Clearview from profiting from our data. But as lawsuits against Clearview continue to mount, the company has invoked a dangerous legal argument that, if successful, could provide a playbook for numerous AI companies to evade accountability."
