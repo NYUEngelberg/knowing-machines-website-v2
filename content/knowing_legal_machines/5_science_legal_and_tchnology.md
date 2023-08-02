@@ -3,11 +3,11 @@ title: "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al
 index: 5
 draft: false
 contentType: "Amicus Brief"
-coverImg: "/img/9_ways/home_9_ways.png"
-coverImgAlt: "A dithered image of a grid of images selected from a dataset"
+coverImg: "/img/legal/5.png"
+coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Jason Schultz & Melodi Dincer"
-excerpt: "xx"
+excerpt: "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their identities. Originating around the turn of the twentieth century in response to the newest image-appropriation technologies of the time, the ROP has continued to evolve to cover each new wave of technologies enabling companies to exploit peoples’ identities as part of their business models."
 ---
 
 [Download ↓](public/docs/legal_knowing_machines/FILED_Clearview_Scholars_Amici_Curiae_Brief.pdf)

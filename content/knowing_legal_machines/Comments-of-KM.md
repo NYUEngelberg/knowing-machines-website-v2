@@ -3,8 +3,8 @@ title: "Comments of the Knowing Machines Research Project to the White House Off
 draft: false
 index: 3
 contentType: "essay"
-coverImg: "/img/9_ways/imagenet_black.png"
-coverImgAlt: "A dithered image of a sparce grid of images selected from the ImageNet dataset"
+coverImg: "/img/legal/8.png"
+coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Melodi Dincer, Kate Crawford & Jason Schultz"
 excerpt: "On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems."

@@ -3,44 +3,25 @@
 {
   "href": "/publications/knowing_legal_machines",
   "contentType": "Collection",
-  "coverImg": "/img/legal/placeholder.png",
-  "coverImgAlt": "a dithered image of a grid of images selected from a dataset",
+  "coverImg": "/img/legal/home.png",
+  "coverImgAlt": "A dithered abstract image of a mesh.",
   "title": "Knowing Legal Machines",
-  "preposition": "Written by",
-  "authors": "Kate Crawford",
-  "excerpt": "Lorem ipsum",
+  "preposition": "",
+  "authors": "",
+  "excerpt": "Many of the social questions raised by artificial intelligence are mediated through the legal system. Policymakers explore new rules to govern the technology, courts work to apply existing legal framework to new situations, and advocates propose entirely new approaches to deal with novel problems (or old problems with new prominence).",
   "intro": "content/knowing_legal_machines/intro.md",
-  "description": "Lorem ipsum",
+  "description": "Many of the social questions raised by artificial intelligence are mediated through the legal system. Policymakers explore new rules to govern the technology, courts work to apply existing legal framework to new situations, and advocates propose entirely new approaches to deal with novel problems (or old problems with new prominence).",
   "external": false,
   "collectionItems": [
-    {
-      "index": 0,
-      "contentType": "Op-Ed",
-      "title": "To Preserve Its Surveillance Empire, This Powerful Tech Company Is Deploying a Free Speech Law Meant to Protect Traditional Activists From Bogus Lawsuits",
-      "img": "/img/9_ways_to_see_a_dataset.png",
-      "preposition": "by",
-      "authors": "Nicola Morrow & Melodi Dincer",
-      "excerpt": "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water. To the company’s chagrin, several European countries have fined Clearview millions for violating their data protections laws by scraping billions of images of peoples’ faces from popular social media websites without their knowledge or consent in order to build its facial recognition app. So far, these moves have failed to stop Clearview from profiting from our data. But as lawsuits against Clearview continue to mount, the company has invoked a dangerous legal argument that, if successful, could provide a playbook for numerous AI companies to evade accountability.",
-      "href": "/knowing-legal-machines/0_surveillance_empire"
-    },
-    {
-      "index": 1,
-      "contentType": "Op-Ed",
-      "title": "The First Amendment Should Protect Us from Tech Companies Like Clearview AI––Not the Other Way Around.",
-      "img": "/img/9_ways_to_see_a_dataset.png",
-      "preposition": "by",
-      "authors": "Talya Whyte & Jake Karr",
-      "excerpt": "Lorem ipsum",
-      "href": "/knowing-legal-machines/1_first_amendment"
-    },
+    
     {
       "index": 2,
       "contentType": "Post",
-      "title": "Transparency",
-      "img": "/img/9_ways/gull_black.png",
+      "title": "Freedom of Information Laws and Access to Government Data in the Age of AI: Two Recent Cases",
+      "img": "/img/legal/2.png",
       "preposition": "by",
       "authors": "Jake Karr",
-      "excerpt": "Lorem ipsum",
+      "excerpt": "In recent years, there has been a surge of concern about the massive amounts of data that governments collect about us. Calls for transparency and accountability have never been louder, especially when it comes to the ways that this data is fed into government AI systems to help “train” them to make decisions that directly but often secretly impact our lives.",
       "href": "/knowing-legal-machines/2_transparency"
     },
     {
@@ -50,7 +31,7 @@
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
       "authors": "Melodi Dincer",
-      "excerpt": "The case of the Colossal Cleaned Common Crawl (C4) dataset underscores the importance of uncovering the sociotechnical dynamics that contribute to the formation of datasets.",
+      "excerpt": "The pandemic and its aftermath have intensified existing rifts over worker autonomy and control in the U.S., including the many ways in which workers are surveilled, measured, and controlled through automated surveillance products. Most workers understand that some of what they do on the job is important to measure so they can be hired to the right roles, rewarded for solid performance, and compensated fairly. But the ubiquitous datafication of every moment on the clock creates vast pools of data that employers are currently free to collect and use without limitations.",
       "href": "/knowing-legal-machines/3_worker_surveillance"
     },
     {
@@ -60,7 +41,7 @@
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
       "authors": "Melodi Dincer, Kate Crawford & Jason Schultz",
-      "excerpt": "On May 3, 2023, the White House Office of Science and Technology Policy (OSTP) requested public input on automated worker surveillance and management systems.",
+      "excerpt": "Knowing Machines urges OSTP to translate workers’ expectations of privacy in their data into guidance for employers on when and what types of data they can collect. As worker data fuels automated surveillance technologies by serving as training data for machine-learning models, we encourage OSTP to set a high bar for employers who exploit worker data to inform employment decision and undermine workers’ autonomy.",
       "href": "/knowing-legal-machines/4_automated_worker_surveillance"
     },
     {
@@ -70,7 +51,7 @@
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
       "authors": "Jason Schultz & Melodi Dincer",
-      "excerpt": "This Amici Brief was filed before the Superior Court of the State of California, County of Alameda in the case of Renderos et al. v. Clearview AI, Inc. et al. in support of Plaintiffs’ opposition to Defendant Clearview’s Special Motion to Strike Pursuant to California Code of Civil Procedure § 425.16 (California’s anti-SLAPP statute).",
+      "excerpt": "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their identities. Originating around the turn of the twentieth century in response to the newest image-appropriation technologies of the time, the ROP has continued to evolve to cover each new wave of technologies enabling companies to exploit peoples’ identities as part of their business models.",
       "href": "/knowing-legal-machines/5_science_legal_and_tchnology"
     },
     {
@@ -80,7 +61,7 @@
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
       "authors": "Jason Schultz",
-      "excerpt": "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their images and identities. Originating around the turn of the Twentieth Century in response to the newest image-appropriation technologies of the time, including portrait photography, mass-production packaging, and a ubiquitous printing press, the ROP has continued to evolve along with each new wave of technologies that enable companies to exploit peoples’ images and identities for commercial gain.",
+      "excerpt": "In this article, I develop a novel theory for how Right of Publicity claims could apply to Facial Recognition systems and detail how their history and development, both statutory and common law, demonstrate their power to impose liability on entities that conduct mass image and identity appropriation, especially through innovative visual technologies.",
       "href": "/knowing-legal-machines/6_right_of_publicity"
     },
     {
@@ -90,7 +71,7 @@
       "img": "/img/9_ways_to_see_a_dataset.png",
       "preposition": "by",
       "authors": "Melodi Dincer & Kate Crawford",
-      "excerpt": "On August 22, 2022, the Federal Trade Commission published an advance notice of proposed rulemaking (ANPR) requesting public comment on an intended Trade Regulation Rule on Commercial Surveillance and Data Security.",
+      "excerpt": "With this Comment, the Knowing Machines Project asks the Commission to investigate and, where appropriate, prohibit the deceptive and unfair practices that emotion recognition companies conduct.",
       "href": "/knowing-legal-machines/7_federal_trade_ommission"
     }
   ]
