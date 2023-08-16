@@ -14,6 +14,26 @@
     "collectionItems": [
       {
         "index": 1,
+        "contentType": "Post",
+        "title": "The First Amendment Should Protect Us from Facial Recognition Technologies – Not the Other Way Around",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Talya Whyte & Jake Karr",
+        "excerpt": "Should the First Amendment allow facial recognition companies to scrape photos of you off the internet and train AI surveillance systems that law enforcement then uses against peaceful protestors?",
+        "href": "/knowing-legal-machines/first_amendment"
+      },
+      {
+        "index": 1,
+        "contentType": "Post",
+        "title": "Clearview AI Is Deploying a California Law Meant to Protect Activists From Bogus Lawsuits",
+        "img": "/img/9_ways_to_see_a_dataset.png",
+        "preposition": "by",
+        "authors": "Nicola Morrow & Melodi Dincer",
+        "excerpt": "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water",
+        "href": "/knowing-legal-machines/clearview_ai"
+      },
+      {
+        "index": 1,
         "contentType": "Amicus Brief",
         "title": "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)",
         "img": "/img/9_ways_to_see_a_dataset.png",
