@@ -3,11 +3,11 @@ title: "Clearview AI Is Deploying a California Law Meant to Protect Activists Fr
 index: 1
 draft: false
 contentType: "Op-Ed"
-coverImg: "/img/legal/1.png"
+coverImg: "/img/legal/7.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Talya Whyte & Jake Karr"
-excerpt: "xx"
+excerpt: "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water"
 ---
 
 [Full Article  ↗](https://techpolicy.press/clearview-ai-is-deploying-a-california-law-meant-to-protect-activists-from-bogus-lawsuits/)

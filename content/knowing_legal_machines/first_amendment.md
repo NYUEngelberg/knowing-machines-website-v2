@@ -3,11 +3,11 @@ title: "The First Amendment Should Protect Us from Facial Recognition Technologi
 index: 1
 draft: false
 contentType: "Op-Ed"
-coverImg: "/img/legal/1.png"
+coverImg: "/img/legal/0.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Talya Whyte & Jake Karr"
-excerpt: "xx"
+excerpt: "Should the First Amendment allow facial recognition companies to scrape photos of you off the internet and train AI surveillance systems that law enforcement then uses against peaceful protestors?"
 ---
 
 [Full Article  ↗](https://techpolicy.press/the-first-amendment-should-protect-us-from-facial-recognition-technologies-not-the-other-way-around/)
