@@ -31,7 +31,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
         (item) => item.title === frontmatter.title
       )?.href || ""),
     imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
-    imageAlt: "https://knowingmachines.org" + frontmatter.coverImgAlt,
+    imageAlt: frontmatter.coverImgAlt,
   };
   const apiURL = "https://machinist.smokingheaps.net/api";
   const [htmlOutput, setHtmlOutput] = useState("");
