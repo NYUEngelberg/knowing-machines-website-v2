@@ -14,6 +14,16 @@
     "collectionItems": [
       {
         "index": 1,
+        "contentType": "Explainer",
+        "title": "Generative AI Legal Explainer",
+        "img": "/img/legal/0.png",
+        "preposition": "by",
+        "authors": "Melodi Dincer, Jake Karr, Jason Schultz, Michael Weinberg",
+        "excerpt": "Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks. Others have answers that are quite well settled, notwithstanding the new AI context that bringsis bringing attention to them.",
+        "href": "/knowing-legal-machines/legal-explainer"
+      },
+      {
+        "index": 2,
         "contentType": "Post",
         "title": "The First Amendment Should Protect Us from Facial Recognition Technologies – Not the Other Way Around",
         "img": "/img/legal/0.png",
@@ -23,7 +33,7 @@
         "href": "/knowing-legal-machines/first_amendment"
       },
       {
-        "index": 1,
+        "index": 3,
         "contentType": "Post",
         "title": "Clearview AI Is Deploying a California Law Meant to Protect Activists From Bogus Lawsuits",
         "img": "/img/legal/7.png",
@@ -33,7 +43,7 @@
         "href": "/knowing-legal-machines/clearview_ai"
       },
       {
-        "index": 1,
+        "index": 4,
         "contentType": "Amicus Brief",
         "title": "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -43,7 +53,7 @@
         "href": "/knowing-legal-machines/1_science_legal_and_technology"
       },
       {
-        "index": 2,
+        "index": 5,
         "contentType": "Paper",
         "title": "The Right of Publicity: A New Framework for Regulating Facial Recognition",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -53,7 +63,7 @@
         "href": "/knowing-legal-machines/2_right_of_publicity"
       },
       {
-        "index": 3,
+        "index": 6,
         "contentType": "Post",
         "title": "Freedom of Information Laws and Access to Government Data in the Age of AI: Two Recent Cases",
         "img": "/img/legal/2.png",
@@ -63,7 +73,7 @@
         "href": "/knowing-legal-machines/3_freedom_of_information"
       },
       {
-        "index": 4,
+        "index": 7,
         "contentType": "Comment",
         "title": "Comments of the Knowing Machines Research Project to the White House Office of Science and Technology Policy on Automated Worker Surveillance and Management",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -73,7 +83,7 @@
         "href": "/knowing-legal-machines/4_automated_worker_surveillance"
       },
       {
-        "index": 5,
+        "index": 8,
         "contentType": "Post",
         "title": "Tell the White House to Limit AI-Driven Worker Surveillance",
         "img": "/img/9_ways_to_see_a_dataset.png",
@@ -83,7 +93,7 @@
         "href": "/knowing-legal-machines/5_worker_surveillance"
       },
       {
-        "index": 6,
+        "index": 9,
         "contentType": "Comment",
         "title": "Comments of the Knowing Machines Research Project to the Federal Trade Commission ",
         "img": "/img/9_ways_to_see_a_dataset.png",
