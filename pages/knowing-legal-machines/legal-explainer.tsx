@@ -24,11 +24,10 @@ type Props = {
     frontmatter: {
         [key: string]: any;
     },
-    slug: string,
     publication: PublicationMetaData
 }
 
-export default function LegalExplainerPage ({content, frontmatter, slug, publication}: Props) {
+export default function LegalExplainerPage ({content, frontmatter, publication}: Props) {
     const metaOgTagData = {
         title: frontmatter.title,
         description: frontmatter.excerpt,
@@ -244,10 +243,8 @@ export default function LegalExplainerPage ({content, frontmatter, slug, publica
 }
 
 export async function getStaticProps({ }) {
-
-    const slug = "legal_explainer";
     const markdownWithMeta = fs.readFileSync(
-      path.join("content", "knowing_legal_machines", slug + ".md"),
+      path.join("content", "knowing_legal_machines", "legal_explainer", "intro.md"),
       "utf-8"
     );
     const { data: frontmatter, content } = matter(markdownWithMeta);
@@ -255,5 +252,5 @@ export async function getStaticProps({ }) {
     const publication = await getPublicationByHref(
       "/publications/knowing_legal_machines"
     );
-    return { props: { frontmatter, slug, content, publication } };
+    return { props: { frontmatter, content, publication } };
   }

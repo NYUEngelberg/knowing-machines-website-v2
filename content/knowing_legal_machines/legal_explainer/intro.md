@@ -7,7 +7,10 @@ coverImg: "/img/legal/0.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Melodi Dincer, Jake Karr, Jason Schultz, Michael Weinberg"
-excerpt: "Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks. Others have answers that are quite well settled, notwithstanding the new AI context that bringsis bringing attention to them."
+excerpt: |
+    Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks.
+    
+    Others have answers that are quite well settled, notwithstanding the new AI context that bringsis bringing attention to them.
 ---
 
 Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks. Others have answers that are quite well settled, notwithstanding the new AI context that bringsis bringing attention to them.
