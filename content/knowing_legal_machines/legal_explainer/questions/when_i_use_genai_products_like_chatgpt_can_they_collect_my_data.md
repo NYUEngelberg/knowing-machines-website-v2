@@ -8,7 +8,7 @@ shortAnswer: |
     Probably yes.
 confidenceLevel: |
     4 (non-BIPA claims); 2 (BIPA claims)
-relatedCases: [P.M. v. OpenAI; A.T. v. OpenAI; Flora v. Prisma Labs. ]
+relatedCases: []
 ---
 When you use GenAI products, [you generate](https://www.theatlantic.com/technology/archive/2023/09/personal-data-digital-privacy-value-choices-rights/675183/?ref=galaxy-brain) data that companies can use to further enhance their products. This is a longstanding practice with most tech products – tech companies often design their products to maximize the amount and variety of [your data](https://policyreview.info/concepts/datafication) that they can collect because the business insights these data can produce are incredibly valuable.  The [data broker industry](https://epic.org/issues/consumer-privacy/data-brokers/) that trades in user data is valued at roughly [$260 billion](https://www.maximizemarketresearch.com/market-report/global-data-broker-market/55670/#:~:text=Data%20Broker%20Market%20size%20was,reaching%20nearly%20USD%20365.70%20Bn.). 
 

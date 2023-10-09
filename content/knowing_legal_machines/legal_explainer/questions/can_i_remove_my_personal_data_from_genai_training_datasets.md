@@ -9,8 +9,7 @@ shortAnswer: |
 
 confidenceLevel: |
     4
-relatedCases: [J.L. v. Alphabet. Young v. NeoCortext, Inc.
-]
+relatedCases: []
 ---
 Many tech companies creating GenAI products today do not disclose their sources of training data. But new tools are popping up that allow us to investigate whether our personal data has made its way into these training datasets. Examples include the “[Have I Been Trained](https://arstechnica.com/information-technology/2022/09/have-ai-image-generators-assimilated-your-art-new-tool-lets-you-check/)” tool, as well as the earlier Exposing.ai project. Through these tools, we have learned that many GenAI products are trained on massive datasets containing personal information scraped from popular websites, including social media platforms, video and photography sites, and online encyclopedias. According to one study extracting personal data from training datasets for early large language models like ChatGPT-2, GenAI products often produce outputs that contain peoples’ names and some form of contact information (like a phone number or social media handle). 
 

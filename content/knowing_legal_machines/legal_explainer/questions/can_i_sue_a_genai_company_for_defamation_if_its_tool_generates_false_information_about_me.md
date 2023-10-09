@@ -8,8 +8,7 @@ shortAnswer: |
     Probably yes.
 confidenceLevel: |
     4
-relatedCases: [Walters v. OpenAI, No. 23-cv-03122 (N.D. Ga.); Battle v. Microsoft, No. 23-cv-01822 (D. Md.)
-]
+relatedCases: []
 ---
 Defamation law allows you to sue someone who says or writes something about you that’s false and harmful to your reputation. You can use a lawsuit to stop them from repeating the falsehood or force them to compensate you for the harm they caused. 
 
