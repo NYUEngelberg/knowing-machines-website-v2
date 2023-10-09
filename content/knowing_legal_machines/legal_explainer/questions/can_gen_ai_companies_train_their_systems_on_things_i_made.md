@@ -1,9 +1,11 @@
 ---
 index: 1
 title: "Can GenAI companies train their systems on images, text, code, or other things I’ve made without getting my permission?"
+slug: "can_gen_ai_companies_train_their_systems_on_things_i_made"
 draft: false
 contentType: "Q&A"
-shortAnswer: "Probably yes."
+shortAnswer: |
+    Probably yes.
 confidenceLevel: "4"
 relatedCases: []
 ---
