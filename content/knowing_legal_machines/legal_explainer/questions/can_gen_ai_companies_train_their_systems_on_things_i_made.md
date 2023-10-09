@@ -1,12 +1,13 @@
 ---
 index: 1
 title: "Can GenAI companies train their systems on images, text, code, or other things I’ve made without getting my permission?"
-slug: "can_gen_ai_companies_train_their_systems_on_things_i_made"
+slug: "can-gen-ai-companies-train-their-systems-on-things-i-made"
 draft: false
 contentType: "Q&A"
 shortAnswer: |
     Probably yes.
-confidenceLevel: "4"
+confidenceLevel: |
+    4
 relatedCases: []
 ---
 The non-consensual use of copyright works to train GenAI systems has been one of the most visible controversies surrounding GenAI lawsuits. If you’ve made something, the argument that you can prevent it from being used to train AI feels simple: (1) you own your copyrights; (2) copyright law grants you exclusive control over any attempt to make a copy of your work; and (3) when GenAI systems train on your works, the works are copied into its memory. Seems like a pretty slam dunk case, right?
