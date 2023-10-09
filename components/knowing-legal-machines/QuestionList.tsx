@@ -11,7 +11,7 @@ type Props = {
 export default function QuestionList({ questions, skipSlugs = [] }: Props) {
   return (
     <div className="my-12">
-      <div className="relative border-black border-t-[1px] relative max-w-3xl mb-12">
+      <div className="relative max-w-3xl">
         <div className="absolute top-[-25px] left-0">
           <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
             {"QUESTIONS"}
