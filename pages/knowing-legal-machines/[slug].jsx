@@ -273,18 +273,20 @@ export default function NWaysPage({ content, frontmatter, publication }) {
 
 export async function getStaticPaths() {
   const files = fs.readdirSync(path.join("content", "knowing_legal_machines"));
-  const temppaths = files.map((filename) => {
-    const markdownWithMeta = fs.readFileSync(
-      path.join("content", "knowing_legal_machines", filename),
-      "utf-8"
-    );
-    const { data: frontmatter } = matter(markdownWithMeta);
-    if (frontmatter.draft === false) {
-      return { params: { slug: filename.replace(".md", "") } };
-    } else {
-      return null;
-    }
-  });
+  const temppaths = files
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename) => {
+      const markdownWithMeta = fs.readFileSync(
+        path.join("content", "knowing_legal_machines", filename),
+        "utf-8"
+      );
+      const { data: frontmatter } = matter(markdownWithMeta);
+      if (frontmatter.draft === false) {
+        return { params: { slug: filename.replace(".md", "") } };
+      } else {
+        return null;
+      }
+    });
   const paths = temppaths.filter((path) => {
     return path && path;
   });

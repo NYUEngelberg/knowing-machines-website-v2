@@ -3,7 +3,6 @@ import { getStaticPathsFromMdFilesDirectory, markdownToHtml } from "../../../../
 import Layout from "@/components/Layout";
 import { GetStaticProps } from "next";
 import { LegalCase } from "@/types/legal";
-import { getQuestionFromSlug, getQuestionPageMetaOgTagData } from "@/util/legalExplainer/questions";
 import { getLegalCaseFromSlug, getLegalCasePageMetaOgTagData } from "@/util/legalExplainer/cases";
 
 type Props = {
