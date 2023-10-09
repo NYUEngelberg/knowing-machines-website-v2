@@ -10,3 +10,15 @@ export type LegalExplainerQuestion = {
     relatedCases: string[]
     lastModified: string
 }
+
+export type LegalCase = {
+    index: number
+    title: string
+    slug: string
+    isDraft: boolean
+    citations: string[]
+    citationComplaintDates: string[]
+    content: string
+    relatedQuestions: string[]
+    lastModified: string
+}
