@@ -8,8 +8,7 @@ draft: false
 contentType: "legalCase"
 relatedQuestions: []
 ---
-Software developers who own source code repositories made available on GitHub filed a proposed class action complaint against GitHub, Inc., Microsoft Corporation, and OpenAI. The plaintiffs alleged that the defendants trained Codex and Copilot on the code deriving from the plaintiffs’ published codes on GitHub, in violation of the Digital Millennium Copyright Act (DMCA), 17 U.S.C. §§ 1201–1205 and several other claims, most of which were dismissed in a mixed ruling in May 2023 by U.S. District Judge Jon Tigar in the Northern District of California.
+Plaintiffs Michael Chabon, David Henry Hwang, and Matthew Klam are authors with many registered copyrighted works. In their proposed class action complaint to both OpenAI and Meta, they alleged copyright infringement on the basis that OpenAI and Meta used copyrighted materials to train the GPT model and the LLaMa model rendering the models themselves and ChatGPT and LLaMa unauthorized derivative works of the training material. The complaint also outlined DMCA violation for removal of copyright management information, violation of the California unfair competition law, negligence, and unjust enrichment.
 
-Claims that were dismissed were for violation of Sections 1202(a) and 1202(b)(2) of the DMCA, tortious interference in a contractual relationship, fraud, false designation of origin, unjust enrichment, unfair competition, breach of the GitHub Privacy Policy and Terms of Service, violation of the California Consumer Privacy Act and negligence.
+In August 2023, plaintiffs in Tremblay v. OpenAI, who made indistinguishable claims against OpenAI as those made in Chabon v. OpenAI, moved to relate the two cases.
 
-What survived the dismissal were plaintiffs’ claims that GitHub and OpenAI violated Sections 1202(b)(1) and 1202(b)(3) of the DMCA and breached the open source licenses under which the plaintiffs’ codes were made available through GitHub. 
