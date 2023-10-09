@@ -20,7 +20,9 @@ import { markdownToHtml } from "@/util/markdownHelpers";
 import Layout from "@/components/Layout";
 import QuestionList from "@/components/knowing-legal-machines/QuestionList";
 import { getLegalExplainerQuestions } from "@/util/legalExplainer/questions";
-import { LegalExplainerQuestion } from "@/types/legal";
+import { LegalCase, LegalExplainerQuestion } from "@/types/legal";
+import { getLegalCases } from "@/util/legalExplainer/cases";
+import LegalCasesList from "@/components/knowing-legal-machines/LegalCasesList";
 
 type Props = {
     content: string,
@@ -28,10 +30,11 @@ type Props = {
         [key: string]: any;
     },
     publication: PublicationMetaData,
-    questions: LegalExplainerQuestion[]
+    questions: LegalExplainerQuestion[],
+    legalCases: LegalCase[]
 }
 
-export default function LegalExplainerPage ({content, frontmatter, publication, questions}: Props) {
+export default function LegalExplainerPage ({content, frontmatter, publication, questions, legalCases}: Props) {
     const metaOgTagData = {
         title: frontmatter.title,
         description: frontmatter.excerpt,
@@ -242,7 +245,9 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
             <div>
               <QuestionList questions={questions}/>
             </div>
-            <div>cases</div>
+            <div>
+              <LegalCasesList legalCases={legalCases} />
+            </div>
           </div>
         </Layout>
       );
@@ -260,6 +265,7 @@ export async function getStaticProps({ }) {
     );
 
     const questions = getLegalExplainerQuestions();
+    const legalCases = getLegalCases();
 
-    return { props: { frontmatter, content, publication, questions } };
+    return { props: { frontmatter, content, publication, questions, legalCases } };
   }
