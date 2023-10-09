@@ -36,9 +36,6 @@ export default function QuestionItemsList({
                 href={"/knowing-legal-machines/legal-explainer/questions/" + item.slug}
                 className="flex flex-row items-center gap-[10px] mt-8"
               >
-                <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
-                  {item.contentType}
-                </span>
                 <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
                   {item.title}
                 </h3>
