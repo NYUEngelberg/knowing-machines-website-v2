@@ -13,7 +13,9 @@ export async function getHtmlFromMdFile(mdFilePath: string) {
 
 export function getFilesFromDir(dirPath: string) {
   const absoluteDirPath = path.join(process.cwd(), dirPath);
-  const fileNames = fs.readdirSync(absoluteDirPath).filter(f => !/^\./.test(f));
+  const fileNames = fs
+    .readdirSync(absoluteDirPath)
+    .filter((f) => !/^\./.test(f));
   return fileNames;
 }
 
@@ -47,4 +49,26 @@ export async function markdownToHtml(markdownContent: string) {
   const processedContent = await remark().use(html).process(markdownContent);
   const htmlContent = processedContent.toString();
   return additionalFormatting(htmlContent);
+}
+
+export async function getStaticPathsFromMdFilesDirectory(
+  directoryBasePath: string
+) {
+  const files = fs.readdirSync(path.join(directoryBasePath));
+  const temppaths = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join(directoryBasePath, filename),
+      "utf-8"
+    );
+    const { data: frontmatter } = matter(markdownWithMeta);
+    if (frontmatter.draft === false) {
+      return { params: { slug: frontmatter.slug } };
+    } else {
+      return null;
+    }
+  });
+  const paths = temppaths.filter((path) => {
+    return path && path;
+  });
+  return paths;
 }

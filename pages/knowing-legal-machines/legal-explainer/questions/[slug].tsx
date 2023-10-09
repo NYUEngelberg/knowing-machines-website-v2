@@ -13,7 +13,7 @@ import { filter } from "unist-util-filter";
 import { u } from "unist-builder";
 import { toHast } from "mdast-util-to-hast";
 import { toHtml } from "hast-util-to-html";
-import { markdownToHtml } from "../../../../util/markdownHelpers";
+import { getStaticPathsFromMdFilesDirectory, markdownToHtml } from "../../../../util/markdownHelpers";
 import Layout from "@/components/Layout";
 import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
@@ -38,23 +38,8 @@ export default function LegalExplainerQuestionPage({question}: Props) {
 }
 
 export async function getStaticPaths() {
-    const files = fs.readdirSync(
-        path.join("content", "knowing_legal_machines", "legal_explainer", "questions"));
-    const temppaths = files.map((filename) => {
-      const markdownWithMeta = fs.readFileSync(
-        path.join("content", "knowing_legal_machines", "legal_explainer", "questions", filename),
-        "utf-8"
-      );
-      const { data: frontmatter } = matter(markdownWithMeta);
-      if (frontmatter.draft === false) {
-        return { params: { slug: frontmatter.slug } };
-      } else {
-        return null;
-      }
-    });
-    const paths = temppaths.filter((path) => {
-      return path && path;
-    });
+    const basePath = "content/knowing_legal_machines/legal_explainer/questions";
+    const paths = await getStaticPathsFromMdFilesDirectory(basePath);
     return { paths, fallback: false };
   }
   
