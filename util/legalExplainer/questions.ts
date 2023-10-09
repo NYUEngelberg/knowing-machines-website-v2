@@ -7,6 +7,12 @@ import { MetaOgTagData } from "@/types/meta";
 export function getQuestionFromSlug(
   slug: string
 ): LegalExplainerQuestion | null {
+  const questions = getLegalExplainerQuestions();
+  const question = questions.find((q) => q.slug === slug) || null;
+  return question;
+}
+
+export function getLegalExplainerQuestions() {
   const files = fs.readdirSync(
     path.join(
       "content",
@@ -41,19 +47,20 @@ export function getQuestionFromSlug(
       lastModified: lastModified,
     };
   });
-  const question = questions.find((q) => q.slug === slug) || null;
-  return question;
+  return questions;
 }
 
-export function getQuestionPageMetaOgTagData (question: LegalExplainerQuestion):MetaOgTagData {
-    const metaOgTagData = {
-        title: question.title,
-        description: "Short answer: " + question.shortAnswer,
-        url:
-          "https://knowingmachines.org/knowing-legal-machines/legal-explainer/questions/" +
-          question.slug,
-        imageUrl: "https://knowingmachines.org/img/legal/0.png",
-        imageAlt: "A dithered abstract image of a mesh.",
-      };
-    return metaOgTagData;
+export function getQuestionPageMetaOgTagData(
+  question: LegalExplainerQuestion
+): MetaOgTagData {
+  const metaOgTagData = {
+    title: question.title,
+    description: "Short answer: " + question.shortAnswer,
+    url:
+      "https://knowingmachines.org/knowing-legal-machines/legal-explainer/questions/" +
+      question.slug,
+    imageUrl: "https://knowingmachines.org/img/legal/0.png",
+    imageAlt: "A dithered abstract image of a mesh.",
+  };
+  return metaOgTagData;
 }

@@ -29,7 +29,6 @@ type Props = {
 }
 
 export default function LegalExplainerQuestionPage({question}: Props) {
-
     return <Layout metaOgTagData={getQuestionPageMetaOgTagData(question)} >
         <pre>
         {JSON.stringify(question, null, 2)}

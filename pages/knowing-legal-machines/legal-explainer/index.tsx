@@ -18,16 +18,20 @@ import { toHast } from "mdast-util-to-hast";
 import { toHtml } from "hast-util-to-html";
 import { markdownToHtml } from "@/util/markdownHelpers";
 import Layout from "@/components/Layout";
+import QuestionList from "@/components/knowing-legal-machines/QuestionList";
+import { getLegalExplainerQuestions } from "@/util/legalExplainer/questions";
+import { LegalExplainerQuestion } from "@/types/legal";
 
 type Props = {
     content: string,
     frontmatter: {
         [key: string]: any;
     },
-    publication: PublicationMetaData
+    publication: PublicationMetaData,
+    questions: LegalExplainerQuestion[]
 }
 
-export default function LegalExplainerPage ({content, frontmatter, publication}: Props) {
+export default function LegalExplainerPage ({content, frontmatter, publication, questions}: Props) {
     const metaOgTagData = {
         title: frontmatter.title,
         description: frontmatter.excerpt,
@@ -235,7 +239,9 @@ export default function LegalExplainerPage ({content, frontmatter, publication}:
                 margin-top: 4em;
               }
             `}</style>
-            <div>questions</div>
+            <div>
+              <QuestionList questions={questions}/>
+            </div>
             <div>cases</div>
           </div>
         </Layout>
@@ -252,5 +258,8 @@ export async function getStaticProps({ }) {
     const publication = await getPublicationByHref(
       "/publications/knowing_legal_machines"
     );
-    return { props: { frontmatter, content, publication } };
+
+    const questions = getLegalExplainerQuestions();
+
+    return { props: { frontmatter, content, publication, questions } };
   }
