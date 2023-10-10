@@ -32,7 +32,7 @@ export default function QuestionPageContent({ question, relatedCases }: Props) {
       <ShortAnswerSection question={question} />
       <ConfidenceLevelSection question={question} />
       <RelatedCasesSection legalCases={relatedCases} />
-      <LongAnswerSection question={question} />
+      <LongAnswerSection markdownContent={question.longAnswer} />
       <LegalCasesList legalCases={relatedCases} />
       <FootnotesSection markdownContent={question.longAnswer} />
     </div>
