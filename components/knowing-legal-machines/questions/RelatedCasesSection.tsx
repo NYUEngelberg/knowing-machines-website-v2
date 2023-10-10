@@ -1,5 +1,7 @@
 import PartialBulkyBorder from "@/components/PartialBulkyBorder"
 import { LegalCase, LegalExplainerQuestion } from "@/types/legal"
+import LegalCasesListItem from "../LegalCasesListItem"
+import RelatedCasesListItem from "../cases/RelatedCasesListItem"
 
 type Props = {
     legalCases: LegalCase[]
@@ -24,9 +26,18 @@ export default function RelatedCasesSection ({legalCases}: Props) {
           <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
             RELATED CASES
           </span>
-          <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
-            {legalCases.map(r => r.citations.join("; ")).join(" | ")}
-          </h3>
+          <span className="flex-grow uppercase font-bold leading-tight tracking-widest">
+            {/* {legalCases.map(r => (
+              <div key={r.slug}>
+                {r.citations}
+              </div>
+            ))} */}
+            {(legalCases || [])
+          .sort((a, b) => a.index - b.index)
+          .map((item) => (
+            <RelatedCasesListItem item={item} key={item.slug} />
+          ))}
+          </span>
       </div>
     </div>
   </div>

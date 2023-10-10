@@ -20,7 +20,7 @@ export default function LegalCasesList({ legalCases, skipSlugs = [] }: Props) {
         {(legalCases || [])
           .sort((a, b) => a.index - b.index)
           .map((item) => (
-            <LegalCasesListItem item={item} />
+            <LegalCasesListItem item={item} key={item.slug} />
           ))}
       </div>
     </div>
