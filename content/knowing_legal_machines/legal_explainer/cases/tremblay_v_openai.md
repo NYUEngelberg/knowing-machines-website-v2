@@ -2,8 +2,8 @@
 index: 5
 title: "Tremblay v. OpenAI, 3:23-cv-03223 (N.D. Cal.)"
 slug: "tremblay-v-openai"
-citations: []
-citationComplaintDates: [4/3/2023]
+citations: ["Tremblay v. OpenAI, 3:23-cv-03223 (N.D. Cal.)"]
+citationComplaintDates: ["4/3/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

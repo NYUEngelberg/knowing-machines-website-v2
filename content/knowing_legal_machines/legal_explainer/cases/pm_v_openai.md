@@ -2,8 +2,8 @@
 index: 11
 title: "P.M. v. OpenAI N.D. Cal."
 slug: "pm-v-openai"
-citations: []
-citationComplaintDates: []
+citations: ["P.M. v. OpenAI N.D. Cal."]
+citationComplaintDates: [""]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["when-i-use-genai-products-like-chatgpt-can-they-collect-my-data"]

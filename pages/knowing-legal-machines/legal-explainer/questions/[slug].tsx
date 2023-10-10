@@ -1,31 +1,64 @@
 import React, { useState, useEffect } from "react";
-import { getStaticPathsFromMdFilesDirectory, markdownToHtml } from "../../../../util/markdownHelpers";
+import {
+  getStaticPathsFromMdFilesDirectory,
+  markdownToHtml,
+} from "../../../../util/markdownHelpers";
 import Layout from "@/components/Layout";
 import { GetStaticProps } from "next";
-import { LegalExplainerQuestion } from "@/types/legal";
-import { getQuestionFromSlug, getQuestionPageMetaOgTagData } from "@/util/legalExplainer/questions";
+import { LegalCase, LegalExplainerQuestion } from "@/types/legal";
+import {
+  getLegalExplainerQuestions,
+  getQuestionFromSlug,
+  getQuestionPageMetaOgTagData,
+} from "@/util/legalExplainer/questions";
+import { getLegalCases } from "@/util/legalExplainer/cases";
+import QuestionList from "@/components/knowing-legal-machines/QuestionList";
+import LegalCasesList from "@/components/knowing-legal-machines/LegalCasesList";
 
 type Props = {
-    question: LegalExplainerQuestion
-}
+  question: LegalExplainerQuestion;
+  otherQuestions: LegalExplainerQuestion[];
+  relatedLegalCases: LegalCase[];
+};
 
-export default function LegalExplainerQuestionPage({question}: Props) {
-    return <Layout metaOgTagData={getQuestionPageMetaOgTagData(question)} >
-        <pre>
-        {JSON.stringify(question, null, 2)}
-    </pre>
+export default function LegalExplainerQuestionPage({
+  question,
+  otherQuestions,
+  relatedLegalCases
+}: Props) {
+  return (
+    <Layout metaOgTagData={getQuestionPageMetaOgTagData(question)}>
+        <div className="mx-auto max-w-3xl">
+            <pre>{JSON.stringify(question, null, 2)}</pre>
+            <QuestionList questions={otherQuestions} />
+            <LegalCasesList legalCases={relatedLegalCases} />
+        </div>
     </Layout>
+  );
 }
 
 export async function getStaticPaths() {
-    const basePath = "content/knowing_legal_machines/legal_explainer/questions";
-    const paths = await getStaticPathsFromMdFilesDirectory(basePath);
-    return { paths, fallback: false };
-  }
-  
-  export const getStaticProps: GetStaticProps = async (context) => {
-    const slug = context.params?.slug + "";
-    const question = getQuestionFromSlug(slug);
-    return { props: { question } };
-  }
-  
+  const basePath = "content/knowing_legal_machines/legal_explainer/questions";
+  const paths = await getStaticPathsFromMdFilesDirectory(basePath);
+  return { paths, fallback: false };
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const slug = context.params?.slug + "";
+  const question = getQuestionFromSlug(slug);
+  const otherQuestions = getLegalExplainerQuestions().filter(
+    (q) => q.slug !== slug
+  );
+  const relatedLegalCases = getLegalCases().filter(
+    (r) => {
+        // console.log(
+        //     r.slug,
+        //     question?.relatedCases[0],
+        //     question?.relatedCases.indexOf(r.slug),
+        //     question?.relatedCases.indexOf(r.slug) !== -1);
+        return question?.relatedCases.indexOf(r.slug) !== -1
+    }
+  );
+  //console.log(relatedLegalCases);
+  return { props: { question, otherQuestions, relatedLegalCases } };
+};

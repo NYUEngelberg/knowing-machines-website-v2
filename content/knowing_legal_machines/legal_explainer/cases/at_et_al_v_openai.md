@@ -2,8 +2,8 @@
 index: 12
 title: "A.T. et al. v. OpenAI LP et al. (N.D. Cal.)"
 slug: "at-et-al-v-openai"
-citations: []
-citationComplaintDates: []
+citations: ["A.T. et al. v. OpenAI LP et al. (N.D. Cal.)"]
+citationComplaintDates: [""]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["when-i-use-genai-products-like-chatgpt-can-they-collect-my-data"]

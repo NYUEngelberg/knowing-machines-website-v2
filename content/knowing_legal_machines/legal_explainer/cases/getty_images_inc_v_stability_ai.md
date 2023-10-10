@@ -2,8 +2,8 @@
 index: 3
 title: "Getty Images Inc. v. Stability AI, 1:23-cv-00135 (D. Del.)"
 slug: "getty-images-inc-v-stability-ai"
-citations: []
-citationComplaintDates: [2/3/2023]
+citations: ["Getty Images Inc. v. Stability AI, 1:23-cv-00135 (D. Del.)"]
+citationComplaintDates: ["2/3/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

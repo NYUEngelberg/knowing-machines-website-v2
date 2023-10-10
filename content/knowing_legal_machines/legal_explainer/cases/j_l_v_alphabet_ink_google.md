@@ -2,8 +2,8 @@
 index: 8
 title: "J.L. v. Alphabet Inc., Google (N.D. Cal.)"
 slug: "j-l-v-alphabet-ink-google"
-citations: ["Chabon v. OpenAI, Inc. 3:23-cv-04625-PHK (N.D. Cal.)", "Chabon v. Meta Platforms, Inc. 3:23-cv-04663 (N.D. Cal.)"]
-citationComplaintDates: [7/11/2023]
+citations: ["J.L. v. Alphabet Inc., Google (N.D. Cal.)"]
+citationComplaintDates: ["7/11/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

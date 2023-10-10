@@ -2,8 +2,8 @@
 index: 1
 title: "Doe 1 v. GitHub, 4:22-cv-06823 (N.D. Cal.)"
 slug: "doe-1-v-github"
-citations: []
-citationComplaintDates: [11/3/2022]
+citations: ["Doe 1 v. GitHub, 4:22-cv-06823 (N.D. Cal.)"]
+citationComplaintDates: ["11/3/2022"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

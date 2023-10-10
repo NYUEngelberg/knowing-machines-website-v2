@@ -8,8 +8,13 @@ shortAnswer: |
     Probably Not.
 confidenceLevel: |
     4
-relatedCases: []
+relatedCases: ['key1', 'key2', 'key3']
 ---
+
+
+    - at-et-al-v-openai,
+    - pm-v-openai,
+    - flora-v-prisma-labs
 Right now, we’re in a moment of flux about who, if anyone, owns GenAI outputs. Traditionally, copyright law assigns ownership in a work to the author/artist. If the author/artist is an employee, the employer typically owns it, and when they are an independent contractor, who owns it typically gets spelled out in the contract.
 
 With GenAI, however, the US Copyright Office has decided that most GenAI outputs are “authored” by the machines that create them, not the humans who prompt them. It has also decided that only human authors should own copyrights. This is primarily because of how copyright law is described in the US constitution and the Copyright Act, along with court cases specifying that the purpose of copyright law is to provide incentives for authors to create works. Since GenAI systems are machines that don’t create works based on financial or property-like incentives, there is no reason to grant them copyrights.

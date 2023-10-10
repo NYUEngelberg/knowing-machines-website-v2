@@ -17,10 +17,12 @@ export default function LegalCasesList({ legalCases, skipSlugs = [] }: Props) {
         </div>
       </div>
       <div className="max-w-3xl">
-      {(legalCases || []).map((item) => (
-        <LegalCasesListItem item={item} />
-      ))}
-    </div>
+        {(legalCases || [])
+          .sort((a, b) => a.index - b.index)
+          .map((item) => (
+            <LegalCasesListItem item={item} />
+          ))}
+      </div>
     </div>
   );
 }

@@ -2,8 +2,8 @@
 index: 7
 title: "Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"
 slug: "kadrey-v-meta"
-citations: ["Chabon v. OpenAI, Inc. 3:23-cv-04625-PHK (N.D. Cal.)", "Chabon v. Meta Platforms, Inc. 3:23-cv-04663 (N.D. Cal.)"]
-citationComplaintDates: [7/7/2023]
+citations: ["Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"]
+citationComplaintDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

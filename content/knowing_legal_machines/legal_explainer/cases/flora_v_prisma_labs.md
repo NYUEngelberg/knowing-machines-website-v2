@@ -1,9 +1,9 @@
 ---
 index: 13
 title: "Flora v. Prisma Labs (N.D. Cal.)"
-slug: "flora-v-prisma-labs.md"
-citations: []
-citationComplaintDates: []
+slug: "flora-v-prisma-labs"
+citations: ["Flora v. Prisma Labs (N.D. Cal.)"]
+citationComplaintDates: [""]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["when-i-use-genai-products-like-chatgpt-can-they-collect-my-data"]

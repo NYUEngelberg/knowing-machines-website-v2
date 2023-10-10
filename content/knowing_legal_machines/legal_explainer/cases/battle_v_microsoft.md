@@ -2,8 +2,8 @@
 index: 12
 title: "Battle v. Microsoft D. Md."
 slug: "battle-v-microsoft"
-citations: []
-citationComplaintDates: []
+citations: ["Battle v. Microsoft D. Md."]
+citationComplaintDates: [""]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-sue-a-genai-company-for-defamation-if-its-tool-generates-false-information-about-me"]

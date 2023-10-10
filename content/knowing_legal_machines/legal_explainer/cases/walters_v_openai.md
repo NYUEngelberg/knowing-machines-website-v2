@@ -2,8 +2,8 @@
 index: 10
 title: "Walters v. OpenAI (Ga. Super. Ct.)"
 slug: "walters-v-openai"
-citations: []
-citationComplaintDates: []
+citations: ["Walters v. OpenAI (Ga. Super. Ct.)"]
+citationComplaintDates: [""]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-sue-a-genai-company-for-defamation-if-its-tool-generates-false-information-about-me"]

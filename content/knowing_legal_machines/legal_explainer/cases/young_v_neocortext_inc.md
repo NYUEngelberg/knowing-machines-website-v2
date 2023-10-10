@@ -2,8 +2,8 @@
 index: 4
 title: "Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"
 slug: "young-v-neocortext-inc"
-citations: []
-citationComplaintDates: [4/3/2023]
+citations: ["Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]
+citationComplaintDates: ["4/3/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-remove-my-personal-data-from-genai-training-datasets"]

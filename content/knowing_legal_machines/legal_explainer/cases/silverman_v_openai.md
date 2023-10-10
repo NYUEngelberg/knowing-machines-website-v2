@@ -2,8 +2,8 @@
 index: 6
 title: "Silverman v. OpenAI, 3:23-cv-03416 (N.D. Cal.)"
 slug: "silverman-v-openai"
-citations: []
-citationComplaintDates: [7/7/2023]
+citations: ["Silverman v. OpenAI, 3:23-cv-03416 (N.D. Cal.)"]
+citationComplaintDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

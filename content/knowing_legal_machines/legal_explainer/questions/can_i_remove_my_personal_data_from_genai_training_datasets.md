@@ -5,8 +5,7 @@ slug: "can-i-remove-my-personal-data-from-genai-training-datasets"
 draft: false
 contentType: "Q&A"
 shortAnswer: |
-
-
+    Practically-speaking, probably not.
 confidenceLevel: |
     4
 relatedCases: []

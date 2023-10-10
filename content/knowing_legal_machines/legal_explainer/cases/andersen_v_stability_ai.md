@@ -2,8 +2,8 @@
 index: 1
 title: "Andersen v. Stability AI, 3:23-cv-00201 (N.D. Cal.)"
 slug: "andersen-v-stability-ai"
-citations: []
-citationComplaintDates: [1/13/2023]
+citations: ["Andersen v. Stability AI, 3:23-cv-00201 (N.D. Cal.)"]
+citationComplaintDates: ["1/13/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]
