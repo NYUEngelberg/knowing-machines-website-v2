@@ -29,7 +29,7 @@ export default function LegalExplainerQuestionPage({
 }: Props) {
   return (
     <Layout metaOgTagData={getQuestionPageMetaOgTagData(question)}>
-      <div className="max-h-[calc(100vh_-_300px)]  pt-[300px] w-[100vw] overflow-y-scroll">
+      <div className="py-12 mx-auto max-w-3xl">
         <QuestionPageContent
           question={question}
           relatedCases={relatedLegalCases}
