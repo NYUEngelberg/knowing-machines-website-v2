@@ -4,8 +4,8 @@ title: "When I use GenAI products like ChatGPT, can they collect my data? "
 slug: "when-i-use-genai-products-like-chatgpt-can-they-collect-my-data"
 draft: false
 contentType: "Q&A"
-shortAnswer: |
-    Probably yes.
+shortAnswer: "Probably yes."
+shortAnswerExpanded: ""
 confidenceLevel: |
     4 (non-BIPA claims); 2 (BIPA claims)
 relatedCases: []

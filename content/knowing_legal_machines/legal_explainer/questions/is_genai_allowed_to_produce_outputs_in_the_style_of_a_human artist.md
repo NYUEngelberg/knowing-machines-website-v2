@@ -4,8 +4,8 @@ title: "Is GenAI allowed to produce outputs “in the style of” a human artist
 slug: "is-genai-allowed-to-produce-outputs-in the-style-of-a-human artist"
 draft: false
 contentType: "Q&A"
-shortAnswer: |
-    Probably yes.
+shortAnswer: "Probably yes."
+shortAnswerExpanded: ""
 confidenceLevel: |
     4
 relatedCases: ["andersen-v-stability-ai"]
