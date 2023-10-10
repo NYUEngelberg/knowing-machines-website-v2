@@ -40,8 +40,10 @@ export function getLegalCases() {
       title: frontmatter.title,
       slug: frontmatter.slug,
       isDraft: frontmatter.draft,
-      citations: frontmatter.citations,
-      citationComplaintDates: frontmatter.citationComplaintDates,
+      citations: frontmatter.citations.map((c:string, i:number) => ({
+        citation: c,
+        complaintDate: frontmatter.citationComplaintDates[i] || ""
+      })),
       contentType: frontmatter.contentType,
       content: content,
       relatedQuestions: frontmatter.relatedQuestions,

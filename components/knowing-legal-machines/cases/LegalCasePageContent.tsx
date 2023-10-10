@@ -2,6 +2,7 @@ import { LegalCase, LegalExplainerQuestion } from "@/types/legal";
 import { markdownToHtml, markdownToHtmlSections } from "@/util/markdownHelpers";
 import { useEffect } from "react";
 import QuestionList from "../QuestionList";
+import React from "react";
 
 type Props = {
   legalCase: LegalCase;
@@ -12,6 +13,7 @@ export default function LegalCasePageContent({
   legalCase,
   relatedQuestions,
 }: Props) {
+  console.log(legalCase);
   const sections = markdownToHtmlSections(legalCase.content);
   return (
     <div className="my-12">
@@ -39,11 +41,19 @@ export default function LegalCasePageContent({
               LAST UPDATED {legalCase.lastModified}
             </span>
           </div>
-          <div>
-            <span className="uppercase font-bold">
-              COMPLAINT DATE {legalCase.citationComplaintDates + ""}
-            </span>
-          </div>
+          {legalCase.citations.map((c) => (
+            <React.Fragment key={c.citation}>
+              <div>
+                <span className="font-bold">
+                  {c.citation}
+                </span>
+                <br />
+                <span className="uppercase font-bold">
+                  COMPLAINT DATE {c.complaintDate}
+                </span>
+              </div>
+            </React.Fragment>
+          ))}
           <div className="max-w-3xl markdown-content">
             {sections.length > 0 &&
               sections.map((section, idx) => (

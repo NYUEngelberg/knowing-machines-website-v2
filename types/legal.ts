@@ -11,13 +11,17 @@ export type LegalExplainerQuestion = {
     lastModified: string
 }
 
+export type LegalCaseCitation = {
+    citation: string
+    complaintDate: string
+}
+
 export type LegalCase = {
     index: number
     title: string
     slug: string
     isDraft: boolean
-    citations: string[]
-    citationComplaintDates: string[]
+    citations: LegalCaseCitation[]
     content: string
     relatedQuestions: string[]
     lastModified: string
