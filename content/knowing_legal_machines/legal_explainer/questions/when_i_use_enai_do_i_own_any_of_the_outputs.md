@@ -5,7 +5,6 @@ slug: "when-i-use-enai-do-i-own-any-of-the-outputs"
 draft: false
 contentType: "Q&A"
 shortAnswer: "Probably Not."
-shortAnswerExpanded: ""
 confidenceLevel: |
     4
 relatedCases: ['key1', 'key2', 'key3']

@@ -5,7 +5,6 @@ slug: "can-gen-ai-companies-train-their-systems-on-things-i-made"
 draft: false
 contentType: "Q&A"
 shortAnswer: "Probably yes."
-shortAnswerExpanded: ""
 confidenceLevel: |
     4
 relatedCases: ["doe-1-v-github", "andersen-v-stability-ai", "getty-images-inc-v-stability-ai", "tremblay-v-openai", "silverman-v-openai", "kadrey-v-meta", "j-l-v-alphabet-ink-google", "chabon-v-openai" ]

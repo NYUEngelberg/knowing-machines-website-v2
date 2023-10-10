@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { LegalExplainerQuestion } from "@/types/legal";
 import { MetaOgTagData } from "@/types/meta";
+import { formatToMmDdYyyy } from "../formatting";
 
 export function getQuestionFromSlug(
   slug: string
@@ -31,7 +32,7 @@ export function getLegalExplainerQuestions() {
     );
     const markdownWithMeta = fs.readFileSync(fullPath, "utf-8");
     const stats = fs.statSync(fullPath);
-    const lastModified = stats.mtime.toISOString().slice(0, 10);
+    const lastModified = formatToMmDdYyyy(stats.mtime);
     //   console.log(stats.mtime, filename);
     const { data: frontmatter, content } = matter(markdownWithMeta);
     return {
@@ -41,7 +42,6 @@ export function getLegalExplainerQuestions() {
       isDraft: frontmatter.draft,
       contentType: frontmatter.contentType,
       shortAnswer: frontmatter.shortAnswer,
-      shortAnswerExpanded: frontmatter.shortAnswerExpanded,
       longAnswer: content,
       confidenceLevel: frontmatter.confidenceLevel,
       relatedCases: frontmatter.relatedCases,

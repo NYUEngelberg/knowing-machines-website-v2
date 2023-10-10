@@ -5,7 +5,6 @@ slug: "can-i-sue-a-genai-company-for-defamation-if-its-tool-generates-false-info
 draft: false
 contentType: "Q&A"
 shortAnswer: "Probably yes."
-shortAnswerExpanded: ""
 confidenceLevel: |
     4
 relatedCases: ["walters-v-openai", "battle-v-microsoft"]

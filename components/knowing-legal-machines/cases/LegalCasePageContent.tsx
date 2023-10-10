@@ -22,8 +22,12 @@ export default function LegalCasePageContent({
           </span>
         </div>
         <div>
-          <div className="flex flex-row items-center gap-[10px]">
-            <img className="max-w-full sm:max-w-[200px]" src="/img/about/team/Weinberg.png" alt={'michael headshot'}/>
+          <div className="flex flex-row items-center gap-[10px] border-black border-x-[1px]">
+            <img
+              className="max-h-[169px] max-w-full sm:max-w-[200px] "
+              src="/img/about/team/Weinberg.png"
+              alt={"michael headshot"}
+            />
             <h3 className="flex-grow uppercase font-bold tracking-wides text-xl">
               {legalCase.title}
             </h3>
@@ -37,7 +41,7 @@ export default function LegalCasePageContent({
           </div>
           <div>
             <span className="uppercase font-bold">
-              COMPLAINT DATE{legalCase.citationComplaintDates + ""}
+              COMPLAINT DATE {legalCase.citationComplaintDates + ""}
             </span>
           </div>
           <div className="max-w-3xl markdown-content">

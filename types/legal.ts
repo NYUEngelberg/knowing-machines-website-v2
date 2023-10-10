@@ -5,7 +5,6 @@ export type LegalExplainerQuestion = {
     isDraft: boolean
     contentType: string
     shortAnswer: string
-    shortAnswerExpanded: string
     longAnswer: string
     confidenceLevel: string
     relatedCases: string[]

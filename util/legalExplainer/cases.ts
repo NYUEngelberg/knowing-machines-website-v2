@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { LegalCase } from "@/types/legal";
 import { MetaOgTagData } from "@/types/meta";
+import { formatToMmDdYyyy } from "../formatting";
 
 export function getLegalCaseFromSlug(
   slug: string
@@ -31,7 +32,7 @@ export function getLegalCases() {
     );
     const markdownWithMeta = fs.readFileSync(fullPath, "utf-8");
     const stats = fs.statSync(fullPath);
-    const lastModified = stats.mtime.toISOString().slice(0, 10);
+    const lastModified = formatToMmDdYyyy(stats.mtime);
     //   console.log(stats.mtime, filename);
     const { data: frontmatter, content } = matter(markdownWithMeta);
     return {
