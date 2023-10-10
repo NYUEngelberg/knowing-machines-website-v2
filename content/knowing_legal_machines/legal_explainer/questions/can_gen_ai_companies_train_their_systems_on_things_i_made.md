@@ -4,8 +4,8 @@ title: "Can GenAI companies train their systems on images, text, code, or other 
 slug: "can-gen-ai-companies-train-their-systems-on-things-i-made"
 draft: false
 contentType: "Q&A"
-shortAnswer: |
-    Probably yes.
+shortAnswer: "Probably yes."
+shortAnswerExpanded: ""
 confidenceLevel: |
     4
 relatedCases: ["chabon-v-openai"]

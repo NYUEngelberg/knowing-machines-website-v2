@@ -14,6 +14,8 @@ import {
 import { getLegalCases } from "@/util/legalExplainer/cases";
 import QuestionList from "@/components/knowing-legal-machines/QuestionList";
 import LegalCasesList from "@/components/knowing-legal-machines/LegalCasesList";
+import LegalCasePageContent from "@/components/knowing-legal-machines/LegalCasePageContent";
+import QuestionPageContent from "@/components/knowing-legal-machines/QuestionPageContent";
 
 type Props = {
   question: LegalExplainerQuestion;
@@ -28,7 +30,8 @@ export default function LegalExplainerQuestionPage({
 }: Props) {
   return (
     <Layout metaOgTagData={getQuestionPageMetaOgTagData(question)}>
-        <div className="mx-auto max-w-3xl">
+        <div className="py-12 mx-auto max-w-3xl">
+            <QuestionPageContent question={question} />
             <pre>{JSON.stringify(question, null, 2)}</pre>
             <QuestionList questions={otherQuestions} />
             <LegalCasesList legalCases={relatedLegalCases} />

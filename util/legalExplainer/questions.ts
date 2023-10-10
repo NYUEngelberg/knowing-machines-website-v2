@@ -41,6 +41,7 @@ export function getLegalExplainerQuestions() {
       isDraft: frontmatter.draft,
       contentType: frontmatter.contentType,
       shortAnswer: frontmatter.shortAnswer,
+      shortAnswerExpanded: frontmatter.shortAnswerExpanded,
       longAnswer: content,
       confidenceLevel: frontmatter.confidenceLevel,
       relatedCases: frontmatter.relatedCases,
