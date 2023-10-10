@@ -2,10 +2,13 @@ import { LegalCase } from "@/types/legal";
 
 type Props = {
   item: LegalCase;
+  isFirstItem: boolean;
 };
 
-export default function RelatedCasesListItem({ item }: Props) {
+export default function RelatedCasesListItem({ item, isFirstItem }: Props) {
   return (
+    <>
+      {!isFirstItem && <span> | </span>}
       <a
         href={"/knowing-legal-machines/legal-explainer/cases/" + item.slug}
         className=""
@@ -14,5 +17,6 @@ export default function RelatedCasesListItem({ item }: Props) {
           {item.title}
         </span>
       </a>
+    </>
   );
 }

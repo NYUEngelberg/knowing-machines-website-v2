@@ -27,15 +27,11 @@ export default function RelatedCasesSection ({legalCases}: Props) {
             RELATED CASES
           </span>
           <span className="flex-grow uppercase font-bold leading-tight tracking-widest">
-            {/* {legalCases.map(r => (
-              <div key={r.slug}>
-                {r.citations}
-              </div>
-            ))} */}
+            
             {(legalCases || [])
           .sort((a, b) => a.index - b.index)
-          .map((item) => (
-            <RelatedCasesListItem item={item} key={item.slug} />
+          .map((item, i) => (
+            <RelatedCasesListItem isFirstItem={i === 0} item={item} key={item.slug} />
           ))}
           </span>
       </div>
