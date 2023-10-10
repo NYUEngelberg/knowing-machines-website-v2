@@ -1,6 +1,7 @@
 import { LegalCase, LegalExplainerQuestion } from "@/types/legal";
 import { markdownToHtml, markdownToHtmlSections } from "@/util/markdownHelpers";
 import { useEffect } from "react";
+import QuestionList from "../QuestionList";
 
 type Props = {
   legalCase: LegalCase;
@@ -53,6 +54,7 @@ export default function LegalCasePageContent({
               ))}
           </div>
         </div>
+        <QuestionList questions={relatedQuestions} />
       </div>
     </div>
   );
