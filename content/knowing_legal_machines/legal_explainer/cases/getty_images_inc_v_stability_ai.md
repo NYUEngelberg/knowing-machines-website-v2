@@ -1,6 +1,6 @@
 ---
 index: 3
-title: "Getty Images Inc. v. Stability AI, 1:23-cv-00135 (D. Del.)"
+title: "Getty Images Inc. v. Stability AI"
 slug: "getty-images-inc-v-stability-ai"
 citations: ["Getty Images Inc. v. Stability AI, 1:23-cv-00135 (D. Del.)"]
 citationComplaintDates: ["2/3/2023"]

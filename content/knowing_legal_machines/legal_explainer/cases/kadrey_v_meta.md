@@ -1,6 +1,6 @@
 ---
 index: 7
-title: "Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"
+title: "Kadrey v. Meta"
 slug: "kadrey-v-meta"
 citations: ["Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"]
 citationComplaintDates: ["7/7/2023"]

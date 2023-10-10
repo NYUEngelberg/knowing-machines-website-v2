@@ -1,6 +1,6 @@
 ---
 index: 4
-title: "Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"
+title: "Young v. NeoCortext, Inc."
 slug: "young-v-neocortext-inc"
 citations: ["Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]
 citationComplaintDates: ["4/3/2023"]

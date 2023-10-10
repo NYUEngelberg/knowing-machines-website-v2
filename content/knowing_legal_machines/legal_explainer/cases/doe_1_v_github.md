@@ -1,6 +1,6 @@
 ---
 index: 1
-title: "Doe 1 v. GitHub, 4:22-cv-06823 (N.D. Cal.)"
+title: "Doe 1 v. GitHub"
 slug: "doe-1-v-github"
 citations: ["Doe 1 v. GitHub, 4:22-cv-06823 (N.D. Cal.)"]
 citationComplaintDates: ["11/3/2022"]

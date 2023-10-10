@@ -1,6 +1,6 @@
 ---
 index: 6
-title: "Silverman v. OpenAI, 3:23-cv-03416 (N.D. Cal.)"
+title: "Silverman v. OpenAI"
 slug: "silverman-v-openai"
 citations: ["Silverman v. OpenAI, 3:23-cv-03416 (N.D. Cal.)"]
 citationComplaintDates: ["7/7/2023"]
