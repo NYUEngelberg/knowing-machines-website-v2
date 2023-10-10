@@ -8,7 +8,7 @@ shortAnswer: |
     Probably yes.
 confidenceLevel: |
     4
-relatedCases: ["chabon-v-openai"]
+relatedCases: ["doe-1-v-github", "andersen-v-stability-ai", "getty-images-inc-v-stability-ai", "tremblay-v-openai", "silverman-v-openai", "kadrey-v-meta", "j-l-v-alphabet-ink-google", "chabon-v-openai" ]
 ---
 The non-consensual use of copyright works to train GenAI systems has been one of the most visible controversies surrounding GenAI lawsuits. If you’ve made something, the argument that you can prevent it from being used to train AI feels simple: (1) you own your copyrights; (2) copyright law grants you exclusive control over any attempt to make a copy of your work; and (3) when GenAI systems train on your works, the works are copied into its memory. Seems like a pretty slam dunk case, right?
 
@@ -18,7 +18,7 @@ Fair use has been around for centuries, and there have been hundreds of decision
 
 For computer programs, there have been dozens of fair use cases. Every time you access a digital image, video, document, song, or even a webpage, your computer has to copy that data into its memory in order to perform or display it for you. When these uses are done with permission, there is no copyright conflict. However, anytime someone loads content into a computer without permission, the courts usually look to fair use to decide if it should be legal or not to do so.
 
-As to the question of whether training AI systems is fair use, US courts have addressed similar situations for over 30 years in dozens of cases, all of which overwhelmingly resulted in findings of fair use when the non-consensual copying was done for the purpose of improving computer systems, scientific knowledge, market competition, access to information, or some other socially beneficial purpose. So it is likely that they will find the same here. 
+As to the question of whether training AI systems is fair use, US courts have addressed similar situations for over 30 years in dozens of cases, all of which overwhelmingly resulted in findings of fair use when the non-consensual copying was done for the purpose of improving computer systems, scientific knowledge, market competition, access to information, or some other socially beneficial purpose. So it is likely that they will find the same here.
 
 That said, the fair use analysis of AI training AI datasets will likely turn on the answers to the two key questions:
 
