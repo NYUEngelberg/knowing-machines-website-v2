@@ -5,22 +5,33 @@ import {
 } from "../../../../util/markdownHelpers";
 import Layout from "@/components/Layout";
 import { GetStaticProps } from "next";
-import { LegalCase } from "@/types/legal";
+import { LegalCase, LegalExplainerQuestion } from "@/types/legal";
 import {
   getLegalCaseFromSlug,
   getLegalCasePageMetaOgTagData,
   getLegalCases,
 } from "@/util/legalExplainer/cases";
 import { getLegalExplainerQuestions } from "@/util/legalExplainer/questions";
+import LegalCasePageContent from "@/components/knowing-legal-machines/cases/LegalCasePageContent";
+import LegalCasesList from "@/components/knowing-legal-machines/LegalCasesList";
 
 type Props = {
   legalCase: LegalCase;
+  otherCases: LegalCase[];
+  relatedQuestions: LegalExplainerQuestion[];
 };
 
-export default function LegalExplainerCasePage({ legalCase }: Props) {
+export default function LegalExplainerCasePage({ legalCase, otherCases, relatedQuestions }: Props) {
+  
   return (
     <Layout metaOgTagData={getLegalCasePageMetaOgTagData(legalCase)}>
-      <pre>{JSON.stringify(legalCase, null, 2)}</pre>
+      <div className="py-12 mx-auto max-w-3xl">
+        <LegalCasePageContent
+          legalCase={legalCase}
+          relatedQuestions={relatedQuestions}
+        />
+        <LegalCasesList legalCases={otherCases} />
+      </div>
     </Layout>
   );
 }
@@ -38,5 +49,5 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const relatedQuestions = getLegalExplainerQuestions().filter(
     (r) => legalCase?.relatedQuestions.indexOf(r.slug) !== -1
   );
-  return { props: { legalCase } };
+  return { props: { legalCase, otherCases, relatedQuestions } };
 };
