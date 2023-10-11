@@ -39,6 +39,8 @@ export function getLegalCases() {
       index: frontmatter.index,
       title: frontmatter.title,
       slug: frontmatter.slug,
+      coverImg: frontmatter.coverImg || "",
+      coverImgAlt: frontmatter.coverImgAlt || "",
       isDraft: frontmatter.draft,
       citations: frontmatter.citations.map((c:string, i:number) => ({
         citation: c,

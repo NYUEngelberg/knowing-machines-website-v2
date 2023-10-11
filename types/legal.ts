@@ -20,6 +20,8 @@ export type LegalCase = {
     index: number
     title: string
     slug: string
+    coverImg: string
+    coverImgAlt: string
     isDraft: boolean
     citations: LegalCaseCitation[]
     content: string
