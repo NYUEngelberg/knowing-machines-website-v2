@@ -22,10 +22,9 @@ export default function QuestionPageContent({ question, relatedCases }: Props) {
         </div>
         <div>
           <div className="flex flex-col items-left gap-[20px] mt-[20px]">
-            <h3 className="flex-grow uppercase font-bold tracking-wides text-xl">
+            <h3 className="flex-grow font-bold text-xl">
               {question.title}
             </h3>
-            <span className="uppercase">LAST UPDATED {question.lastModified}</span>
           </div>
         </div>
       </div>
@@ -33,8 +32,10 @@ export default function QuestionPageContent({ question, relatedCases }: Props) {
       <ConfidenceLevelSection question={question} />
       <RelatedCasesSection legalCases={relatedCases} />
       <LongAnswerSection markdownContent={question.longAnswer} />
+      <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">LAST UPDATED {question.lastModified}</span>
       <LegalCasesList legalCases={relatedCases} />
       <FootnotesSection markdownContent={question.longAnswer} />
+      
     </div>
   );
 }

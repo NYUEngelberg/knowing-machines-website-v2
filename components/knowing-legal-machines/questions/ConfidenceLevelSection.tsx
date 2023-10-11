@@ -11,7 +11,6 @@ export default function ConfidenceLevelSection ({question}: Props) {
   >
     <div
       id="set-collection-items"
-      className="relative border-black border-t-[1px] relative"
     >
         <PartialBulkyBorder
           total={5}
@@ -19,7 +18,7 @@ export default function ConfidenceLevelSection ({question}: Props) {
           bottom={false}
         />
       <div
-          className="flex flex-row items-center gap-[10px] mt-8"
+          className="flex flex-row items-center gap-[10px] mt-2"
         >
           <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
             CONFIDENCE LEVEL

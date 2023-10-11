@@ -20,7 +20,7 @@ export default function LongAnswerSection({ markdownContent }: Props) {
             LONG ANSWER
           </span>
 
-          <div className="max-w-3xl markdown-content">
+          <div className="max-w-3xl markdown-content px-8 pt-4">
             {sections.length > 0 &&
               sections.map((section, idx) => (
                 <div key={idx}>

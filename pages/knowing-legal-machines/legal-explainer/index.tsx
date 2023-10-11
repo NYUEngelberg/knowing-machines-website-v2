@@ -162,11 +162,11 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
                   className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
                   href="/publications/knowing_legal_machines"
                 >
-                  collection
+                  ← collection |
                 </a>
                 <span className="inline-block pr-2 p-1 pl-0">
                   {" "}
-                  | {frontmatter.contentType}
+                 {frontmatter.contentType}
                 </span>
               </div>
             </div>

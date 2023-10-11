@@ -26,21 +26,17 @@ export default function LegalCasePageContent({
         <div>
           <div className="flex flex-row items-center gap-[10px] border-black border-x-[1px]">
             <img
-              className="max-h-[169px] max-w-full sm:max-w-[200px] "
+              className="max-h-[170px] max-w-full sm:max-w-[200px] border-black border-r-[1px]"
               src={legalCase.coverImg || "/img/about/team/Joler.png"}
               alt={legalCase.coverImgAlt || "Vladan headshot"}
             />
-            <h3 className="flex-grow uppercase font-bold tracking-wides text-xl">
+            <h3 className="flex-grow uppercase pl-4 font-bold tracking-wides text-xl">
               {legalCase.title}
             </h3>
           </div>
         </div>
-        <div className="flex flex-col gap-4 p-4 border-[1px] border-black">
-          <div>
-            <span className="uppercase font-bold">
-              LAST UPDATED {legalCase.lastModified}
-            </span>
-          </div>
+        <div className="flex flex-col gap-4 p-8 border-[1px] border-black">
+
           {legalCase.citations.map((c) => (
             <React.Fragment key={c.citation}>
               <div>
@@ -48,13 +44,18 @@ export default function LegalCasePageContent({
                   {c.citation}
                 </span>
                 <br />
-                <span className="uppercase font-bold">
-                  COMPLAINT DATE {c.complaintDate}
+                <span className="content-type text-xs uppercase ">
+                  COMPLAINT DATE: {c.complaintDate}
                 </span>
+
               </div>
             </React.Fragment>
           ))}
-          <div className="max-w-3xl markdown-content">
+          <div>
+
+
+          </div>
+          <div className="max-w-3xl  markdown-content">
             {sections.length > 0 &&
               sections.map((section, idx) => (
                 <div key={idx}>
@@ -66,8 +67,12 @@ export default function LegalCasePageContent({
                     }}
                   />
                 </div>
+                
               ))}
           </div>
+          <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
+            LAST UPDATED {legalCase.lastModified}
+          </span>
         </div>
         <QuestionList questions={relatedQuestions} />
       </div>

@@ -20,7 +20,7 @@ export default function QuestionItemsList({
         .map((item) => (
           <div
             key={item.title}
-            className="pb-6 flex flex-col items-stretch gap-[40px]"
+            className="pb-[0.8rem] flex flex-col items-stretch gap-[40px]"
           >
             <div
               id="set-collection-items"
@@ -39,14 +39,14 @@ export default function QuestionItemsList({
                     "/knowing-legal-machines/legal-explainer/questions/" +
                     item.slug
                   }
-                  className="flex flex-row items-center gap-[10px] mt-8"
+                  className="flex flex-row items-center gap-[18px] mt-[1.5rem]"
                 >
-                  <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
+                  <h3 className="flex-grow font-bold leading-tight">
                     {item.title}
                   </h3>
                   <img
                     src="/img/arrow-top-right.svg"
-                    className="link-arrow-magic"
+                    className="link-arrow-magic pr-2"
                   />
                 </a>
               </div>
