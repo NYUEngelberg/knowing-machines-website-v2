@@ -1,5 +1,16 @@
 [
   {
+    "href": "/knowing-legal-machines/legal-explainer",
+    "contentType": "Explainer",
+    "coverImg": "/img/legal/home.png",
+    "coverImgAlt": "A dithered abstract image of a mesh.",
+    "title": "Generative AI Legal Explainer",
+    "preposition": "Written by",
+    "authors": "Melodi Dincer, Jake Karr, Jason Schultz, Michael Weinberg",
+    "excerpt": "Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks. Others have answers that are quite well settled, notwithstanding the new AI context that bringsis bringing attention to them.",
+    "external": true
+  },
+  {
     "href": "/publications/knowing_legal_machines",
     "contentType": "Collection",
     "coverImg": "/img/legal/home.png",
