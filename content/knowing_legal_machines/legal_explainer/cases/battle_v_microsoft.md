@@ -2,6 +2,8 @@
 index: 12
 title: "Battle v. Microsoft"
 slug: "battle-v-microsoft"
+coverImg: "/img/legal/explainer/cases/b.png"
+coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Battle v. Microsoft D. Md."]
 citationComplaintDates: [""]
 draft: false 

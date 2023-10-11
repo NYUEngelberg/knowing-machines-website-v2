@@ -2,6 +2,8 @@
 index: 8
 title: "J.L. v. Alphabet Inc., Google"
 slug: "j-l-v-alphabet-ink-google"
+coverImg: "/img/legal/explainer/cases/j.png"
+coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["J.L. v. Alphabet Inc., Google (N.D. Cal.) 3:23-cv-03440"]
 citationComplaintDates: ["7/11/2023"]
 draft: false 
