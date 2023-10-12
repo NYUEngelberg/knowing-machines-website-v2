@@ -13,14 +13,19 @@ export default function LegalCasePageContent({
   legalCase,
   relatedQuestions,
 }: Props) {
-  console.log(legalCase);
   const sections = markdownToHtmlSections(legalCase.content);
   return (
     <div className="my-12">
       <div className="relative border-black border-t-[1px] relative max-w-3xl mb-12">
         <div className="absolute top-[-25px] left-0">
-          <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
-            LEGAL EXPLAINER CASES
+          <span className="content-type text-xs text-white uppercase bg-black py-1 self-start">
+            <a
+              className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
+              href="/knowing-legal-machines/legal-explainer"
+            >
+              ← LEGAL EXPLAINER |
+            </a>
+            <span className="inline-block pr-2 p-1 pl-0">{"CASES"}</span>
           </span>
         </div>
         <div>
@@ -36,25 +41,18 @@ export default function LegalCasePageContent({
           </div>
         </div>
         <div className="flex flex-col gap-4 px-8 pt-8 border-[1px] border-black">
-
           {legalCase.citations.map((c) => (
             <React.Fragment key={c.citation}>
               <div>
-                <span className="font-bold">
-                  {c.citation}
-                </span>
+                <span className="font-bold">{c.citation}</span>
                 <br />
                 <span className="content-type text-xs uppercase ">
                   COMPLAINT DATE: {c.complaintDate}
                 </span>
-
               </div>
             </React.Fragment>
           ))}
-          <div>
-
-
-          </div>
+          <div></div>
           <div className="max-w-3xl  markdown-content">
             {sections.length > 0 &&
               sections.map((section, idx) => (
@@ -67,7 +65,6 @@ export default function LegalCasePageContent({
                     }}
                   />
                 </div>
-                
               ))}
           </div>
           <span className="mb-2 inline-block content-type text-xs font-bold uppercase self-start">
@@ -77,7 +74,6 @@ export default function LegalCasePageContent({
 
           <br />
         </div>
-
       </div>
     </div>
   );
