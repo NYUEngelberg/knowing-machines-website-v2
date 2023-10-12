@@ -3,7 +3,7 @@ index: 1
 title: "Generative AI Legal Explainer"
 draft: false
 contentType: "Explainer"
-coverImg: "/img/legal/0.png"
+coverImg: "/img/legal/explainer.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"
 authors: "Melodi Dincer, Jake Karr, Jason Schultz, Michael Weinberg"
