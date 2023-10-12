@@ -35,7 +35,7 @@ export default function LegalCasePageContent({
             </h3>
           </div>
         </div>
-        <div className="flex flex-col gap-4 p-8 border-[1px] border-black">
+        <div className="flex flex-col gap-4 px-8 pt-8 border-[1px] border-black">
 
           {legalCase.citations.map((c) => (
             <React.Fragment key={c.citation}>
@@ -70,12 +70,14 @@ export default function LegalCasePageContent({
                 
               ))}
           </div>
-          <span className="mb-8 inline-block content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
+          <span className="mb-2 inline-block content-type text-xs font-bold uppercase self-start">
             LAST UPDATED {legalCase.lastModified}
           </span>
+          <QuestionList questions={relatedQuestions} prefix="related" />
+
           <br />
         </div>
-        <QuestionList questions={relatedQuestions} prefix="related" />
+
       </div>
     </div>
   );

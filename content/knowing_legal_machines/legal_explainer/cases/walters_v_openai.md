@@ -2,6 +2,8 @@
 index: 10
 title: "Walters v. OpenAI"
 slug: "walters-v-openai"
+coverImg: "/img/legal/explainer/cases/w.png"
+coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Walters v. OpenAI (Ga. Super. Ct.) No. 23-A-04860-2 (Ga. Super. Ct., Gwinnett Cnty.)"]
 citationComplaintDates: [""]
 draft: false 
