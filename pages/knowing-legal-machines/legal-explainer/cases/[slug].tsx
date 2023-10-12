@@ -30,7 +30,7 @@ export default function LegalExplainerCasePage({ legalCase, otherCases, relatedQ
           legalCase={legalCase}
           relatedQuestions={relatedQuestions}
         />
-        <LegalCasesList legalCases={otherCases} />
+        <LegalCasesList legalCases={otherCases} prefix="other" />
       </div>
     </Layout>
   );

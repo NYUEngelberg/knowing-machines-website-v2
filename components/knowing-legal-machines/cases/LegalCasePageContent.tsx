@@ -74,7 +74,7 @@ export default function LegalCasePageContent({
             LAST UPDATED {legalCase.lastModified}
           </span>
         </div>
-        <QuestionList questions={relatedQuestions} />
+        <QuestionList questions={relatedQuestions} prefix="related" />
       </div>
     </div>
   );

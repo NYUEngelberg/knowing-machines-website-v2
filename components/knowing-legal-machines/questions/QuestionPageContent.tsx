@@ -33,7 +33,7 @@ export default function QuestionPageContent({ question, relatedCases }: Props) {
       <RelatedCasesSection legalCases={relatedCases} />
       <LongAnswerSection markdownContent={question.longAnswer} />
       <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">LAST UPDATED {question.lastModified}</span>
-      <LegalCasesList legalCases={relatedCases} />
+      <LegalCasesList legalCases={relatedCases} prefix="related"  />
       <FootnotesSection markdownContent={question.longAnswer} />
       
     </div>

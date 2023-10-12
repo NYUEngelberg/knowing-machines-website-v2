@@ -34,7 +34,7 @@ export default function LegalExplainerQuestionPage({
           question={question}
           relatedCases={relatedLegalCases}
         />
-        <QuestionList questions={otherQuestions} />
+        <QuestionList questions={otherQuestions}  prefix="other" />
       </div>
     </Layout>
   );
