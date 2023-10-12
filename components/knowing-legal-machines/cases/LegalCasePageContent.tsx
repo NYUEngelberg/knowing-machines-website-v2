@@ -70,9 +70,10 @@ export default function LegalCasePageContent({
                 
               ))}
           </div>
-          <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
+          <span className="mb-8 inline-block content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
             LAST UPDATED {legalCase.lastModified}
           </span>
+          <br />
         </div>
         <QuestionList questions={relatedQuestions} prefix="related" />
       </div>
