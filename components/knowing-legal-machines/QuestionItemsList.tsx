@@ -1,17 +1,13 @@
-import { PublicationCollectionItem } from "@/types/publications";
-import PartialBulkyBorder from "../PartialBulkyBorder";
 import { LegalExplainerQuestion } from "@/types/legal";
 
 type Props = {
   questions: LegalExplainerQuestion[] | undefined;
   hideExcerpt?: boolean;
-  hidePartialBulkyBorder?: boolean;
 };
 
 export default function QuestionItemsList({
   questions,
   hideExcerpt,
-  hidePartialBulkyBorder,
 }: Props) {
   return (
     <div className="max-w-3xl">
@@ -26,13 +22,6 @@ export default function QuestionItemsList({
               id="set-collection-items"
               className="relative border-black border-t-[1px] relative"
             >
-              {!hidePartialBulkyBorder && (
-                <PartialBulkyBorder
-                  total={(questions || []).length}
-                  i={item.index - 1}
-                  bottom={false}
-                />
-              )}
               <div>
                 <a
                   href={

@@ -1,5 +1,4 @@
 import { LegalCase } from "@/types/legal";
-import PartialBulkyBorder from "../PartialBulkyBorder";
 
 type Props = {
   item: LegalCase;

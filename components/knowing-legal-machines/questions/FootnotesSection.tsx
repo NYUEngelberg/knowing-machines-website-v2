@@ -10,7 +10,6 @@ export default function FootnotesSection({ markdownContent }: Props) {
     extractFootnoteDefinitionsFromMarkdown(markdownContent);
   return (
     <>
-      <PartialBulkyBorder total={5} i={3} bottom={false} />
       <div className="max-w-3xl markdown-content">
         {footnoteSections.length > 0 &&
           footnoteSections.map((footnoteSection, idx) => (

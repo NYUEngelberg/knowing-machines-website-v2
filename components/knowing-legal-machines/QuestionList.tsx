@@ -1,5 +1,3 @@
-import { PublicationMetaData } from "@/types/publications";
-import CollectionItemsList from "@/components/collection-essay/CollectionItemsList";
 import { LegalExplainerQuestion } from "@/types/legal";
 import QuestionItemsList from "./QuestionItemsList";
 
@@ -22,7 +20,6 @@ export default function QuestionList({ questions, skipSlugs = [], prefix = "" }:
       <QuestionItemsList
         questions={questions}
         hideExcerpt={true}
-        hidePartialBulkyBorder={true}
       />
     </div>
   );
