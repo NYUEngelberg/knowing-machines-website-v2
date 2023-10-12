@@ -8,23 +8,23 @@ export default function LegalCasesListItem({ item }: Props) {
   return (
     <div
       key={item.title}
-      className="pb-6 flex flex-col items-stretch gap-[40px]"
+      className="mb-6 flex flex-col items-stretch"
     >
       <div
         id="set-collection-items"
-        className="relative border-black border-t-[1px] relative"
+        className="relative border-black border-[1px] relative"
       >
         <div>
           <a
             href={
               "/knowing-legal-machines/legal-explainer/cases/" + item.slug
             }
-            className="flex flex-row items-center gap-[10px] mt-8"
+            className="flex flex-row items-center gap-[10px]"
           >
+            <img src={item.coverImg} alt={item.coverImgAlt} />
             <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
               {item.title}
             </h3>
-            <img src="/img/arrow-top-right.svg" className="link-arrow-magic" />
           </a>
         </div>
       </div>
