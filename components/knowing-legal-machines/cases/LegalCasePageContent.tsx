@@ -15,7 +15,7 @@ export default function LegalCasePageContent({
 }: Props) {
   const sections = markdownToHtmlSections(legalCase.content);
   return (
-    <div className="my-12">
+    <div className="my-20 ">
       <div className="relative border-black border-t-[1px] relative max-w-3xl mb-12">
         <div className="absolute top-[-25px] left-0">
           <span className="content-type text-xs text-white uppercase bg-black py-1 self-start">
