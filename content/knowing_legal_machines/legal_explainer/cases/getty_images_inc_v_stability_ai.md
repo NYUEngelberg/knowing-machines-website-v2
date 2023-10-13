@@ -5,7 +5,7 @@ slug: "getty-images-inc-v-stability-ai"
 coverImg: "/img/legal/explainer/cases/g.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Getty Images Inc. v. Stability AI, 1:23-cv-00135 (D. Del.)"]
-citationComplaintDates: ["2/3/2023"]
+caseDates: ["2/3/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

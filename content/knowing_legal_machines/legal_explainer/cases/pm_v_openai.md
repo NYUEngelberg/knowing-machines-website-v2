@@ -5,7 +5,7 @@ slug: "pm-v-openai"
 coverImg: "/img/legal/explainer/cases/p.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["P.M. v. OpenAI N.D. Cal."]
-citationComplaintDates: ["6/28/2023"]
+caseDates: ["6/28/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["when-i-use-genai-products-like-chatgpt-can-they-collect-my-data"]

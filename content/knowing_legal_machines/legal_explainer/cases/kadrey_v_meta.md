@@ -5,7 +5,7 @@ slug: "kadrey-v-meta"
 coverImg: "/img/legal/explainer/cases/k.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"]
-citationComplaintDates: ["7/7/2023"]
+caseDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

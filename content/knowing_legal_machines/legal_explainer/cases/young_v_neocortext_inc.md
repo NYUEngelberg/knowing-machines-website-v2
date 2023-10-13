@@ -5,7 +5,7 @@ slug: "young-v-neocortext-inc"
 coverImg: "/img/legal/explainer/cases/y.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]
-citationComplaintDates: ["4/3/2023"]
+caseDates: ["4/3/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-remove-my-personal-data-from-genai-training-datasets"]

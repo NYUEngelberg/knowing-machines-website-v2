@@ -5,7 +5,7 @@ slug: "tremblay-v-openai"
 coverImg: "/img/legal/explainer/cases/t.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Tremblay v. OpenAI, 3:23-cv-03223 (N.D. Cal.)"]
-citationComplaintDates: ["4/3/2023"]
+caseDates: ["4/3/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

@@ -47,7 +47,7 @@ export default function LegalCasePageContent({
                 <span className="font-bold">{c.citation}</span>
                 <br />
                 <span className="content-type text-xs uppercase ">
-                  COMPLAINT DATE: {c.complaintDate}
+                  COMPLAINT DATE: {c.caseDate}
                 </span>
               </div>
             </React.Fragment>

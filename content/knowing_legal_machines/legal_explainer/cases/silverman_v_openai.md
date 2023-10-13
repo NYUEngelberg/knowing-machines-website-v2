@@ -5,7 +5,7 @@ slug: "silverman-v-openai"
 coverImg: "/img/legal/explainer/cases/s.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Silverman v. OpenAI, 3:23-cv-03416 (N.D. Cal.)"]
-citationComplaintDates: ["7/7/2023"]
+caseDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

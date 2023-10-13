@@ -5,7 +5,7 @@ slug: "battle-v-microsoft"
 coverImg: "/img/legal/explainer/cases/b.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Battle v. Microsoft D. Md."]
-citationComplaintDates: ["7/7/2023"]
+caseDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-sue-a-genai-company-for-defamation-if-its-tool-generates-false-information-about-me"]

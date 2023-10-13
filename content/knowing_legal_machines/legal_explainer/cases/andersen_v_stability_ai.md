@@ -5,7 +5,7 @@ slug: "andersen-v-stability-ai"
 coverImg: "/img/legal/explainer/cases/a.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Andersen v. Stability AI, 3:23-cv-00201 (N.D. Cal.)"]
-citationComplaintDates: ["1/13/2023"]
+caseDates: ["1/13/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-gen-ai-companies-train-their-systems-on-things-i-made"]

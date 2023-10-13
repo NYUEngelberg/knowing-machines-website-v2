@@ -5,7 +5,7 @@ slug: "walters-v-openai"
 coverImg: "/img/legal/explainer/cases/w.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Walters v. OpenAI, No. 23-cv-03122 (Ga. Super. Ct.)","Walters v. OpenAI, No. 23-A-04860-2 (Ga. Super. Ct., Gwinnett Cnty.)"]
-citationComplaintDates: ["7/14/2023","6/5/2023"]
+caseDates: ["7/14/2023","6/5/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-sue-a-genai-company-for-defamation-if-its-tool-generates-false-information-about-me"]
