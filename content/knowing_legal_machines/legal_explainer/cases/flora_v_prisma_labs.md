@@ -5,7 +5,7 @@ slug: "flora-v-prisma-labs"
 coverImg: "/img/legal/explainer/cases/f.png"
 coverImgAlt: "A dithered abstract image the initials of the case."
 citations: ["Flora v. Prisma Labs (N.D. Cal.)"]
-citationComplaintDates: [""]
+citationComplaintDates: ["2/15/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["when-i-use-genai-products-like-chatgpt-can-they-collect-my-data"]
