@@ -2,8 +2,8 @@
 index: 7
 title: "Kadrey v. Meta"
 slug: "kadrey-v-meta"
-coverImg: "/img/legal/explainer/cases/k.png"
-coverImgAlt: "A dithered abstract image the initials of the case."
+coverImg: "/img/legal/explainer/cases/7.png"
+coverImgAlt: "A dithered abstract image with lines."
 citations: ["Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"]
 caseDates: ["7/7/2023"]
 draft: false 

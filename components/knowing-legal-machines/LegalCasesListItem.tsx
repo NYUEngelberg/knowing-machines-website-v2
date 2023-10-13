@@ -22,7 +22,7 @@ export default function LegalCasesListItem({ item }: Props) {
             className="flex flex-row items-center gap-[10px]"
           >
             <img src={item.coverImg} alt={item.coverImgAlt} className="max-w-[140px]"/>
-            <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
+            <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest mb-0">
               {item.title}
             </h3>
           </a>

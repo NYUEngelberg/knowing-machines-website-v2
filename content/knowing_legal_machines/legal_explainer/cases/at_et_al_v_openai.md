@@ -2,8 +2,8 @@
 index: 14
 title: "A.T. et al. v. OpenAI"
 slug: "at-et-al-v-openai"
-coverImg: "/img/legal/explainer/cases/o.png"
-coverImgAlt: "A dithered abstract image the initials of the case."
+coverImg: "/img/legal/explainer/cases/14.png"
+coverImgAlt: "A dithered abstract image with lines."
 citations: ["A.T. et al. v. OpenAI LP et al. (N.D. Cal.)"]
 caseDates: ["9/5/2023"]
 draft: false 

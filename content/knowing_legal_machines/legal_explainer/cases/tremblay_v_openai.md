@@ -2,8 +2,8 @@
 index: 5
 title: "Tremblay v. OpenAI"
 slug: "tremblay-v-openai"
-coverImg: "/img/legal/explainer/cases/t.png"
-coverImgAlt: "A dithered abstract image the initials of the case."
+coverImg: "/img/legal/explainer/cases/5.png"
+coverImgAlt: "A dithered abstract image with lines."
 citations: ["Tremblay v. OpenAI, 3:23-cv-03223 (N.D. Cal.)"]
 caseDates: ["4/3/2023"]
 draft: false 

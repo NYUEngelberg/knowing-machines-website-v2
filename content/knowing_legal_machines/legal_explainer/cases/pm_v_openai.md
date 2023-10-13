@@ -2,8 +2,8 @@
 index: 11
 title: "P.M. v. OpenAI"
 slug: "pm-v-openai"
-coverImg: "/img/legal/explainer/cases/p.png"
-coverImgAlt: "A dithered abstract image the initials of the case."
+coverImg: "/img/legal/explainer/cases/11.png"
+coverImgAlt: "A dithered abstract image with lines."
 citations: ["P.M. v. OpenAI N.D. Cal."]
 caseDates: ["6/28/2023"]
 draft: false 
