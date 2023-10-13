@@ -24,6 +24,7 @@ export type LegalCase = {
     coverImgAlt: string
     isDraft: boolean
     citations: LegalCaseCitation[]
+    caseDateLabel: string
     content: string
     relatedQuestions: string[]
     lastModified: string
