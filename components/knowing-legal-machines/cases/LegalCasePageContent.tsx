@@ -70,8 +70,9 @@ export default function LegalCasePageContent({
           <span className="mb-2 inline-block content-type text-xs font-bold uppercase self-start">
             LAST UPDATED {legalCase.lastModified}
           </span>
-          <QuestionList questions={relatedQuestions} prefix="related" />
-
+          {relatedQuestions.length > 0 && (
+            <QuestionList questions={relatedQuestions} prefix="related" />
+          )}
           <br />
         </div>
       </div>

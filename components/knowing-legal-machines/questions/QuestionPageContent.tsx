@@ -34,12 +34,16 @@ export default function QuestionPageContent({ question, relatedCases }: Props) {
       </div>
       <ShortAnswerSection question={question} />
       <ConfidenceLevelSection question={question} />
-      <RelatedCasesSection legalCases={relatedCases} />
+      {relatedCases.length > 0 && (
+        <RelatedCasesSection legalCases={relatedCases} />
+      )}
       <LongAnswerSection markdownContent={question.longAnswer} />
       <span className="mb-8 inline-block content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
         LAST UPDATED {question.lastModified}
       </span>
-      <LegalCasesList legalCases={relatedCases} prefix="related" />
+      {relatedCases.length > 0 && (
+        <LegalCasesList legalCases={relatedCases} prefix="related" />
+      )}
       <FootnotesSection markdownContent={question.longAnswer} />
     </div>
   );
