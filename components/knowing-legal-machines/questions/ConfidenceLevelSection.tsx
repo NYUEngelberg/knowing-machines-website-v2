@@ -16,7 +16,7 @@ export default function ConfidenceLevelSection({ question }: Props) {
               CONFIDENCE LEVEL
             </span>
             <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
-              <ConfidenceRange value={question.confidenceLevel} />
+              <ConfidenceRange value={question.confidenceLevel.trim()} />
             </h3>
           </div>
         ) : (

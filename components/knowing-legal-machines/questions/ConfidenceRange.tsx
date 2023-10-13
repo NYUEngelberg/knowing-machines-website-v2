@@ -1,7 +1,6 @@
 type Props = {
   value: string;
 };
-//“” (1),  (2),  (3), “” (4), “”
 
 export default function ConfidenceRange({ value }: Props) {
   const valTextMapping: Record<string, string> = {
@@ -17,7 +16,7 @@ export default function ConfidenceRange({ value }: Props) {
         <span
           key={val}
           className={
-            "pl-[3px] pr-[2px] " + (val === value ? "text-white bg-black" : "")
+            "pl-[3.6px] pr-[2px] " + (val === value ? "text-white bg-black" : "")
           }
         >
           {val}
