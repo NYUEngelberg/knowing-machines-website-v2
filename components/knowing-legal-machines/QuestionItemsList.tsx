@@ -20,7 +20,7 @@ export default function QuestionItemsList({
           >
             <div
               id="set-collection-items"
-              className="relative border-black border-t-[1px] relative"
+              className="relative border-black border-t-[px] relative"
             >
               <div>
                 <a

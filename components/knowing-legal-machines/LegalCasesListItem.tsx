@@ -8,7 +8,7 @@ export default function LegalCasesListItem({ item }: Props) {
   return (
     <div
       key={item.title}
-      className="mb-6 flex flex-col items-stretch"
+      className="mb-4 flex flex-col items-stretch"
     >
       <div
         id="set-collection-items"
@@ -21,7 +21,7 @@ export default function LegalCasesListItem({ item }: Props) {
             }
             className="flex flex-row items-center gap-[10px]"
           >
-            <img src={item.coverImg} alt={item.coverImgAlt} />
+            <img src={item.coverImg} alt={item.coverImgAlt} className="max-w-[140px]"/>
             <h3 className="flex-grow uppercase font-bold leading-tight tracking-widest">
               {item.title}
             </h3>
