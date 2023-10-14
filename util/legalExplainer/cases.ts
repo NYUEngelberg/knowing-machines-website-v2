@@ -46,8 +46,8 @@ export function getLegalCases() {
         citation: c,
         caseDate: frontmatter.caseDates[i] || ""
       })),
-      caseDateLabel: frontmatter.caseDateLabel || "",
-      contentType: frontmatter.contentType || "COMPLAINT DATE",
+      caseDateLabel: frontmatter.caseDateLabel || "COMPLAINT DATE",
+      contentType: frontmatter.contentType,
       content: content,
       relatedQuestions: frontmatter.relatedQuestions,
       lastModified: lastModified,
