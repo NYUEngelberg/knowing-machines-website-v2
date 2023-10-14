@@ -1,8 +1,8 @@
 ---
-index: 4
+index: 15
 title: "Young v. NeoCortext, Inc."
 slug: "young-v-neocortext-inc"
-coverImg: "/img/legal/explainer/cases/4.png"
+coverImg: "/img/legal/explainer/cases/15.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]
 caseDates: ["4/3/2023"]

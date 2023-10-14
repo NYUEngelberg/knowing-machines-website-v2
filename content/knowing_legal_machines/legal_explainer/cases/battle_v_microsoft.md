@@ -1,8 +1,8 @@
 ---
-index: 12
+index: 3
 title: "Battle v. Microsoft"
 slug: "battle-v-microsoft"
-coverImg: "/img/legal/explainer/cases/12.png"
+coverImg: "/img/legal/explainer/cases/3.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Battle v. Microsoft D. Md."]
 caseDates: ["7/7/2023"]

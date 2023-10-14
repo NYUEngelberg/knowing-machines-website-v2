@@ -1,8 +1,8 @@
 ---
-index: 7
+index: 9
 title: "Kadrey v. Meta"
 slug: "kadrey-v-meta"
-coverImg: "/img/legal/explainer/cases/7.png"
+coverImg: "/img/legal/explainer/cases/9.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"]
 caseDates: ["7/7/2023"]

@@ -1,8 +1,8 @@
 ---
-index: 9
+index: 4
 title: "Chabon v. OpenAI, Inc"
 slug: "chabon-v-openai"
-coverImg: "/img/legal/explainer/cases/9.png"
+coverImg: "/img/legal/explainer/cases/4.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Chabon v. OpenAI, Inc. 3:23-cv-04625-PHK (N.D. Cal.)", "Chabon v. Meta Platforms, Inc. 3:23-cv-04663 (N.D. Cal.)"]
 caseDates: ["09/09/2023", "09/12/2023"]

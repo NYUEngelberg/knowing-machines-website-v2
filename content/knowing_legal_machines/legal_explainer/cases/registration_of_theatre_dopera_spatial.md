@@ -1,8 +1,8 @@
 ---
-index: 15
+index: 11
 title: "Registration of “Théâtre D’opéra Spatial”"
 slug: "registration-of-theatre-dopera-spatial"
-coverImg: "/img/legal/explainer/cases/15.png"
+coverImg: "/img/legal/explainer/cases/11.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Registration of “Théâtre D’opéra Spatial”, SR # 1-11743923581 (U.S. Copyright Office)"]
 caseDates: ["9/5/2023"]

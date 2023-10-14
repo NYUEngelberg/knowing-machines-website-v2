@@ -1,8 +1,8 @@
 ---
-index: 1
+index: 5
 title: "Doe 1 v. GitHub"
 slug: "doe-1-v-github"
-coverImg: "/img/legal/explainer/cases/1.png"
+coverImg: "/img/legal/explainer/cases/5.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Doe 1 v. GitHub, 4:22-cv-06823 (N.D. Cal.)"]
 caseDates: ["11/3/2022"]

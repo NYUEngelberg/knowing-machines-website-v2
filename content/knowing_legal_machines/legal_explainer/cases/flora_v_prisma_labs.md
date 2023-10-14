@@ -1,8 +1,8 @@
 ---
-index: 13
+index: 6
 title: "Flora v. Prisma Labs"
 slug: "flora-v-prisma-labs"
-coverImg: "/img/legal/explainer/cases/13.png"
+coverImg: "/img/legal/explainer/cases/6.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Flora v. Prisma Labs (N.D. Cal.)"]
 caseDates: ["2/15/2023"]
