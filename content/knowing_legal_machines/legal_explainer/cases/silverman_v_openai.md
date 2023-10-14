@@ -5,6 +5,7 @@ slug: "silverman-v-openai"
 coverImg: "/img/legal/explainer/cases/12.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Silverman v. OpenAI, 3:23-cv-03416 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"

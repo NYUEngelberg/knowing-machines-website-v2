@@ -5,6 +5,7 @@ slug: "getty-images-inc-v-stability-ai"
 coverImg: "/img/legal/explainer/cases/7.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Getty Images Inc. v. Stability AI, 1:23-cv-00135 (D. Del.)"]
+citationLinks: [""]
 caseDates: ["2/3/2023"]
 draft: false 
 contentType: "legalCase"

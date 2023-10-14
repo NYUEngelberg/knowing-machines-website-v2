@@ -5,6 +5,7 @@ slug: "pm-v-openai"
 coverImg: "/img/legal/explainer/cases/10.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["P.M. v. OpenAI, 3:23-cv-03199 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["6/28/2023"]
 draft: false 
 contentType: "legalCase"

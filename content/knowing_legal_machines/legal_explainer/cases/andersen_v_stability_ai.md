@@ -5,6 +5,7 @@ slug: "andersen-v-stability-ai"
 coverImg: "/img/legal/explainer/cases/2.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Andersen v. Stability AI, 3:23-cv-00201 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["1/13/2023"]
 draft: false 
 contentType: "legalCase"

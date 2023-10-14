@@ -44,6 +44,7 @@ export function getLegalCases() {
       isDraft: frontmatter.draft,
       citations: frontmatter.citations.map((c:string, i:number) => ({
         citation: c,
+        link: frontmatter.citationLinks[i] || "",
         caseDate: frontmatter.caseDates[i] || ""
       })),
       caseDateLabel: frontmatter.caseDateLabel || "COMPLAINT DATE",

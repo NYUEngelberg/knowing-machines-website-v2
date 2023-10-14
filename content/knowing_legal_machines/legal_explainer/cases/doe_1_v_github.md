@@ -5,6 +5,7 @@ slug: "doe-1-v-github"
 coverImg: "/img/legal/explainer/cases/5.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Doe 1 v. GitHub, 4:22-cv-06823 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["11/3/2022"]
 draft: false 
 contentType: "legalCase"

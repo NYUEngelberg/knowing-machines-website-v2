@@ -5,6 +5,7 @@ slug: "at-et-al-v-openai"
 coverImg: "/img/legal/explainer/cases/1.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["A.T. et al. v. OpenAI LP et al., 3:23-cv-04557 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["9/5/2023"]
 draft: false 
 contentType: "legalCase"

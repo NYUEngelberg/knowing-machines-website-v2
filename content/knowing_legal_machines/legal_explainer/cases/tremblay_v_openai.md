@@ -5,6 +5,7 @@ slug: "tremblay-v-openai"
 coverImg: "/img/legal/explainer/cases/13.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Tremblay v. OpenAI, 3:23-cv-03223 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["4/3/2023"]
 draft: false 
 contentType: "legalCase"

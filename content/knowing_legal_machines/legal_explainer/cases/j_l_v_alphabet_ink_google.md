@@ -5,6 +5,7 @@ slug: "j-l-v-alphabet-ink-google"
 coverImg: "/img/legal/explainer/cases/8.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["J.L. v. Alphabet Inc., Google, 3:23-cv-03440 (N.D. Cal.)"]
+citationLinks: [""]
 caseDates: ["7/11/2023"]
 draft: false 
 contentType: "legalCase"

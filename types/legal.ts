@@ -13,6 +13,7 @@ export type LegalExplainerQuestion = {
 
 export type LegalCaseCitation = {
     citation: string
+    link: string
     caseDate: string
 }
 
