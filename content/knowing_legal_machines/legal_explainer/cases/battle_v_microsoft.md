@@ -5,7 +5,7 @@ slug: "battle-v-microsoft"
 coverImg: "/img/legal/explainer/cases/3.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Battle v. Microsoft, 1:23-cv-01822 (D. Md.)"]
-citationLinks: [""]
+citationLinks: ["https://www.courtlistener.com/docket/67597344/battle-v-microsoft-corporation/"]
 caseDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"

@@ -5,7 +5,7 @@ slug: "pm-v-openai"
 coverImg: "/img/legal/explainer/cases/10.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["P.M. v. OpenAI, 3:23-cv-03199 (N.D. Cal.)"]
-citationLinks: [""]
+citationLinks: ["https://www.pacermonitor.com/public/case/49386360/PM_et_al_v_OPENAI_LP_et_al"]
 caseDates: ["6/28/2023"]
 draft: false 
 contentType: "legalCase"

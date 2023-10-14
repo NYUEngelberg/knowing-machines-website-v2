@@ -5,7 +5,7 @@ slug: "kadrey-v-meta"
 coverImg: "/img/legal/explainer/cases/9.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Kadrey v. Meta, 3:23-cv-03417 (N.D. Cal.)"]
-citationLinks: [""]
+citationLinks: ["https://www.courtlistener.com/docket/67569326/kadrey-v-meta-platforms-inc/"]
 caseDates: ["7/7/2023"]
 draft: false 
 contentType: "legalCase"

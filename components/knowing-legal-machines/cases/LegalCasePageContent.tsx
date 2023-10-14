@@ -44,7 +44,7 @@ export default function LegalCasePageContent({
           {legalCase.citations.map((c) => (
             <React.Fragment key={c.citation}>
               <div>
-                <span className="font-bold">{c.citation}</span>
+                <a href={c.link} className="font-bold">{c.citation}</a>
                 <br />
                 <span className="content-type text-xs uppercase ">
                   {legalCase.caseDateLabel}: {c.caseDate}

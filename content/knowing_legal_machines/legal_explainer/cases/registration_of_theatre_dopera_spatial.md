@@ -5,7 +5,7 @@ slug: "registration-of-theatre-dopera-spatial"
 coverImg: "/img/legal/explainer/cases/11.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Registration of “Théâtre D’opéra Spatial”, SR # 1-11743923581 (U.S. Copyright Office)"]
-citationLinks: [""]
+citationLinks: ["https://www.copyright.gov/rulings-filings/review-board/docs/Theatre-Dopera-Spatial.pdf"]
 caseDates: ["9/5/2023"]
 caseDateLabel: "Registration denied"
 draft: false 

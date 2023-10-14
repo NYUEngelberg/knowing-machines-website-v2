@@ -4,8 +4,8 @@ title: "Young v. NeoCortext, Inc."
 slug: "young-v-neocortext-inc"
 coverImg: "/img/legal/explainer/cases/15.png"
 coverImgAlt: "A dithered abstract image with lines."
-citations: ["Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]
-citationLinks: [""]
+citations: ["Kyland Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]
+citationLinks: ["https://www.courtlistener.com/docket/67127939/kyland-young-v-neocortext-inc/"]
 caseDates: ["4/3/2023"]
 draft: false 
 contentType: "legalCase"

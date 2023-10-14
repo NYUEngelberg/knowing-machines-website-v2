@@ -5,7 +5,7 @@ slug: "flora-v-prisma-labs"
 coverImg: "/img/legal/explainer/cases/6.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Flora v. Prisma Labs, 5:23-cv-00680 (N.D. Cal.)"]
-citationLinks: [""]
+citationLinks: ["https://www.pacermonitor.com/public/case/47809511/Flora_et_al_v_Prisma_Labs,_Inc"]
 caseDates: ["2/15/2023"]
 draft: false 
 contentType: "legalCase"
