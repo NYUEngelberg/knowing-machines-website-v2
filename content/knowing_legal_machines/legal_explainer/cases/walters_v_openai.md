@@ -4,7 +4,7 @@ title: "Walters v. OpenAI"
 slug: "walters-v-openai"
 coverImg: "/img/legal/explainer/cases/14.png"
 coverImgAlt: "A dithered abstract image with lines."
-citations: ["Walters v. OpenAI, No. 23-cv-03122 (Ga. Super. Ct.)","Walters v. OpenAI, No. 23-A-04860-2 (Ga. Super. Ct., Gwinnett Cnty.)"]
+citations: ["Walters v. OpenAI, No. 23-cv-03122 (N.D. Ga.)","Walters v. OpenAI, No. 23-A-04860-2 (Ga. Super. Ct., Gwinnett Cnty.)"]
 caseDates: ["7/14/2023","6/5/2023"]
 draft: false 
 contentType: "legalCase"

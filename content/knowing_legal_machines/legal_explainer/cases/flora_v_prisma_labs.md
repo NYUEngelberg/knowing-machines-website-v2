@@ -4,7 +4,7 @@ title: "Flora v. Prisma Labs"
 slug: "flora-v-prisma-labs"
 coverImg: "/img/legal/explainer/cases/6.png"
 coverImgAlt: "A dithered abstract image with lines."
-citations: ["Flora v. Prisma Labs (N.D. Cal.)"]
+citations: ["Flora v. Prisma Labs, 5:23-cv-00680 (N.D. Cal.)"]
 caseDates: ["2/15/2023"]
 draft: false 
 contentType: "legalCase"
