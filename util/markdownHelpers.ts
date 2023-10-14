@@ -83,11 +83,12 @@ export async function getStaticPathsFromMdFilesDirectory(
 
 
 export function markdownToHtmlSectionsForElementTypes(markdown: string, elementTypes: string[]):any[] {
+  const areFootnotesIgnored = elementTypes.indexOf("footnoteDefinition") === -1;
   const AST = unified().use(remarkParse).use(remarkGfm).parse(markdown);
       let sections:any[] = [];
       let footnotes:any = {};
       Object.assign(footnotes, { type: "root", children: [] });
-      visit(AST, ["text", ...elementTypes], (node:any) => {
+      visit(AST, ["text", "footnoteDefinition", ...elementTypes], (node:any) => {
         if (node.children && node.children[0]?.value?.startsWith("[:")) {
           sections.push({
             type: node.children[0].value.slice(1, -1).split("-")[0],
@@ -155,7 +156,7 @@ export function markdownToHtmlSectionsForElementTypes(markdown: string, elementT
         toHast(footnotes) as any,
         (node:any) => node.tagName !== "sup"
       );
-      if (filteredFootnotes.children.length > 0) {
+      if (!areFootnotesIgnored && filteredFootnotes.children.length > 0) {
         sections.push({
           type: "paragraph",
           tagName: "div",
