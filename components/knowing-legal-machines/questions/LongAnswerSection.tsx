@@ -1,5 +1,4 @@
 import PartialBulkyBorder from "@/components/PartialBulkyBorder";
-import { LegalExplainerQuestion } from "@/types/legal";
 import { markdownToHtmlSectionsWithoutFootnotes } from "@/util/markdownHelpers";
 
 type Props = {
@@ -14,12 +13,11 @@ export default function LongAnswerSection({ markdownContent }: Props) {
         id="set-collection-items"
         className="relative border-black border-t-[1px] relative"
       >
-        <PartialBulkyBorder total={5} i={3} bottom={false} />
+        <PartialBulkyBorder total={9} i={5.5} bottom={false} />
         <div className="flex flex-col items-center gap-[10px] mt-8">
           <span className="content-type text-xs text-white uppercase bg-black p-2 py-1 self-start">
             LONG ANSWER
           </span>
-
           <div className="max-w-3xl markdown-content px-8 pt-4">
             {sections.length > 0 &&
               sections.map((section, idx) => (

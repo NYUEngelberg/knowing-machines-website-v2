@@ -14,8 +14,8 @@ export default function ShortAnswerSection ({question}: Props) {
       className="relative border-black border-t-[1px] relative"
     >
         <PartialBulkyBorder
-          total={5}
-          i={3}
+          total={9}
+          i={1.5}
           bottom={false}
         />
       <div

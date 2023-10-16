@@ -1,4 +1,3 @@
-import PartialBulkyBorder from "@/components/PartialBulkyBorder";
 import { extractFootnoteDefinitionsFromMarkdown } from "@/util/markdownHelpers";
 
 type Props = {

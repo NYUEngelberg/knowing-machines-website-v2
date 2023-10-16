@@ -1,6 +1,4 @@
-import PartialBulkyBorder from "@/components/PartialBulkyBorder"
-import { LegalCase, LegalExplainerQuestion } from "@/types/legal"
-import LegalCasesListItem from "../LegalCasesListItem"
+import { LegalCase } from "@/types/legal"
 import RelatedCasesListItem from "../cases/RelatedCasesListItem"
 
 type Props = {
