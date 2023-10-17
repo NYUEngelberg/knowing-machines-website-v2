@@ -12,7 +12,7 @@ export default function QuestionItemsList({
   return (
     <div className="max-w-3xl">
       {(questions || [])
-        .sort((a, b) => a.title.localeCompare(b.title, 'en', { sensitivity: 'base' }))
+        .sort((a, b) => a.index - b.index)
         .map((item) => (
           <div
             key={item.title}
