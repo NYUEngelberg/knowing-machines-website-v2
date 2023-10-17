@@ -7,7 +7,7 @@ contentType: "Q&A"
 shortAnswer: "Probably yes."
 confidenceLevel: |
     4
-relatedCases: ["doe-1-v-github", "andersen-v-stability-ai", "getty-images-inc-v-stability-ai", "tremblay-v-openai", "silverman-v-openai", "kadrey-v-meta", "j-l-v-alphabet-ink-google", "chabon-v-openai" ]
+relatedCases: ["doe-1-v-github", "andersen-v-stability-ai", "getty-images-v-stability-ai", "tremblay-v-openai", "silverman-v-openai", "kadrey-v-meta", "j-l-v-alphabet", "chabon-v-openai" ]
 ---
 The non-consensual use of copyright works to train GenAI systems has been one of the most visible controversies surrounding GenAI lawsuits. If you’ve made something, the argument that you can prevent it from being used to train AI feels simple: (1) you own your copyrights; (2) copyright law grants you exclusive control over any attempt to make a copy of your work; and (3) when GenAI systems train on your works, the works are copied into its memory.[^1] Seems like a pretty slam dunk case, right?[^2]
 

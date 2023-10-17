@@ -1,7 +1,7 @@
 ---
 index: 15
-title: "Young v. NeoCortext, Inc."
-slug: "young-v-neocortext-inc"
+title: "Young v. NeoCortext"
+slug: "young-v-neocortext"
 coverImg: "/img/legal/explainer/cases/15.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Kyland Young v. NeoCortext, Inc., 2:23-cv-02496 (C.D. Cal.)"]

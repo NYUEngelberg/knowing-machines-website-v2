@@ -1,6 +1,6 @@
 ---
 index: 4
-title: "Chabon v. OpenAI, Inc"
+title: "Chabon v. OpenAI"
 slug: "chabon-v-openai"
 coverImg: "/img/legal/explainer/cases/4.png"
 coverImgAlt: "A dithered abstract image with lines."

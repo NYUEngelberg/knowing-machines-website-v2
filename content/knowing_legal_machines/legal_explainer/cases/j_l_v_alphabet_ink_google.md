@@ -1,6 +1,6 @@
 ---
 index: 8
-title: "J.L. v. Alphabet Inc., Google"
+title: "J.L. v. Alphabet Inc."
 slug: "j-l-v-alphabet-ink-google"
 coverImg: "/img/legal/explainer/cases/8.png"
 coverImgAlt: "A dithered abstract image with lines."

@@ -1,7 +1,7 @@
 ---
 index: 1
-title: "A.T. et al. v. OpenAI"
-slug: "at-et-al-v-openai"
+title: "A.T. v. OpenAI"
+slug: "at-v-openai"
 coverImg: "/img/legal/explainer/cases/1.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["A.T. et al. v. OpenAI LP et al., 3:23-cv-04557 (N.D. Cal.)"]
