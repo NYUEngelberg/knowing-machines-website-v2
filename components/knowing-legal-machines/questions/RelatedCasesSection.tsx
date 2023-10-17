@@ -22,7 +22,7 @@ export default function RelatedCasesSection ({legalCases}: Props) {
           <span className="flex-grow uppercase leading-tight text-sm ">
             
             {(legalCases || [])
-          .sort((a, b) => a.index - b.index)
+          .sort((a, b) => a.title.localeCompare(b.title, 'en', { sensitivity: 'base' }))
           .map((item, i) => (
             <RelatedCasesListItem isFirstItem={i === 0} item={item} key={item.slug} />
           ))}

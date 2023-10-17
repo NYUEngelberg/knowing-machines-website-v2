@@ -19,7 +19,7 @@ export default function LegalCasesList({ legalCases, skipSlugs = [], prefix = ""
       </div>
       <div className="max-w-3xl">
         {(legalCases || [])
-          .sort((a, b) => a.index - b.index)
+          .sort((a, b) => a.title.localeCompare(b.title, 'en', { sensitivity: 'base' }))
           .map((item) => (
             <LegalCasesListItem item={item} key={item.slug} />
           ))}
