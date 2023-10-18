@@ -102,7 +102,7 @@ export function markdownToHtmlSectionsForElementTypes(markdown: string, elementT
           const mda = u(node.type, { value: node.value });
           sections.push({
             type: node.type,
-            content: toHtml(toHast(mda, { allowDangerousHtml: true }) as any, {
+            content: toHtml(toHast(mda, { allowDangerousHtml: true, clobberPrefix: "" }) as any, {
               allowDangerousHtml: true,
             }),
             className: `${node.type} w-full flex justify-center items-center mb-8`,
@@ -117,7 +117,7 @@ export function markdownToHtmlSectionsForElementTypes(markdown: string, elementT
           );
           sections.push({
             type: node.parent ? node.parent.type : node.type,
-            content: toHtml(toHast(mda, { allowDangerousHtml: true }) as any, {
+            content: toHtml(toHast(mda, { allowDangerousHtml: true, clobberPrefix: "" }) as any, {
               allowDangerousHtml: true,
             }),
             className: node.type,
@@ -133,7 +133,7 @@ export function markdownToHtmlSectionsForElementTypes(markdown: string, elementT
           });
           sections.push({
             type: img.type,
-            content: toHtml(toHast(mda, { allowDangerousHtml: true }) as any, {
+            content: toHtml(toHast(mda, { allowDangerousHtml: true, clobberPrefix: "" }) as any, {
               allowDangerousHtml: true,
             }),
             className: node.type,
@@ -144,16 +144,16 @@ export function markdownToHtmlSectionsForElementTypes(markdown: string, elementT
 
           sections.push({
             type: node.parent ? node.parent.type : node.type,
-            content: toHtml(toHast(mda, { allowDangerousHtml: true }) as any, {
+            content: fixFootnoteReferences(toHtml(toHast(mda, { allowDangerousHtml: true, clobberPrefix: "" }) as any, {
               allowDangerousHtml: true,
-            }),
+            })),
             className: node.type,
           });
           return SKIP;
         }
       });
       const filteredFootnotes = filter(
-        toHast(footnotes) as any,
+        toHast(footnotes, {clobberPrefix: ""}) as any,
         (node:any) => node.tagName !== "sup"
       );
       if (!areFootnotesIgnored && filteredFootnotes.children.length > 0) {
@@ -196,4 +196,15 @@ export function extractFootnoteDefinitionsFromMarkdown(markdown:string):any[] {
     "footnoteDefinition",
   ];
   return markdownToHtmlSectionsForElementTypes(markdown, elementTypes);
+}
+
+function fixFootnoteReferences(htmlString: string): string {
+  const fixedHtmlString = htmlString.replace(
+    /<a href="#fn-(\d+)" id="fnref-(\d+)"[^>]*>\d+<\/a>/g,
+    (match, hrefNumber, idNumber) => {
+      return `<a href="#fn-${hrefNumber}" id="fnref-${idNumber}">${hrefNumber}</a>`;
+    }
+  );
+
+  return fixedHtmlString;
 }
