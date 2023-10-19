@@ -10,6 +10,23 @@
 
 2. Add [lastname].png as provided by the designer (because the image needs to have the dithering and the blue filter applied) to /public/img/about/alumni. It is neccessary that the .md file (from the step above) and the .png file have the same name
 
+## How to convert team member to alumni
+
+1. Move [lastname].md from /content/about/team to /content/about/alumni
+
+2. Move [lastname].png from /public/img/about/alumni to /public/img/about/alumni. It is neccessary that the .md file (from the step above) and the .png file have the same name
+
+## How to edit legal explainer questions
+
+1. Find the question .md file in /content/knowing_legal_machines/legal_explainer/questions
+
+2. Edit the metadata, or edit the main content if you're editing the "long answer"
+
+## How to edit legal explainer cases
+
+1. Find the question .md file in /content/knowing_legal_machines/legal_explainer/cases
+
+2. Edit the metadata and/or content
 
 ## Below is the initial next.js project readme
 

@@ -166,7 +166,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
   }
   return (
     <Layout metaOgTagData={metaOgTagData} navbarDefaultCollapsed={false}>
-      <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px]">
+      <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[20px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
             className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
@@ -182,11 +182,11 @@ export default function NWaysPage({ content, frontmatter, publication }) {
               className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
               href="/publications/9_ways_to_see_a_dataset"
             >
-              collection
+              ← collection |
             </a>
             <span className="inline-block pr-2 p-1 pl-0">
               {" "}
-              | {frontmatter.contentType}
+               {frontmatter.contentType}
             </span>
           </div>
         </div>

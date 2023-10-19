@@ -26,3 +26,11 @@ export function additionalFormatting(htmlContent: string): string {
   let updatedHtmlContent = htmlContent.replace(urlRegex, urlReplacer);
   return updatedHtmlContent;
 }
+
+export function formatToMmDdYyyy(d: Date):string {
+  const month = (d.getMonth() + 1).toString().padStart(2, '0');
+  const day = d.getDate().toString().padStart(2, '0');
+  const year = d.getFullYear().toString();
+
+  return `${month}/${day}/${year}`;
+}
