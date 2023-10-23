@@ -1,5 +1,6 @@
 ---
 title: "9 Ways To See A Dataset: What’s at stake in examining datasets?"
+slug: "9-ways-to-see-a-dataset"
 index: 0
 draft: false
 contentType: "essay"

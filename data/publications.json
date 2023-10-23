@@ -31,7 +31,8 @@
         "preposition": "by",
         "authors": "Melodi Dincer, Jake Karr, Jason Schultz, Michael Weinberg",
         "excerpt": "Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks. Others have answers that are quite well settled, notwithstanding the new AI context bringing attention to them.",
-        "href": "/knowing-legal-machines/legal-explainer"
+        "href": "/knowing-legal-machines/legal-explainer",
+        "slug": "legal-explainer"
       },
       {
         "index": 2,
@@ -41,7 +42,8 @@
         "preposition": "by",
         "authors": "Talya Whyte & Jake Karr",
         "excerpt": "Should the First Amendment allow facial recognition companies to scrape photos of you off the internet and train AI surveillance systems that law enforcement then uses against peaceful protestors?",
-        "href": "/knowing-legal-machines/first_amendment"
+        "href": "/knowing-legal-machines/first_amendment",
+        "slug": "first_amendment"
       },
       {
         "index": 3,
@@ -51,7 +53,8 @@
         "preposition": "by",
         "authors": "Nicola Morrow & Melodi Dincer",
         "excerpt": "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water. But as lawsuits against Clearview continue to mount, the company has invoked a dangerous legal argument that, if successful, could provide a playbook for numerous AI companies to evade accountability.",
-        "href": "/knowing-legal-machines/clearview_ai"
+        "href": "/knowing-legal-machines/clearview_ai",
+        "slug": "clearview_ai"
       },
       {
         "index": 4,
@@ -61,7 +64,8 @@
         "preposition": "by",
         "authors": "Jason Schultz & Melodi Dincer",
         "excerpt": "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their identities. Originating around the turn of the twentieth century in response to the newest image-appropriation technologies of the time, the ROP has continued to evolve to cover each new wave of technologies enabling companies to exploit peoples’ identities as part of their business models.",
-        "href": "/knowing-legal-machines/1_science_legal_and_technology"
+        "href": "/knowing-legal-machines/1_science_legal_and_technology",
+        "slug": "1_science_legal_and_technology"
       },
       {
         "index": 5,
@@ -71,7 +75,8 @@
         "preposition": "by",
         "authors": "Jason Schultz",
         "excerpt": "In this article, I develop a novel theory for how Right of Publicity claims could apply to Facial Recognition systems and detail how their history and development, both statutory and common law, demonstrate their power to impose liability on entities that conduct mass image and identity appropriation, especially through innovative visual technologies.",
-        "href": "/knowing-legal-machines/2_right_of_publicity"
+        "href": "/knowing-legal-machines/2_right_of_publicity",
+        "slug": "2_right_of_publicity"
       },
       {
         "index": 6,
@@ -81,7 +86,8 @@
         "preposition": "by",
         "authors": "Jake Karr",
         "excerpt": "In recent years, there has been a surge of concern about the massive amounts of data that governments collect about us. Calls for transparency and accountability have never been louder, especially when it comes to the ways that this data is fed into government AI systems to help “train” them to make decisions that directly but often secretly impact our lives.",
-        "href": "/knowing-legal-machines/3_freedom_of_information"
+        "href": "/knowing-legal-machines/3_freedom_of_information",
+        "slug": "3_freedom_of_information"
       },
       {
         "index": 7,
@@ -91,7 +97,8 @@
         "preposition": "by",
         "authors": "Melodi Dincer, Kate Crawford & Jason Schultz",
         "excerpt": "Knowing Machines urges OSTP to translate workers’ expectations of privacy in their data into guidance for employers on when and what types of data they can collect. As worker data fuels automated surveillance technologies by serving as training data for machine-learning models, we encourage OSTP to set a high bar for employers who exploit worker data to inform employment decision and undermine workers’ autonomy.",
-        "href": "/knowing-legal-machines/4_automated_worker_surveillance"
+        "href": "/knowing-legal-machines/4_automated_worker_surveillance",
+        "slug": "4_automated_worker_surveillance"
       },
       {
         "index": 8,
@@ -101,7 +108,8 @@
         "preposition": "by",
         "authors": "Melodi Dincer",
         "excerpt": "The pandemic and its aftermath have intensified existing rifts over worker autonomy and control in the U.S., including the many ways in which workers are surveilled, measured, and controlled through automated surveillance products. Most workers understand that some of what they do on the job is important to measure so they can be hired to the right roles, rewarded for solid performance, and compensated fairly. But the ubiquitous datafication of every moment on the clock creates vast pools of data that employers are currently free to collect and use without limitations.",
-        "href": "/knowing-legal-machines/5_worker_surveillance"
+        "href": "/knowing-legal-machines/5_worker_surveillance",
+        "slug": "5_worker_surveillance"
       },
       {
         "index": 9,
@@ -111,7 +119,8 @@
         "preposition": "by",
         "authors": "Melodi Dincer & Kate Crawford",
         "excerpt": "With this Comment, the Knowing Machines Project asks the Commission to investigate and, where appropriate, prohibit the deceptive and unfair practices that emotion recognition companies conduct.",
-        "href": "/knowing-legal-machines/6_federal_trade_commission"
+        "href": "/knowing-legal-machines/6_federal_trade_commission",
+        "slug": "6_federal_trade_commission"
       }
     ]
   },
@@ -136,7 +145,8 @@
         "preposition": "by",
         "authors": "Kate Crawford",
         "excerpt": "If you read the leaked memo from Google, “We Have No Moat, and Neither Does Open AI”, you’ll find a revealing admission about AI development: “data quality scales better than data size.” This short phrase points to a seachange in thinking that has significant implications for generative AI in particular.",
-        "href": "/9-ways-to-see/9-ways-to-see-a-dataset"
+        "href": "/9-ways-to-see/9-ways-to-see-a-dataset",
+        "slug": "9-ways-to-see-a-dataset"
       },
       {
         "index": 1,
@@ -146,7 +156,8 @@
         "preposition": "by",
         "authors": "Mike Ananny",
         "excerpt": "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements.",
-        "href": "/9-ways-to-see/datasets-as-institutions"
+        "href": "/9-ways-to-see/datasets-as-institutions",
+        "slug": "datasets-as-institutions"
       },
       {
         "index": 2,
@@ -156,7 +167,8 @@
         "preposition": "by",
         "authors": "Jer Thorp",
         "excerpt": "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight.",
-        "href": "/9-ways-to-see/NABirds-and-the-Iceland-Gull"
+        "href": "/9-ways-to-see/NABirds-and-the-Iceland-Gull",
+        "slug": "NABirds-and-the-Iceland-Gull"
       },
       {
         "index": 3,
@@ -166,7 +178,8 @@
         "preposition": "by",
         "authors": "Will Orr",
         "excerpt": "The case of the Colossal Cleaned Common Crawl (C4) dataset underscores the importance of uncovering the sociotechnical dynamics that contribute to the formation of datasets.",
-        "href": "/9-ways-to-see/C4"
+        "href": "/9-ways-to-see/C4",
+        "slug": "C4"
       },
       {
         "index": 4,
@@ -176,7 +189,8 @@
         "preposition": "by",
         "authors": "Hamsini Sridharan",
         "excerpt": "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories.",
-        "href": "/9-ways-to-see/nabirds"
+        "href": "/9-ways-to-see/nabirds",
+        "slug": "nabirds"
       },
       {
         "index": 5,
@@ -186,7 +200,8 @@
         "preposition": "by",
         "authors": "Sasha Luccioni",
         "excerpt": "ImageNet is one of the first datasets AI researchers are exposed to when learning and experimenting with computer vision approaches. Since it was first released in 2009, it has been used to train and evaluate nearly every AI model in the object recognition task, and improvement upon state-of-the-art performance on the dataset can translate into getting accepted into top AI conferences and appearing on leaderboards.",
-        "href": "/9-ways-to-see/ImageNet"
+        "href": "/9-ways-to-see/ImageNet",
+        "slug": "ImageNet"
       },
       {
         "index": 6,
@@ -196,7 +211,8 @@
         "preposition": "by",
         "authors": "Jason Schultz",
         "excerpt": "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?",
-        "href": "/9-ways-to-see/LAION-copyright"
+        "href": "/9-ways-to-see/LAION-copyright",
+        "slug": "LAION-copyright"
       },
       {
         "index": 7,
@@ -206,7 +222,8 @@
         "preposition": "by",
         "authors": "Jer Thorp",
         "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
-        "href": "/9-ways-to-see/iNaturalist"
+        "href": "/9-ways-to-see/iNaturalist",
+        "slug": "iNaturalist"
       },
       {
         "index": 8,
@@ -216,7 +233,8 @@
         "preposition": "by",
         "authors": "Christo Buschek",
         "excerpt": "While research and investigations share many similarities, there are also key differences that set them apart. An investigation aims to scrutinize the investigative subject, to discover something hidden or secret, and then tell a story about it.",
-        "href": "/9-ways-to-see/investigating-datasets"
+        "href": "/9-ways-to-see/investigating-datasets",
+        "slug": "investigating-datasets"
       }
     ]
   },

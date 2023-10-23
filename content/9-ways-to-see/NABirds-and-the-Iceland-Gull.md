@@ -1,5 +1,6 @@
 ---
 title: "9 Ways To See A Dataset: Consider The Iceland Gull"
+slug: "NABirds-and-the-Iceland-Gull"
 draft: false
 index: 4
 contentType: essay

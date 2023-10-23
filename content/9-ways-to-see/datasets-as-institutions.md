@@ -1,5 +1,6 @@
 ---
 title: "9 Ways To See A Dataset: Datasets as Institutions — The New York Times Annotated Corpus"
+slug: "datasets-as-institutions"
 draft: false
 index: 0
 contentType: "essay"

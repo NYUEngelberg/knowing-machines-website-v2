@@ -1,5 +1,6 @@
 ---
 title: "Comments of the Knowing Machines Research Project to the Federal Trade Commission"
+slug: "6_federal_trade_commission"
 index: 6
 draft: false
 contentType: "Comment"

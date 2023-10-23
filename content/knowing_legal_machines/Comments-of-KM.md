@@ -1,6 +1,7 @@
 ---
 title: "Comments of the Knowing Machines Research Project to the White House Office of Science and Technology Policy on Automated Worker Surveillance and Management"
-draft: false
+slug: ""
+draft: true
 index: 3
 contentType: "essay"
 coverImg: "/img/legal/8.png"

@@ -1,7 +1,8 @@
 ---
 title: "To Preserve Its Surveillance Empire, This Powerful Tech Company Is Deploying a Free Speech Law Meant to Protect Traditional Activists From Bogus Lawsuits"
+slug: ""
 index: 0
-draft: false
+draft: true
 contentType: "Op-Ed"
 coverImg: "/img/legal/0.png"
 coverImgAlt: "A dithered abstract image of a mesh."

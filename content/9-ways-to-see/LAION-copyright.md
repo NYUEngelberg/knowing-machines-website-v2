@@ -1,5 +1,6 @@
 ---
 title: "9 Ways To See A Dataset: What Can LAION Teach Us About Copyright Law?"
+slug: "LAION-copyright"
 draft: false
 index: 4
 contentType: essay
