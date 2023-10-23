@@ -19,9 +19,9 @@ import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 import NWaysCarousel from "@/components/n-ways-to-see/NWaysCarousel";
 import CollectionLinks from "@/components/collection-essay/CollectionLinks";
-import { getPublicationByHref } from "@/util/publications";
+import { getPublicationByHref, getEssaysForPublicationSlug } from "@/util/publications";
 
-export default function NWaysPage({ content, frontmatter, publication }) {
+export default function NWaysPage({ content, frontmatter, publication, publicationEssays }) {
   const metaOgTagData = {
     title: frontmatter.title,
     description: frontmatter.excerpt,
@@ -265,7 +265,9 @@ export default function NWaysPage({ content, frontmatter, publication }) {
             margin-top: 4em;
           }
         `}</style>
-        <CollectionLinks publication={publication} />
+        <CollectionLinks
+          publication={publication}
+          publicationEssays={publicationEssays}/>
       </div>
     </Layout>
   );
@@ -303,5 +305,7 @@ export async function getStaticProps({ params: { slug } }) {
   const publication = await getPublicationByHref(
     "/publications/knowing_legal_machines"
   );
-  return { props: { frontmatter, slug, content, publication } };
+
+  const publicationEssays = getEssaysForPublicationSlug(publication.slug);
+  return { props: { frontmatter, slug, content, publication, publicationEssays } };
 }

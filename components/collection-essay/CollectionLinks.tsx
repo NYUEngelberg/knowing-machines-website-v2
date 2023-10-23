@@ -1,11 +1,12 @@
-import { PublicationMetaData } from "@/types/publications";
+import { PublicationCollectionItem, PublicationMetaData } from "@/types/publications";
 import CollectionItemsList from "./CollectionItemsList";
 
 type Props = {
   publication: PublicationMetaData;
+  publicationEssays: PublicationCollectionItem[];
 };
 
-export default function CollectionLinks({ publication }: Props) {
+export default function CollectionLinks({ publication, publicationEssays }: Props) {
   return (
     <div className="my-12">
       <div className="relative border-black border-t-[1px] relative max-w-3xl mb-12">
