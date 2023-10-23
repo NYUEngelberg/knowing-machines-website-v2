@@ -1,5 +1,7 @@
 export type PublicationMetaData = {
   href: string;
+  slug?: string;
+  contentPath?: string;
   contentType: string;
   coverImg: string;
   coverImgAlt: string;
@@ -15,6 +17,7 @@ export type PublicationMetaData = {
 export type PublicationCollectionItem = {
   index: number
   contentType: string
+  content?: string
   title: string
   slug: string
   img: string

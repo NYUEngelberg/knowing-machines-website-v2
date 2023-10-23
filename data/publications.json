@@ -12,6 +12,8 @@
   },
   {
     "href": "/publications/knowing_legal_machines",
+    "slug": "knowing-legal-machines",
+    "contentPath": "knowing_legal_machines",
     "contentType": "Collection",
     "coverImg": "/img/legal/home.png",
     "coverImgAlt": "A dithered abstract image of a mesh.",
@@ -126,6 +128,8 @@
   },
   {
     "href": "/publications/9_ways_to_see_a_dataset",
+    "slug": "9-ways-to-see",
+    "contentPath": "9-ways-to-see",
     "contentType": "Collection",
     "coverImg": "/img/9_ways/home_9_ways.png",
     "coverImgAlt": "a dithered image of a grid of images selected from a dataset",

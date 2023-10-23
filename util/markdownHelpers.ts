@@ -12,6 +12,7 @@ import { filter } from "unist-util-filter";
 import { u } from "unist-builder";
 import { toHast } from "mdast-util-to-hast";
 import { toHtml } from "hast-util-to-html";
+import { PublicationMetaData } from "@/types/publications";
 
 export async function getHtmlFromMdFile(mdFilePath: string) {
   const markdownContent = getMarkdownContentFromFile(mdFilePath);
@@ -31,6 +32,12 @@ export function getMdFilesFromDir(dirPath: string) {
   const fileNames = getFilesFromDir(dirPath);
   const mdFileNames = fileNames.filter((fileName) => /\.md$/.test(fileName));
   return mdFileNames;
+}
+
+export function getMarkdownWithMetaFromFile(path: string) {
+  const markdownWithMeta = fs.readFileSync(path, "utf-8");
+  const { data: frontmatter, content } = matter(markdownWithMeta);
+  return { frontmatter, content };
 }
 
 export async function getHtmlFromMdFilesInDir(dirPath: string) {
@@ -59,7 +66,39 @@ export async function markdownToHtml(markdownContent: string) {
   return additionalFormatting(htmlContent);
 }
 
-export async function getStaticPathsFromMdFilesDirectory(
+export function getMdFileNamesForPublication(publication: PublicationMetaData):string[] {
+  const files = fs.readdirSync(path.join("content", publication.contentPath || ""));
+  const filePaths = files
+    .filter((filename) => filename.endsWith(".md"));
+  return filePaths;
+}
+
+export function getStaticPublicationEssayPathsFromMdFilesDirectory(publication: PublicationMetaData) {
+  const files = fs.readdirSync(path.join("content", publication.contentPath || ""));
+  const temppaths = files
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename) => {
+      const markdownWithMeta = fs.readFileSync(
+        path.join("content", publication.contentPath || "", filename),
+        "utf-8"
+      );
+      const { data: frontmatter } = matter(markdownWithMeta);
+      if (frontmatter.draft === false) {
+        return { params: {
+          essay: frontmatter.slug,
+          publication: publication.slug
+        } };
+      } else {
+        return null;
+      }
+    });
+  const paths = temppaths.filter((path) => {
+    return path && path;
+  });
+  return paths;
+}
+
+export async function getStaticSlugPathsFromMdFilesDirectory(
   directoryBasePath: string
 ) {
   const files = fs.readdirSync(path.join(directoryBasePath));

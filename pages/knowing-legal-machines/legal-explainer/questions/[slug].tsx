@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  getStaticPathsFromMdFilesDirectory,
+  getStaticSlugPathsFromMdFilesDirectory,
   markdownToHtml,
 } from "../../../../util/markdownHelpers";
 import Layout from "@/components/Layout";
@@ -42,7 +42,7 @@ export default function LegalExplainerQuestionPage({
 
 export async function getStaticPaths() {
   const basePath = "content/knowing_legal_machines/legal_explainer/questions";
-  const paths = await getStaticPathsFromMdFilesDirectory(basePath);
+  const paths = await getStaticSlugPathsFromMdFilesDirectory(basePath);
   return { paths, fallback: false };
 }
 
