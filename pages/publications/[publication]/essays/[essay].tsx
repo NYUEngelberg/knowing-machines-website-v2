@@ -1,9 +1,10 @@
 import Layout from "@/components/Layout";
-import { PublicationCollectionItem } from "@/types/publications";
+import { PublicationCollectionItem, PublicationMetaData } from "@/types/publications";
 import { getStaticPublicationEssayPathsFromMdFilesDirectory } from "@/util/markdownHelpers";
 import {
   getEssaysForPublicationSlug,
   getPageMetaOgTagDataForPublicationItem,
+  getPublicationBySlug,
   getPublicationsWithEssays
 } from "@/util/publications";
 import { GetStaticProps } from "next";
@@ -11,18 +12,19 @@ import { GetStaticProps } from "next";
 type Props = {
   essay: PublicationCollectionItem;
   otherEssays: PublicationCollectionItem[];
+  publication: PublicationMetaData;
 };
 
-export default function EssayPage({ essay, otherEssays }: Props) {
+export default function EssayPage({ essay, otherEssays, publication }: Props) {
   return (
     <Layout metaOgTagData={getPageMetaOgTagDataForPublicationItem(essay)}>
       <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[20px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
             className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
-            style={{ backgroundImage: "url(" + essay.img + ")" }}
+            style={{ backgroundImage: "url(" + essay.coverImg + ")" }}
             role="img"
-            aria-label={essay.imgAlt}
+            aria-label={essay.coverImgAlt}
           ></div>
           <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
           <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
@@ -30,7 +32,7 @@ export default function EssayPage({ essay, otherEssays }: Props) {
           <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
             <a
               className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-              href="/publications/9_ways_to_see_a_dataset"
+              href={publication.href}
             >
               ← collection |
             </a>
@@ -61,8 +63,9 @@ export async function getStaticPaths() {
 export const getStaticProps: GetStaticProps = async (context) => {
   const publicationSlug = context.params?.publication + "";
   const essaySlug = context.params?.essay + "";
+  const publication = await getPublicationBySlug(publicationSlug);
   const publicationEssays = getEssaysForPublicationSlug(publicationSlug);
   const essay = publicationEssays.find((r) => r.slug === essaySlug);
   const otherEssays = publicationEssays.filter((r) => r.slug !== essaySlug);
-  return { props: { essay, otherEssays } };
+  return { props: { essay, otherEssays, publication } };
 };

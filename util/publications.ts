@@ -53,8 +53,8 @@ export function getEssaysForPublication(
         content: content || "",
         title: frontmatter.title || "",
         slug: frontmatter.slug || "",
-        img: frontmatter.img || "",
-        imgAlt: frontmatter.imgAlt || "",
+        coverImg: frontmatter.coverImg || "",
+        coverImgAlt: frontmatter.coverImgAlt || "",
         preposition: frontmatter.preposition || "",
         authors: frontmatter.authors || "",
         excerpt: frontmatter.excerpt || "",
@@ -94,6 +94,22 @@ export async function getPublicationByHref(href: string) {
   return publication;
 }
 
+export async function getPublicationBySlug(slug: string) {
+  const publicationData: PublicationMetaData[] = publicationsJson;
+  const publication = publicationData.find(
+    (p) => p.slug === slug
+  ) as PublicationMetaData;
+  const introPath = publication.intro;
+  if (introPath != null) {
+    const intro = await getHtmlFromMdFile(introPath);
+    return {
+      ...publication,
+      intro,
+    };
+  }
+  return publication;
+}
+
 export function getPageMetaOgTagDataForPublicationItem(
   item: PublicationCollectionItem
 ): MetaOgTagData {
@@ -101,8 +117,8 @@ export function getPageMetaOgTagDataForPublicationItem(
     title: item.title,
     description: item.excerpt,
     url: item.href,
-    imageUrl: item.img,
-    imageAlt: item.imgAlt || "",
+    imageUrl: item.coverImg,
+    imageAlt: item.coverImgAlt || "",
   };
   return metaOgTagData;
 }

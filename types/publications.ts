@@ -20,8 +20,8 @@ export type PublicationCollectionItem = {
   content?: string
   title: string
   slug: string
-  img: string
-  imgAlt?: string
+  coverImg: string
+  coverImgAlt?: string
   preposition: string
   authors: string
   excerpt: string
