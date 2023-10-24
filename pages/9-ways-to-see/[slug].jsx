@@ -19,7 +19,7 @@ import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 import NWaysCarousel from "@/components/n-ways-to-see/NWaysCarousel";
 import CollectionLinks from "@/components/collection-essay/CollectionLinks";
-import { getPublicationByHref, getEssaysForPublicationSlug } from "@/util/publications";
+import { getPublicationBySlug, getEssaysForPublicationSlug } from "@/util/publications";
 
 export default function NWaysPage({ content, frontmatter, publication, publicationEssays }) {
   const metaOgTagData = {
@@ -176,7 +176,7 @@ export default function NWaysPage({ content, frontmatter, publication, publicati
           <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
             <a
               className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-              href="/publications/9_ways_to_see_a_dataset"
+              href="/publications/9-ways-to-see"
             >
               ← collection |
             </a>
@@ -296,9 +296,7 @@ export async function getStaticProps({ params: { slug } }) {
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
-  const publication = await getPublicationByHref(
-    "/publications/9_ways_to_see_a_dataset"
-  );
+  const publication = await getPublicationBySlug("9-ways-to-see");
 
   const publicationEssays = getEssaysForPublicationSlug(publication.slug);
   return { props: { frontmatter, slug, content, publication, publicationEssays } };

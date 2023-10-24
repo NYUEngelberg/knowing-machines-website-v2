@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import { getPublicationByHref } from "@/util/publications";
+import { getPublicationByHref, getPublicationBySlug } from "@/util/publications";
 import { PublicationMetaData } from "@/types/publications";
 import { useEffect, useState } from "react";
 import { unified } from "unified";
@@ -153,7 +153,7 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
               <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
                 <a
                   className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-                  href="/publications/knowing_legal_machines"
+                  href="/publications/knowing-legal-machines"
                 >← collection |</a>
                 <span className="inline-block pr-2 p-1 pl-0">
                   {" "}
@@ -251,8 +251,8 @@ export async function getStaticProps({ }) {
     );
     const { data: frontmatter, content } = matter(markdownWithMeta);
   
-    const publication = await getPublicationByHref(
-      "/publications/knowing_legal_machines"
+    const publication = await getPublicationBySlug(
+      "knowing-legal-machines"
     );
 
     const questions = getLegalExplainerQuestions();

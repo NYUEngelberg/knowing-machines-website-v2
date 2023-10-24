@@ -1,10 +1,7 @@
 import Layout from "@/components/Layout";
 import { getHomePageIntro } from "@/util/homePageContent";
-import { getActiveSet, getSets } from "@/util/setsContent";
 import { WorkingSet } from "@/types/sets";
 import UpcomingSets from "@/components/sets/UpcomingSets";
-import HomePageHeading from "@/components/HomePageHeading";
-import ActiveSet from "@/components/sets/ActiveSet";
 import NewsletterFormEmbed from "@/components/NewsletterFormEmbed";
 import PublicationsSection from "@/components/PublicationsSection";
 import { PublicationMetaData } from "@/types/publications";
@@ -13,12 +10,10 @@ import { MetaOgTagData } from "@/types/meta";
 
 type Props = {
   intro: string;
-  sets: WorkingSet[];
-  activeSet: WorkingSet;
   publicationPreviews: PublicationMetaData[]
 };
 
-export default function Home({ intro, sets, activeSet, publicationPreviews }: Props) {
+export default function Home({ intro, publicationPreviews }: Props) {
   const metaOgTagData:MetaOgTagData = {
     title: "Knowing Machines",
     description: "Knowing Machines is a research project tracing the histories, practices, and politics of how machine learning systems are trained to interpret the world.",
@@ -72,14 +67,10 @@ export default function Home({ intro, sets, activeSet, publicationPreviews }: Pr
 
 export async function getStaticProps() {
   const intro = await getHomePageIntro();
-  const sets = getSets();
-  const activeSet = await getActiveSet();
   const publicationPreviews = getPublicationPreviews();
   return {
     props: {
       intro,
-      sets,
-      activeSet,
       publicationPreviews
     },
   };

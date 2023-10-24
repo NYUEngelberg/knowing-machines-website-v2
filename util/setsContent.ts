@@ -40,38 +40,3 @@ export async function getSetDescription(index: number) {
   const description = await getHtmlFromMdFile(`content/sets/${dirName}/description.md`);
   return description;
 }
-
-async function getSetCollectionItems(index: number): Promise<WorkingSetCollectionItem[]> {
-  const setDirNames = getSetDirs();
-  const dirName = setDirNames[index - 1];
-  const collectionDir = `content/sets/${dirName}/collection`;
-  const fileNames = getFilesFromDir(collectionDir);
-  const collectionItems = await Promise.all(fileNames.map(async (fileName) => {
-    const itemIndex = Number(fileName.split("-")[0]);
-    const regex = /\d+-\[([^\]]+)\]-([^\[]+)-\[([^\]]+)\]-(.+)\.md/;
-    const [__, contentType, title, preposition, authors] = fileName.match(regex) as string[];
-    const excerpt = await getHtmlFromMdFile(`content/sets/${dirName}/collection/${fileName}`);
-    return {
-      index: itemIndex,
-      contentType: contentType,
-      preposition: preposition.replaceAll("-", " "),
-      title: title.replaceAll("-", " "),
-      excerpt: excerpt,
-      authors: authors.replaceAll("-", " "),
-      href: "/"
-    };
-  }));
-  return collectionItems;
-}
-
-export async function getActiveSet():Promise<WorkingSet> {
-  const sets = getSets();
-  const activeSet = sets[0];
-  const activeSetDescription = await getSetDescription(activeSet.index);
-  const collection = await getSetCollectionItems(activeSet.index);
-  return {
-    ...activeSet,
-    description: activeSetDescription,
-    collection
-  }
-}
