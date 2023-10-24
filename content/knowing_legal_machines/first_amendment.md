@@ -1,6 +1,6 @@
 ---
 title: "The First Amendment Should Protect Us from Facial Recognition Technologies – Not the Other Way Around"
-slug: "first_amendment"
+slug: "first-amendment"
 index: 1
 draft: false
 contentType: "Post"

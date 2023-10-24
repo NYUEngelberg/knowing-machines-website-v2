@@ -1,6 +1,6 @@
 ---
 title: "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)"
-slug: "1_science_legal_and_technology"
+slug: "amici-brief-science-legal-and-technology"
 index: 1
 draft: false
 contentType: "Amicus Brief"

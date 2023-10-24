@@ -1,6 +1,6 @@
 ---
 title: "Tell the White House to Limit AI-Driven Worker Surveillance"
-slug: "5_worker_surveillance"
+slug: "limit-worker-surveillance"
 index: 5
 draft: false
 contentType: "Post"

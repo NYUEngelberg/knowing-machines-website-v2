@@ -1,6 +1,6 @@
 ---
 title: "Clearview AI Is Deploying a California Law Meant to Protect Activists From Bogus Lawsuits"
-slug: "clearview_ai"
+slug: "clearview-ai"
 index: 1
 draft: false
 contentType: "Post"
