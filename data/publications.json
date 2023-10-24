@@ -1,5 +1,16 @@
 [
   {
+      "href": "/knowing-legal-machines/bird-in-hand",
+      "contentType": "Collection",
+      "coverImg": "/img/legal/explainer.png",
+      "coverImgAlt": "xx",
+      "title": "Bird in hand",
+      "preposition": "Written by",
+      "authors": "Hamsini Sridharan & Jer Thorp",
+      "excerpt": "xx",
+      "external": true
+  },
+  {
     "href": "/knowing-legal-machines/legal-explainer",
     "contentType": "Explainer",
     "coverImg": "/img/legal/explainer.png",
