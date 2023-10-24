@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import { getPublicationByHref, getPublicationBySlug } from "@/util/publications";
+import { getPublicationBySlug } from "@/util/publications";
 import { PublicationMetaData } from "@/types/publications";
 import { useEffect, useState } from "react";
 import { unified } from "unified";
