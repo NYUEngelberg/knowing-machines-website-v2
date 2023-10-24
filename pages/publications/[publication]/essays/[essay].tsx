@@ -23,7 +23,9 @@ export default function EssayPage({ essay, publicationEssays, publication }: Pro
     <Layout metaOgTagData={getPageMetaOgTagDataForPublicationItem(essay)}>
       <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[20px]">
         <EssayTopSection essay={essay} publication={publication} />
-        <EssayMarkdownContent markdownContent={essay.content || ""} />
+        <EssayMarkdownContent
+          markdownContent={essay.content || ""}
+          frontmatter={essay.frontmatter || {}}/>
         <CollectionLinks
           publication={publication}
           publicationEssays={publicationEssays}/>

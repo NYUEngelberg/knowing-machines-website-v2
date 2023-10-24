@@ -19,6 +19,7 @@ export type PublicationCollectionItem = {
   index: number
   contentType: string
   content?: string
+  frontmatter?: any
   title: string
   slug: string
   coverImg: string

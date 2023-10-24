@@ -57,14 +57,15 @@ export function getEssaysForPublication(
         index: frontmatter.index || "",
         contentType: frontmatter.contentType || "",
         content: content || "",
+        frontmatter: frontmatter,
         title: frontmatter.title || "",
         slug: frontmatter.slug || "",
+        href: `/publications/${publication.slug}/essays/${frontmatter.slug}`,
         coverImg: frontmatter.coverImg || "",
         coverImgAlt: frontmatter.coverImgAlt || "",
         preposition: frontmatter.preposition || "",
         authors: frontmatter.authors || "",
         excerpt: frontmatter.excerpt || "",
-        href: frontmatter.href || "",
       };
     })
     .sort((a, b) => a.index - b.index);
