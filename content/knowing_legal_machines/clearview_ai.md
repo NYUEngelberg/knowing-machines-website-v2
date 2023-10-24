@@ -3,7 +3,7 @@ title: "Clearview AI Is Deploying a California Law Meant to Protect Activists Fr
 slug: "clearview_ai"
 index: 1
 draft: false
-contentType: "Op-Ed"
+contentType: "Post"
 coverImg: "/img/legal/7.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"

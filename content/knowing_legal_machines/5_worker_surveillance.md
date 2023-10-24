@@ -3,7 +3,7 @@ title: "Tell the White House to Limit AI-Driven Worker Surveillance"
 slug: "5_worker_surveillance"
 index: 5
 draft: false
-contentType: "Op-Ed"
+contentType: "Post"
 coverImg: "/img/legal/3.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"

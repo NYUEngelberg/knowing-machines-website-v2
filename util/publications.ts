@@ -43,10 +43,16 @@ export function getEssaysForPublication(
   publication: PublicationMetaData
 ): PublicationCollectionItem[] {
   const essayFileNames = getMdFileNamesForPublication(publication);
-  const essays = essayFileNames.map((fileName) => {
+  const essays = essayFileNames
+    .filter((filename) => filename != "intro.md")
+    .map((filename) => {
       const { frontmatter, content } = getMarkdownWithMetaFromFile(
-        path.join("content", publication.contentPath || "", fileName)
+        path.join("content", publication.contentPath || "", filename)
       );
+      return { frontmatter, content };
+    })
+    .filter(({ frontmatter, content }) => frontmatter.draft != true)
+    .map(({ frontmatter, content }) => {
       return {
         index: frontmatter.index || "",
         contentType: frontmatter.contentType || "",
@@ -60,7 +66,8 @@ export function getEssaysForPublication(
         excerpt: frontmatter.excerpt || "",
         href: frontmatter.href || "",
       };
-    });
+    })
+    .sort((a, b) => a.index - b.index);
   return essays;
 }
 

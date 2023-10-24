@@ -3,7 +3,7 @@ title: "The First Amendment Should Protect Us from Facial Recognition Technologi
 slug: "first_amendment"
 index: 1
 draft: false
-contentType: "Op-Ed"
+contentType: "Post"
 coverImg: "/img/legal/0.png"
 coverImgAlt: "A dithered abstract image of a mesh."
 preposition: "by"

@@ -11,6 +11,7 @@ export type PublicationMetaData = {
   excerpt: string;
   intro?: string;
   external?: boolean;
+  nonEssayCollectionItems?: PublicationCollectionItem[]
   collectionItems?: PublicationCollectionItem[]
 };
 
