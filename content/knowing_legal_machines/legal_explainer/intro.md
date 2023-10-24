@@ -21,6 +21,6 @@ This explainer is an evolving project to provide everyone with the types of answ
 
 In many cases, the question/answer pairs also include some of the cases that are actively litigating them. These cases may serve as examples of how a dispute related to the question can work in real life.  They are also cases to keep an eye on if you are especially interested in the question.
 
-While we hope that these questions and answers will help you understand the shape of the legal discussions around generative AI, you should not use them as legal advice.  One reason lawyers tend towards “it depends”-type answers is because it really does depend. Even answers that are right in most cases will be influenced by specific facts and details that we do not touch on here. If you want a specific legal answer about a specific action, you should still talk to a lawyer.
+While we hope that these questions and answers will help you understand the shape of the legal discussions around generative AI, you should not use them as legal advice.  One reason lawyers tend towards “it depends”-type answers is because it really does depend. Even answers that are right in most cases will be influenced by specific facts and details that we do not touch on here. You should also keep in mind that these answers are grounded in US law. They may be different in different parts of the world. If you want a specific legal answer about a specific action, you should still talk to a lawyer.
 
 *Thanks to Catherine Wang for research support.*
