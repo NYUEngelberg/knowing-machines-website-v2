@@ -2,7 +2,7 @@
 title: "If Not Them, Us"
 slug: "if-not-them-us"
 draft: false
-index: 3
+index: 2
 contentType: Op-Ed
 coverImg: "/img/9_ways/c4_black.png"
 coverImgAlt: "xx"
