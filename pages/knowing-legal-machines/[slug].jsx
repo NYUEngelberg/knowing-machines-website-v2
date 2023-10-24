@@ -19,7 +19,7 @@ import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 import NWaysCarousel from "@/components/n-ways-to-see/NWaysCarousel";
 import CollectionLinks from "@/components/collection-essay/CollectionLinks";
-import { getEssaysForPublicationSlug } from "@/util/publications";
+import { getPublicationBySlug, getEssaysForPublicationSlug } from "@/util/publications";
 
 export default function NWaysPage({ content, frontmatter, publication, publicationEssays }) {
   const metaOgTagData = {
