@@ -17,12 +17,16 @@ export function getPublicationPreviews() {
   return publicationPreviews;
 }
 
-export function getPublicationPagePaths() {
-  const publicationPagePaths = [
+export function getPublicationPageSlugs() {
+  const publicationsWithEssaysSlugs = getPublicationsWithEssays()
+    .map((r) => r.slug || "")
+    .filter((slug) => slug != "");
+  const legacyPublicationPageSlugs = [
     "9_ways_to_see_a_dataset",
     "knowing_legal_machines",
   ];
-  return publicationPagePaths;
+  const publicationPageSlugs = Array.from(new Set([...publicationsWithEssaysSlugs, ...legacyPublicationPageSlugs]));
+  return publicationPageSlugs;
 }
 
 export function getPublicationCollectionItemEssays(
@@ -91,6 +95,9 @@ export async function getPublicationByHref(href: string) {
   const publication = publicationData.find(
     (p) => p.href === href
   ) as PublicationMetaData;
+  if (publication == null) {
+    return null;
+  }
   const introPath = publication.intro;
   if (introPath != null) {
     const intro = await getHtmlFromMdFile(introPath);
@@ -124,8 +131,8 @@ export function getPageMetaOgTagDataForPublicationItem(
   const metaOgTagData = {
     title: item.title,
     description: item.excerpt,
-    url: item.href,
-    imageUrl: item.coverImg,
+    url: "https://knowingmachines.org" + item.href,
+    imageUrl: "https://knowingmachines.org" + item.coverImg,
     imageAlt: item.coverImgAlt || "",
   };
   return metaOgTagData;

@@ -24,7 +24,7 @@ export default function EssayTopSection({ essay, publication }: Props) {
         <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
           <a
             className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-            href={publication.href}
+            href={`/publications/${publication.slug}`}
           >
             ← collection |
           </a>

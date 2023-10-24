@@ -7,19 +7,22 @@ import {
   PublicationMetaData,
 } from "@/types/publications";
 import {
+  getEssaysForPublicationSlug,
   getPublicationByHref,
-  getPublicationPagePaths,
+  getPublicationBySlug,
+  getPublicationPageSlugs,
 } from "@/util/publications";
 
 type Props = {
   publication: PublicationMetaData;
+  publicationEssays: PublicationCollectionItem[]
 };
 
-export default function PublicationPage({ publication }: Props) {
+export default function PublicationPage({ publication, publicationEssays }: Props) {
   const metaOgTagData:MetaOgTagData = {
     title: publication.title,
     description: publication.excerpt,
-    url: "https://knowingmachines.org" + publication.href,
+    url: "https://knowingmachines.org/publications/" + publication.slug,
     imageUrl: "https://knowingmachines.org" + publication.coverImg,
     imageAlt: "https://knowingmachines.org" + publication.coverImgAlt,
   }
@@ -49,7 +52,10 @@ export default function PublicationPage({ publication }: Props) {
             }}
           ></div>
         </div>
-        <CollectionItemsList collectionItems={publication.collectionItems} />
+        <CollectionItemsList collectionItems={[
+          ...(publication.nonEssayCollectionItems || []),
+          ...publicationEssays,
+        ]} />
       </div>
       <></>
     </Layout>
@@ -57,9 +63,9 @@ export default function PublicationPage({ publication }: Props) {
 }
 
 export async function getStaticPaths() {
-  const publicationStaticPaths = getPublicationPagePaths();
+  const publicationStaticSlugs = getPublicationPageSlugs();
   return {
-    paths: publicationStaticPaths.map((publication) => ({
+    paths: publicationStaticSlugs.map((publication) => ({
       params: { publication },
     })),
     //[{ params: { id: '1' } }, { params: { id: '2' } }],
@@ -70,10 +76,14 @@ export async function getStaticPaths() {
 export async function getStaticProps(context: any) {
   const slug: string = context.params.publication;
   const href = "/publications/" + slug;
-  const publication = await getPublicationByHref(href) as PublicationMetaData;
+  let publication = await getPublicationByHref(href) as PublicationMetaData;
+  if (publication == null) {
+    publication = await getPublicationBySlug(slug);
+  }
 
+  const publicationEssays = getEssaysForPublicationSlug(publication.slug || "");
   return {
     // Passed to the page component as props
-    props: { publication: publication },
+    props: { publication, publicationEssays },
   };
 }

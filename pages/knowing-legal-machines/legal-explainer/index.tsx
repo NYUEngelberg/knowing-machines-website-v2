@@ -2,10 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import {
-    getPublicationByHref,
-    getPublicationPagePaths,
-  } from "@/util/publications";
+import { getPublicationByHref } from "@/util/publications";
 import { PublicationMetaData } from "@/types/publications";
 import { useEffect, useState } from "react";
 import { unified } from "unified";
@@ -38,11 +35,7 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
     const metaOgTagData = {
         title: frontmatter.title,
         description: frontmatter.excerpt,
-        url:
-          "https://knowingmachines.org" +
-          (publication.collectionItems?.find(
-            (item) => item.title === frontmatter.title
-          )?.href || ""),
+        url: "knowing-legal-machines/legal-explainer",
         imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
         imageAlt: frontmatter.coverImgAlt,
       };

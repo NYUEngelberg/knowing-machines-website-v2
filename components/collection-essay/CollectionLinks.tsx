@@ -24,7 +24,7 @@ export default function CollectionLinks({
         <div className="absolute top-[-4px] right-0 h-[5px] w-[200px] bg-black"></div>
         <div>
           <a
-            href={publication.href}
+            href={`/publications/${publication.slug}`}
             className="flex flex-row items-center gap-[10px] mt-[20px]"
           >
             <h3 className="flex-grow uppercase font-bold tracking-wides text-xl">

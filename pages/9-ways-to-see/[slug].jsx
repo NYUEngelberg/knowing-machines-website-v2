@@ -25,11 +25,7 @@ export default function NWaysPage({ content, frontmatter, publication, publicati
   const metaOgTagData = {
     title: frontmatter.title,
     description: frontmatter.excerpt,
-    url:
-      "https://knowingmachines.org" +
-      (publication.collectionItems.find(
-        (item) => item.title === frontmatter.title
-      )?.href || ""),
+    url: `https://knowingmachines.org/publications/${publication.slug}/essays/${frontmatter.slug}`,
     imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
     imageAlt: frontmatter.coverImgAlt,
   };
