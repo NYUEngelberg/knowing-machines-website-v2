@@ -12,12 +12,13 @@ export default function EssayTopSection({ essay, publication }: Props) {
   return (
     <>
       <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
-        <div
+        <img src={essay.coverImg} alt={essay.coverImgAlt} 
+          role="img"
+          aria-label={essay.coverImgAlt}/>
+        {/* <div
           className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
           style={{ backgroundImage: "url(" + essay.coverImg + ")" }}
-          role="img"
-          aria-label={essay.coverImgAlt}
-        ></div>
+        ></div> */}
         <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
         <div className="absolute top-[-4px] right-[-4px] h-[100px] w-[4px] bg-black"></div>
         <div className="absolute bottom-0 left-0 h-[4px] w-[100px] bg-black"></div>
