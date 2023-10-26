@@ -8,6 +8,7 @@
       "coverImgAlt": "Dithered image of a bird standing on a park bench with engraved text 'public lot'",
       "title": "Bird in hand",
       "preposition": "Written by",
+      "intro": "content/bird-in-hand/intro.md",
       "authors": "Hamsini Sridharan & Jer Thorp",
       "excerpt": "What can birding teach us about machine learning? And how is AI shaping how we interact with nature? Projects at the intersection of nature observation, citizen science, and machine learning offer useful case studies for examining systems of dataset production, model training and human feedback. They also present an alternative model to the extractive and exploitative “Big Data” approach to training machine learning algorithms, offering many possibilities as well as unique challenges for thinking through how we relate to AI systems. ",
       "external": false
