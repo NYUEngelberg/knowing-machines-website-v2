@@ -4,8 +4,8 @@ slug: "odd_ducks"
 draft: false
 index: 3
 contentType: "Article"
-coverImg: "/img/9_ways/nyt_black.png"
-coverImgAlt: "xx"
+coverImg: "/img/bird-in-hand/duck.png"
+coverImgAlt: "Dithered black and white image of a duck head"
 preposition: "by"
 authors: "Hamsini Sridharan and Jer Thorp"
 excerpt: "In this article, we study the Visipedia computer vision project, which focuses on collaboration with naturalist communities, as an alternative approach to the extractive and exploitative “Big Data” paradigm of ML datasets. We focus on the processes of classification, labor, and expertise that shape Visipedia’s datasets and tools, including eBird, Merlin, iNaturalist, and NABirds. We argue that logics of hybridity shape Visipedia’s work, showing its possibilities and limitations. We conclude that hybridity is a useful lens for critical studies of ML datasets more broadly."

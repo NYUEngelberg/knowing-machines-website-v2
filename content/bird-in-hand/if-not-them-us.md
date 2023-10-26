@@ -4,8 +4,8 @@ slug: "if-not-them-us"
 draft: false
 index: 2
 contentType: Op-Ed
-coverImg: "/img/9_ways/c4_black.png"
-coverImgAlt: "xx"
+coverImg: "/img/bird-in-hand/them-us.png"
+coverImgAlt: "Dithered black and white image with the strikeout text THEM followed by US"
 preposition: "by"
 authors: "Hamsini Sridharan & Jer Thorp"
 excerpt: "A year into the so-called AI revolution, Silicon Valley’s scions are asking us to believe two things at once. 

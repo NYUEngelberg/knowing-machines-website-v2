@@ -4,8 +4,8 @@ slug: "birds-through-a-knowing-glass"
 index: 1
 draft: false
 contentType: "essay"
-coverImg: "/img/bird-in-hand/Knowing_glass.jpg"
-coverImgAlt: "A dithered image of a grid of images selected from a dataset"
+coverImg: "/img/bird-in-hand/Title.jpg"
+coverImgAlt: "A dithered image of a bird with graphical curved lines and his Id"
 preposition: "by"
 authors: "Hamsini Sridharan & Jer Thorp"
 excerpt: "One midweek morning near the end of September, just after 2am, an angel appeared on the South Shore of Long Island Sound. It grew in size until it was about two miles wide and then it moved down, past Hauppauge and Melville, Garden City and Great Neck, before drifting over the eastern boroughs of New York City. There was a glimmer, just as the first blue light of dawn was appearing, and then it was over. The angel fell earthward and dissolved into hundreds of thousands of winged things. They settled down to the city’s branches and onto its dew-covered lawns."
