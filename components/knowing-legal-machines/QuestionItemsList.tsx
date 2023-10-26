@@ -10,7 +10,7 @@ export default function QuestionItemsList({
   hideExcerpt,
 }: Props) {
   return (
-    <div className="max-w-3xl">
+    <div className="max-w-3xl px-2">
       {(questions || [])
         .sort((a, b) => a.index - b.index)
         .map((item) => (

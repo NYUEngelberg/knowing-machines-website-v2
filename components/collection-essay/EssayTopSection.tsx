@@ -11,10 +11,11 @@ type Props = {
 export default function EssayTopSection({ essay, publication }: Props) {
   return (
     <>
-      <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
-        <img src={essay.coverImg} alt={essay.coverImgAlt} 
-          role="img"
-          aria-label={essay.coverImgAlt}/>
+      <div className="relative my-12 p-6 border-black border-[1px] border-b-0 ">
+        <img src={essay.coverImg} alt={essay.coverImgAlt} className=""
+          role="img" 
+          aria-label={essay.coverImgAlt} />
+        
         {/* <div
           className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
           style={{ backgroundImage: "url(" + essay.coverImg + ")" }}
