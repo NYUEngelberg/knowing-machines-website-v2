@@ -7,7 +7,7 @@ contentType: "essay"
 coverImg: "/img/bird-in-hand/Title.jpg"
 coverImgAlt: "A dithered image of a bird with graphical curved lines and his Id"
 preposition: "by"
-authors: "Hamsini Sridharan & Jer Thorp"
+authors: "Jer Thorp"
 excerpt: "One midweek morning near the end of September, just after 2am, an angel appeared on the South Shore of Long Island Sound. It grew in size until it was about two miles wide and then it moved down, past Hauppauge and Melville, Garden City and Great Neck, before drifting over the eastern boroughs of New York City. There was a glimmer, just as the first blue light of dawn was appearing, and then it was over. The angel fell earthward and dissolved into hundreds of thousands of winged things. They settled down to the city’s branches and onto its dew-covered lawns."
 ---
 
@@ -150,3 +150,6 @@ About 3% of all birds live most of their lives at sea, coming on land only to ne
 *[2,712 species in Africa](https://en.wikipedia.org/wiki/List_of_birds_of_Africa)*
 
 The continent of Africa is home to more than a quarter of the world’s birds, but it is dramatically under-represented in bird-focused AI models. None of the continent’s species are supported by Merlin Sound ID. According to the model’s makers, two things regulate whether a region is supported: availability of at least 100 high quality sound recordings per species and the presence of “enough expert annotators” in the region. The red-billed quelea, which ranges across much of the continent, is considered to be the most numerous bird on the planet. While it can flock in numbers higher than 10 million individuals, the species only has 16 eBird checklists with recorded audio. This exposes the main bias in citizen-contributed bird datasets: data comes from the species birders usually see, in the places where birders usually go.
+
+
+*With assistance from Hamsini Sridharan.* 

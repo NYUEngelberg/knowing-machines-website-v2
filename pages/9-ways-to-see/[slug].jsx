@@ -165,7 +165,7 @@ export default function NWaysPage({ content, frontmatter, publication, publicati
       <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[20px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
-            className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
+            className="max-w-3xl w-full h-[265px] bg-center bg-cover"
             style={{ backgroundImage: "url(" + frontmatter.coverImg + ")" }}
             role="img"
             aria-label={frontmatter.coverImgAlt}

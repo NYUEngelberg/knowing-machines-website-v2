@@ -17,7 +17,7 @@ export default function EssayTopSection({ essay, publication }: Props) {
           aria-label={essay.coverImgAlt} />
         
         {/* <div
-          className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
+          className="max-w-3xl w-full h-[265px] bg-center bg-cover"
           style={{ backgroundImage: "url(" + essay.coverImg + ")" }}
         ></div> */}
         <div className="absolute top-[-4px] right-[-4px] h-[4px] w-[250px] bg-black"></div>
