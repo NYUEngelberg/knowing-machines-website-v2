@@ -26,7 +26,7 @@ export default function PodcastPage({}: Props) {
           <HomePageHeading text={"Podcast"} />
           <div className={"pb-10 md:p-10 relative"}>
             <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
-
+            
             <iframe
               className="border-black border-[1px]"
               height="200px"
@@ -36,6 +36,17 @@ export default function PodcastPage({}: Props) {
               seamless
               src="https://player.simplecast.com/90a7d53e-86d4-46ec-8029-cb85691aed40?dark=false"
             ></iframe>
+            <br></br>
+            <iframe
+              className="border-black border-[1px]"
+              height="200px"
+              width="100%"
+              frameBorder={"0"}
+              scrolling="no"
+              seamless
+              src="https://player.simplecast.com/265b9a8a-d0c3-4d50-a239-af1dc0f2b67d?dark=false"
+            ></iframe>
+            
           </div>
         </section>
       </main>
