@@ -2,10 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import {
-    getPublicationByHref,
-    getPublicationPagePaths,
-  } from "@/util/publications";
+import { getPublicationBySlug } from "@/util/publications";
 import { PublicationMetaData } from "@/types/publications";
 import { useEffect, useState } from "react";
 import { unified } from "unified";
@@ -38,11 +35,7 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
     const metaOgTagData = {
         title: frontmatter.title,
         description: frontmatter.excerpt,
-        url:
-          "https://knowingmachines.org" +
-          (publication.collectionItems?.find(
-            (item) => item.title === frontmatter.title
-          )?.href || ""),
+        url: "knowing-legal-machines/legal-explainer",
         imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
         imageAlt: frontmatter.coverImgAlt,
       };
@@ -149,7 +142,7 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
           <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[40px] sm:gap-[20px]">
             <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
               <div
-                className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
+                className="max-w-3xl w-full h-[265px] bg-center bg-cover"
                 style={{ backgroundImage: "url(" + frontmatter.coverImg + ")" }}
                 role="img"
                 aria-label={frontmatter.coverImgAlt}
@@ -160,7 +153,7 @@ export default function LegalExplainerPage ({content, frontmatter, publication, 
               <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
                 <a
                   className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-                  href="/publications/knowing_legal_machines"
+                  href="/publications/knowing-legal-machines"
                 >← collection |</a>
                 <span className="inline-block pr-2 p-1 pl-0">
                   {" "}
@@ -258,8 +251,8 @@ export async function getStaticProps({ }) {
     );
     const { data: frontmatter, content } = matter(markdownWithMeta);
   
-    const publication = await getPublicationByHref(
-      "/publications/knowing_legal_machines"
+    const publication = await getPublicationBySlug(
+      "knowing-legal-machines"
     );
 
     const questions = getLegalExplainerQuestions();

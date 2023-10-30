@@ -1,5 +1,19 @@
 [
   {
+      "href": "/knowing-legal-machines/bird-in-hand",
+      "slug": "bird-in-hand",
+      "contentPath": "bird-in-hand",
+      "contentType": "Collection",
+      "coverImg": "/img/bird-in-hand/bird-in-hand.png",
+      "coverImgAlt": "Dithered image of a bird standing on a park bench with engraved text 'public lot'",
+      "title": "Bird in hand",
+      "preposition": "Written by",
+      "intro": "content/bird-in-hand/intro.md",
+      "authors": "Hamsini Sridharan & Jer Thorp",
+      "excerpt": "What can birding teach us about machine learning? And how is AI shaping how we interact with nature? Projects at the intersection of nature observation, citizen science, and machine learning offer useful case studies for examining systems of dataset production, model training and human feedback. They also present an alternative model to the extractive and exploitative “Big Data” approach to training machine learning algorithms, offering many possibilities as well as unique challenges for thinking through how we relate to AI systems. ",
+      "external": false
+  },
+  {
     "href": "/knowing-legal-machines/legal-explainer",
     "contentType": "Explainer",
     "coverImg": "/img/legal/explainer.png",
@@ -12,6 +26,8 @@
   },
   {
     "href": "/publications/knowing_legal_machines",
+    "slug": "knowing-legal-machines",
+    "contentPath": "knowing_legal_machines",
     "contentType": "Collection",
     "coverImg": "/img/legal/home.png",
     "coverImgAlt": "A dithered abstract image of a mesh.",
@@ -22,101 +38,24 @@
     "intro": "content/knowing_legal_machines/intro.md",
     "description": "Many of the social questions raised by artificial intelligence are mediated through the legal system. Policymakers explore new rules to govern the technology, courts work to apply existing legal framework to new situations, and advocates propose entirely new approaches to deal with novel problems (or old problems with new prominence).",
     "external": false,
-    "collectionItems": [
+    "nonEssayCollectionItems": [
       {
         "index": 1,
         "contentType": "Explainer",
         "title": "Generative AI Legal Explainer",
-        "img": "/img/legal/explainer.png",
+        "coverImg": "/img/legal/explainer.png",
         "preposition": "by",
         "authors": "Melodi Dincer, Jake Karr, Jason Schultz, Michael Weinberg",
         "excerpt": "Generative AI raises a host of legal questions and concerns.  Some of these questions will challenge existing legal rules and require new laws and policy frameworks. Others have answers that are quite well settled, notwithstanding the new AI context bringing attention to them.",
-        "href": "/knowing-legal-machines/legal-explainer"
-      },
-      {
-        "index": 2,
-        "contentType": "Post",
-        "title": "The First Amendment Should Protect Us from Facial Recognition Technologies – Not the Other Way Around",
-        "img": "/img/legal/0.png",
-        "preposition": "by",
-        "authors": "Talya Whyte & Jake Karr",
-        "excerpt": "Should the First Amendment allow facial recognition companies to scrape photos of you off the internet and train AI surveillance systems that law enforcement then uses against peaceful protestors?",
-        "href": "/knowing-legal-machines/first_amendment"
-      },
-      {
-        "index": 3,
-        "contentType": "Post",
-        "title": "Clearview AI Is Deploying a California Law Meant to Protect Activists From Bogus Lawsuits",
-        "img": "/img/legal/7.png",
-        "preposition": "by",
-        "authors": "Nicola Morrow & Melodi Dincer",
-        "excerpt": "Clearview AI is a lucrative facial recognition company that has spent the past few years in legal hot water. But as lawsuits against Clearview continue to mount, the company has invoked a dangerous legal argument that, if successful, could provide a playbook for numerous AI companies to evade accountability.",
-        "href": "/knowing-legal-machines/clearview_ai"
-      },
-      {
-        "index": 4,
-        "contentType": "Amicus Brief",
-        "title": "Amici Brief of Science, Legal, and Technology Scholars in Renderos et al. v. Clearview AI, Inc. et al., No. RG21096898 (Superior Ct. Alameda County)",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Jason Schultz & Melodi Dincer",
-        "excerpt": "For over a century, the right of publicity (ROP) has protected individuals from unwanted commercial exploitation of their identities. Originating around the turn of the twentieth century in response to the newest image-appropriation technologies of the time, the ROP has continued to evolve to cover each new wave of technologies enabling companies to exploit peoples’ identities as part of their business models.",
-        "href": "/knowing-legal-machines/1_science_legal_and_technology"
-      },
-      {
-        "index": 5,
-        "contentType": "Paper",
-        "title": "The Right of Publicity: A New Framework for Regulating Facial Recognition",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Jason Schultz",
-        "excerpt": "In this article, I develop a novel theory for how Right of Publicity claims could apply to Facial Recognition systems and detail how their history and development, both statutory and common law, demonstrate their power to impose liability on entities that conduct mass image and identity appropriation, especially through innovative visual technologies.",
-        "href": "/knowing-legal-machines/2_right_of_publicity"
-      },
-      {
-        "index": 6,
-        "contentType": "Post",
-        "title": "Freedom of Information Laws and Access to Government Data in the Age of AI: Two Recent Cases",
-        "img": "/img/legal/2.png",
-        "preposition": "by",
-        "authors": "Jake Karr",
-        "excerpt": "In recent years, there has been a surge of concern about the massive amounts of data that governments collect about us. Calls for transparency and accountability have never been louder, especially when it comes to the ways that this data is fed into government AI systems to help “train” them to make decisions that directly but often secretly impact our lives.",
-        "href": "/knowing-legal-machines/3_freedom_of_information"
-      },
-      {
-        "index": 7,
-        "contentType": "Comment",
-        "title": "Comments of the Knowing Machines Research Project to the White House Office of Science and Technology Policy on Automated Worker Surveillance and Management",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Melodi Dincer, Kate Crawford & Jason Schultz",
-        "excerpt": "Knowing Machines urges OSTP to translate workers’ expectations of privacy in their data into guidance for employers on when and what types of data they can collect. As worker data fuels automated surveillance technologies by serving as training data for machine-learning models, we encourage OSTP to set a high bar for employers who exploit worker data to inform employment decision and undermine workers’ autonomy.",
-        "href": "/knowing-legal-machines/4_automated_worker_surveillance"
-      },
-      {
-        "index": 8,
-        "contentType": "Post",
-        "title": "Tell the White House to Limit AI-Driven Worker Surveillance",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Melodi Dincer",
-        "excerpt": "The pandemic and its aftermath have intensified existing rifts over worker autonomy and control in the U.S., including the many ways in which workers are surveilled, measured, and controlled through automated surveillance products. Most workers understand that some of what they do on the job is important to measure so they can be hired to the right roles, rewarded for solid performance, and compensated fairly. But the ubiquitous datafication of every moment on the clock creates vast pools of data that employers are currently free to collect and use without limitations.",
-        "href": "/knowing-legal-machines/5_worker_surveillance"
-      },
-      {
-        "index": 9,
-        "contentType": "Comment",
-        "title": "Comments of the Knowing Machines Research Project to the Federal Trade Commission ",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Melodi Dincer & Kate Crawford",
-        "excerpt": "With this Comment, the Knowing Machines Project asks the Commission to investigate and, where appropriate, prohibit the deceptive and unfair practices that emotion recognition companies conduct.",
-        "href": "/knowing-legal-machines/6_federal_trade_commission"
+        "href": "/knowing-legal-machines/legal-explainer",
+        "slug": "legal-explainer"
       }
     ]
   },
   {
     "href": "/publications/9_ways_to_see_a_dataset",
+    "slug": "9-ways-to-see",
+    "contentPath": "9-ways-to-see",
     "contentType": "Collection",
     "coverImg": "/img/9_ways/home_9_ways.png",
     "coverImgAlt": "a dithered image of a grid of images selected from a dataset",
@@ -126,99 +65,7 @@
     "excerpt": "To further the understanding of training data, the Knowing Machines Project developed SeeSet, an investigative tool for examining the training datasets for AI. Here you will find nine essays from individual members of our team. Each one uses SeeSet to explore a key AI dataset and its role in the construction of 'ground truth.'",
     "intro": "content/9-ways-to-see/intro.md",
     "description": "To further the understanding of training data, the Knowing Machines Project developed SeeSet, an investigative tool for examining the training datasets for AI. Here you will find nine essays from individual members of our team. Each one uses SeeSet to explore a key AI dataset and its role in the construction of 'ground truth.'",
-    "external": false,
-    "collectionItems": [
-      {
-        "index": 0,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: What’s at stake in examining datasets?",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Kate Crawford",
-        "excerpt": "If you read the leaked memo from Google, “We Have No Moat, and Neither Does Open AI”, you’ll find a revealing admission about AI development: “data quality scales better than data size.” This short phrase points to a seachange in thinking that has significant implications for generative AI in particular.",
-        "href": "/9-ways-to-see/9-ways-to-see-a-dataset"
-      },
-      {
-        "index": 1,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: Datasets as Institutions — The New York Times Annotated Corpus",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Mike Ananny",
-        "excerpt": "The NYT Annotated Corpus (NYTAC) shows how datasets are institutional achievements.",
-        "href": "/9-ways-to-see/datasets-as-institutions"
-      },
-      {
-        "index": 2,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: Consider The Iceland Gull",
-        "img": "/img/9_ways/gull_black.png",
-        "preposition": "by",
-        "authors": "Jer Thorp",
-        "excerpt": "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight.",
-        "href": "/9-ways-to-see/NABirds-and-the-Iceland-Gull"
-      },
-      {
-        "index": 3,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: Datasets as sociotechnical artifacts — The case of 'Colossal Cleaned Common Crawl' (C4)",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Will Orr",
-        "excerpt": "The case of the Colossal Cleaned Common Crawl (C4) dataset underscores the importance of uncovering the sociotechnical dynamics that contribute to the formation of datasets.",
-        "href": "/9-ways-to-see/C4"
-      },
-      {
-        "index": 4,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: NABirds And The Instability Of Categories",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Hamsini Sridharan",
-        "excerpt": "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories.",
-        "href": "/9-ways-to-see/nabirds"
-      },
-      {
-        "index": 5,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: Investigating ImageNet",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Sasha Luccioni",
-        "excerpt": "ImageNet is one of the first datasets AI researchers are exposed to when learning and experimenting with computer vision approaches. Since it was first released in 2009, it has been used to train and evaluate nearly every AI model in the object recognition task, and improvement upon state-of-the-art performance on the dataset can translate into getting accepted into top AI conferences and appearing on leaderboards.",
-        "href": "/9-ways-to-see/ImageNet"
-      },
-      {
-        "index": 6,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: What Can LAION Teach Us About Copyright Law?",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Jason Schultz",
-        "excerpt": "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?",
-        "href": "/9-ways-to-see/LAION-copyright"
-      },
-      {
-        "index": 7,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: Some Blobs Are Human, Too",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Jer Thorp",
-        "excerpt": "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist.",
-        "href": "/9-ways-to-see/iNaturalist"
-      },
-      {
-        "index": 8,
-        "contentType": "essay",
-        "title": "9 Ways To See A Dataset: Investigating Datasets",
-        "img": "/img/9_ways_to_see_a_dataset.png",
-        "preposition": "by",
-        "authors": "Christo Buschek",
-        "excerpt": "While research and investigations share many similarities, there are also key differences that set them apart. An investigation aims to scrutinize the investigative subject, to discover something hidden or secret, and then tell a story about it.",
-        "href": "/9-ways-to-see/investigating-datasets"
-      }
-    ]
+    "external": false
   },
   {
     "href": "/critical-field-guide",

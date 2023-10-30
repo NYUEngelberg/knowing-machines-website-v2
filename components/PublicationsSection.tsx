@@ -18,9 +18,9 @@ export default function PublicationsSection({
       <div className={"pb-10 md:p-10 relative"}>
         <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
         {publicationPreviews.map((publication) => (
-          <React.Fragment key={publication.href}>
+          <React.Fragment key={publication.title}>
             <div
-              key={publication.href}
+              key={publication.title}
               className={
                 "border-[1px] border-black p-6 flex flex-col items-center gap-[40px] mb-6"
               }
@@ -36,7 +36,7 @@ export default function PublicationsSection({
               >
                 <div>
                   <a
-                    href={publication.href}
+                    href={publication.external ? publication.href : `/publications/${publication.slug}`}
                     className="flex flex-row items-center gap-[10px] mt-[20px] justify-between"
                   >
                     <div className="flex flex-row flex-wrap gap-[10px] items-center">

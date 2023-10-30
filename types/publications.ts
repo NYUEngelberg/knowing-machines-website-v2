@@ -1,5 +1,7 @@
 export type PublicationMetaData = {
   href: string;
+  slug?: string;
+  contentPath?: string;
   contentType: string;
   coverImg: string;
   coverImgAlt: string;
@@ -9,15 +11,19 @@ export type PublicationMetaData = {
   excerpt: string;
   intro?: string;
   external?: boolean;
+  nonEssayCollectionItems?: PublicationCollectionItem[]
   collectionItems?: PublicationCollectionItem[]
 };
 
 export type PublicationCollectionItem = {
   index: number
   contentType: string
+  content?: string
+  frontmatter?: any
   title: string
-  img: string
-  imgAlt?: string
+  slug: string
+  coverImg: string
+  coverImgAlt?: string
   preposition: string
   authors: string
   excerpt: string

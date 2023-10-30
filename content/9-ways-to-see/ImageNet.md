@@ -1,5 +1,6 @@
 ---
 title: "9 Ways To See A Dataset: Investigating ImageNet"
+slug: "ImageNet"
 draft: false
 index: 3
 contentType: "essay"

@@ -19,17 +19,13 @@ import NWaysImage from "@/components/n-ways-to-see/NWaysImage";
 import NWaysGrid from "@/components/n-ways-to-see/NWaysGrid";
 import NWaysCarousel from "@/components/n-ways-to-see/NWaysCarousel";
 import CollectionLinks from "@/components/collection-essay/CollectionLinks";
-import { getPublicationByHref } from "@/util/publications";
+import { getPublicationBySlug, getEssaysForPublicationSlug } from "@/util/publications";
 
-export default function NWaysPage({ content, frontmatter, publication }) {
+export default function NWaysPage({ content, frontmatter, publication, publicationEssays }) {
   const metaOgTagData = {
     title: frontmatter.title,
     description: frontmatter.excerpt,
-    url:
-      "https://knowingmachines.org" +
-      (publication.collectionItems.find(
-        (item) => item.title === frontmatter.title
-      )?.href || ""),
+    url: `https://knowingmachines.org/publications/${publication.slug}/essays/${frontmatter.slug}`,
     imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
     imageAlt: frontmatter.coverImgAlt,
   };
@@ -169,7 +165,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
       <div className="p-6 grid grid-column-[minmax(0,1fr)] justify-center gap-[20px]">
         <div className="relative my-12 p-6 border-black border-[1px] border-b-0">
           <div
-            className="max-w-3xl w-full h-[265.93px] bg-center bg-cover"
+            className="max-w-3xl w-full h-[265px] bg-center bg-cover"
             style={{ backgroundImage: "url(" + frontmatter.coverImg + ")" }}
             role="img"
             aria-label={frontmatter.coverImgAlt}
@@ -180,7 +176,7 @@ export default function NWaysPage({ content, frontmatter, publication }) {
           <div className="absolute -top-6 left-[-1px] text-xs text-white uppercase bg-black self-start">
             <a
               className="inline-block pl-2 p-1 hover:bg-[#1400FF] hover:text-white no-underline"
-              href="/publications/knowing_legal_machines"
+              href="/publications/knowing-legal-machines"
             >
               ← collection |
             </a>
@@ -265,7 +261,9 @@ export default function NWaysPage({ content, frontmatter, publication }) {
             margin-top: 4em;
           }
         `}</style>
-        <CollectionLinks publication={publication} />
+        <CollectionLinks
+          publication={publication}
+          publicationEssays={publicationEssays}/>
       </div>
     </Layout>
   );
@@ -300,8 +298,8 @@ export async function getStaticProps({ params: { slug } }) {
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
-  const publication = await getPublicationByHref(
-    "/publications/knowing_legal_machines"
-  );
-  return { props: { frontmatter, slug, content, publication } };
+  const publication = await getPublicationBySlug("knowing-legal-machines");
+
+  const publicationEssays = getEssaysForPublicationSlug(publication.slug);
+  return { props: { frontmatter, slug, content, publication, publicationEssays } };
 }

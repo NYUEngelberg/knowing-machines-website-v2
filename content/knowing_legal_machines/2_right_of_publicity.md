@@ -1,5 +1,6 @@
 ---
 title: "The Right of Publicity: A New Framework for Regulating Facial Recognition"
+slug: "right-of-publicity"
 index: 2
 draft: false
 contentType: "Paper"

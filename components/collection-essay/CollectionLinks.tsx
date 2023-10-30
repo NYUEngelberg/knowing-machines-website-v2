@@ -1,11 +1,18 @@
-import { PublicationMetaData } from "@/types/publications";
+import {
+  PublicationCollectionItem,
+  PublicationMetaData,
+} from "@/types/publications";
 import CollectionItemsList from "./CollectionItemsList";
 
 type Props = {
   publication: PublicationMetaData;
+  publicationEssays: PublicationCollectionItem[];
 };
 
-export default function CollectionLinks({ publication }: Props) {
+export default function CollectionLinks({
+  publication,
+  publicationEssays,
+}: Props) {
   return (
     <div className="my-12">
       <div className="relative border-black border-t-[1px] relative max-w-3xl mb-12">
@@ -17,7 +24,7 @@ export default function CollectionLinks({ publication }: Props) {
         <div className="absolute top-[-4px] right-0 h-[5px] w-[200px] bg-black"></div>
         <div>
           <a
-            href={publication.href}
+            href={`/publications/${publication.slug}`}
             className="flex flex-row items-center gap-[10px] mt-[20px]"
           >
             <h3 className="flex-grow uppercase font-bold tracking-wides text-xl">
@@ -27,7 +34,10 @@ export default function CollectionLinks({ publication }: Props) {
         </div>
       </div>
       <CollectionItemsList
-        collectionItems={publication.collectionItems}
+        collectionItems={[
+          ...(publication.nonEssayCollectionItems || []),
+          ...publicationEssays,
+        ]}
         hideExcerpt={true}
         hidePartialBulkyBorder={true}
       />
