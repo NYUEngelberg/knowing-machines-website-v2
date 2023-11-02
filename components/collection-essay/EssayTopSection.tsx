@@ -11,7 +11,7 @@ type Props = {
 export default function EssayTopSection({ essay, publication }: Props) {
   return (
     <>
-      <div className="relative my-12 p-6 border-black border-[1px] border-b-0 ">
+      <div className="max-w-3xl relative my-12 p-6 border-black border-[1px] border-b-0 ">
         <img src={essay.coverImg} alt={essay.coverImgAlt} className=""
           role="img" 
           aria-label={essay.coverImgAlt} />
