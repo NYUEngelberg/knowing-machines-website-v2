@@ -28,6 +28,10 @@
 
 2. Edit the metadata and/or content
 
+## How to add files
+
+1. Add them to /public/docs
+
 ## Below is the initial next.js project readme
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
