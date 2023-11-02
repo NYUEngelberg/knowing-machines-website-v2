@@ -1,4 +1,18 @@
 [
+    {
+      "href": "/knowing-legal-machines/dataset-creator",
+      "slug": "dataset-creator",
+      "contentPath": "dataset-creator",
+      "contentType": "Collection",
+      "coverImg": "/img/bird-in-hand/bird-in-hand.png",
+      "coverImgAlt": "Dithered image of a bird standing on a park bench with engraved text 'public lot'",
+      "title": "dataset-creator",
+      "preposition": "Written by",
+      "intro": "content/dataset-creator/intro.md",
+      "authors": "Hamsini Sridharan & Jer Thorp",
+      "excerpt": "xx",
+      "external": false
+    },
   {
       "href": "/knowing-legal-machines/bird-in-hand",
       "slug": "bird-in-hand",

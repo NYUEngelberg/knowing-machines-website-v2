@@ -1,7 +1,7 @@
 ---
 title: "9 Ways To See A Dataset: Investigating Datasets"
 slug: "investigating-datasets"
-index: 4
+index: 2
 draft: false
 contentType: "essay"
 coverImg: "/img/9_ways/investigation_black.png"
