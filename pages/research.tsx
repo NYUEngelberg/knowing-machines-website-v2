@@ -20,7 +20,7 @@ export default function ResearchPage({ publicationPreviews }: Props) {
     <Layout metaOgTagData={metaOgTagData}>
       <main
         className={
-          "max-w-[1080px] mx-auto my-12" +
+          "max-w-[900px] mx-auto my-12" +
           " md:grid " +
           " md:grid-cols-[minmax(0,1fr)] md:gap-[40px]"
         }

@@ -4,8 +4,8 @@ slug: "building-better-datasets"
 draft: false
 index: 2
 contentType: "Article"
-coverImg: "/img/9_ways/nyt_black.png"
-coverImgAlt: "xx"
+coverImg: "/img/creators/3.png"
+coverImgAlt: "Abstract image oh black horizontal lines"
 preposition: "by"
 authors: "Will Orr & Kate Crawford"
 excerpt: "The increasing demand for high-quality datasets in machine learning has raised concerns about the ethical and responsible creation of these datasets. Dataset creators play a crucial role in developing responsible practices, yet their perspectives and expertise have not yet been highlighted in the current literature."

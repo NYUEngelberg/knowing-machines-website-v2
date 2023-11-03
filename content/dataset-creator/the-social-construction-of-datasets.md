@@ -5,8 +5,8 @@ slug: "the-social-construction-of-datasets"
 index: 1
 draft: false
 contentType: "Article"
-coverImg: "/img/9_ways/home_9_ways.png"
-coverImgAlt: "xx"
+coverImg: "/img/creators/4.png"
+coverImgAlt: "Abstract image oh black horizontal lines"
 preposition: "by"
 authors: "Will Orr & Kate Crawford"
 excerpt: "Despite the critical role that datasets play in how systems make predictions and interpret the world, the dynamics of their construction are not well understood. Drawing on a corpus of interviews with dataset creators, we uncover the messy and contingent realities of dataset preparation."
