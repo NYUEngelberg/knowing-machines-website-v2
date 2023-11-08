@@ -27,7 +27,18 @@ export default function PodcastPage({}: Props) {
           <div className={"pb-10 md:p-10 relative"}>
             <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
             <div className="flex flex-col gap-6 sm:m-0 mx-8 ">
-              <div className="text-sm markdown-content mt-8 sm:mt-0">The Knowing Machines podcast is hosted by Tamar Avishai, and explains how we train AI systems to interpret the world. If you want to go deeper on understanding generative AI, this limited series podcast answers what it is, how we got here, why it matters, and how it might impact our lives. The Knowing Machines podcast has themed episodes featuring groundbreaking research on the social, legal, cultural, environmental, and political impacts of these new systems at a pivotal time. </div>
+              <div className="text-sm markdown-content mt-8 sm:mt-0">The Knowing Machines podcast is hosted by Tamar Avishai, and explains how we train AI systems to interpret the world. If you want to go deeper on understanding generative AI, this limited series podcast answers what it is, how we got here, why it matters, and how it might impact our lives. The Knowing Machines podcast has themed episodes featuring groundbreaking research on the social, legal, cultural, environmental, and political impacts of these new systems at a pivotal time. <br></br> <br></br>
+              
+              You can listen to individual episodes below, or click 'subscribe' in the player for options to subscribe to the entire season.</div>
+              <iframe
+                className="border-black border-[1px]"
+                height="200px"
+                width="100%"
+                frameBorder={"0"}
+                scrolling="no"
+                seamless
+                src="https://player.simplecast.com/90a7d53e-86d4-46ec-8029-cb85691aed40?dark=false"
+              ></iframe>
               <iframe
                 className="border-black border-[1px]"
                 height="200px"
@@ -44,8 +55,10 @@ export default function PodcastPage({}: Props) {
                 frameBorder={"0"}
                 scrolling="no"
                 seamless
-                src="https://player.simplecast.com/90a7d53e-86d4-46ec-8029-cb85691aed40?dark=false"
+                src="https://player.simplecast.com/b5e36c36-cec2-45e1-bcc8-69a98d34f32b?dark=false"
               ></iframe>
+              
+              
             </div>
           </div>
         </section>
