@@ -26,7 +26,8 @@ export default function PodcastPage({}: Props) {
           <HomePageHeading text={"Podcast"} />
           <div className={"pb-10 md:p-10 relative"}>
             <div className="absolute top-0 left-0 w-[1px] h-[333px] bg-black"></div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 sm:m-0 mx-8 ">
+              <div className="text-sm markdown-content mt-8 sm:mt-0">The Knowing Machines podcast is hosted by Tamar Avishai, and explains how we train AI systems to interpret the world. If you want to go deeper on understanding generative AI, this limited series podcast answers what it is, how we got here, why it matters, and how it might impact our lives. The Knowing Machines podcast has themed episodes featuring groundbreaking research on the social, legal, cultural, environmental, and political impacts of these new systems at a pivotal time. </div>
               <iframe
                 className="border-black border-[1px]"
                 height="200px"

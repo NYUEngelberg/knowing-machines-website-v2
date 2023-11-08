@@ -8,7 +8,7 @@ coverImg: "/img/creators/2.png"
 coverImgAlt: "Abstract image oh black horizontal lines"
 preposition: "by"
 authors: "Will Orr & Kate Crawford"
-excerpt: "The increasing demand for high-quality datasets in machine learning has raised concerns about the ethical and responsible creation of these datasets. Dataset creators play a crucial role in developing responsible practices, yet their perspectives and expertise have not yet been highlighted in the current literature."
+excerpt: 'As part of the Knowing Machines Project, we have been interviewing dataset creators to understand the current developments in AI from the perspectives of those in charge of gathering data and sharing it with the technical community. Rather than investigating datasets as stable artifacts, we analyze "datasets-in-the-making" to uncover the uncertainties, personal assessments, and trade-offs made by dataset creators, amid their social, technical, and organizational contexts.'
 ---
 
 How do you make a better dataset? When is a dataset ready to train an AI model?  Does the dataset accurately reflect what it claims? And could it be misinterpreted or misused? These are just some of the questions that creators of datasets ask when developing datasets for machine learning applications. Far from being neutral or objective artifacts, datasets are profoundly shaped by the intentions of their creators and the complex dynamics of their creation (Crawford and Paglen, 2019; Crawford, 2021; Denton et al., 2021). And with the widespread use of generative AI systems, the impacts of datasets are more pronounced than ever. Yet, the labor of constructing datasets is underexamined in machine learning research (Denton et al., 2020). And despite the foundational influence that dataset creators have in shaping models and their wider impacts, this work is often undervalued within the machine learning pipeline, as compared to model designers and developers (Sambasivan et al., 2021). 
@@ -34,7 +34,7 @@ Taking up this call, in our article *Building Better Datasets* we share the sugg
 
 There are significant ethical issues tied to dataset creation. Our interviews addressed privacy concerns, copyright issues, and the problem of obtaining consent from data subjects. Through these recommendations, we hope that dataset creators across domains will find common ground and that they are included as important stakeholders in the AI community. We hope that dataset creation will be taken more seriously as an area in computer science and engineering education and continue to shift from a fragmented, solitary endeavor into a cohesive community with its own norms, tools, and best practices. 
 
-You can read a draft of our forthcoming article [here](). 
+You can read a draft of our forthcoming article [here](https://osf.io/preprints/socarxiv/8c9uh). 
 
 
 **References:**
