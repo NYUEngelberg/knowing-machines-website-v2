@@ -1,4 +1,18 @@
 [
+      {
+        "href": "/knowing-legal-machines/calculating-empires",
+        "slug": "calculating-empires",
+        "contentPath": "calculating-empires",
+        "contentType": "Exhibition",
+        "coverImg": "/img/calculating_empires/0.png",
+        "coverImgAlt": "Section of the map Calculating empires",
+        "title": "Calculating Empires",
+        "preposition": "Written by",
+        "intro": "/content/calculating-empires/intro.md",
+        "authors": "Kate Crawford and Vladan Joler",
+        "excerpt": "Calculating Empires is a new exhibition by Kate Crawford and Vladan Joler that opens at Fondazione Prada on November 23, 2023 at the Osservatorio in Milan. Joler and Crawford contextualize the current explosion of artificial intelligence by asking how we got here — and to consider where we might be going. Multiple works of critical cartography span the two floors, and invite visitors to experience the longue durée of how technology and power have been intertwined since 1500. ",
+        "external": false
+      },
     {
       "href": "/knowing-legal-machines/dataset-creator",
       "slug": "dataset-creator",
