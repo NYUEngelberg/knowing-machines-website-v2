@@ -27,6 +27,8 @@
 1. Find the question .md file in /content/knowing_legal_machines/legal_explainer/cases
 
 2. Edit the metadata and/or content
+   
+3. If this is a new question, add slug to the metadata of the relevant related question(s)
 
 ## How to add files
 
