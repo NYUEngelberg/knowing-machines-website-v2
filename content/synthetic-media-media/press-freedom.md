@@ -1,14 +1,14 @@
 ---
-title: "“Press freedom means controlling the language of AI”"
+title: "Press freedom means controlling the language of AI"
 slug: "press-freedom"
 draft: false
 index: 1
-contentType: "article"
+contentType: "post"
 coverImg: "/img/synthetic-media-media/1.png"
 coverImgAlt: "Abstract image of white horizontal lines"
 preposition: "by"
 authors: "Jake Karr and Mike Ananny"
-excerpt: "Generative AI systems act like “stochastic parrots,” using statistical models to guess word orders and pixel placements. That’s incompatible with a free press that commands its own words.
+excerpt: "Generative AI poses the biggest threat to press freedom in decades, and journalists should act quickly to organize themselves and radically reshape its power to produce news. Long buffeted by economic and technological challenges beyond its control, today’s press depends on distributed, technological infrastructures owned and operated by a select few powerful corporations. With Generative AI, news organizations may soon outsource to tech companies not only the power and responsibility to disseminate and curate news, but to create it in the first place.
 "
 ---
 
