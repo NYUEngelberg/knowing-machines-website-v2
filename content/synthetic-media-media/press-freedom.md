@@ -5,7 +5,7 @@ draft: false
 index: 1
 contentType: "article"
 coverImg: "/img/synthetic-media-media/1.png"
-coverImgAlt: "Abstract image oh black horizontal lines"
+coverImgAlt: "Abstract image of white horizontal lines"
 preposition: "by"
 authors: "Jake Karr and Mike Ananny"
 excerpt: "Generative AI systems act like “stochastic parrots,” using statistical models to guess word orders and pixel placements. That’s incompatible with a free press that commands its own words.

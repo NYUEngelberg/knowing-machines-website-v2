@@ -5,7 +5,7 @@ draft: false
 index: 1
 contentType: "article"
 coverImg: "/img/synthetic-media-media/2.png"
-coverImgAlt: "Abstract image oh black horizontal lines"
+coverImgAlt: "Abstract image of white horizontal lines"
 preposition: "by"
 authors: "Jake Karr and Mike Ananny"
 excerpt: "If the ways that journalists work and the stories that they tell always depend upon an era’s technologies, then what kind of news emerges from a press that relies on Generative Artificial Intelligence (GenAI)? How is this press actually a “synthetic press” that uses machine learning to create its words, images, and videos—and to shape its workflows, economics, ethics, intellectual property, and sense of public purpose?
