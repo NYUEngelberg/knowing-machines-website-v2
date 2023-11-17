@@ -7,7 +7,7 @@ contentType: "post"
 coverImg: "/img/synthetic-media-media/1.png"
 coverImgAlt: "Abstract image of white horizontal lines"
 preposition: "by"
-authors: "Jake Karr and Mike Ananny"
+authors: "Mike Ananny and Jake Karr"
 excerpt: "Generative AI poses the biggest threat to press freedom in decades, and journalists should act quickly to organize themselves and radically reshape its power to produce news. Long buffeted by economic and technological challenges beyond its control, today’s press depends on distributed, technological infrastructures owned and operated by a select few powerful corporations. With Generative AI, news organizations may soon outsource to tech companies not only the power and responsibility to disseminate and curate news, but to create it in the first place.
 "
 ---

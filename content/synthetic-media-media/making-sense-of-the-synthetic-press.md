@@ -7,7 +7,7 @@ contentType: "article"
 coverImg: "/img/synthetic-media-media/2.png"
 coverImgAlt: "Abstract image of white horizontal lines"
 preposition: "by"
-authors: "Jake Karr and Mike Ananny"
+authors: "Mike Ananny and Jake Karr"
 excerpt: "If the ways that journalists work and the stories that they tell always depend upon an era’s technologies, then what kind of news emerges from a press that relies on Generative AI? How is this press actually a “synthetic press” that uses machine learning to create its words, images, and videos—and to shape its workflows, economics, ethics, intellectual property, and sense of public purpose? Envisioned as the first in a series of investigations, this project teases out early dynamics of a field in transition. By analyzing discourses, policies, and practices defining this journalistic moment, we see a “synthetic press” emerging that is likely to continue shifting for years to come.
 "
 ---
