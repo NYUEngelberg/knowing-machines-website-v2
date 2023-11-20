@@ -34,6 +34,10 @@
 
 1. Add them to /public/docs
 
+## How to add podcast episodes
+
+1. Edit /pages/podcast.tsx
+
 ## Below is the initial next.js project readme
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
