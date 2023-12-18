@@ -102,6 +102,15 @@ export default function PodcastPage({}: Props) {
                 seamless
                 src="https://player.simplecast.com/f6d59707-1663-48e1-a185-452e0d4c5f97?dark=false"
               ></iframe>
+              <iframe
+                className="border-black border-[1px]"
+                height="200px"
+                width="100%"
+                frameBorder={"0"}
+                scrolling="no"
+                seamless
+                src="https://player.simplecast.com/bd2b0ede-6126-40e9-bc08-81f2913e74d3?dark=false"
+              ></iframe>
               
               
             </div>
