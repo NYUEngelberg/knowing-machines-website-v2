@@ -5,8 +5,8 @@ slug: "walters-v-openai"
 coverImg: "/img/legal/explainer/cases/14.png"
 coverImgAlt: "A dithered abstract image with lines."
 citations: ["Walters v. OpenAI, No. 23-A-04860-2 (Ga. Super. Ct., Gwinnett Cnty.)", "Walters v. OpenAI, No. 23-cv-03122 (N.D. Ga.)"]
-citationLinks: ["https://www.courtlistener.com/docket/67617826/walters-v-openai-llc/", "https://www.courthousenews.com/wp-content/uploads/2023/06/walters-openai-complaint-gwinnett-county.pdf"]
-caseDates: ["7/14/2023","6/5/2023"]
+citationLinks: ["https://www.courthousenews.com/wp-content/uploads/2023/06/walters-openai-complaint-gwinnett-county.pdf", "https://www.courtlistener.com/docket/67617826/walters-v-openai-llc/"]
+caseDates: ["6/5/2023", "7/14/2023"]
 draft: false 
 contentType: "legalCase"
 relatedQuestions: ["can-i-sue-a-genai-company-for-defamation-if-its-tool-generates-false-information-about-me"]
