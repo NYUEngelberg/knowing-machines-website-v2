@@ -4,16 +4,17 @@ import matter from "gray-matter";
 import { LegalCase } from "@/types/legal";
 import { MetaOgTagData } from "@/types/meta";
 import { formatToMmDdYyyy } from "../formatting";
+import { getLastCommitDate } from "../githubApi";
 
-export function getLegalCaseFromSlug(
+export async function getLegalCaseFromSlug(
   slug: string
-): LegalCase | null {
-  const legalCases = getLegalCases();
+): Promise<LegalCase | null> {
+  const legalCases = await getLegalCases();
   const legalCase = legalCases.find((r) => r.slug === slug) || null;
   return legalCase;
 }
 
-export function getLegalCases() {
+export async function getLegalCases() {
   const files = fs.readdirSync(
     path.join(
       "content",
@@ -22,7 +23,7 @@ export function getLegalCases() {
       "cases"
     )
   );
-  const legalCases: LegalCase[] = files.map((filename) => {
+  const legalCases: LegalCase[] = await Promise.all(files.map(async (filename) => {
     const fullPath = path.join(
       "content",
       "knowing_legal_machines",
@@ -32,8 +33,10 @@ export function getLegalCases() {
     );
     const markdownWithMeta = fs.readFileSync(fullPath, "utf-8");
     const stats = fs.statSync(fullPath);
-    const lastModified = formatToMmDdYyyy(stats.mtime);
-    //   console.log(stats.mtime, filename);
+    const lastCommitDate = await getLastCommitDate(fullPath);
+    //console.log(lastCommitDate);//, new Date(lastCommitDate));
+    const lastModified = lastCommitDate || formatToMmDdYyyy(stats.mtime);
+    //console.log(stats.mtime, filename);
     const { data: frontmatter, content } = matter(markdownWithMeta);
     return {
       index: frontmatter.index,
@@ -53,7 +56,7 @@ export function getLegalCases() {
       relatedQuestions: frontmatter.relatedQuestions,
       lastModified: lastModified,
     };
-  });
+  }));
   return legalCases;
 }
 

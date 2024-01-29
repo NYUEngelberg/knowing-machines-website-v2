@@ -256,7 +256,7 @@ export async function getStaticProps({ }) {
     );
 
     const questions = getLegalExplainerQuestions();
-    const legalCases = getLegalCases();
+    const legalCases = await getLegalCases();
 
     return { props: { frontmatter, content, publication, questions, legalCases } };
   }

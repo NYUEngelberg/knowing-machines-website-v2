@@ -34,3 +34,13 @@ export function formatToMmDdYyyy(d: Date):string {
 
   return `${month}/${day}/${year}`;
 }
+
+export function isoStringToMmDdYyyy(dateISOString: string): string {
+  const inputDate = new Date(dateISOString);
+
+  const year = inputDate.getFullYear();
+  const month = (inputDate.getMonth() + 1).toString().padStart(2, '0');
+  const day = inputDate.getDate().toString().padStart(2, '0');
+
+  return `${month}/${day}/${year}`;
+}

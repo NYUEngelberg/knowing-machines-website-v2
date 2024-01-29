@@ -52,7 +52,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const otherQuestions = getLegalExplainerQuestions().filter(
     (q) => q.slug !== slug
   );
-  const relatedLegalCases = getLegalCases().filter((r) => {
+  const relatedLegalCases = (await getLegalCases()).filter((r) => {
     // console.log(
     //     r.slug,
     //     question?.relatedCases[0],
