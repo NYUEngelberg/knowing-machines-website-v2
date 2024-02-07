@@ -46,7 +46,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug + "";
   const legalCase = await getLegalCaseFromSlug(slug);
   const otherCases = (await getLegalCases()).filter((c) => c.slug !== slug);
-  const relatedQuestions = getLegalExplainerQuestions().filter(
+  const relatedQuestions = (await getLegalExplainerQuestions()).filter(
     (r) => legalCase?.relatedQuestions.indexOf(r.slug) !== -1
   );
   return { props: { legalCase, otherCases, relatedQuestions } };

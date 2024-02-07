@@ -4,16 +4,17 @@ import matter from "gray-matter";
 import { LegalExplainerQuestion } from "@/types/legal";
 import { MetaOgTagData } from "@/types/meta";
 import { formatToMmDdYyyy } from "../formatting";
+import { getLastCommitDate } from "../githubApi";
 
-export function getQuestionFromSlug(
+export async function getQuestionFromSlug(
   slug: string
-): LegalExplainerQuestion | null {
-  const questions = getLegalExplainerQuestions();
+): Promise<LegalExplainerQuestion | null> {
+  const questions = await getLegalExplainerQuestions();
   const question = questions.find((q) => q.slug === slug) || null;
   return question;
 }
 
-export function getLegalExplainerQuestions() {
+export async function getLegalExplainerQuestions() {
   const files = fs.readdirSync(
     path.join(
       "content",
@@ -22,7 +23,7 @@ export function getLegalExplainerQuestions() {
       "questions"
     )
   );
-  const questions: LegalExplainerQuestion[] = files.map((filename) => {
+  const questions: LegalExplainerQuestion[] = await Promise.all(files.map(async (filename) => {
     const fullPath = path.join(
       "content",
       "knowing_legal_machines",
@@ -32,7 +33,8 @@ export function getLegalExplainerQuestions() {
     );
     const markdownWithMeta = fs.readFileSync(fullPath, "utf-8");
     const stats = fs.statSync(fullPath);
-    const lastModified = formatToMmDdYyyy(stats.mtime);
+    const lastCommitDate = await getLastCommitDate(fullPath);
+    const lastModified = lastCommitDate || formatToMmDdYyyy(stats.mtime);
     //   console.log(stats.mtime, filename);
     const { data: frontmatter, content } = matter(markdownWithMeta);
     return {
@@ -47,7 +49,7 @@ export function getLegalExplainerQuestions() {
       relatedCases: frontmatter.relatedCases,
       lastModified: lastModified,
     };
-  });
+  }));
   return questions;
 }
 

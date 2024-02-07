@@ -255,7 +255,7 @@ export async function getStaticProps({ }) {
       "knowing-legal-machines"
     );
 
-    const questions = getLegalExplainerQuestions();
+    const questions = await getLegalExplainerQuestions();
     const legalCases = await getLegalCases();
 
     return { props: { frontmatter, content, publication, questions, legalCases } };

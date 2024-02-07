@@ -48,8 +48,8 @@ export async function getStaticPaths() {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug + "";
-  const question = getQuestionFromSlug(slug);
-  const otherQuestions = getLegalExplainerQuestions().filter(
+  const question = await getQuestionFromSlug(slug);
+  const otherQuestions = (await getLegalExplainerQuestions()).filter(
     (q) => q.slug !== slug
   );
   const relatedLegalCases = (await getLegalCases()).filter((r) => {
