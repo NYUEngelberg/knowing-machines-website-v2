@@ -10,7 +10,11 @@ export function getGithubUrlForCommitsPerFile (filePath: string):string {
 export async function getLastCommitDate(filePath: string):Promise<string> {
     const url = getGithubUrlForCommitsPerFile(filePath);
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, {
+            headers: {
+                'Authorization': `token ${process.env.GITHUB_TOKEN}`
+              }
+        });
         console.log(response);
         const commits = await response.json();
         const lastCommitDate = commits[0].commit.committer.date as string;
