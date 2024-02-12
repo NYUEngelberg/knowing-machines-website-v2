@@ -7,7 +7,7 @@ contentType: "Q&A"
 shortAnswer: "Probably Not."
 confidenceLevel: |
     4
-relatedCases: ["registration-of-zarya-of-the-dawn", "registration-of-theatre-dopera-spatial", "thaler-v-perlmutter"]
+relatedCases: ["registration-of-zarya-of-the-dawn", "registration-of-theatre-dopera-spatial", "thaler-v-perlmutter", "registration-of-suryast"]
 ---
 
 Right now, we’re in a moment of flux about who, if anyone, owns GenAI outputs. Traditionally, copyright law assigns ownership in a work to the author/artist. If the author/artist is an employee, the employer typically owns it, and when they are an independent contractor, who owns it typically gets spelled out in the contract.
