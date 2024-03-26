@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  font-family: IBM Plex Mono, Arial, sans-serif;
+  background-color: #EFF0EC;
+}
+
+object {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+}
+
+#scrolly {
+  position: relative;
+  overflow: clip;
+  background-color: #EFF0EC;
+}
+
+article {
+  position: relative;
+  padding: 0;
+  max-width: min(80%, 500px);
+  margin: auto;
+  left: 0vw;
+  top:50vh;
+  z-index: 3;
+}
+
+a {
+  color:darkgray;
+}
+
+b {
+  text-decoration: underline;
+}
+
+.hed {
+  display: inline-block;
+  width: auto;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+
+.intro__hed {
+  font-size: 2em;
+}
+
+.intro__dek {
+  color: #8a8a8a;
+}
+
+#intro {
+  max-width: min(600px, 80%);
+  margin: 1rem auto;
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bolder;
+}
+
+#grid {
+  position: sticky;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
+}
+
+#map {
+  opacity:0;
+  position: fixed;
+  left: 2vw;
+  top: 20vh;
+  width: 100%;
+  margin: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 0;
+}
+
+#svgHolder {
+  transform: scale(0.9);
+  transform: translate(0, 100);
+}
+
+svg {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+
+  overflow: visible;
+}
+
+.step {
+  padding-top:20vh;
+  padding-bottom:80vh;
+  height: 500px;
+  width: auto;
+  position:relative;
+}
+
+.firstStep {
+  padding-top:5vh !important;
+}
+
+.lastStep { 
+  opacity: 0;
+}
+
+.credits {
+
+}
+
+.section-title p {
+  background-color: transparent !important;
+  padding: 0px !important;
+  line-height: 2;
+}
+
+.credits p {
+  background-color: transparent !important;
+  text-align: center !important;
+}
+
+
+@media screen and (min-width: 601px) {
+  .section-title span {
+    font-size:1.8em;
+    text-align:center !important;
+    color:white !important;
+    background-color:black !important;
+    outline: 10px white solid;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-title span {
+    font-size:1.4em;
+    text-align:center !important;
+    color:white !important;
+    background-color:black !important;
+    border: 10px white solid;
+  }
+}
+
+
+
+.sitright {
+  left: 15vw;
+}
+
+
+.hilite {
+  background-color: #F8F6BC !important;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step.is-active p {
+  background-color: goldenrod;
+  color: #3b3b3b;
+}
+
+.step h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #3b3b3b;
+}
+
+.step h2 {
+  text-align: center;
+  padding: 0.21rem;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+
+.smaller {
+  font-size: 1.0rem !important;
+}
+
+@media screen and (min-width: 601px) {
+  .step p {
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #3b3b3b;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .step p {
+    text-align: left;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #3b3b3b;
+    background-color: white;
+  }
+}
+
+
+
+
+.step strong {
+  text-weight:bolder;
+  text-decoration: underline;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+
+.labelHolder {
+  transform-origin: top left;
+  display: block;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  text-align: left;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.label {
+  opacity:0;
+  display: block;
+  position: absolute;
+  width: auto;
+}
+
+.text_with_figure {
+  display: grid;
+  position:relative;
+  left:0vw !important;
+  padding: 10px;
+  margin-bottom: 200px;
+  min-width: min(70vw,500px);
+  width: 40vw;
+  height: auto;
+  grid-template-columns: repefat(1, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 16px;
+  z-index:3;
+  background-color:white;
+}
+
+.text_with_figure > span {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_with_figure > span > img {
+  max-width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .text_with_figure {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0px;
+    grid-column-gap: 16px;
+  }
+}
+
+.two {
+  border:1px solid black;
+  padding: 15px;
+  margin-bottom: 100px;
+  position:relative;
+  display:block;
+  left:-20vw;
+  top:0px;
+  display: grid;
+  width: 60vw;
+  height: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 0px;
+  z-index:3;
+  background-color:white;
+
+}
+
+.three {
+    margin: 0px;
+    position:absolute;
+    left:-5vw;
+    top:0px;
+    display: grid;
+    width: 80vw;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 0px;
+}
+
+/* TODO: Adjust the `left` attributes in a final check to look good on different screens. */
+@media (min-width: 768px) {
+  .three {
+    left:-10vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .three {
+    left:-15vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .three {
+    left:-25vw;
+  }
+}
+
+.iGrid {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.iGridItem {
+  display:block;
+  position:relative;
+  opacity:0;
+  left:0px;
+  top:0px;
+  z-index: 10;
+}
+
+
+.iGridImg {
+  display:block;
+  position:relative;
+  left:0px;
+  top:0px;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  z-index:0;
+  background-color: #FFFFFF44;
+}
+
+.iGridText {
+  will-change: transform;
+  display:inline;
+  position:relative;
+  left:0px;
+  top:10%;
+  width:100%;
+  height:100%;
+  z-index:1;
+  background-color: black;
+  color:white;
+  font-size:10px;
+  opacity:0;
+
+}
+
+.iGridLang {
+  will-change: transform;
+  display:block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:auto;
+  height:auto;
+  z-index:3;
+  background-color: orangered;
+  color:white;
+  font-size:10px;
+  opacity:0;
+}
+
+.iGridScore {
+  will-change: transform;
+  display:block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:auto;
+  height:auto;
+  z-index:2;
+  background-color: #4CBB17;
+  color:white;
+  font-size:12px;
+  opacity:0;
+}
+
+.langMark {
+  display:block;
+  width=100%;
+  height=100%;
+  font-size:3em;
+  color:lightgrey;
+  background-color:black;
+}
+
+.p5Canvas {
+  display: block;
+  position:fixed;
+  left:0px;
+  top:0px;
+  z-index: 1;
+}
+
+.person {
+  display: block;
+  position:absolute;
+  width:120px;
+  height:120px;
+  background-image: url("/img/person.png");
+  opacity:0;
+  background-size: contain;
+}
