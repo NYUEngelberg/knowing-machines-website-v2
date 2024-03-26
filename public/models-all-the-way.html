@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--link rel="icon" href="https://glitch.com/favicon.ico" /-->
+
+    <title>Models All The Way Down</title>
+
+    <!--link rel="canonical" href="https://glitch-hello-website.glitch.me/" /-->
+    <meta name="description" content="" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Models All The Way Down" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
+    <!--meta property="og:description" content="." /-->
+    <!--meta
+      property="og:image"
+      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
+    /-->
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://use.typekit.net/xcb2vhl.css" />
+    <link rel="stylesheet" href="/models-all-the-way.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </head>
+  <body>
+    <section id="intro">
+      <div>
+      <div class="hed">
+      <h1 class="intro__hed">Models</h1>
+      </div>
+      </div>
+
+      <div>
+      <div class="hed">
+      <h1 class="intro__hed">All</h1>
+      </div>
+      </div>
+
+      <div>
+      <div class="hed">
+      <h1 class="intro__hed">The</h1>
+      </div>
+      </div>
+
+      <div>
+      <div class="hed">
+      <h1 class="intro__hed">Way</h1>
+      </div>
+      </div>
+
+      <div>
+      <div class="hed">
+      <h1 class="intro__hed">Down</h1>
+      </div>
+      </div>
+
+      <h2 class="intro__dek">Christo Buschek & Jer Thorp</h2>
+      <p class="intro__dek">A <a href="https://knowingmachines.org/" target="_blank">Knowing Machines</a> Project</p>
+
+      <h2></h2>
+
+      <!--h2>
+        FUNCTIONAL DRAFT  -  PAY NO ATTENTION TO DESIGN
+      </h2-->
+    </section>
+    <section id="scrolly">
+      <div id="gridHold"></div>
+
+      <div id="grid"></div>
+
+      <article>
+
+
+<div class='step firstStep' id='1.01' + data-cueCode='firstCrawlers(true);' + data-upCode='stopCrawlers();
+crawlers = [];' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>If you want to make a really big AI model — the kind that can generate images or do your homework, or build this website, or fake a moon landing — you start by finding a really big training set.</p></span></div>
+<div class='step ' id='1.02' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Images and words, harvested by the billions from the internet, material to build the world that your AI model will reflect back to you.</p></span></div>
+<div class='step ' id='1.03' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>What this training set contains is extremely important. More than any other thing, it will influence what your model can do and how well it does it.</p></span><p><span>Yet few people in the world have spent the time to look at what these really sets that feed their models contain. </p></span></div>
+<div class='step undefined' id='1.035' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>When they do, very real problems emerge, often with serious legal ramifications.</p></span></div>
+<div class='step ' id='1.04' + data-cueCode='speedCrawlers(10);' + data-upCode='firstCrawlers(true);' + data-mobileCueCode='' + data-keyframe=''><p><span>In December, researchers from Stanford's Internet Observatory identified more than 3,000 images categorized as Child Sexual Abuse Material (CSAM) in one of the most influential AI training sets of the moment: LAION-5B.</p></span></div>
+<div class='step undefined' id='1.05' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>LAION-5B is a really big, open-source dataset of images and text captions scraped from the internet, designed for large AI models. It was released in 2022 by LAION, a German non-profit organization. </p></span><p><span>LAION-5B is what we call a "foundation dataset" for generative artificial intelligence.</p></span></div>
+<div class='step undefined' id='1.06' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>Training a model on LAION-5B is meant to give it a comprehensive representation of the world, to build a kind of vocabulary of things and concepts.</p></span></div>
+<div class='step undefined' id='1.07' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>The stated goal of the project to create LAION-5B was to conduct basic research into dataset curation. Specifically, its authors wanted to create an image training set with purely automated methods - with no humans in the mix.</p></span><p><span>The resulting "hands-off" dataset has been used in hundreds of academic projects. The paper announcing LAION-5B has been cited 1,331.</p></span></div>
+<div class='step undefined' id='1.08' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>On their homepage, its creators explicitly warn against its use in real-world contexts:</p></span><p><span>“Providing our dataset openly, we however do not recommend using it for creating ready-to-go industrial products ...”</p></span></div>
+<div class='step undefined' id='1.09' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>Largely, this warning has been ignored. Midjourney and Stable Diffusion, two large models for which some of the data sources are known, are both trained in part on LAION-5B. </p></span><p><span>It’s likely that many other commercial models - perhaps hundreds - have been trained on the set. Models that power chat bots and image generators and have hundreds of thousands of users. </p></span></div>
+<div class='step ' id='1.1' + data-cueCode='stopCrawlers();
+crawlers = [];' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>The fact that there are CSAM images in LAION-5B is alarming, but it is certainly not surprising.</p></span><p><span>The scale of LAION-5B means that human curation of the dataset borders on the impossible.</p></span></div>
+<div class='step ' id='1.11' + data-cueCode='addCrawler(cfiles, [9, 5], 50, [3, 0], 33, [],["r","d","d","r"]);
+startCrawlers();' + data-upCode='stopCrawlers();
+crawlers = [];' + data-mobileCueCode='addCrawler(cfiles, [4, 5], 50, [3, 0], 33, [],["r","d","d","r"]);
+startCrawlers();' + data-keyframe='TRUE'><p><span>If your full-time, eight-hours-a-day, five-days-a-week job were to look at each image in the dataset for just one second, it would take you 781 years.</p></span></div>
+<div class='step ' id='1.12' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>You'd be doing important work.</p></span><p><span>Investigating training sets is an essential avenue to understanding how generative AI models work; the ways they see and re-create the world.</p></span></div>
+<div class='step ' id='1.13' + data-cueCode='' + data-upCode='addCrawler(cfiles, [9, 5], 50, [3, 0], 33, [],["r","d","d","r"]);
+startCrawlers();' + data-mobileCueCode='' + data-keyframe=''><p><span>Scrutinizing these sets is perhaps the only way to get a clear look at the models that are trained on them. </p></span></div>
+<div class='step ' id='1.14' + data-cueCode='stopCrawlers();
+crawlers = [];' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>These investigations can help us to identify biases, and to better predict the risks and harms that might arise as the models go into wider use.</p></span><p><span>So how do you investigate something that takes lifetimes to look at?</p></span></div>
+<div class='step ' id='1.15' + data-cueCode='' + data-upCode='clearNetwork();' + data-mobileCueCode='' + data-keyframe=''><p><span>You start by trying to understand exactly how it was made.</p></span></div>
+<div class='step section-title' id='section2' + data-cueCode='
+removeAllGrids();
+initNetwork();' + data-upCode='clearNetwork();' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>Part 2: Seeing Like an Algorithm</p></span></div>
+<div class='step ' id='2.01' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>LAION-5B was itself built from an even larger dataset, which comes from another non profit organization: Common Crawl.</p></span></div>
+<div class='step ' id='2.02' + data-cueCode='' + data-upCode='
+removeAllGrids();
+initNetwork();' + data-mobileCueCode='' + data-keyframe=''><p><span>Common Crawl is a corpus of web data that comes from a monthly crawl of the web. It contains data for more than 3 billion websites. </p></span></div>
+<div class='step ' id='2.03' + data-cueCode='clearNetwork();
+currentGrid = addGrid(pinImages, 9, 5, true);' + data-upCode='removeGrid(currentGrid);' + data-mobileCueCode='clearNetwork();
+currentGrid = addGrid(pinImages, 4, 5, true);' + data-keyframe='TRUE'><p><span>Some of these websites in particular are very well-represented in LAION-5B. </p></span><p><span>There are nearly 155 million images pairs (images + captions) from Pinterest - about one in every forty pairs.</p></span></div>
+<div class='step ' id='2.04' + data-cueCode='removeGrid(currentGrid);
+currentGrid = addGrid(shopifyImages, 9, 5, true);' + data-upCode='removeGrid(currentGrid);' + data-mobileCueCode='removeGrid(currentGrid);
+currentGrid = addGrid(shopifyImages, 4, 5, true);' + data-keyframe='TRUE'><p><span>2,4% of LAION-5B - 140 million image pairs - comes from Shopify.</p></span></div>
+<div class='step ' id='2.05' + data-cueCode='removeGrid(currentGrid);
+currentGrid = addGrid(slideImages, 9, 5, true);' + data-upCode='clearNetwork();' + data-mobileCueCode='removeGrid(currentGrid);
+currentGrid = addGrid(slideImages, 4, 5, true);' + data-keyframe='TRUE'><p><span>72 million pairs are from SlidePlayer, a platform for storing and sharing PowerPoint presentations.</p></span></div>
+<div class='step ' id='2.06' + data-cueCode='
+removeAllGrids();
+initNetwork();
+scrollCount += 200;' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='TRUE'><p><span>These particular domains are well represented in LAION-5B in part because they host a lot of images. </p></span></div>
+<div class='step undefined' id='2.07' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>On top of that, content from these three sites is served up in a way that makes it particularly appealing to LAION’s methods of statistical curation.</p></span></div>
+<div class='step ' id='2.08' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='TRUE'><p><span>To make LAION-5B, developers processed Common Crawl looking for HTML IMG tags which have an ALT attribute.</p></span><p><span>The intended purpose of the ALT attribute is to improve accessibility, in particular for vision-impaired users who use screen readers.</p></span></div>
+<div class='step ' id='2.11' + data-cueCode='clearNetwork();
+currentGrid = addGrid(slideImages, 2, 12, true);
+gridToAlt(currentGrid);' + data-upCode='undefined' + data-mobileCueCode='
+clearNetwork();
+currentGrid = addGrid(slideImages, 2, 8, true);
+gridToAlt(currentGrid);' + data-keyframe='TRUE'><p><span>Under 40% of the images across the web have ALT tags. But for some sites this is much higher. </p></span><p><span>SlidePlayer, for example, seems to add ALT tags automatically, populating them with text from the PowerPoint slides it ingests.</p></span></div>
+<div class='step ' id='2.12' + data-cueCode='removeGrid(currentGrid);
+currentGrid = addGrid(pinImages, 2, 12, true);
+gridToAlt(currentGrid);' + data-upCode='' + data-mobileCueCode='
+removeGrid(currentGrid);
+currentGrid = addGrid(pinImages, 2, 8, true);
+gridToAlt(currentGrid);' + data-keyframe='TRUE'><p><span>Pinterest generates the captions on its pages from the ALT tags, so users learned to write them before they ‘pinned’ their images.</p></span></div>
+<div class='step ' id='2.125' + data-cueCode='removeGrid(currentGrid);
+currentGrid = addGrid(shopifyImages, 2, 12, true);
+gridToAlt(currentGrid);' + data-upCode='undefined' + data-mobileCueCode='
+removeGrid(currentGrid);
+currentGrid = addGrid(shopifyImages, 2, 8, true);
+gridToAlt(currentGrid);' + data-keyframe='TRUE'><p><span>Shopify users often have their eyes on high Google PageRank scores, and write ALT tag descriptions with SEO (Search Engine Optimization) in mind.</p></span></div>
+<div class='step undefined' id='2.127' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>All of this means that ALT tags are not so much descriptions of image contents as they are artifacts of the web’s workings and of creators’ retail ambitions.</p></span></div>
+<div class='step undefined' id='2.1' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>The content of an ALT tag <em>should</em> describe what is in the image. <div class="text_with_figure">
+    <span>
+    <h2>IMAGE</h2>
+    <img src="https://cdn.xxl.thumbs.canstockphoto.com/canstock20816168.jpg" alt="Garden center worker selling potted flower"/>
+    </span>
+    <span>
+    <h2>ALT TEXT</h2>
+    <p class="smaller">
+    Garden center worker selling potted flower
+    </p>
+    </span>
+    </div></p></span></div>
+<div class='step ' id='2.13' + data-cueCode='' + data-upCode='removeAllGrids();' + data-mobileCueCode='' + data-keyframe=''><p><span>However, ALT tags most often describe what the site's owners want algorithms
+to see, not what they want humans to see.
+<div class="text_with_figure">
+    <span>
+    <h2>IMAGE</h2>
+    <img src="https://machinist.smokingheaps.net/api/datasets/8/files/78274500" alt="Heart Shaped Sunnies - Chynna Dolls Swimwear"/>
+    </span>
+    <span>
+    <h2>ALT TEXT</h2>
+    <p class="smaller">
+    Heart Shaped Sunnies - Chynna Dolls Swimwear
+    </p>
+    </span>
+    </div>
+</p></span></div>
+<div class='step ' id='2.14' + data-cueCode='currentGrid = addGrid(cfiles, 9, 5, true);' + data-upCode='removeAllGrids();' + data-mobileCueCode='currentGrid = addGrid(cfiles, 4, 5, true);' + data-keyframe='TRUE'><p><span>Here we find an important truth about LAION-5B:</p></span><p><span><b>It contains less about how humans see the world than it does about how search engines see the world. It is a dataset that is powerfully shaped by commercial logics.</b></p></span></div>
+<div class='step ' id='2.15' + data-cueCode='gridToAlt(currentGrid);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>A key part of LAION-5B's construction was to try to select images and text captions from Common Crawl where the text of the ALT attribute most closely matched the contents of the image.</p></span></div>
+<div class='step ' id='2.16' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>To do this, LAION developers used a model called CLIP (Contrastive Language–Image Pre-training), a neural network developed by researchers at Open AI.</p></span></div>
+<div class='step ' id='2.17' + data-cueCode='gridToScore(currentGrid);' + data-upCode='clearNetwork();
+currentGrid = addGrid(cfiles, 9, 5, true);' + data-mobileCueCode='' + data-keyframe=''><p><span>The developers used CLIP to get a score for how well a string of text matches to an image: a metric for similarity between the image and its ALT tag.</p></span></div>
+<div class='step ' id='2.18' + data-cueCode='removeAllGrids();
+initNetwork();
+randomSeed(9);
+spawnReach = 0.3;
+scoring = true;
+scrollCount += 200;' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>LAION-5B's authors used this score to determine which images and text captions from Common Crawl would end up in their dataset.</p></span></div>
+<div class='step ' id='2.2' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>To arrive at a minimun acceptable score, LAION-5B trained a model with samples from Common Crawl against popular benchmark datasets, such as ImageNet-1K.</p></span></div>
+<div class='step ' id='2.21' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>They determined that image/text pairs with a similarity scores above a threshold of 0.26 - 0.28 (depending on the language of the caption) would be included in LAION.</p></span></div>
+<div class='step ' id='2.22' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>This one thin sliver of a threshold is the thing that, more than anything else, defines which images LAION-5B contains. </p></span></div>
+<div class='step ' id='2.23' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>CLIP, like most neural networks, is hard to reverse engineer. OpenAI is not forthcoming about the data that CLIP was trained on.
+The image pairs in LAION - and their scores -  give us a glimpse into some of its workings.</p></span></div>
+<div class='step ' id='2.24' + data-cueCode='' + data-upCode='initNetwork(); randomSeed(9); spawnReach = 0.3; scoring = true;' + data-mobileCueCode='' + data-keyframe=''><p><span>By looking at images at the extreme edges of LAION-5B’s similarity thresholds, we can get a sense of how CLIP perceives images, and how the use of this score might influence what LAION includes and excludes.</p></span></div>
+<div class='step ' id='2.25' + data-cueCode='clearNetwork();
+currentGrid = addGrid(highImages, 10, 6, true);
+gridToScore(currentGrid);' + data-upCode='' + data-mobileCueCode='clearNetwork();
+currentGrid = addGrid(highImages, 2, 5, true);
+gridToScore(currentGrid);' + data-keyframe='TRUE'><p><span>High similarity scores tend to be given to pairs where there is text in the image that matches the ALT tag exactly. </p></span><p><span>The CLIP scores that the LAION team generated seem to have upward bounds in the 0.5 range; there are only 22,645 images in the entire 5B set that score higher than 0.5.</p></span></div>
+<div class='step ' id='2.26' + data-cueCode='gridToAlt(currentGrid);' + data-upCode='removeAllGrids();
+currentGrid = addGrid(highImages, 10, 6, true); gridToScore(currentGrid);' + data-mobileCueCode='' + data-keyframe=''><p><span>Here is a set of image/text pairs with similarity scores > 0.46</p></span><p><span>These are mostly pairs where the images contain text, and where the ALT tags match that text.</p></span></div>
+<div class='step ' id='2.28' + data-cueCode='removeAllGrids();
+currentGrid = addGrid(multiImages, 20, 20, true);
+gridToScore(currentGrid);' + data-upCode='' + data-mobileCueCode='removeAllGrids();
+currentGrid = addGrid(lowImages, 16, 20, true);
+gridToScore(currentGrid);' + data-keyframe='TRUE'><p><span>Looking across LAION-5B, it's clear that these CLIP scores are very unequally distributed.</p></span><p><span>Very often the scores are near LAION's chosen threshold.</p></span></div>
+<div class='step ' id='2.29' + data-cueCode='distroGrid(currentGrid);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>A full 16% of the total images across all subsets have scores within 0.1 of the lower bounds.</p></span></div>
+<div class='step ' id='2.3' + data-cueCode='
+filterGrid(currentGrid, [0.27,0.5]);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>This means if the LAION developers had chosen to nudge the CLIP similarity threshold up by just 0.01, they would have removed 937,489,831 pairs from the set.
+</p></span></div>
+<div class='step ' id='2.31' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>The tiniest of shifts in LAION's thresholds could have excluded or included <em>hundreds of millions of images.</em> </p></span><p><span>What the images contain plays no role at all in deciding what stays and what goes.</p></span></div>
+<div class='step undefined' id='2.315' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>This is what curation by statistics looks like: tiny tweaks to code can have profound effects on the content of training sets, and on the models that use them to shape their computational worldview.</p></span></div>
+<div class='step ' id='2.32' + data-cueCode='unDistro(currentGrid);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>There are two important things we can learn here.</p></span></div>
+<div class='step ' id='2.33' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span><b>First, that algorithmic curation commonly depends on numeric thresholds which are very often poorly understood.</b></p></span></div>
+<div class='step ' id='2.34' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>For decades datasets were constructed by human intervention. This generally yielded datasets that are of high quality but too small to make today's LLM’s yield meaningful results.</p></span><p><span>LAION set out to build a dataset for these newer, hungrier models. They built a dataset that is purely constructed by machine processes, by running models and tweaking thresholds: LAION-5B is made by measure.</p></span></div>
+<div class='step ' id='2.35' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>But what is getting measured? The quality of data? The capacities of CLIP? The success of a model against a benchmark? The benchmark itself?</p></span></div>
+<div class='step ' id='2.36' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span><b>Second, that there is a circularity inherent to the authoring of AI training sets.</b></p></span></div>
+<div class='step ' id='2.37' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Because they need to be so large, their construction necessarily involves the use of other models, which themselves were trained on algorithmically curated training sets. </p></span></div>
+<div class='step undefined' id='2.375' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>Consider LAION-5B’s similarity score. It is the result of a model (CLIP) trained on a dataset (which OpenAI does not disclose). </p></span><p><span>To arrive at a threshold, LAION made another model, trained on a fraction of their own dataset, and compared it to benchmarks (e.g. ImageNet-1K). </p></span></div>
+<div class='step undefined' id='' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>The gold standard for this benchmark was set in 2020 by a third model, a widely-used neural network called ResNet50.</p></span></div>
+<div class='step ' id='2.38' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span><b>There are models on top of models, and trainings sets on top of training sets.</b></p></span></div>
+<div class='step ' id='2.39' + data-cueCode='' + data-upCode='removeAllGrids();' + data-mobileCueCode='' + data-keyframe=''><p><span>Omissions and biases and blind spots from these stacked-up models and training sets shape all of the resulting new models and new training sets.</p></span></div>
+<div class='step ' id='2.4' + data-cueCode='removeAllGrids();' + data-upCode='undefined' + data-mobileCueCode='removeAllGrids();' + data-keyframe=''><p><span>It's only by looking at datasets that we can get a better sense of how AI models work, and the gaps, errors, and biases that can emerge. </p></span></div>
+<div class='step section-title' id='section3' + data-cueCode='engGrid = addGrid(cfiles, 15, 20, true, windowWidth * 0.3, windowHeight  * 0.8, 0, 0);' + data-upCode='removeAllGrids();' + data-mobileCueCode='engGrid = addGrid(cfiles, 10, 30, true, windowWidth * 0.3, windowHeight  * 0.8, 0, 0);' + data-keyframe='TRUE'><p><span>Part 3: LAION-5B's Great Divide</p></span></div>
+<div class='step ' id='3.01' + data-cueCode='multiGrid = addGrid(lang20, 15, 19, true, windowWidth * 0.3, windowHeight * 0.75, windowWidth * 0.33, 0);' + data-upCode='removeGrid(noGrid);' + data-mobileCueCode='removeGrid(engGrid);
+noGrid = addGrid(multiImages, 10, 15, true, windowWidth * 0.3, windowHeight * 0.35, windowWidth * 0.66, 0);
+' + data-keyframe=''><p><span>It's convenient to refer to LAION-5B in the singular: as one gigantic training set.</p></span><p><span>In reality, most researchers who train models with LAION-5B use a subset of the data, constructed with a specific purpose or task in mind.</p></span></div>
+<div class='step ' id='3.02' + data-cueCode='noGrid = addGrid(multiImages, 15, 10, true, windowWidth * 0.3, windowHeight * 0.35, windowWidth * 0.66, 0);' + data-upCode='' + data-mobileCueCode='removeGrid(noGrid);
+multiGrid = addGrid(lang20, 10, 27, true, windowWidth * 0.3, windowHeight * 0.75, windowWidth * 0.33, 0);' + data-keyframe=''><p><span>Indeed, there is no way to directly download all of LAION-5B; instead you need to choose one of three language subsets.</p></span></div>
+<div class='step ' id='3.03' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><div class="three"><span>
+    <h2>LAION-2B EN</h2>
+    <p class="smaller">
+    2.3 billion image-text pairs where the text was algorithmically identified as English.
+    </p>
+    </span><span>
+    <h2>LAION-2B MULTI</h2>
+    <p class="smaller">
+    2.26 billion image-text pairs where the text was algorithmically identified as a non-English language.
+    </p>
+    </span><span>
+    <h2>LAION-1B NOLANG</h2>
+    <p class="smaller">
+    1.27 billion image-text pairs where the language couldn't be detected by the algorithm, or the confidence level was too low.
+    </p>
+    </span></div>
+</div>
+<div class='step ' id='3.04' + data-cueCode='gridToLang(engGrid);
+gridToLang(multiGrid);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>To make these subsets, LAION developers again relied on a machine learning model developed by Google called CLD3 (Compact Language Detector 3) to classify the language of the ALT attribute into one of 107 language classes.</p></span></div>
+<div class='step ' id='3.05' + data-cueCode='removeGrid(engGrid);
+removeGrid(noGrid);
+distroGridLang(multiGrid);' + data-upCode='clearRatio();
+multiGrid = addGrid(lang20, 16, 22, true, windowWidth * 0.35, windowHeight, windowWidth * 0.4, 0);' + data-mobileCueCode='' + data-keyframe=''><p><span>Beside English, Russian is the most common language that can be found in the set. Russian is followed by French and then German.</p></span></div>
+<div class='step ' id='3.06' + data-cueCode='removeAllGrids();
+addRatio([1,1], "ru");' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>For each of the 255 million Russian speakers on the planet, there is one image in the dataset labeled as Russian.</p></span></div>
+<div class='step ' id='3.07' + data-cueCode='clearRatio();
+addRatio([2,1], "fr");' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>For every 2 French speakers there is one image caption labeled as French.</p></span></div>
+<div class='step ' id='3.09' + data-cueCode='clearRatio();
+addRatio([35], "sw");' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>For every 35 of the 71.6 million Swahili speakers on Earth, there is one image caption in LAION-5B labeled as Swahili.</p></span></div>
+<div class='step ' id='3.1' + data-cueCode='clearRatio();
+addRatio([2,3], "en");' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>On the other hand, for every English speaker on the planet there are 1.6 captions labeled as English.</p></span></div>
+<div class='step ' id='3.11' + data-cueCode='clearRatio();
+addRatio([1,3], "nl");' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>For every Dutch speaker there are 3 captions in LAION-5B labeled as Dutch.</p></span></div>
+<div class='step ' id='3.08' + data-cueCode='clearRatio();
+addRatio([1,7], "is");' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>For every Icelandic speaker there is are 7 image captions labeled as Icelandic.</p></span></div>
+<div class='step ' id='3.12' + data-cueCode='clearRatio();' + data-upCode='' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>These statistics tell us less about the composition of the originating dataset - Common Crawl - than they do about the shortcomings of the language detection model the LAION-5B developers chose to use.</p></span></div>
+<div class='step ' id='3.13' + data-cueCode='' + data-upCode='removeAllGrids();' + data-mobileCueCode='' + data-keyframe=''><p><span>The language distribution differs significantly between Common Crawl and LAION-5B.</p></span><p><span>That is, the quantity of pages in a language in Common Crawl may not match the number of images in LAION-5B for the same language.</p></span></div>
+<div class='step ' id='3.14' + data-cueCode='luxGrid = addGrid(luxImagesFull, 12, 10, true);
+' + data-upCode='' + data-mobileCueCode='luxGrid = addGrid(luxImagesFull, 6, 8, true);
+' + data-keyframe='TRUE'><p><span>To give a stark example, there are 34,270,773 text captions in LAION-5B which CLD3 has classified as Luxembourgian: a language that only 300,000 people speak. This is 1 caption for every 114 images.</p></span><p><span>Meanwhile there are only around 53,500 pages classified as Luxembourgian in the Common Crawl: 1 for every 58,000 pages.</p></span></div>
+<div class='step ' id='3.15' + data-cueCode='
+gridToAlt(luxGrid);' + data-upCode='stopCrawlers();
+crawlers = [];' + data-mobileCueCode='' + data-keyframe=''><p><span>Looking at a set of supposedly Luxembourgian image pairs, we can quickly see that the ALT text is mostly English or in a different language altogether.</p></span></div>
+<div class='step ' id='3.16' + data-cueCode='removeGrid(luxGrid);
+addCrawler(luxSmall, [9, 5], 50, [3, 0], 33, [],["r","d","d","r"]);
+startCrawlers();' + data-upCode='' + data-mobileCueCode='removeGrid(luxGrid);
+addCrawler(luxSmall, [4, 5], 50, [2, 0], 33, [],["r","d","d","r"]);
+startCrawlers();' + data-keyframe='TRUE'><p><span>Exactly why CLD3  fails toward Luxembourgish is a question for another investigation (and another training set). </p></span><p><span>It does, however, offer a particularly clear example of how LAION’s ‘hands-off’ processes fail.</p></span></div>
+<div class='step ' id='3.17' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Despite the fact that many English captions seem to have been mis-classified as other languages, it's obvious that LAION-5B as a whole prioritizes English content.</p></span></div>
+<div class='step ' id='3.18' + data-cueCode='' + data-upCode='removeAllGrids();' + data-mobileCueCode='' + data-keyframe=''><p><span>This prioritization can also be observed in the fundament that LAION-5B is build upon – Common Crawl, where about 45% of websites have primarily English language content.
+</p></span></div>
+<div class='step ' id='3.19' + data-cueCode='stopCrawlers();
+engGrid = addGrid(cfiles, 12, 17, true, windowWidth * 0.48, windowHeight, 0, 0);
+multiGrid = addGrid(multiImages, 12, 17, true, windowWidth * 0.47, windowHeight, windowWidth * 0.53, 0);
+gridToLang(engGrid);
+gridToLang(multiGrid);' + data-upCode='' + data-mobileCueCode='stopCrawlers();
+engGrid = addGrid(cfiles, 7, 10, true, windowWidth * 0.48, windowHeight, 0, 0);
+multiGrid = addGrid(multiImages, 7, 10, true, windowWidth * 0.47, windowHeight, windowWidth * 0.53, 0);
+gridToLang(engGrid);
+gridToLang(multiGrid);' + data-keyframe='TRUE'><p><span>This split tells us something specific about the worldview that LAION-5B contains; a perspective that is carried into AI models that are trained on it.</p></span><p><span>For models trained on LAION-5B, English (and English-speaking culture) is valued more than the other 107 languages combined.</p></span></div>
+<div class='step ' id='3.2' + data-cueCode='' + data-upCode='engGrid = addGrid(cfiles, 12, 17, true, windowWidth * 0.48, windowHeight, 0, 0);
+multiGrid = addGrid(multiImages, 12, 17, true, windowWidth * 0.47, windowHeight, windowWidth * 0.53, 0);
+gridToLang(engGrid);
+gridToLang(multiGrid);' + data-mobileCueCode='' + data-keyframe=''><p><span>The creators of LAION-5B are aware of the representative shortcomings of Common Crawl, when it comes to language and cultural representation.</p></span><p><span>But they deem the situation workable. Their whole endeavour, after all, is a research project, not to be used to create 'ready-to-go industrial projects'.</p></span></div>
+<div class='step ' id='3.21' + data-cueCode='removeAllGrids();' + data-upCode='stopCrawlers(); crawlers = [];' + data-mobileCueCode='' + data-keyframe=''><p><span>Yet the LAION team has created other subsets of their really big dataset, built to satisfy the very particular needs of consumer-facing generative AIs. </p></span></div>
+<div class='step section-title' id='section4' + data-cueCode='addCrawler(sacSets, [4, 8], 50, [0, 0], 10, [],["d","d","d","r","d"],false,32);
+startCrawlers();' + data-upCode='' + data-mobileCueCode='addCrawler(sacSets, [2, 4], 50, [0, 0], 50, [],["d","d","d","r","d"],false,32);
+startCrawlers();' + data-keyframe='TRUE'><p><span>Part 4: Made to Fit</p></span></div>
+<div class='step ' id='4.01' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Besides the language subsets, LAION has released several other datasets based on LAION-5B targeted toward specific purposes.</p></span></div>
+<div class='step ' id='4.02' + data-cueCode='stopCrawlers();
+crawlers = [];
+aGrid2 = addGrid(aesthetic, 20, 15, true, windowWidth, windowHeight, 0, 0);' + data-upCode='' + data-mobileCueCode='stopCrawlers();
+crawlers = [];
+aGrid2 = addGrid(aesthetic, 10, 15, true, windowWidth, windowHeight, 0, 0);' + data-keyframe=''><p><span>Perhaps the most interesting of these is LAION-Aesthetics, a subset intended to include images that have "high visual quality".</p></span><p><span>Ask Midjourney or Stable Diffusion to generate an image for you, and you’ll get a result that has been fine-tuned on this subset of LAION.</p></span></div>
+<div class='step ' id='4.03' + data-cueCode='' + data-upCode='stopCrawlers();
+crawlers = [];' + data-mobileCueCode='' + data-keyframe=''><p><span>The model used to build this subset was trained on three sources: 15,000 images of logos, as well as two different batches of images that were rated by humans to be visually appealing.</p></span></div>
+<div class='step ' id='4.04' + data-cueCode='removeGrid(aGrid2);
+addCrawler(sacFull, [9, 5], 50, [0, 0], 10, [],["r","r","r","r","r","r","r","r","r","d"]);
+startCrawlers();' + data-upCode='' + data-mobileCueCode='removeGrid(aGrid2);
+addCrawler(sacFull, [4, 5], 50, [0, 0], 40, [],["r","r","r","r","r","r","r","r","r","d"]);
+startCrawlers();' + data-keyframe='TRUE'><p><span>One batch of images came from a training set called Simulacra Aesthetic Captions (SAC). This set contains synthetic images, produced by Generative AIs including CompVis latent GLIDE and Stable Diffusion.</p></span></div>
+<div class='step ' id='4.05' + data-cueCode='' + data-upCode='removeAllGrids();' + data-mobileCueCode='' + data-keyframe=''><p><span>These synthetic images – 238,000 of them – were rated by users of the Discord communities for GLIDE and Stable Diffusion.</p></span></div>
+<div class='step ' id='4.07' + data-cueCode='stopCrawlers();
+sacGrid = addGrid(sacHigh, 6, 5, true, windowWidth, windowHeight, 0, 0);' + data-upCode='removeAllGrids();' + data-mobileCueCode='stopCrawlers();
+sacGrid = addGrid(sacHigh, 3, 5, true, windowWidth, windowHeight, 0, 0);' + data-keyframe='TRUE'><p><span>Users were asked to rate images on a scale of 1 to 10.</p></span><p><span>These images are a sample of the 176,000 top scoring ones in the set.</p></span></div>
+<div class='step ' id='4.08' + data-cueCode='gridToAlt(sacGrid);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>The creators of SAC are transparent about the shortcomings of the set, specifically the fact that the scores were submitted by users who were both WEIRD (Western, Educated, Industrialized, Rich, and Democratic) and developers of AI art, a demographic they describe as leaning toward "nerdy" and "esoteric."</p></span></div>
+<div class='step ' id='4.09' + data-cueCode='removeGrid(sacGrid);
+sacGrid2 = addGrid(sacFull, 20, 15, true, windowWidth, windowHeight, 0, 0);' + data-upCode='' + data-mobileCueCode='sacGrid2 = addGrid(sacFull, 10, 12, true, windowWidth, windowHeight, 0, 0);' + data-keyframe='TRUE'><p><span>Furthermore, they admit that most of the ratings in the dataset were submitted by a "handful of users," whose "aesthetic preferences dominate the dataset."</p></span></div>
+<div class='step ' id='4.1' + data-cueCode='removeAllGrids();' + data-upCode='removeAllGrids();' + data-mobileCueCode='' + data-keyframe='TRUE'><p><span>Another of the aesthetic training sets uses images scored on the website dpchallenge.com, which is described as a "digital photography challenge". </p></span><p><span>250,000 images were scraped from the website, along with user-contributed ratings, for the Aesthetic Visual Analysis (AVA) dataset.</p></span></div>
+<div class='step ' id='4.101' + data-cueCode='dpGrid1 = addGrid(dpbest, 12, 7, true, windowWidth, windowHeight, 0, 0);' + data-upCode='removeAllGrids();' + data-mobileCueCode='dpGrid1 = addGrid(dpbest, 6, 14, true, windowWidth, windowHeight, 0, 0);' + data-keyframe='TRUE'><p><span>Here is a sample of the highest rating images from the set.</p></span></div>
+<div class='step ' id='4.11' + data-cueCode='removeGrid(dpGrid1);
+dpGrid2 = addGrid(dpusers, 7, 4, true, windowWidth, windowHeight, 0, 0);' + data-upCode='' + data-mobileCueCode='removeGrid(dpGrid1);
+dpGrid2 = addGrid(dpusers, 3, 4, true, windowWidth, windowHeight, 0, 0);' + data-keyframe='TRUE'><p><span>dpchallenge.com posts a leaderboard of image reviewers.</p></span><p><span>The top 50 reviewers, responsible for more than 7.5 million total reviews, appear to fall neatly in the WEIRD demographic. </p></span></div>
+<div class='step ' id='4.12' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Of the 41 users who share location info, 95% are in the US, Canada, or Europe.</p></span><p><span>They are, mostly, middle-aged photography enthusiasts from small American cities.</p></span></div>
+<div class='step ' id='4.13' + data-cueCode='removeGrid(dpGrid2);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Using the SAC set, LAION-Logos and AVA images, LAION developers trained a model called LAION-Aesthetics_Predictor V2. </p></span><p><span>This model produces an aesthetic score based on the output from the CLIP model's analysis of an image.</p></span></div>
+<div class='step ' id='4.14' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>They used this model to score the english language set (2.3 billion images) and released a series of subsets with different score thresholds.</p></span></div>
+<div class='step ' id='4.15' + data-cueCode='addCrawler(aesthetic, [9, 5], 50, [0, 0], 10, [],["r","r","r","r","r","r","r","r","r","d"]); startCrawlers();' + data-upCode='' + data-mobileCueCode='addCrawler(aesthetic, [3, 5], 50, [0, 0], 10, [],["r","d"]); startCrawlers();' + data-keyframe='TRUE'><p><span>The smallest of these subsets, with 600 million images scoring 5 or higher, was used by Midjourney to fine-tune the results of their model, with the goal to produce output that would be more appealing to the users of their tool.
+</p></span></div>
+<div class='step ' id='4.16' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Here we find another truth about generative AI: </p></span><p><span><b>The concepts of what is and isn't visually appealing can be influenced in outsized ways by the tastes of a very small group of individuals, and the processes that are chosen by dataset creators to curate the datasets.</b></p></span></div>
+<div class='step ' id='4.17' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>In the case of Midjourney, by a handful of esoteric nerds, and by a 65-year old mechanical engineer living in Southeastern Wisconsin.</p></span></div>
+<div class='step section-title' id='section5' + data-cueCode='stopCrawlers();
+addCrawler(shopifyImages, [24, 10], 50, [7, 2], 20);
+startCrawlers();' + data-upCode='' + data-mobileCueCode='"stopCrawlers();
+addCrawler(shopifyImages, [24, 10], 50, [7, 2], 20);
+startCrawlers();"' + data-keyframe='TRUE'><p><span>Part 5: Big is the new small.</p></span></div>
+<div class='step ' id='5.03' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Over the last two years, generative AI models have forced people to ask hard questions about ownership and about safety.</p></span></div>
+<div class='step ' id='5.04' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>At the root of these conversations are training sets like LAION-5B, whose contents cross all manner of boundaries (both ethical and legal).</p></span></div>
+<div class='step undefined' id='' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>The LAION-5B training set does address both ownership and safety, albeit in a typically statistical fashion.</p></span></div>
+<div class='step undefined' id='' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>For image ownership, the LAION-5B set offers a score indicating the probability that the image is watermarked, and a flag for NSFW content.</p></span><p><span>Both of these metrics were produced by models created by LAION.</p></span></div>
+<div class='step ' id='5.05' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>The researchers admit that these models are "not perfect." </p></span><p><span>Again, the caveat: that the metrics should not be used to create “production-ready” subsets.</p></span></div>
+<div class='step ' id='5.06' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>This is a convenient way to avoid responsibility, and leans heavily on a core philosophy of software-based research: that if you make the problems visible, someone down the line will step up and fix them.</p></span></div>
+<div class='step ' id='5.07' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>In their paper, the LAION devs "advocate using these tags responsibly," to nor rely on them for making "truly safe" versions of their dataset.</p></span><p><span>Beyond that, no advice is given about what responsible use might look like.</p></span></div>
+<div class='step ' id='5.08' + data-cueCode=' addCrawler(slideImages, [8, 8], 50, [2, 2], 10);' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Responsible use might start with a more careful look at how these scores connect to the content of the pages from which the images and text captions were collected.</p></span></div>
+<div class='step ' id='5.09' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>There is one thing in particular that LAION get right: they publish their datasets as open-source. </p></span><p><span>In the field of AI they are alone in doing so. It is what allowed us to dissect LAION-5B in the first place.</p></span></div>
+<div class='step undefined' id='5.099' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>Openness in the AI field matters, not just for model biases, but for the structural biases in the ecosystem. An ongoing problem is that curation by statistics amplifies many of those structural biases.</p></span></div>
+<div class='step ' id='5.1' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>Driven by investments going into the trillions, datasets and AI models, which are too complex or large to be truly understood, are being deployed with a neck-break speed.</p></span></div>
+<div class='step ' id='5.11' + data-cueCode='addCrawler(aesthetic, [9, 7], 50, [4, 4], 17); ' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>As artists, academics, practitioners, or as journalists, dataset investigation is one of the few tools we have available to gain insight and understanding into the most complex systems ever conceived by humans.</p></span><p><span>This is why advocating for dataset transparency is so important if AI systems are ever going to be accountable for their impacts in the world. </p></span></div>
+<div class='step undefined' id='5.12' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>LAION-5B has, since the CSAM findings in December, been unavailable for download.</p></span><p><span>The developers say they are working on remediating it.</p></span></div>
+<div class='step undefined' id='5.13' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>In the meantime, they've released a new dataset of images and textcalled CommonPool, which contains 12.8 billion image pairs.
+</p></span></div>
+<div class='step ' id='5.14' + data-cueCode='' + data-upCode='lastCrawlers(); startCrawlers();' + data-mobileCueCode='' + data-keyframe=''><p><span>12.8 billion images pairs, culled from Common Crawl.</p></span></div>
+<div class='step undefined' id='5.15' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>12.8 billion images pairs, scored by CLIP.</p></span></div>
+<div class='step undefined' id='5.16' + data-cueCode='undefined' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='undefined'><p><span>12.8 billion images pairs, curated by statistics.</p></span></div>
+<div class='step credits' id='5.17' + data-cueCode='stopCrawlers();' + data-upCode='undefined' + data-mobileCueCode='undefined' + data-keyframe='TRUE'><p><span>This piece was created by Knowing Machines, a research project tracing the histories, practices, and politics of how machine learning systems are trained to interpret the world. </p></span><p><span><a href="https://knowingmachines.org" target="blank">knowingmachines.org</a></p></span><p><span>Special thanks to Kate Crawford and Michael Weinberg.</p></span></div>
+<div class='step lastStep' id='5.18' + data-cueCode='' + data-upCode='' + data-mobileCueCode='' + data-keyframe=''><p><span>.</p></span></div>
+</article>
+
+    </section>
+
+
+    <script src="models-all-the-way.js"></script>
+    <script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    <script>
+      // using d3 for convenience
+      let main = d3.select("main");
+      let scrolly = main.select("#scrolly");
+      let figure = scrolly.select("figure");
+      let article = scrolly.select("article");
+      let step = article.selectAll(".step");
+      let p5ready;
+      let lastExecute;
+
+      // initialize the scrollama
+      let scroller = scrollama();
+
+      // generic window resize listener event
+      function handleResize() {}
+
+      // scrollama event handlers
+      function handleStepEnter(response) {
+        let step = response.element.dataset.step;
+        let isDown = response.direction == "down";
+
+        //console.log(response.element.dataset.mobilecuecode.length);
+        let mobileQ = (isNarrow && (response.element.dataset.mobilecuecode != "undefined" && response.element.dataset.mobilecuecode.length > 1));
+        let cueCode = (mobileQ)  ? response.element.dataset.mobilecuecode:response.element.dataset.cuecode;
+
+
+        let keyframe = response.element.dataset.keyframe;
+
+        let downScript = cueCode;
+        let upScript = response.element.dataset.upcode;
+        let keyScript = getScriptsToKeyframe(response);
+        let fullScript = "";
+
+
+        //run the up code first
+        if (response.element != lastExecute) {
+          if (upScript && !isDown) {
+            eval(upScript)
+          }
+
+          if (keyframe == "TRUE" || fullInit) {
+            fullScript = downScript;
+            firstKey = true;
+          } else {
+            fullScript = keyScript + downScript;
+          }
+
+          if (p5ready) {
+            eval(fullScript);
+          } else {
+            anchorScript = fullScript;
+          }
+
+          if (response.element.id.charAt(0) == 's') {
+            window.history.pushState('page2', 'KM test', window.location.origin + window.location.pathname + "#" + response.element.id);
+          }
+        }
+
+        lastExecute = response.element;
+        fullInit = true;
+      }
+
+      function getScriptsToKeyframe(_response) {
+        //console.log("COMPILE FROM KEYFRAME");
+          //find the last keyframe
+          let code = "";
+          let kfi;
+          let ei;
+          for(let i = 0; i < allSteps.length; i++) {
+            if (allSteps[i].dataset.keyframe == "TRUE") kfi = i;
+            if (allSteps[i] == _response.element) {
+              ei = i;
+              break;
+            }
+          }
+
+          if (!kfi) {
+            firstCrawlers();
+          }
+          //gather code between then and now
+          for (let i = kfi; i < ei; i++) {
+            let cc = (isNarrow && (allSteps[i].dataset.mobilecuecode != "undefined" && _response.element.dataset.mobilecuecode.length > 1)) ? allSteps[i].dataset.mobilecuecode:allSteps[i].dataset.cuecode;
+            if (cc != undefined && cc != "undefined") {
+             code = code + cc;
+            }
+          }
+
+          return(code);
+      }
+
+      function init() {
+        isNarrow = windowWidth < windowHeight;
+        allSteps = document.querySelectorAll(".step");
+        // 1. force a resize on load to ensure proper dimensions are sent to scrollama
+        handleResize();
+        // 2. setup the scroller passing options
+        // 		this will also initialize trigger observations
+        // 3. bind scrollama event handlers (this can be chained like below)
+        scroller
+          .setup({
+            step: "#scrolly article .step",
+            offset: 0.33,
+            debug: false,
+          })
+          .onStepEnter(handleStepEnter);
+
+        // 4. Load json files for crawlers & grids
+
+        firstCrawlers();
+
+        loadFileList(jsPath + "/shopping.json", shoppingImages);
+        loadFileList(jsPath + "/laion2B-multi-high-sim.json", highImages);
+        loadFileList(jsPath + "/laion2B-multi-low-sim.json", lowImages);
+        loadFileList(jsPath + "/laion2B-multi-tier2.json", multiImages);
+        loadFileList(jsPath + "/laion2B-multi-lb.json", luxImagesFull);
+        loadFileList(jsPath + "/laion2B-multi-lb-small.json", luxSmall);
+        loadFileList(jsPath + "/sac.json", sacFull);
+        loadFileList(jsPath + "/sac-rating-10.json", sacHigh);
+        loadFileList(jsPath + "/sac-generations.json", sacSets);
+        loadFileList(jsPath + "/dpchallenge-users.json", dpusers);
+        loadFileList(jsPath + "/laion2B-multi-tier2-top20-languages.json", lang20);
+        loadFileList(jsPath + "/dpchallenge.json", dpbest);
+        loadFileList(jsPath + "/laion-aesthetic-multi-500.json", aesthetic);
+        loadFileList(jsPath + "/laion2B-en-tier2-pinimg.json", pinImages);
+        loadFileList(jsPath + "/laion2B-en-tier2-shopify.json", shopifyImages);
+        loadFileList(jsPath + "/laion2B-multi-tier2-slideplayer.json", slideImages);
+
+        //6. Literally the hackiest thing
+        let divs = document.querySelectorAll("div");
+        divs.forEach(d => {
+          d.innerHTML = d.innerHTML.replaceAll("<p></p>", "");
+        });
+
+        //5. Text stack
+        let heds = document.querySelectorAll(".hed");
+        for (let i = 0; i < heds.length; i++) {
+          gsap.to(heds[i], {
+            x: "+=" + (i * 40),
+            duration: 1,
+            ease: "power1.out",
+            delay: i * (0.3),
+          });
+        }
+      }
+
+      function lastCrawlers() {
+        addCrawler(shopifyImages, [24, 10], 50, [7, 2], 20);
+        addCrawler(slideImages, [8, 8], 50, [2, 2], 10);
+        addCrawler(aesthetic, [9, 7], 50, [4, 4], 17);
+      }
+
+      function firstCrawlers(_launch) {
+        loadFileList(jsPath + "/laion2B-en-tier2.json", cfiles, function() {
+
+        if (_launch) {
+          if (!isNarrow) {
+            addCrawler(cfiles, [24, 10], 50, [7, 2], 20);
+          } else {
+            addCrawler(cfiles, [10, 8], 50, [1, 2], 20);
+          }
+          startCrawlers();
+        }
+          let cf = cfiles;
+
+          for (let i = 0; i < 100; i++) {
+            let f = cfiles[i];
+            try {
+            netImages.push(
+              {
+                img:loadImage(imageBase +  f["30px"]),
+                alt:randomAlts[floor(random(randomAlts.length))],
+                mode:0,
+                tick:0
+            });
+            } catch(_e) {
+
+            }
+          }
+        });
+
+        loadFileList(jsPath + "/pets-animals__pets.json", petImages, function() {
+          if (_launch) {
+            if (!isNarrow) {
+              addCrawler(petImages, [8, 8], 50, [2, 2], 10);
+            } else {
+              addCrawler(petImages, [4, 6], 50, [1, 1], 10);
+            }
+          }
+        });
+      }
+
+      let cfiles = [] ;
+      let petImages = [];
+      let shoppingImages = [];
+      let highImages = [];
+      let lowImages =[];
+      let multiImages = [];
+      let luxImagesFull = [];
+      let luxSmall = [];
+      let sacFull = [];
+      let sacHigh = [];
+      let sacSets = [];
+      let dpusers = [];
+      let dpbest = [];
+      let lang20 = [];
+      let aesthetic = [];
+      let pinImages = [];
+      let shopifyImages = [];
+      let slideImages = [];
+
+
+      let anchorScript;
+      let fullInit = false;
+      let firstKey = false;
+      let allSteps;
+
+      let isNarrow;
+
+      let singles = [{"url":"https://cdn.ostrovok.ru/t/240x240/content/72/e4/72e4c2b3a986d4ac90cba644f83d0c40b19ec488.jpeg","text":"Orfeus Park Hotel Турция, Сиде - 1 отзыв об отеле, цены и фото номеров - забронировать отель Orfeus Park Hotel онлайн помещение для мероприятий","language":"ru","similarity":0.27308371663093567,"30px":"models-all-the-way/laion-individual-images/5925370430485536645/30px.jpg","100px":"models-all-the-way/laion-individual-images/5925370430485536645/100px.jpg","300px":"models-all-the-way/laion-individual-images/5925370430485536645/300px.jpg"},{"url":"https://img.freepik.com/photos-gratuite/soupe-epicee-aux-nouilles-instantanees-aux-crevettes_1339-51396.jpg?size=626&ext=jpg","text":"Soupe épicée aux nouilles instantanées aux crevettes","language":"fr","similarity":0.2610405385494232,"30px":"models-all-the-way/laion-individual-images/14436585982085185598/30px.jpg","100px":"models-all-the-way/laion-individual-images/14436585982085185598/100px.jpg","300px":"models-all-the-way/laion-individual-images/14436585982085185598/300px.jpg"},{"url":"https://img.freepik.com/vrije-photo/jonge-blanke-blonde-vrouw-geisoleerd-op-gele-achtergrond-glimlachend-zelfverzekerd-met-gekruiste-armen_1187-168469.jpg?size=626&ext=jpg","text":"Jonge blanke blonde vrouw geïsoleerd op gele achtergrond glimlachend zelfverzekerd met gekruiste armen.","language":"nl","similarity":0.2783508598804474,"30px":"models-all-the-way/laion-individual-images/18014293805084550231/30px.jpg","100px":"models-all-the-way/laion-individual-images/18014293805084550231/100px.jpg","300px":"models-all-the-way/laion-individual-images/18014293805084550231/300px.jpg"},{"url":"http://img.fotocommunity.com/fischerboot-21eb646d-49bc-4b8e-a2fb-fc42212bf86a.jpg?height=1080","text":"Fischerboot","language":"nl","similarity":0.27115800976753235,"30px":"models-all-the-way/laion-individual-images/11966796491674876339/30px.jpg","100px":"models-all-the-way/laion-individual-images/11966796491674876339/100px.jpg","300px":"models-all-the-way/laion-individual-images/11966796491674876339/300px.jpg"},{"url":"https://us.123rf.com/450wm/popocorn/popocorn1110/popocorn111000037/10990474-owls.jpg?ver=6","text":"owls Vector","language":"nl","similarity":0.28857967257499695,"30px":"models-all-the-way/laion-individual-images/5029376647965400878/30px.jpg","100px":"models-all-the-way/laion-individual-images/5029376647965400878/100px.jpg","300px":"models-all-the-way/laion-individual-images/5029376647965400878/300px.jpg"},{"url":"https://media.defense.gov/2012/Jul/31/2000129354/780/780/0/120725-F-AK347-018.JPG","text":"LONDON, England – Staff Sgt. Steven Conine, 748th Aircraft Maintenance Squadron, sorts apparel at the USA Olympic Team Processing Center July 25, 2012. U.S. Service members, civilian employees and family members from across the United Kingdom volunteered to help with processing and set up in preparation for the 2012 Olympic Games. (U.S. Air Force photo/Senior Airman Jerilyn Quintanilla)","language":"en","similarity":0.3686193525791168,"30px":"models-all-the-way/laion-individual-images/17313306646511539608/30px.jpg","100px":"models-all-the-way/laion-individual-images/17313306646511539608/100px.jpg","300px":"models-all-the-way/laion-individual-images/17313306646511539608/300px.jpg"},{"url":"https://photos.classiccars.com/cc-temp/listing/138/1258/21891223-1979-chevrolet-camaro-std.jpg","text":"1979 Chevrolet Camaro (CC-1381258) for sale in Sherman, Texas","language":"en","similarity":0.31542325019836426,"30px":"models-all-the-way/laion-individual-images/18033151951005702898/30px.jpg","100px":"models-all-the-way/laion-individual-images/18033151951005702898/100px.jpg","300px":"models-all-the-way/laion-individual-images/18033151951005702898/300px.jpg"},{"url":"https://thumb7.shutterstock.com/image-photo/sto ck-photo-robber-and-the-thief-hijacks-the-car-450w-69137545.jpg","text":"robber and the thief hijacks the car - stock photo","language":"en","similarity":0.3914746344089508,"30px":"models-all-the-way/laion2B-en-tier2/6132935670080481846/30px.jpg","100px":"models-all-the-way/laion2B-en-tier2/6132935670080481846/100px.jpg"},{"url":"https://pp.userapi.com/TMyzW0xiKVHQkxBDrVLcZSglSl-0K841p1At3A/xADf9Tp26qw.jpg","text":"Обливион (2013)","language":"sw","similarity":0.27565741539001465,"30px":"models-all-the-way/laion-individual-images/911214770798741122/30px.jpg","100px":"models-all-the-way/laion-individual-images/911214770798741122/100px.jpg","300px":"models-all-the-way/laion-individual-images/911214770798741122/300px.jpg"},{"url":"https://ic.pics.livejournal.com/slavikap/52009501/480914/480914_300.jpg","text":"Ernest_Hemingway_on_safari,_1934","language":"is","similarity":0.33716726303100586,"30px":"models-all-the-way/laion-individual-images/10853929434660229398/30px.jpg","100px":"models-all-the-way/laion-individual-images/10853929434660229398/100px.jpg","300px":"models-all-the-way/laion-individual-images/10853929434660229398/300px.jpg"}];
+
+
+
+
+      let samples = {};
+      samples["ru"] = [singles[0]];
+      samples["fr"] = [singles[1]];
+      samples["nl"] = [singles[2],singles[3],singles[4]];
+      samples["en"] = [singles[5],singles[6],singles[7]];
+      samples["sw"] = [singles[8]];
+      samples["is"] = [singles[9],singles[0],singles[1],singles[1],singles[3],singles[4],singles[5]];
+
+
+
+
+    </script>
+  </body>
+</html>

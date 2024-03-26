@@ -6,6 +6,10 @@ const nextConfig = {
   },
   rewrites: async () => [
     {
+      source: "/models-all-the-way",
+      destination: "/models-all-the-way.html",
+    },
+    {
       source: "/critical-field-guide",
       destination: "/critical-field-guide.html",
     },
