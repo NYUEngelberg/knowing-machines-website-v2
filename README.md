@@ -38,6 +38,10 @@
 
 1. Edit /pages/podcast.tsx
 
+##  How to add a new item to the index page
+
+1. Edit /data/publications.json
+
 ## Below is the initial next.js project readme
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

@@ -4,7 +4,7 @@
     "contentType": "Visual Story",
     "coverImg": "/img/models_all_the_way.png",
     "coverImgAlt": "Dithered images used in 'Models all the way'",
-    "title": "Models all the Way",
+    "title": "Models all the Way Down",
     "preposition": "By",
     "authors": "Christo Buschek & Jer Thorp",
     "excerpt": "LAION-5B is an open-source foundation dataset used to train AI models such as Stable Diffusion. It contains 5.8 billion image and text pairs—a size too large to make sense of. In this visual investigation, we follow the construction of the dataset to better understand its contents, implications and entanglements.",
