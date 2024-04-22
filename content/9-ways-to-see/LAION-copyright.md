@@ -11,31 +11,31 @@ authors: "Jason Schultz"
 excerpt: "Looking through millions of dataset images can be a disorienting experience. Each one says something. But what does a sea of them say about the current status of copyright law?"
 image-1:
   caption: "Image of Napoleon from the LAION-Face subset"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78676939"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/78676939"
 image-2:
   caption: "Image of Clement Scott from the LAION-Face subset"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78191526"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/78191526"
 image-3:
   caption: "Frampton Comes Alive! album cover"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/79239582"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/79239582"
 image-4:
   caption: "Image of William H Fitzgerald labelled as 'copyright-free'"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78327143"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/78327143"
 image-5:
   caption: "Trump Bill Signing Meme image from LAION-Face"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/42850351"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/42850351"
 image-6:
   caption: "Padme Amidala, Jeff Lafferty"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78288479"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/78288479"
 image-7:
   caption: "Image of Allie Mae Burroughs from LAION-Face"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/77926428"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/77926428"
 image-8:
   caption: "Andy Warhol's Michael Jackson"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/79029811"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/79029811"
 image-9:
   caption: "North Korea propaganda poster"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/8/data/78408202"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/8/78408202"
 grid-1:
   caption: "Copyright curiousities in the LAION training set"
   collection: 3

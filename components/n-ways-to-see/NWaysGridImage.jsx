@@ -58,7 +58,7 @@ export default function NWaysGridImage({
         style={{
           backgroundImage:
             item.files.length > 0
-              ? `url("${apiURL}/collections/${collection}/files/${item.files[0].id}")`
+            ? `url("${apiURL}/collections/${collection}/files/${item.files[0].name}")`
               : "",
         }}
         onClick={() => handleClick(item.id)}

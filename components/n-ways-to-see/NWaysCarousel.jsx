@@ -18,7 +18,7 @@ export default function NWaysCarousel({ title, collection, apiURL }) {
 
   useEffect(() => {
     const fetchImages = async (collection) => {
-      fetch(`${apiURL}/collections/${collection}/data?page=0&size=50`, {
+      fetch(`${apiURL}/collections/${collection}.json`, {
         method: "GET",
       })
         .then((response) => {
@@ -32,12 +32,15 @@ export default function NWaysCarousel({ title, collection, apiURL }) {
           data.data.map((d, i) => {
             const path = `${apiURL}/collections/${collection}/data/${d.id}`;
             const imageId = d.files && d.files[0].id;
+            const imageName = d.files && d.files[0].name;
             const dataId = path.split("/").reverse()[0];
             Object.assign(d, {
               imagePath: path
                 .replace("/data/", "/files/")
-                .replace(dataId, imageId),
+                .replace(dataId, imageName),
             });
+
+            console.log(d);
             fetchedData.push(d);
           });
           setCollectionData(fetchedData);
