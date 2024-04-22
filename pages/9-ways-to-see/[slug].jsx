@@ -29,7 +29,7 @@ export default function NWaysPage({ content, frontmatter, publication, publicati
     imageUrl: "https://knowingmachines.org" + frontmatter.coverImg,
     imageAlt: frontmatter.coverImgAlt,
   };
-  const apiURL = "https://machinist.smokingheaps.net/api";
+  const apiURL = "/n-ways-to-see-a-dataset";
   const [htmlOutput, setHtmlOutput] = useState("");
   const [sections, setSections] = useState([]);
   const elementTypes = [

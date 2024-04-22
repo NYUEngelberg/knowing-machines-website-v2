@@ -11,7 +11,7 @@ authors: "Hamsini Sridharan"
 excerpt: "How does a machine learning algorithm “recognize” a bird? Generic computer vision datasets, composed of images scraped unceremoniously from sites like Flickr, are most useful for general object recognition, training algorithms to distinguish a raven from a writing desk (or, at any rate, “bird” from “furniture”). But what species of raven is it? Answering that question requires access to images broken into much narrower, more precise categories."
 image-1:
   caption: "Image of a Black-Throated Gray Warbler from NABirds showing taxonomy and labeled parts"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/5/data/15348943"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/5/15348943"
   fileIndex: 1
 carousel-1:
   caption: "Sample of images from NABirds labelled as female or immature male"

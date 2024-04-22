@@ -14,7 +14,7 @@ export default function NWaysGrid({ title, collection, apiURL }) {
 
   useEffect(() => {
     const fetchImages = async (collection) => {
-      fetch(`${apiURL}/collections/${collection}/data?page=0&size=200`, {
+      fetch(`${apiURL}/collections/${collection}.json`, {
         method: "GET",
       })
         .then((response) => {

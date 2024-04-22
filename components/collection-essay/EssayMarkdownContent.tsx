@@ -22,7 +22,7 @@ export default function EssayMarkdownContent({
     "html",
     "image",
   ];
-  const apiURL = "https://machinist.smokingheaps.net/api";
+  const apiURL = "/n-ways-to-see-a-dataset";
   function loadEmbed(type:string, id:string) {
     const item = frontmatter[id.slice(1, -1).slice(1)];
     switch (type) {

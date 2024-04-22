@@ -11,7 +11,7 @@ authors: "Jer Thorp"
 excerpt: "If you’ve found a featureless blob and you’d like to identify it, your first stop should be iNaturalist."
 image-1:
   caption: "Blob image 1."
-  imagePath: "https://machinist.smokingheaps.net/api/collections/7/data/82060419"
+  imagePath: "/n-ways-to-see-a-dataset/collections/7/82060419"
 grid-1:
   caption: "Images of blob-like organisms from the iNat2021 training set"
   collection: 7

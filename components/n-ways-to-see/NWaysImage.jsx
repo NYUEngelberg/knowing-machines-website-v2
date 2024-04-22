@@ -10,7 +10,7 @@ export default function NWaysImage({ title, imagePath, apiURL, fileIndex }) {
 
   useEffect(() => {
     const fetchImageData = async (imagePath) => {
-      fetch(imagePath, {
+      fetch(`${imagePath}.json`, {
         method: "GET",
       })
         .then((response) => {
@@ -20,11 +20,11 @@ export default function NWaysImage({ title, imagePath, apiURL, fileIndex }) {
           throw "Error";
         })
         .then((data) => {
-          const id = data.data.files[fileIndex || 0].id;
+          const name = data.data.files[fileIndex || 0].name;
           const dataId = imagePath.split("/").reverse()[0];
           const newImagePath = imagePath
             .replace("/data/", "/files/")
-            .replace(dataId, id);
+            .replace(dataId, `files/${name}`);
           setImgPath(newImagePath);
           setImageData(data.data);
         })

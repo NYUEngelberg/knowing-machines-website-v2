@@ -11,7 +11,7 @@ authors: "Jer Thorp"
 excerpt: "What makes a bird hard to see? It may be a small bird, or a well camouflaged one. It may be rare, or it could live in a place that’s hard to get to. Or, it might be hiding in plain sight."
 image-1:
   caption: "Iceland Gull (Larus glaucoides) from iNat2021 dataset"
-  imagePath: "https://machinist.smokingheaps.net/api/datasets/9/data/82073217"
+  imagePath: "/n-ways-to-see-a-dataset/datasets/9/82073217"
 grid-1:
   caption: "Images from NABirds training data"
   collection: 6
