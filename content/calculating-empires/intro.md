@@ -3,7 +3,7 @@
  ###### —Gregory Bateson, 1972
 
 
-**Calculating Empires** is a new exhibition by Kate Crawford and Vladan Joler that opens at Fondazione Prada on November 23, 2023 at the Osservatorio in Milan. Joler and Crawford contextualize the current explosion of artificial intelligence by asking how we got here — and to consider where we might be going. Multiple works of critical cartography span the two floors, 
+**[Calculating Empires](https://calculatingempires.net/)** is a new exhibition by Kate Crawford and Vladan Joler that opens at Fondazione Prada on November 23, 2023 at the Osservatorio in Milan. Joler and Crawford contextualize the current explosion of artificial intelligence by asking how we got here — and to consider where we might be going. Multiple works of critical cartography span the two floors, 
 
 The centerpiece of the exhibition is the *Calculating Empires* Map Room. The viewer is invited to enter a dark room, like walking into a literal black box, to find an intricately detailed space. This immersive work is presented to the public for the first time and is based on a diptych of maps: one speaks to the themes of *communication and computation*, the other explores *control and classification*. Each map is over 12 meters long and depicts how empires have calculated  —and how we might calculate empires —  over a five hundred year time span. 
 
