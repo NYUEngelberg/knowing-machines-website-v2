@@ -1,5 +1,19 @@
 [
   {
+    "href": "/knowing-legal-machines/calculating-empires",
+    "slug": "calculating-empires",
+    "contentPath": "calculating-empires",
+    "contentType": "Exhibition",
+    "coverImg": "/img/calculating_empires/0.png",
+    "coverImgAlt": "Section of the map Calculating empires",
+    "title": "Calculating Empires",
+    "preposition": "Written by",
+    "intro": "/content/calculating-empires/intro.md",
+    "authors": "Kate Crawford and Vladan Joler",
+    "excerpt": "Calculating Empires has won the European Commission's 2024 Grand Prize for Artistic Exploration in Science, Technology, and the Arts. The jury noted that 'Calculating Empires challenges us to redefine our relationship with current socio-technical structures. By asking how we got where we are today, we can reconsider where we might be going.' Previous winners include Richard Mosse, Holly Herndon and Matt Dryhurst.",
+    "external": false
+  },
+  {
     "href": "/models-all-the-way",
     "contentType": "Visual Story",
     "coverImg": "/img/models_all_the_way.png",
@@ -22,20 +36,6 @@
     "intro": "/content/synthetic-media-media/intro.md",
     "authors": "Mike Ananny and Jake Karr",
     "excerpt": "This project traces how media systems are using, interpreting, and anticipating Generative AI to create public life. We’re studying how the news industry frames Generative AI, when and why journalists are using it in their work, which policies and guidelines organizations are creating to regulate its use, and how people and infrastructures have the power to make Generative AI a public problem.",
-    "external": false
-  },
-  {
-    "href": "/knowing-legal-machines/calculating-empires",
-    "slug": "calculating-empires",
-    "contentPath": "calculating-empires",
-    "contentType": "Exhibition",
-    "coverImg": "/img/calculating_empires/0.png",
-    "coverImgAlt": "Section of the map Calculating empires",
-    "title": "Calculating Empires",
-    "preposition": "Written by",
-    "intro": "/content/calculating-empires/intro.md",
-    "authors": "Kate Crawford and Vladan Joler",
-    "excerpt": "Calculating Empires is a new exhibition by Kate Crawford and Vladan Joler that opens at Fondazione Prada on November 23, 2023 at the Osservatorio in Milan. Joler and Crawford contextualize the current explosion of artificial intelligence by asking how we got here — and to consider where we might be going. Multiple works of critical cartography span the two floors, and invite visitors to experience the longue durée of how technology and power have been intertwined since 1500. ",
     "external": false
   },
   {
