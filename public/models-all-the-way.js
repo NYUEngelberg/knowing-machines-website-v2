@@ -1,6 +1,6 @@
 /*
 
-LAION Scrollytell 
+LAION Scrollytell
 
 Known issues
 - 32px hack for grid
@@ -42,10 +42,7 @@ gsap.config({
   nullTargetWarn: false,
 });
 
-
-function preload() {
-
-}
+function preload() {}
 
 function setup() {
   p5ready = true;
@@ -57,21 +54,20 @@ function setup() {
 }
 
 function draw() {
-
   let newWaits = [];
-  gridWaits.forEach(g => {
+  gridWaits.forEach((g) => {
     let w = g.waitObject;
     if (w.files.length > 0) {
       if (!w.grid.removed) {
         if (!w.grid.fullyLoaded) {
-         newWaits.push(g);
-         populateGrid(w.grid);
+          newWaits.push(g);
+          populateGrid(w.grid);
         } else {
           w.grid.populated = true;
           if (w.extras) {
-            w.extras.forEach(e => {
+            w.extras.forEach((e) => {
               e.f(w.grid);
-            })
+            });
           }
         }
       }
@@ -81,22 +77,19 @@ function draw() {
   });
   gridWaits = newWaits;
 
-
   if (!networking) {
-
   } else {
     let scrollDiff = abs(oldScroll - window.scrollY);
     oldScroll = window.scrollY;
-    for(let i = 0; i < scrollDiff; i++) {
+    for (let i = 0; i < scrollDiff; i++) {
       //doNetwork();
       scrollCount += 0.3;
     }
 
     if (scrollCount > 0) {
       doNetwork();
-      scrollCount -=1;
+      scrollCount -= 1;
     }
-    
   }
 
   //Fade out
@@ -104,25 +97,35 @@ function draw() {
     whiteCount--;
     fill("#EFF0EC11");
     noStroke();
-    rect(0,0,windowWidth,windowHeight);
+    rect(0, 0, windowWidth, windowHeight);
   }
 }
 
 //------------------------------------ NETWORK ------------------------------
 
 function getScoreColor(_score) {
-  let greens = ['#ffffe5','#f7fcb9','#d9f0a3','#addd8e','#78c679','#41ab5d','#238443','#006837','#004529'];
-  return(greens[floor(mapRange(_score, 0.1, 0.5, 0, greens.length, 0, greens.length))]);
+  let greens = [
+    "#ffffe5",
+    "#f7fcb9",
+    "#d9f0a3",
+    "#addd8e",
+    "#78c679",
+    "#41ab5d",
+    "#238443",
+    "#006837",
+    "#004529",
+  ];
+  return greens[
+    floor(mapRange(_score, 0.1, 0.5, 0, greens.length, 0, greens.length))
+  ];
 }
 
 function initNetwork() {
   //console.log("INIT NETWORK");
   try {
     randomSeed(1);
-  } catch(_e) {
+  } catch (_e) {}
 
-  }
-  
   networkCanvas = createCanvas(windowWidth, windowHeight);
   document.querySelector(".p5Canvas").style.visibility = "visible";
   seed = makeNode();
@@ -135,31 +138,35 @@ function clearNetwork() {
   seed = null;
   focusNode = null;
   try {
-   select(".p5Canvas").remove();
- } catch (_e) {
-
- }
- networking = false;
- networkCount = 0;
+    select(".p5Canvas").remove();
+  } catch (_e) {}
+  networking = false;
+  networkCount = 0;
 }
 
 function doNetwork() {
   if (seed) {
     background("#EFF0EC");
-      //background("red");
+    //background("red");
 
     push();
     if (focusNode) {
-      translate(-(focusNode.pos.x - seed.pos.x), -(focusNode.pos.y - seed.pos.y));
+      translate(
+        -(focusNode.pos.x - seed.pos.x),
+        -(focusNode.pos.y - seed.pos.y),
+      );
     }
 
     if (networking) updateNode(seed);
     renderNode(seed);
 
-    
-
-    let centerPP = focusNode ? focusNode:seed;
-    let heading = focusNode ? atan2(focusNode.pos.y - focusNode.parent.pos.y, focusNode.pos.x - focusNode.parent.pos.x) : atan2(windowHeight/2 -seed.pos.y,  windowWidth/2 - seed.pos.x)
+    let centerPP = focusNode ? focusNode : seed;
+    let heading = focusNode
+      ? atan2(
+          focusNode.pos.y - focusNode.parent.pos.y,
+          focusNode.pos.x - focusNode.parent.pos.x,
+        )
+      : atan2(windowHeight / 2 - seed.pos.y, windowWidth / 2 - seed.pos.x);
 
     //Arrow
     push();
@@ -167,34 +174,36 @@ function doNetwork() {
     rotate(heading);
     stroke(0);
     strokeWeight(3);
-    line(0,0,-10,-7);
-    line(0,0,-10,7);
+    line(0, 0, -10, -7);
+    line(0, 0, -10, 7);
     pop();
     pop();
 
-    describe(`A network visualization showing sites and images from a conceptual version of Common Crawl. Currently shows ${networkCount} nodes.`);
+    describe(
+      `A network visualization showing sites and images from a conceptual version of Common Crawl. Currently shows ${networkCount} nodes.`,
+    );
   }
 }
 
 function makeNode() {
   let n = {
-    pos:{x:0, y:0},
-    tpos:{x:windowWidth/3, y:windowHeight/2},
-    parent:null,
-    children:[],
-    spawned:false,
-    spawnable:null,
-    depth:0,
-    img:netImages[floor(random(netImages.length))],
-    type:(random() < networkAltProb) ? "txt":"img",
+    pos: { x: 0, y: 0 },
+    tpos: { x: windowWidth / 3, y: windowHeight / 2 },
+    parent: null,
+    children: [],
+    spawned: false,
+    spawnable: null,
+    depth: 0,
+    img: netImages[floor(random(netImages.length))],
+    type: random() < networkAltProb ? "txt" : "img",
     alt: randomAlts[floor(random(randomAlts.length))],
-    score:String(random(0.05, 0.7)).substr(0,5),
-    scoreCount:0,
-    scoreLimit:floor(random(10,20))
-  }
+    score: String(random(0.05, 0.7)).substr(0, 5),
+    scoreCount: 0,
+    scoreLimit: floor(random(10, 20)),
+  };
   nodes.push(n);
 
-  return(n);
+  return n;
 }
 
 function updateNode(_node) {
@@ -205,42 +214,42 @@ function updateNode(_node) {
     let d = dist(_node.pos.x, _node.pos.y, _node.tpos.x, _node.tpos.y);
     if (abs(d) < 1) {
       _node.spawned = true;
-      if (_node.depth < 3 && _node.spawnable) spawnNode(_node)
+      if (_node.depth < 3 && _node.spawnable) spawnNode(_node);
     }
-
-} else {
-  _node.scoreCount++;
-  _node.children.forEach(node => {
-    updateNode(node);
-    renderNode(node);
-  });
-}
-
+  } else {
+    _node.scoreCount++;
+    _node.children.forEach((node) => {
+      updateNode(node);
+      renderNode(node);
+    });
+  }
 }
 
 function checkIn(_node) {
   let _coords = _node.pos;
-  let xIn = (_coords.x > focusNode.pos.x - windowWidth/2 && _coords.x < focusNode.pos.x + windowWidth/2);
-  let yIn = (_coords.y > focusNode.pos.y - windowHeight/2 && _coords.y < focusNode.pos.y + windowHeight/2);
-  return(xIn && yIn);
+  let xIn =
+    _coords.x > focusNode.pos.x - windowWidth / 2 &&
+    _coords.x < focusNode.pos.x + windowWidth / 2;
+  let yIn =
+    _coords.y > focusNode.pos.y - windowHeight / 2 &&
+    _coords.y < focusNode.pos.y + windowHeight / 2;
+  return xIn && yIn;
 }
 
 function renderNode(_node) {
-
   if (_node == seed) {
     stroke(225);
     strokeWeight(3);
-    line(_node.pos.x, _node.pos.y, 0, windowHeight/5);
+    line(_node.pos.x, _node.pos.y, 0, windowHeight / 5);
   }
 
-  _node.children.forEach(kid => {
-
+  _node.children.forEach((kid) => {
     if (checkIn(_node) || checkIn(kid)) {
-      strokeWeight(kid == focusNode ? 3:1);
+      strokeWeight(kid == focusNode ? 3 : 1);
       stroke(225);
       line(_node.pos.x, _node.pos.y, kid.pos.x, kid.pos.y);
     }
-  }) 
+  });
 
   noStroke();
   if (_node != seed && _node != focusNode) {
@@ -253,47 +262,50 @@ function renderNode(_node) {
         } catch (_e) {
           console.log(_node);
           rect(_node.pos.x - 5, _node.pos.y - 5, 10, 10);
-        } 
+        }
       } else {
         push();
         translate(_node.pos.x, _node.pos.y);
 
-        let c = (parseFloat(_node.score) > 0.26 &&  parseFloat(_node.score) < 0.45) ? getScoreColor(_node.score):("lightgray");
+        let c =
+          parseFloat(_node.score) > 0.26 && parseFloat(_node.score) < 0.45
+            ? getScoreColor(_node.score)
+            : "lightgray";
 
         fill(c);
 
-        rect(-2,-14,36,16);
+        rect(-2, -14, 36, 16);
         fill("white");
-        text(_node.score, 0,0);
+        text(_node.score, 0, 0);
         pop();
       }
     }
   }
-  
 }
 
 function spawnNode(_node) {
-  let nn = isNarrow ? floor(random(4,10)): floor(random(8,20));
-  let rad = random(20,100);
+  let nn = isNarrow ? floor(random(4, 10)) : floor(random(8, 20));
+  let rad = random(20, 100);
   let inc = TAU / nn;
   let focusIndex = floor(random(nn));
   let spin = random(TAU);
   for (let i = 0; i < nn; i++) {
     let kid = makeNode();
-    let theta = spin + (i * inc);
-    kid.pos = {x:_node.pos.x, y:_node.pos.y};
+    let theta = spin + i * inc;
+    kid.pos = { x: _node.pos.x, y: _node.pos.y };
     kid.depth = _node.depth + 1;
-    kid.spawnable = (i == focusIndex || random(100) < 20);
+    kid.spawnable = i == focusIndex || random(100) < 20;
     if (i == focusIndex && (_node == focusNode || _node == seed)) {
       focusNode = kid;
       kid.depth = 0;
     }
 
-    let arad = (i == focusIndex) ? rad * 3  * (random(100) > 80 ? (5 * spawnReach):1): rad;
+    let arad =
+      i == focusIndex ? rad * 3 * (random(100) > 80 ? 5 * spawnReach : 1) : rad;
     kid.tpos = {
-      x:_node.pos.x + (arad * cos(theta)),
-      y:_node.pos.y + (arad * sin(theta))
-    }
+      x: _node.pos.x + arad * cos(theta),
+      y: _node.pos.y + arad * sin(theta),
+    };
     _node.children.push(kid);
     kid.parent = _node;
     networkCount++;
@@ -320,304 +332,27 @@ let randomAlts = [
   "Strait South - Country Band in Fort Erie, Ontario",
   "Chrysler rolls first production 2013 SRT Viper off of Conner Avenue Assembly Plant",
   "Toddler Jack Sparrow Costume, halloween costume (Toddler Jack Sparrow Costume)",
-  ];
-
-//---------------- BUBBLE MAP PARAMS
-
-let centroid = [550, 100];
-let mapJSON;
-let jMap = {};
-let medians;
-let heatColors = [
-  "#002f61",
-  "#003d6c",
-  "#004b77",
-  "#005981",
-  "#006689",
-  "#007390",
-  "#007f95",
-  "#008b98",
-  "#00979b",
-  "#00a39c",
-  "#00af9b",
-  "#00bb98",
-  "#00c693",
-  "#00d18b",
-  "#18dc82",
-  "#3be675",
-  "#65ec69",
-  "#87f25c",
-  "#a7f74d",
-  "#c5fa3c",
-  "#e2fd27",
-  "#ffff00",
-  ];
-
-//-----------MAP
-
-function heatMap(_type) {
-  let all = medians[medians.length - 1];
-  medians.forEach((med) => {
-    console.log(med);
-    let hscale = med["median_" + _type] / all["median_" + _type];
-    let hc = heatColors[Math.floor((hscale / 2) * heatColors.length)];
-    try {
-      let s = processLabel(
-        med.category_tier2 && med.category_tier2 != ""
-        ? med.category_tier2
-        : med.category_tier1
-        );
-
-      let mainItem = document.querySelector("#" + s);
-      let circles = mainItem.querySelectorAll("circle");
-      circles.forEach((c) => {
-        console.log(c);
-        c.style.fill = hc;
-      });
-
-      console.log(mainItem);
-      //mainItem.firstElementChild.style.fill = hc;
-
-      //mainItem
-      gsap.to(mainItem, {
-        duration: 0.5,
-        ease: "power1.out",
-        //opacity: hscale / 2,
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  });
-}
-
-function showMap(_hide) {
-  //document.querySelectorAll("#map").style.visibility = "visible";
-  gsap.to("#map", {
-    opacity: _hide ? 0 : 1,
-    ease: "power1.out",
-  });
-}
-
-function unMap() {
-  let circles = document.querySelectorAll("circle");
-  circles.forEach((c) => {
-    //console.log(c.getAttribute("oricolor"))
-    c.style.fill = c.getAttribute("oricolor");
-  });
-}
-
-function doLabel(_label, _depthLimit) {
-  if (!_depthLimit) _depthLimit = 0;
-  let mainItem = document.querySelector("#" + processLabel(_label));
-  let pd = parseInt(mainItem.getAttribute("depth"));
-  let kids = mainItem.querySelectorAll("g");
-
-  kids.forEach((c) => {
-    try {
-      if (parseInt(c.getAttribute("depth")) <= pd + 1 + _depthLimit) {
-        addLabel(c, c.getAttribute("label"));
-      }
-    } catch (e) {
-      console.log(e);
-    }
-  });
-}
-
-function unLabel() {
-  document.querySelectorAll(".label").forEach((l) => {
-    l.innerHTML = "";
-  });
-}
-
-function addLabel(_element, _label) {
-  let d = document.createElement("div");
-  let h = document.createElement("div");
-  let t = document.createTextNode(_label);
-  h.appendChild(t);
-  d.appendChild(h);
-  d.classList.add("label");
-  h.classList.add("labelHolder");
-
-  //centroid (this needs to be functionized!)
-  //put everything that's a circle into the mainItems array
-  let mainItems = _element.querySelectorAll("circle");
-
-  //calc the centroid
-  let isoCent = [0, 0];
-  let ic = 0;
-
-  mainItems.forEach((item) => {
-    try {
-      isoCent[0] += parseFloat(item.getAttribute("cx"));
-      isoCent[1] += parseFloat(item.getAttribute("cy"));
-      ic++;
-    } catch (e) {}
-  });
-
-  isoCent[0] /= ic;
-  isoCent[1] /= ic;
-
-  //console.log(isoCent);
-
-  d.style.left = isoCent[0] + "px";
-  d.style.top = isoCent[1] + "px";
-
-  document.querySelector("#svgSlide").appendChild(d);
-
-  gsap.to(d, {
-    duration: 0.5,
-    delay: Math.random(),
-    ease: "power1.out",
-    opacity: 1,
-  });
-}
-
-function isolate(_label) {
-  let isoScale = 2;
-  //hide 'em all
-  let hideItems = document.querySelectorAll(".mapPart");
-  let mainItem = document.querySelector("#" + processLabel(_label));
-
-  //put everything that's a circle into the mainItems array
-  let mainItems = mainItem.querySelectorAll("circle");
-
-  //calc the centroid
-  let isoCent = [0, 0];
-  let ic = 0;
-
-  mainItems.forEach((item) => {
-    try {
-      isoCent[0] += parseFloat(item.getAttribute("cx"));
-      isoCent[1] += parseFloat(item.getAttribute("cy"));
-      ic++;
-    } catch (e) {}
-  });
-
-  isoCent[0] /= ic;
-  isoCent[1] /= ic;
-
-  console.log(isoCent);
-
-  //move animation
-  gsap.to("#map", {
-    duration: 0.5,
-    ease: "power1.out",
-    x: centroid[0] - isoCent[0], // * isoScale,
-    y: centroid[1] - isoCent[1], // * isoScale,
-  });
-
-  //zoom animation
-  gsap.to("#svgSlide", {
-    duration: 0.5,
-    ease: "power1.out",
-    scale: isoScale,
-  });
-
-  document.querySelectorAll(".labelHolder").forEach((l) => {
-    console.log(l);
-    gsap.to(l, {
-      duration: 0.5,
-      ease: "power1.out",
-      scale: 1 / isoScale,
-    });
-  });
-
-  //opacity animation
-  hideItems.forEach((hi) => {
-    //hi.style.opacity = "0";
-    if (mainItems.indexOf(hi) == -1) {
-      gsap.to(hi, {
-        duration: 0.5,
-        ease: "power1.out",
-        opacity: 0.1,
-      });
-    }
-  });
-
-  //Show the main node;
-  mainItem.style.opacity = "1";
-}
-
-function deIsolate() {
-  //show 'em all
-  let hideItems = document.querySelectorAll(".mapPart");
-
-  hideItems.forEach((hi) => {
-    //hi.style.opacity = "0";
-    gsap.to(hi, {
-      duration: 0.5,
-      ease: "power1.out",
-      opacity: 1,
-    });
-  });
-
-  //move animation
-  gsap.to("#map", {
-    duration: 0.5,
-    ease: "power1.out",
-    x: 0,
-    y: 0,
-  });
-
-  //zoom animation
-  gsap.to("#svgSlide", {
-    duration: 0.5,
-    ease: "power1.out",
-    scale: 1,
-  });
-
-  document.querySelectorAll(".labelHolder").forEach((l) => {
-    console.log(l);
-    gsap.to(l, {
-      duration: 0.5,
-      ease: "power1.out",
-      scale: 1,
-    });
-  });
-}
-
-function processLabel(_label) {
-  return _label.replace(/[^A-Z0-9]+/gi, "_");
-}
+];
 
 //------------------------------------ GRID
 
 async function prepareFileListJSON(_url) {
   let j = fetch(_url);
-  return(j);
+  return j;
 }
 
 function loadFileList(_url, _container, _trigger) {
-  prepareFileListJSON(_url)
-  .then(response => {
-    response.json() 
-    .then((data) => {
-      data.forEach(d => {
+  prepareFileListJSON(_url).then((response) => {
+    response.json().then((data) => {
+      data.forEach((d) => {
         _container.push(d);
       });
       if (_trigger) {
         _trigger();
       }
-    })  
+    });
   });
 }
-
-
-/*
-function prepareFileList(_size, _maxDim) {
-  if (!_maxDim) {
-    _maxDim = 200;
-  }
-  let files = [];
-  for (let i = 0; i < _size; i++) {
-    let f = {
-      url: "https://picsum.photos/" + _maxDim + "?r=" + Math.random(),
-    };
-    files[i] = f;
-  }
-  return files;
-}
-*/
 
 function moveGrid(_grid, _x, _y, _t) {
   console.log("MOVE GRID");
@@ -628,8 +363,7 @@ function moveGrid(_grid, _x, _y, _t) {
   });
 }
 
-function addGrid(_files, _c, _r, _animate, _w, _h, _x, _y,_skip,_isCrawler) {
-
+function addGrid(_files, _c, _r, _animate, _w, _h, _x, _y, _skip, _isCrawler) {
   //console.log("ADD GRID");
 
   let grid = document.createElement("div");
@@ -641,18 +375,18 @@ function addGrid(_files, _c, _r, _animate, _w, _h, _x, _y,_skip,_isCrawler) {
 
   grid.args = arguments;
   grid.popCount = 0;
-  grid.isCrawler = _isCrawler
+  grid.isCrawler = _isCrawler;
   grid.fullyLoaded = false;
 
   //if (_files.length == 0) {
-    grid.waitObject = {
-      "grid":grid,
-      "files":_files,
-      "extras":[]
-    };
-    gridWaits.push(grid);
+  grid.waitObject = {
+    grid: grid,
+    files: _files,
+    extras: [],
+  };
+  gridWaits.push(grid);
 
-    /*
+  /*
   } else {
     populateGrid(grid);
     grid.populated = true;
@@ -665,27 +399,26 @@ function addGrid(_files, _c, _r, _animate, _w, _h, _x, _y,_skip,_isCrawler) {
 }
 
 function populateGrid(_grid) {
-
   let c = 0;
-  let o = (_grid.args[8]) ? _grid.args[8]:0;
+  let o = _grid.args[8] ? _grid.args[8] : 0;
 
-  _grid.style.width = (_grid.args[4] ? _grid.args[4]:windowWidth) + "px";
-  _grid.style.height = (_grid.args[5] ? _grid.args[5]:windowHeight) + "px";
+  _grid.style.width = (_grid.args[4] ? _grid.args[4] : windowWidth) + "px";
+  _grid.style.height = (_grid.args[5] ? _grid.args[5] : windowHeight) + "px";
 
   if (_grid.args[6]) {
     _grid.style.left = _grid.args[6] + "px";
     _grid.style.top = _grid.args[7] + "px";
   }
 
-
   let sc = _grid.popCount;
-  let pc = _grid.popCount + (_grid.isCrawler ? _grid.args[1] * _grid.args[2]:5);
+  let pc =
+    _grid.popCount + (_grid.isCrawler ? _grid.args[1] * _grid.args[2] : 5);
 
-  for (let i = sc; i < min(pc,_grid.args[1] * _grid.args[2]); i++) { 
-    let f = _grid.args[0][i + parseFloat(o)];      
+  for (let i = sc; i < min(pc, _grid.args[1] * _grid.args[2]); i++) {
+    let f = _grid.args[0][i + parseFloat(o)];
     let gi = document.createElement("div");
 
-      //Image element
+    //Image element
     let gii = document.createElement("div");
     gii.classList.add("iGridImg");
     gi.appendChild(gii);
@@ -697,7 +430,6 @@ function populateGrid(_grid) {
       git.innerHTML = f.text;
       gii.appendChild(git);
 
-
       //Lang text
       let gil = document.createElement("div");
       gil.classList.add("iGridLang");
@@ -708,33 +440,32 @@ function populateGrid(_grid) {
       let gis = document.createElement("div");
       gis.classList.add("iGridScore");
       //kludge for sim values that are null
-      if(f.similarity == null) f.similarity = "NO S" 
-      gis.innerHTML = f.similarity.toString().slice(0,5);
+      if (f.similarity == null) f.similarity = "NO S";
+      gis.innerHTML = f.similarity.toString().slice(0, 5);
       gii.appendChild(gis);
-      gis.style["background-color"] =  getScoreColor(f.similarity);
+      gis.style["background-color"] = getScoreColor(f.similarity);
 
       gi.id = "sq" + (c % _grid.args[1]) + "_" + Math.floor(c / _grid.args[1]);
       gi.classList.add("iGridItem");
 
-      let w = (_grid.args[4] ? _grid.args[4]:windowWidth) / _grid.args[1] ;
-      let h = (_grid.args[5] ? _grid.args[5]:windowHeight) / _grid.args[2] ;
+      let w = (_grid.args[4] ? _grid.args[4] : windowWidth) / _grid.args[1];
+      let h = (_grid.args[5] ? _grid.args[5] : windowHeight) / _grid.args[2];
 
       gi.style.width = w + "px";
       gi.style.height = h + "px";
 
       let imgSize;
-      if ((w > 100 || h > 100) && (f["300px"]))  {
-        imgSize = "300px"
+      if ((w > 100 || h > 100) && f["300px"]) {
+        imgSize = "300px";
       } else if (w > 30 || h > 30) {
-        imgSize = "100px"
+        imgSize = "100px";
       } else {
-        imgSize = "30px"
+        imgSize = "30px";
       }
 
       gii.style["background-image"] = "url(" + imageBase + f[imgSize] + ")";
       _grid.appendChild(gi);
-       
-      
+
       if (_grid.args[3]) {
         gsap.to(gi, {
           delay: Math.random() * 0.5,
@@ -743,21 +474,17 @@ function populateGrid(_grid) {
           opacity: 1,
         });
       }
-
-    } catch (_e) {
-
-    }
+    } catch (_e) {}
     c++;
-    _grid.popCount ++;
-  };
+    _grid.popCount++;
+  }
 
-  if (_grid.popCount == (_grid.args[1] * _grid.args[2])) {
+  if (_grid.popCount == _grid.args[1] * _grid.args[2]) {
     _grid.fullyLoaded = true;
     //console.log("GRID DONE");
   }
 
-
-    //console.log(c);
+  //console.log(c);
 }
 
 function crawlerToAlt(_crawler) {
@@ -772,11 +499,11 @@ function crawlerToAlt(_crawler) {
   });
 }
 
-function mapRange (value, a, b, c, d) {
-    // first map value from (a..b) to (0..1)
-    value = (value - a) / (b - a);
-    // then map it from (0..1) to (c..d) and return it
-    return c + value * (d - c);
+function mapRange(value, a, b, c, d) {
+  // first map value from (a..b) to (0..1)
+  value = (value - a) / (b - a);
+  // then map it from (0..1) to (c..d) and return it
+  return c + value * (d - c);
 }
 
 function distroGrid(_grid) {
@@ -784,53 +511,74 @@ function distroGrid(_grid) {
     let binCount = 20;
     let bins = [];
     let range = [0.26, 0.46];
-    for (let i = 0; i <binCount; i++) {
+    for (let i = 0; i < binCount; i++) {
       bins[i] = [];
     }
 
     try {
-     _grid.querySelectorAll(".iGridItem").forEach((gi) => {
+      _grid.querySelectorAll(".iGridItem").forEach((gi) => {
+        let xOff = gi.offsetLeft;
+        let yOff = gi.offsetTop;
 
-      let xOff = gi.offsetLeft;
-      let yOff = gi.offsetTop;
+        gi.oldPos = [xOff, yOff];
 
-      gi.oldPos = [xOff, yOff];
+        let score = parseFloat(gi.querySelector(".iGridScore").innerHTML);
+        let b = floor(mapRange(score, range[0], range[1], 0, binCount));
 
-      let score = parseFloat(gi.querySelector(".iGridScore").innerHTML);
-      let b = floor(mapRange(score, range[0], range[1], 0, binCount));
+        let xp = mapRange(
+          b,
+          0,
+          binCount,
+          windowWidth * 0.05,
+          windowWidth - windowWidth * 0.05,
+        );
+        let yp = windowHeight - 100 - bins[b].length * 5;
 
-      let xp = mapRange(b, 0, binCount, windowWidth * 0.05, windowWidth - (windowWidth * 0.05));
-      let yp = (windowHeight - 100) - (bins[b].length * 5);
+        gsap.to(gi, {
+          duration: 0.5,
+          delay: 0.5 + score * 6,
+          x: xp - xOff,
+          y: yp - yOff,
+        });
 
-      gsap.to(gi, {
-        duration: 0.5,
-        delay: 0.5 + (score * 6),
-        x: xp - xOff,
-        y: yp - yOff,
+        bins[b].push(gi);
       });
-
-      bins[b].push(gi);
+    } catch (_e) {}
+  } else {
+    //console.log("--- DEFER DISTRO");
+    _grid.waitObject.extras.push({
+      f: distroGrid,
     });
-   } catch(_e) {
-
-   }
- } else {
-  //console.log("--- DEFER DISTRO");
-  _grid.waitObject.extras.push({
-    f:distroGrid
-  });
-}
+  }
 }
 
 function distroGridLang(_grid) {
-
   if (_grid.populated) {
-
-    let langs = ["ru","fr","de","es","zh","ja","it","pt","nl","pl","no","vi","tr","la","lb","gl","da","cs","bg","sv","other"];
-    let bins = {
-
-    }
-    langs.forEach(l => {
+    let langs = [
+      "ru",
+      "fr",
+      "de",
+      "es",
+      "zh",
+      "ja",
+      "it",
+      "pt",
+      "nl",
+      "pl",
+      "no",
+      "vi",
+      "tr",
+      "la",
+      "lb",
+      "gl",
+      "da",
+      "cs",
+      "bg",
+      "sv",
+      "other",
+    ];
+    let bins = {};
+    langs.forEach((l) => {
       bins[l] = [];
     });
 
@@ -840,64 +588,67 @@ function distroGridLang(_grid) {
     //console.log(gxOff + ":" + gyOff);
 
     try {
-     _grid.querySelectorAll(".iGridItem").forEach((gi) => {
-      let l = gi.querySelector(".iGridLang").innerHTML;
+      _grid.querySelectorAll(".iGridItem").forEach((gi) => {
+        let l = gi.querySelector(".iGridLang").innerHTML;
 
-      let xOff = gi.offsetLeft;
-      let yOff = gi.offsetTop;
+        let xOff = gi.offsetLeft;
+        let yOff = gi.offsetTop;
 
-      gi.oldPos = [xOff, yOff];
+        gi.oldPos = [xOff, yOff];
 
-      let b = langs.indexOf(l);
-      if (b == -1) {
-        b = langs.indexOf("other");
-        //console.log(l);
-        l = "other";
-      }
+        let b = langs.indexOf(l);
+        if (b == -1) {
+          b = langs.indexOf("other");
+          //console.log(l);
+          l = "other";
+        }
 
-      let xp = mapRange(b, 0, langs.length, windowWidth * 0.15, windowWidth - (windowWidth * 0.15));
-      let yp = (windowHeight - 100) - (bins[l].length * 5);
+        let xp = mapRange(
+          b,
+          0,
+          langs.length,
+          windowWidth * 0.15,
+          windowWidth - windowWidth * 0.15,
+        );
+        let yp = windowHeight - 100 - bins[l].length * 5;
 
-      gsap.to(gi, {
-        duration: 0.5,
-        delay: 1 + (b * 0.2),
-        x: xp - xOff - gxOff,
-        y: yp - yOff - gyOff,
+        gsap.to(gi, {
+          duration: 0.5,
+          delay: 1 + b * 0.2,
+          x: xp - xOff - gxOff,
+          y: yp - yOff - gyOff,
+        });
+
+        bins[l].push(gi);
       });
-
-      bins[l].push(gi);
+    } catch (_e) {
+      console.log(_e);
+    }
+  } else {
+    console.log("--- DEFER UNDISTRO");
+    _grid.waitObject.extras.push({
+      f: distroGridLang,
     });
-   } catch(_e) {
-    console.log(_e);
   }
-} else {
-  console.log("--- DEFER UNDISTRO");
-  _grid.waitObject.extras.push({
-    f:distroGridLang
-  });
-}
 }
 
 function unDistro(_grid) {
   if (_grid.populated) {
     _grid.querySelectorAll(".iGridItem").forEach((gi) => {
-
       gsap.to(gi, {
         duration: 0.5,
         delay: 1 + random(2),
         x: gi.oldPos[0] / 2,
         y: gi.oldPos[1] / 2,
       });
-
     });
   } else {
     //console.log("--- DEFER UNDISTRO");
     _grid.waitObject.extras.push({
-      f:unDistro
+      f: unDistro,
     });
   }
 }
-
 
 function gridToAlt(_grid) {
   //console.log("GRID TO ALT");
@@ -914,13 +665,11 @@ function gridToAlt(_grid) {
           opacity: 1,
         });
       });
-    } catch (_e) {
-
-    }
+    } catch (_e) {}
   } else {
     console.log("--- DEFER");
     _grid.waitObject.extras.push({
-      f:gridToAlt
+      f: gridToAlt,
     });
   }
 }
@@ -936,12 +685,10 @@ function gridToLang(_grid) {
           opacity: 1,
         });
       });
-    } catch (_e) {
-
-    }
+    } catch (_e) {}
   } else {
     _grid.waitObject.extras.push({
-      f:gridToLang
+      f: gridToLang,
     });
   }
 }
@@ -955,61 +702,51 @@ function filterGrid(_grid, _range) {
         gsap.to(gi, {
           duration: 0.5,
           delay: 1 + random(2),
-          x:"-=50",
+          x: "-=50",
           ease: "power1.out",
           opacity: 0,
         });
       }
     });
-  } catch (_e) {
-
-  }
-  
-
+  } catch (_e) {}
 }
 
 function gridToScore(_grid, _bully) {
   if (_grid.populated) {
-   if(_bully) {
-     try {
-       _grid.querySelectorAll(".iGridText").forEach((gi) => {
+    if (_bully) {
+      try {
+        _grid.querySelectorAll(".iGridText").forEach((gi) => {
+          gsap.to(gi, {
+            duration: 0.2,
+            delay: Math.random(),
+            ease: "power1.out",
+            opacity: 0,
+          });
+        });
+      } catch (_e) {}
+    }
+    try {
+      _grid.querySelectorAll(".iGridScore").forEach((gi) => {
         gsap.to(gi, {
-          duration: 0.2,
+          duration: 0.5,
           delay: Math.random(),
           ease: "power1.out",
-          opacity: 0,
+          opacity: 1,
         });
       });
-     } catch (_e) {
-
-     }
-   }
-   try {
-    _grid.querySelectorAll(".iGridScore").forEach((gi) => {
-      gsap.to(gi, {
-        duration: 0.5,
-        delay: Math.random(),
-        ease: "power1.out",
-        opacity: 1,
-      });
+    } catch (_e) {}
+  } else {
+    if (_bully) {
+      _grid.waitObject.extras = [];
+    }
+    _grid.waitObject.extras.push({
+      f: gridToScore,
     });
-  } catch (_e) {
-
   }
-} else {
-  if (_bully) {
-    _grid.waitObject.extras = [];
-  }
-  _grid.waitObject.extras.push({
-    f:gridToScore
-  })
 }
-}
-
 
 function removeAllGrids() {
-
-  document.querySelectorAll(".iGridItem").forEach(g => {
+  document.querySelectorAll(".iGridItem").forEach((g) => {
     g.removed = true;
   });
 
@@ -1028,12 +765,10 @@ function removeAllGrids() {
       opacity: 1,
       onComplete: function () {
         try {
-         this._targets[0].remove();
-       } catch (_e) {
-
-       } 
-     },
-   });
+          this._targets[0].remove();
+        } catch (_e) {}
+      },
+    });
   } catch (_e) {
     //document.querySelector(".iGrid").remove();
   }
@@ -1054,18 +789,17 @@ function removeGrid(_grid) {
       duration: 1.5,
       ease: "power1.out",
       opacity: 1,
-      onCompleteParams:[_grid],
+      onCompleteParams: [_grid],
       onComplete: function (_grid) {
         try {
-         _grid.remove();
-       } catch (_e) {
-         console.log("REMOVE ERROR");
-         console.log(_e);
-       } 
-     },
-   });
+          _grid.remove();
+        } catch (_e) {
+          console.log("REMOVE ERROR");
+          console.log(_e);
+        }
+      },
+    });
   } catch (_e) {
-    
     //document.querySelector(".iGrid").remove();
   }
 }
@@ -1097,7 +831,7 @@ function markLanguage() {
     { token: "IT", prob: 0.04 },
     { token: "PT", prob: 0.04 },
     { token: "NL", prob: 0.03 },
-    ];
+  ];
 
   let c = 0;
   g.querySelectorAll(".iGridText").forEach((gii) => {
@@ -1142,41 +876,41 @@ function updateCrawlers() {
             i++;
           }
           if (i == 1) {
-          //UP
+            //UP
             c.index[1]--;
             if (c.index[1] < 0) c.index[1] += c.grid[1];
           } else if (i == 2) {
-          //RIGHT
+            //RIGHT
             c.index[0]++;
             if (c.index[0] >= c.grid[0]) c.index[0] = 0;
           } else if (i == 3) {
-          //DOWN
+            //DOWN
             c.index[1]++;
             if (c.index[1] >= c.grid[1]) c.index[1] = 0;
           } else {
             c.index[0]--;
             if (c.index[0] < 0) c.index[0] += c.grid[0];
-          //LEFT
+            //LEFT
           }
         } else {
           let dir = c.pattern[c.tock % c.pattern.length];
-        //console.log(dir);
+          //console.log(dir);
           if (dir == "u") {
-          //UP
+            //UP
             c.index[1]--;
             if (c.index[1] < 0) c.index[1] += c.grid[1];
           } else if (dir == "r") {
-          //RIGHT
+            //RIGHT
             c.index[0]++;
             if (c.index[0] >= c.grid[0]) c.index[0] = 0;
           } else if (dir == "d") {
-          //DOWN
+            //DOWN
             c.index[1]++;
             if (c.index[1] >= c.grid[1]) c.index[1] = 0;
           } else if (dir == "l") {
             c.index[0]--;
             if (c.index[0] < 0) c.index[0] += c.grid[0];
-          //LEFT
+            //LEFT
           }
         }
 
@@ -1212,7 +946,7 @@ function updateCrawlers() {
 
         try {
           let t = sq.querySelector(".iGridText");
-        //console.log(t);
+          //console.log(t);
           if (c.size > 30) {
             gsap.to(t, {
               opacity: 1,
@@ -1220,15 +954,12 @@ function updateCrawlers() {
               delay: 2,
             });
           }
-        } catch (_e) {
-
-        }
+        } catch (_e) {}
 
         c.tock++;
         if (c.count) {
           if (c.tock == c.count - 1) c.alive = false;
         }
-
       }
     }
   });
@@ -1238,25 +969,34 @@ function addCrawlBlock(_images, _size, _pulse, _count, _w) {
   let pattern = [];
   for (let i = 0; i < _count; i++) {
     if (i % _w == _w - 1) {
-      pattern[i] = 'u';
+      pattern[i] = "u";
     } else {
       let row = Math.floor(i / _w);
-      pattern[i] = row % 2 == 0 ? 'r':'l';
+      pattern[i] = row % 2 == 0 ? "r" : "l";
     }
   }
 
   let h = Math.ceil(_count / _w);
-  let _grid = [_w, h]
-  
-  let _div = addGrid(_images, _grid[0], _grid[1], false, _w * _size, h * _size, 0, true);
-  
+  let _grid = [_w, h];
+
+  let _div = addGrid(
+    _images,
+    _grid[0],
+    _grid[1],
+    false,
+    _w * _size,
+    h * _size,
+    0,
+    true,
+  );
+
   //Add crawler
   let crawl = {
-    alive:true,
+    alive: true,
     grid: _grid,
     images: _images,
     size: _size,
-    index: [0,h],
+    index: [0, h],
     pulse: _pulse,
     probs: [],
     tick: 0,
@@ -1265,12 +1005,11 @@ function addCrawlBlock(_images, _size, _pulse, _count, _w) {
     redding: false,
     pattern: pattern,
     noFade: true,
-    noRepeat:true,
-    count:_count
+    noRepeat: true,
+    count: _count,
   };
   crawlers.push(crawl);
-  return(crawl);
-  
+  return crawl;
 }
 
 function addCrawler(
@@ -1282,8 +1021,8 @@ function addCrawler(
   _probs,
   _pattern,
   _noFade,
-  _offset
-  ) {
+  _offset,
+) {
   let crawl = {
     alive: true,
     grid: _grid,
@@ -1294,7 +1033,18 @@ function addCrawler(
     probs: _probs ? _probs : [25, 25, 25, 25],
     tick: 0,
     tock: 0,
-    div: addGrid(_images, _grid[0], _grid[1], false, false, false, false, false, _offset, true),
+    div: addGrid(
+      _images,
+      _grid[0],
+      _grid[1],
+      false,
+      false,
+      false,
+      false,
+      false,
+      _offset,
+      true,
+    ),
     redding: false,
     pattern: _pattern,
   };
@@ -1318,14 +1068,14 @@ function clearCrawlers() {
 
 function stopCrawlers() {
   let squares = document.querySelectorAll(".iGridItem");
-  squares.forEach(sq => { 
+  squares.forEach((sq) => {
     gsap.to(sq, {
       opacity: 0,
       duration: 1,
       ease: "power1.out",
       delay: random(),
     });
-  })
+  });
   clearInterval(crawlTimer);
   crawlTimer = null;
 }
@@ -1335,7 +1085,6 @@ function stopCrawlers() {
 let ratioItems = [];
 
 function addRatio(_ratio, _lang) {
-
   let s = 100;
 
   if (_ratio[0] > 10) {
@@ -1348,108 +1097,76 @@ function addRatio(_ratio, _lang) {
 
   let is = 100;
 
-
   //console.log("ADD RATIO");
   //console.log(_ratio);
-    //People
-  for(let i = 0; i < _ratio[0]; i++) {
+  //People
+  for (let i = 0; i < _ratio[0]; i++) {
     let p = document.createElement("div");
     p.classList.add("person");
 
-    let cols = (i > 100) ? (60):(_ratio[0]);
-    p.style.left = (windowWidth/2 -(cols/2 * s) + ((i % cols) * s)) + "px";
-      p.style.top = ((windowHeight/4 - _ratio[0]/10) + (s * floor(i / cols))) + "px";//random(windowHeight/5, 2 * windowHeight/5) + "px";
-      document.querySelector("#grid").appendChild(p);
-      p.style.width = s + "px";
-      p.style.height = s + "px";
+    let cols = i > 100 ? 60 : _ratio[0];
+    p.style.left = windowWidth / 2 - (cols / 2) * s + (i % cols) * s + "px";
+    p.style.top =
+      windowHeight / 4 - _ratio[0] / 10 + s * floor(i / cols) + "px"; //random(windowHeight/5, 2 * windowHeight/5) + "px";
+    document.querySelector("#grid").appendChild(p);
+    p.style.width = s + "px";
+    p.style.height = s + "px";
 
-
-      gsap.to(p, {
-        opacity: 1,
-        duration: 1,
-        ease: "power1.out",
-        delay: 0,
-      });
-      ratioItems.push(p)
-    }
-    //Images
-    //People
-    for(let i = 0; i < _ratio[1]; i++) {
-      let img = document.createElement("div");
-      img.classList.add("person");
-      img.style.left = (windowWidth/2 -(_ratio[1]/2 * is) + (i * is)) + "px";//random(windowWidth/4,3 * windowWidth/4) + "px";
-      img.style.top = (2 * windowHeight/3) + "px";///random(3 * windowHeight/5, 3.2 * windowHeight/5 - 100) + "px";
-      img.style.width = is + "px";
-      img.style.height = is + "px";
-
-      let sample = samples[_lang];
-
-      let f = sample[i];
-      img.style["background-image"] = "url(" + imageBase + f["100px"] + ")";
-      document.querySelector("#grid").appendChild(img);
-      gsap.to(img, {
-        opacity: 1,
-        duration: 1,
-        ease: "power1.out",
-        delay: 0,
-      });
-      ratioItems.push(img)
-    }
+    gsap.to(p, {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.out",
+      delay: 0,
+    });
+    ratioItems.push(p);
   }
+  //Images
+  //People
+  for (let i = 0; i < _ratio[1]; i++) {
+    let img = document.createElement("div");
+    img.classList.add("person");
+    img.style.left = windowWidth / 2 - (_ratio[1] / 2) * is + i * is + "px"; //random(windowWidth/4,3 * windowWidth/4) + "px";
+    img.style.top = (2 * windowHeight) / 3 + "px"; ///random(3 * windowHeight/5, 3.2 * windowHeight/5 - 100) + "px";
+    img.style.width = is + "px";
+    img.style.height = is + "px";
 
-  function clearRatio() {
-    ratioItems.forEach(i => {
-      gsap.to(i, {
-        opacity: 0,
-        duration: 1,
-        ease: "power1.out",
-        delay: random(),
-      });
-    })
-    ratioItems = [];
+    let sample = samples[_lang];
+
+    let f = sample[i];
+    img.style["background-image"] = "url(" + imageBase + f["100px"] + ")";
+    document.querySelector("#grid").appendChild(img);
+    gsap.to(img, {
+      opacity: 1,
+      duration: 1,
+      ease: "power1.out",
+      delay: 0,
+    });
+    ratioItems.push(img);
   }
+}
+
+function clearRatio() {
+  ratioItems.forEach((i) => {
+    gsap.to(i, {
+      opacity: 0,
+      duration: 1,
+      ease: "power1.out",
+      delay: random(),
+    });
+  });
+  ratioItems = [];
+}
 
 //-----------DATA
 
-  function onJSON() {
-    console.log("JSON LOADED");
-  }
-
-  function getJSON() {
-  //Map
-    fetch("data/eng.json")
-    .then((response) => response.json())
-
-    //There are only three possible nesting levels so this hack is fine. Right?
-    .then((data) => {
-      data.children.forEach(function (d) {
-        jMap[d.name] = d;
-        d.children.forEach(function (d2) {
-          jMap[d2.name] = d2;
-          d2.children.forEach(function (d3) {
-            jMap[d3.name] = d3;
-          });
-        });
-      });
-
-      //Medians
-      fetch("data/multi1.json")
-      .then((response) => response.json())
-      .then((data) => {
-        medians = data;
-          //isolate("Internet & Telecom");
-      })
-      .catch((error) => console.error("Error fetching JSON:", error));
-    })
-    .catch((error) => console.error("Error fetching JSON:", error));
-  }
+function onJSON() {
+  console.log("JSON LOADED");
+}
 
 //---------- UTILITIES
 
-  function toTitleCase(str) {
+function toTitleCase(str) {
   return str.replace(/\w\S*/g, function (txt) {
     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
   });
 }
-
-getJSON();
