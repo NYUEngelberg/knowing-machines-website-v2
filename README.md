@@ -34,6 +34,10 @@
 
 1. Add them to /public/docs
 
+## How to add images
+
+1. Add them to /public/img
+
 ## How to add podcast episodes
 
 1. Edit /pages/podcast.tsx
