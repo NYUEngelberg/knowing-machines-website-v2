@@ -2,7 +2,7 @@
 title: "FONDAZIONE PRADA PRESENTS “CALCULATING EMPIRES”"
 slug: "fondazione-prada-presents-calculating-empires"
 draft: false
-index: 1
+index: 2
 contentType: "press release"
 coverImg: "/img/calculating_empires/1.png"
 coverImgAlt: "Abstract image oh black horizontal lines"

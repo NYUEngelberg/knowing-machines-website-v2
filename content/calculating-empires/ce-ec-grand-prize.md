@@ -2,7 +2,7 @@
 title: "“CALCULATING EMPIRES” WINS GRAND PRIZE FOR ARTISTIC EXPLORATION"
 slug: "ce-ec-grand-prize"
 draft: false
-index: 0
+index: 1
 contentType: "press release"
 coverImg: "/img/calculating_empires/prize-dithered-image.png"
 coverImgAlt: "A dithered image with the Calculating Empires map next to the award itself"
