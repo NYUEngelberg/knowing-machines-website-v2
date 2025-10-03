@@ -4,7 +4,7 @@ slug: "silver-lion-venice-architettura-biennale"
 draft: false
 index: 0
 contentType: "press release"
-coverImg: "/img/calculating_empires/prize-dithered-image.png"
+coverImg: "/img/calculating_empires/silver_lion.png"
 coverImgAlt: "A dithered image with the Calculating Empires map next to the award itself"
 preposition: "by"
 authors: "KATE CRAWFORD AND VLADAN JOLER"
