@@ -46,3 +46,5 @@ Specifically, how did 20 years of NYT organizational culture create NYTAC patter
 The NYTAC _emerged from_ decades of reporting habits, publishing standards, and news librarianship that seem contained within journalistic choices – but these choices are taking on a new and authoritative life in engineering communities using the NYTAC to build seemingly objective systems for classifying and producing news.
 
 The NYTAC is simultaneously a reflection of news cultures and organizational patterns, a dataset with a life beyond journalism, and a standard for data engineers building derivative products. As “loosely coupled array of standardized elements” (practices, languages, norms, categories), the NYTAC is an institutional achievement. Understanding it and its journalism-engineering meetings shows the contemporary “press” to be not just what journalists and newsrooms do, but what datasets see and shape.
+
+*July 2023*

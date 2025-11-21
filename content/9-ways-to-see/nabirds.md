@@ -48,3 +48,5 @@ The biocultural assumptions underlying categories such as sex are destabilized b
 [:carousel-2]
 
 Probing the dataset’s orderliness challenges us to question the stability of the very categories — such as sexual binarism — that machine learning algorithms trained on such data naturalize. Misrecognition happens in the construction of our categories as much as at the level of individual images. Not only can a given bird be misclassified (by species, by age, by sex), but the very taxonomies that support classification prove to be imperfect fits for describing lively creatures, in ways that shape how we — aided by algorithms — come to know and manage them. Such misrecognition is fundamentally shaped by culture and power: we “see” (assume) binary sex, even when it is unsupported by reality, because that is what we are normatively conditioned to “see” (enforce and algorithmically reinforce). The stakes of such categorical misrecognition are real for birds — and, as research by scholars such as [Scheuerman et al. (2020)](https://par.nsf.gov/servlets/purl/10179307) shows, even more so for humans.
+
+*July 2023*

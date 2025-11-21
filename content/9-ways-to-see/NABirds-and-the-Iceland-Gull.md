@@ -51,3 +51,5 @@ Look through photos from single species, and you'll appreciate all the small var
 What makes a bird hard to see for a machine?
 
 Small, well-camouflaged, rare, hard to get to -- all of these same things can trickle down into the quality and quantity of data. Rare birds tend to have less available photos for systems to train on, and those that live in out of the way places are likewise less documented. Machines also have a unique version of birds that are hiding in plain sight: the ones that people don't choose to include in their datasets. There are nearly 800 species of birds in mainland North America, counting breeding species and regular visitors. When NABirds was assembled only the 400 most common of those birds were included. This number includes the 12 most common species of gull but not the 13th: The Iceland Gull.
+
+*July 2023*
