@@ -51,3 +51,5 @@ Community-based approaches to AI bring their own challenges, including geographi
 Big Tech’s greedy approaches have so far dominated AI conversations — but by looking to groups that are charting a different course, we can push back on the narrative that this is inevitable, that it can’t be otherwise. Paying closer attention to the technical and social approaches pioneered by projects like iNaturalist could have profound effects on how AI is developed and deployed, particularly in science and medicine. More broadly, these models can inspire us to build AI models as tools with specific purposes, whose workings are visible, and whose impacts can be measured and known: things that can be built by and accountable to specific communities.  
 
 If not them, us.
+
+*October 2023*

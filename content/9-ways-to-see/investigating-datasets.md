@@ -32,3 +32,5 @@ The see:set tool started its life to solve challenges we faced – how to intros
 Not every engagement took place in see:set – one tool rarely satisfies all required functionality and interface needs. From the beginning, see:set focused on building a foundational information architecture to store and query data, allowing us to ask different questions based on search. While the user interface of see:set was aimed at exploring and browsing data, we also adopted a workflow where we used spreadsheets as a second interface to data. We always considered see:set a team player by fostering to export data that can be utilized in other tools.
 
 Investigating datasets is a method as well as a critical practice. If anything, it is an antidote to suspending one’s disbelief, which has been the common reaction recently to the ubiquity of generative models.
+
+*July 2023*

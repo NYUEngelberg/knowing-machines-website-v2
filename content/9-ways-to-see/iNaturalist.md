@@ -44,3 +44,4 @@ The specifics of this example, that the *Fuligo* ended up as *Homo sapiens*, rev
 
 Machine learning datasets are designed to carry world views: to pass to the systems that are trained upon them their own particular ways of seeing the world. In the case of iNaturalist, its human-as-wildlife and cigarette-butt-as-human ethic carries into its community and its tools; something you can experience firsthand the next time you stumble upon a blob (featureless or not). 
 
+*July 2023*
